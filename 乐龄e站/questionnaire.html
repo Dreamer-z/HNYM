@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <title>问卷调查</title>
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="./js/plug/jquery-1.8.3.min.js"></script>
+    <script src="./js/plug/adaptive.js"></script>
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 28;
+        window['adaptive'].maxWidth = 480;
+        window['adaptive'].scaleType = 1;
+        window['adaptive'].init();
+    </script>
+</head>
+
+<body>
+    <div class="questionnaire">
+        <ul class="question-list">
+            <li class="question-li">
+                <p class="question-tit" data-state="false">1、问题1？</p>
+                <textarea class="answer-box" placeholder="在此处输入您的回答（非必填）" maxlength=""></textarea>
+            </li>
+            <li class="question-li">
+                <p class="question-tit" data-state="false">2、问题2？</p>
+                <textarea class="answer-box" placeholder="在此处输入您的回答（非必填）" maxlength=""></textarea>
+            </li>
+            <li class="question-li">
+                <p class="question-tit" data-state="false">3、问题3？</p>
+                <textarea class="answer-box" placeholder="在此处输入您的回答（非必填）" maxlength=""></textarea>
+            </li>
+        </ul>
+        <div class="question-push">
+            <button>确认提交</button>
+        </div>
+    </div>
+</body>
+<script>
+    var th;
+    $(".question-tit").click(function() {
+        // th = $(this);
+        // if ($(this).attr("data-state") == 'true') {
+        //     $(this).attr("data-state", "false")
+        // } else {
+        //     $(this).attr("data-state", "true");
+        // };
+        // slide(th);
+        $(this).siblings("textarea").slideToggle("slow");
+    })
+
+    // function slide(dom) {
+    //     if ($(dom).attr("data-state") == 'true') {
+    //         $(dom).siblings("textarea").slideDown("slow");
+    //     } else {
+    //         $(dom).siblings("textarea").slideUp("slow");
+    //     }
+    // };
+</script>
+
+</html>

@@ -1,0 +1,201 @@
+<link rel="stylesheet" href="/css/smohan.pop&share.css">
+<div id="header">
+    <div id="header-content" class="y-width y-clearfix">
+        <div class="y-left y-clearfix">
+            <p class="y-left">
+                <span class="welc">湖南希尔生命科技有限公司欢迎您!</span>
+                <!-- <span class="sign-logn">请先<a href="/sign.html" class="sign">登录</a><a href="/login.html" class="login">免费注册</a></span> -->
+            </p>
+        </div>
+        <ul id="header-list" class="y-right y-clearfix">
+            <!-- <li class="doctor y-clearfix y-left">
+                <i class="list-icon y-left"></i>
+                <a href="/shopping_car.html" class="y-left"><span>购物车</span></a>
+            </li>
+            <li class="health y-clearfix y-left">
+                <i class="list-icon y-left"></i>
+                <a href="/member.html" class="y-left"><span>会员中心</span></a>
+            </li>
+            <li class="weib y-clearfix y-left">
+                <i class="list-icon y-left"></i>
+                <a href="" class="y-left"><span>公众号</span></a>
+            </li> -->
+            <li class="doctors y-clearfix y-left">
+                <i class="list-icon y-left"></i>
+                <a href="http://www.jk.cn" class="y-left" target="_blank"><span>平安好医生</span></a>
+            </li>
+            <li class="health y-clearfix y-left">
+                <i class="list-icon y-left"></i>
+                <a href="http://www.yydys.com" class="y-left" target="_blank"><span>医云健康</span></a>
+            </li>
+            <li class="weib y-clearfix y-left">
+                <i class="list-icon y-left"></i>
+                <a href="http://weibo.com/u/6289392971?refer_flag=1001030101_" class="y-left" target="_blank"><span>新浪微博</span></a>
+            </li>
+            <li class="flagship y-clearfix y-left">
+                <i class="list-icon y-left"></i>
+                <a href="https://mall.jd.com/index-674905.htmlindex-674905.html" class="y-left" target="_blank"><span>旗舰店</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="nav">
+    <div class="nav-content y-width y-clearfix">
+        <div class="nav-content-left y-left">
+            <a href="/index.html" class="y-clearfix">
+                <img src="images/EnterpriseDynamics/logo.png" alt="" />
+            </a>
+        </div>
+        <div class="nav-content-right y-right y-clearfix">
+            <ul id="index-box" class="y-left">
+                <li class="y-left" data_id="ind">
+                    <a href="/index.html">首页</a>
+                </li>
+            </ul>
+            <ul class="nav-first y-left y-clearfix">
+
+            </ul>
+            <div class="y-left search">
+                <button></button>
+            </div>
+            <div id="search-box">
+                <div id="search-content" class="y-clearfix">
+                    <input type="text" class="searchinp y-left" placeholder="搜索 新闻 / 产品 / 视频">
+                    <button class="searchbtn y-left">搜索</button>
+
+                    <ul id="search-choose">
+                        <li class="sc-li">新闻</li>
+                        <li class="sc-li">产品</li>
+                        <li class="sc-li">视频</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function GetColumn() {
+        //获取头部列表数据
+        var url = data_url;
+        var data = {
+            "action": "GetCloumnAndChild"
+        };
+        $.post(url, data, function(json) {
+            $(".nav-first").html($("#navTemplate").tmpl(json.Result));
+            var cl = localStorage.getItem("column");
+            // $(".nav-first-li").each(function(i) {
+            //     if (!cl || cl == "" || cl == undefined || !cl || cl == "ind") {
+            //         $("#index-box>li>a").css("color", "#a6ce60");
+            //     } else if ($(".nav-first-li").eq(i).attr("data_id") == cl) {
+            //         $("#index-box>li>a").css("color", "#000");
+            //         $(".nav-first-li").eq(i).children("a").css("color", "#a6ce60");
+            //         $(".nav-first-li").eq(i).siblings().children("a").css("color", "#000");
+            //     };
+            // });
+            $("#index-box>li").click(function() {
+                localStorage.setItem("column", $(this).attr("data_id"));
+            });
+            $(".nav-first-li").click(function() {
+                $(this).children("a").css("color", "#a6ce60");
+                $(this).siblings().children("a").css("color", "#000");
+                localStorage.setItem("column", $(this).attr("data_id"));
+                localStorage.setItem("column_child_init", $(this).children(".nav-second").children(".nav-second-li").eq(0).attr("data_id"));
+                localStorage.setItem("column_child_val", $(this).children(".nav-second").children(".nav-second-li").eq(0).children("a").html());
+                localStorage.setItem("column_val", $(this).children("a").html());
+                localStorage.setItem("column_url", $(this).children("a").attr("href"));
+            });
+            $(".nav-second-li").click(function() {
+                localStorage.setItem("column", $(this).parent().parent().attr("data_id"));
+                localStorage.setItem("column_child", $(this).attr("data_id"));
+                localStorage.setItem("column_val", $(this).parent().parent().children("a").html());
+                localStorage.setItem("column_url", $(this).parent().parent().children("a").attr("href"));
+                localStorage.setItem("column_child_val", $(this).children("a").html());
+                localStorage.setItem("column_child_url", $(this).children("a").attr("href"));
+                localStorage.setItem("child2_column_init", $(this).children(".nav-thr").children(".nav-thr-li").eq(0).attr("data_id"));
+                localStorage.setItem("child2_column_val_init", $(this).children($(".nav-thr")).children(".nav-thr-li").eq(0).children("a").html());
+            });
+            // for (var i = 0; i < $(".nav-first-li").length; i++) {
+            //     $(".nav-first-li").eq(i).click(function() {
+            //         localStorage.setItem("column", $(this).attr("data_id"));
+            //         localStorage.setItem("column_child_init", $(this).children(".nav-second").children($(".nav-second-li")).eq(0).attr("data_id"));
+            //         localStorage.setItem("column_val", $(this).children("a").html());
+            //         localStorage.setItem("column_url", $(this).children("a").attr("href"));
+            //     });
+            //     for (var j = 0; j < $(".nav-first-li:eq(" + i + ") .nav-second-li").length; j++) {
+            //         $(".nav-first-li:eq(" + i + ") .nav-second-li").eq(j).click(function() {
+            //             localStorage.setItem("column", $(this).parent().parent().attr("data_id"));
+            //             localStorage.setItem("column_child", column_child);
+            //             localStorage.setItem("column_val", $(this).parent().parent().children("a").html());
+            //             localStorage.setItem("column_url", $(this).parent().parent().children("a").attr("href"));
+            //             localStorage.setItem("column_child_val", $(this).children("a").html());
+            //             localStorage.setItem("column_child_url", $(this).children("a").attr("href"));
+
+            //             localStorage.setItem("child2_column_init", $(this).children($(".nav-thr")).children($(".nav-thr-li")).eq(0).attr("data_id"));
+            //             localStorage.setItem("child2_column_val_init", $(this).children($(".nav-thr")).children($(".nav-thr-li")).eq(0).children("a").html());
+            //         });
+            //     }
+            // };
+            $(".nav-thr-li").click(function() {
+                localStorage.setItem("child2_column", $(this).attr("data_id"));
+                localStorage.setItem("child2_column_val", $(this).children("a").html());
+            });
+            $(".search").click(function(ev) {
+                var e = ev || window.ev;
+                e.stopPropagation();
+                e.cancelBubble = true;
+                $("#search-box").css("display", "block");
+                $("#search-box").animate({
+                    "right": 0
+                }, 500);
+                $(document).click(function(ev) {
+                    if (ev.target == $("#search-box")[0] || ev.target == $(".searchinp ")[0] || ev.target == $(".searchbtn")[0] || ev.target == $("#search-content")[0] || ev.target == $("#search-choose")[0] || ev.target == $(".sc-li")[0] || ev.target == $(".sc-li")[1] || ev.target == $(".sc-li")[2]) {
+                        return;
+                    };
+                    $("#search-box").animate({
+                        "right": -150 + "%"
+                    }, 200);
+                    $("#search-box").fadeOut(200);
+                })
+            });
+            $(".searchbtn").click(function() {
+                if ($(".searchinp").val() == "") {
+                    return;
+                };
+                localStorage.setItem("keyword", $(".searchinp").val());
+                window.location.assign("/search-result.html");
+            });
+            document.onkeydown = function(event) {
+                var e = event || window.event || arguments.callee.caller.arguments[0];
+                if (e && e.keyCode == 13) { // enter 键
+                    //要做的事情               
+                    if ($(".searchinp").val() == "") {
+                        return;
+                    };
+                    localStorage.setItem("keyword", $(".searchinp").val());
+                    window.location.assign("/search-result.html");
+                };
+            };
+            $(".searchinp").focus(function(ev) {
+                var e = ev || window.ev;
+                e.stopPropagation();
+                e.cancelBubble = true;
+                $("#search-choose").fadeIn(200);
+                $(document).click(function(ev) {
+                    if (ev.target == $("#search-box")[0] || ev.target == $(".searchinp ")[0] || ev.target == $(".searchbtn")[0] || ev.target == $("#search-content")[0] || ev.target == $("#search-choose")[0]) {
+                        return;
+                    };
+                    $("#search-choose").fadeOut(200);
+                });
+                $(".sc-li").each(function(i) {
+                    $(".sc-li").eq(i).click(function() {
+                        localStorage.setItem("search_type", $(this).html());
+                        $(".searchinp").focus();
+                        $("#search-choose").fadeOut(200);
+                    });
+                })
+            });
+        }, "json");
+        //加载尾部
+    };
+    GetColumn();
+</script>

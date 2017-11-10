@@ -1,0 +1,169 @@
+#header {
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 40px;
+    color: #666;
+    background-color: #e6e6e5;
+}
+
+#header span:hover {
+    cursor: pointer;
+}
+
+#header #hd-l #addr {
+    color: #ed7623;
+    margin-right: 5px;
+}
+
+#header #hd-r li {
+    margin: 0 10px;
+}
+
+#header #hd-r .hd-r-l {
+    display: block;
+    width: 1px;
+    height: 14px;
+    background-color: #666;
+    margin: 13px 5px;
+}
+
+#hd-nav {
+    height: 100px;
+}
+
+#hd-nav #logo {
+    margin-left: 10px;
+}
+
+#hd-nav #logo img {
+    width: 160px;
+    height: 30px;
+    margin: 40px 0;
+}
+
+#hd-nav #hd-nav-op {
+    margin-left: 40px;
+    padding-top: 22px;
+    height: 78px;
+    text-align: center;
+}
+
+#hd-nav #hd-nav-op li {
+    margin: 0 10px;
+}
+
+#hd-nav #hd-nav-op #search-box {
+    border: 2px solid #ef3a24;
+}
+
+#hd-nav #hd-nav-op #search-box input {
+    width: 440px;
+    height: 38px;
+    line-height: 40px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#hd-nav #hd-nav-op #search-box button {
+    height: 42px;
+    width: 100px;
+    background-color: #ef3a24;
+    font-size: 20px;
+    line-height: 42px;
+    color: #fff;
+}
+
+#hd-nav #hd-nav-op #hd-hot-box {
+    color: #999;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+#hd-nav #hd-nav-op #elease-box #elease button {
+    height: 46px;
+    padding: 0 15px;
+    background-color: #ef3a24;
+    font-size: 20px;
+    line-height: 46px;
+    color: #fff;
+}
+
+#hd-nav #hd-nav-op #elease-box p {
+    color: #999;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+#hd-nav #hd-nav-op #elease-box p span:hover {
+    cursor: pointer;
+}
+
+#fd-box {
+    width: 100%;
+    background-color: #343434;
+    padding-top: 50px;
+}
+
+.fd-ul {
+    padding-bottom: 42px;
+    border-bottom: 1px solid #818080;
+}
+
+.fd-li h4 {
+    color: #dddddc;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+.fd-li li,
+.fd-li li a {
+    font-size: 14px;
+    color: #818080;
+    line-height: 30px;
+}
+
+.touch {
+    width: 380px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 140px;
+}
+
+.touch li i {
+    display: inline-block;
+    width: 18px;
+    height: 15px;
+    margin-top: 7px;
+}
+
+.email i {
+    background: url(/images/index/email.png)no-repeat center;
+}
+
+.tel i {
+    background: url(/images/index/tel.png)no-repeat center;
+}
+
+.addr i {
+    background: url(/images/index/addr.png)no-repeat center;
+}
+
+.blogroll {
+    width: 80px;
+    margin-right: 320px;
+}
+
+.help-center {
+    width: 80px;
+}
+
+#ba {
+    color: #818080;
+    font-size: 12px;
+    text-align: center;
+    line-height: 42px;
+}

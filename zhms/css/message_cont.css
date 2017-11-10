@@ -1,0 +1,26 @@
+.main {
+    padding: 0.4rem 0.4rem;
+}
+
+.title {
+    font-size: 0.32rem;
+    font-weight: bold;
+}
+
+.time {
+    font-size: 0.24rem;
+    line-height: 0.7rem;
+    color: #666;
+}
+
+.cont {
+    font-size: 0.28rem;
+    line-height: 0.48rem;
+    color: #666;
+}
+
+.cont img {
+    display: block;
+    max-width: 100%;
+    margin: 0.2rem auto;
+}

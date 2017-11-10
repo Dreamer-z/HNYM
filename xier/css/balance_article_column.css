@@ -1,0 +1,255 @@
+.nav-first-li:nth-of-type(1) > a {
+  color: #a6ce60;
+}
+
+#now-add {
+  height: 18px;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 36px auto;
+  margin-top: 15px;
+  color: #898a89;
+}
+
+#now-add p {
+  display: block;
+  text-align: left;
+}
+
+#now-add p i {
+  display: inline-block;
+  width: 20px;
+  height: 18px;
+  background: url(/images/index_03.png) no-repeat center;
+  background-size: 100%;
+}
+
+#now-add p a {
+  color: #898a89;
+}
+
+.page-turner {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+#balance-article-box {
+  margin-bottom: 35px;
+}
+
+.ba-l-ui {
+  margin-bottom: 40px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ba-l-li {
+  padding: 0 15px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  border-bottom: 1px solid #999;
+  margin: 0 2px;
+}
+
+.ba-l-li a {
+  color: #000;
+}
+
+.ba-l-li:hover a {
+  color: #a6ce60;
+}
+
+.thr-c {
+  border-bottom: 1px solid #ffc028;
+}
+
+.thr-c a {
+  color: #a6ce60;
+}
+
+#balance-article-left {
+  width: 700px;
+  padding: 5px 0;
+}
+
+#balance-article-left li {
+  width: 100%;
+  height: 154px;
+  box-sizing: border-box;
+  margin: 20px 0;
+  padding: 20px 10px;
+  border-bottom: 1px solid #666;
+}
+
+#balance-article-left li:hover {
+  cursor: pointer;
+}
+
+.balance-article-left-img {
+  width: 200px;
+  height: 100%;
+  position: relative;
+}
+
+.balance-article-left-img img,
+.balance-article-left-img video,
+.balance-article-left-img .play {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.balance-article-left-img img {
+  z-index: 998;
+}
+
+.balance-article-left-img .play {
+  z-index: 999;
+  background: url(/images/play.png) no-repeat center;
+  background-size: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+}
+
+.balance-article-left-content {
+  width: 470px;
+  height: 100%;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.balance-article-left-content h4 {
+  font-size: 18px;
+  line-height: 34px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.balance-article-left-content p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.balance-article-left-content b {
+  display: block;
+  text-align: right;
+}
+
+#balance-article-right {
+  width: 400px;
+  margin-left: 100px;
+}
+
+#balance-article-right-one,
+#balance-article-right-two,
+#balance-article-right-three,
+#balance-article-right-four {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+#balance-article-right-one img,
+#balance-article-right-one video,
+#balance-article-right-two img,
+#balance-article-right-two video,
+#balance-article-right-three img,
+#balance-article-right-three video,
+#balance-article-right-four img,
+#balance-article-right-four video {
+  width: 100%;
+  height: 260px;
+}
+
+#balance-article-right-one {
+  height: 260px;
+  position: relative;
+}
+
+#balance-article-right-one img,
+#balance-article-right-one video {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#balance-article-right-four ol {
+  list-style: decimal inside;
+}
+
+#balance-article-right-two div {
+  height: 30px;
+  width: 100%;
+  border-bottom: 1px solid #666;
+}
+
+#balance-article-right-two div h4 {
+  font-size: 20px;
+  line-height: 30px;
+  width: 390px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#balance-article-right-two div span {
+  width: 4px;
+  height: 24px;
+  margin-top: 3px;
+  margin-right: 5px;
+  background-color: #147bd1;
+  border-radius: 2px;
+  line-height: 30px;
+}
+
+#balance-article-right-two ul li {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+#balance-article-right-two ul li span {
+  width: 10px;
+  height: 10px;
+  margin: 0 15px;
+  margin-top: 13px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+#balance-article-right-two ul li p {
+  width: 320px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#balance-article-right-four #hot-article h4 {
+  font-size: 18px;
+  line-height: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #666;
+  margin-bottom: 10px;
+}
+
+#balance-article-right-four #hot-articleli {
+  line-height: 30px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+#balance-article-right-four #hot-articleli li {
+  padding-left: 20px;
+  color: #666;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

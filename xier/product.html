@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/rest.min.css">
+    <link rel="stylesheet" href="/css/head-footer.min.css">
+    <link rel="stylesheet" href="/css/banner.css">
+    <link rel="stylesheet" href="/css/product.min.css">
+    <title>产品中心</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="headbox"></div>
+    <!-- banner -->
+    <div id="banner">
+        <ul id="banner-content" class="y-clearfix">
+        </ul>
+
+        <ul id="banner-swicth-ul" class="y-clearfix">
+        </ul>
+
+        <span id="banner-swicth-left" class="switchClick"></span>
+        <span id="banner-swicth-right" class="switchClick"></span>
+    </div>
+    <!-- banner end -->
+    <!-- 当前位置 -->
+    <div id="now-add" class="y-width">
+        <p class="y-right y-clearfix"><i class="y-left"></i><span class="y-left">当前位置：</span><a href="/index.html" class="y-left">首页</a>
+            <span class="y-left">&gt产品中心</span>
+        </p>
+    </div>
+    <!-- 当前位置 end -->
+    <div id="peatured-product">
+        <div class="product-title  product-part-one-title"></div>
+        <div class="product-box y-width product-part-one y-clearfix">
+            <div class="product-bg"></div>
+            <div class="product-content product-part-one-content">
+                <div class="product-content-one-left y-left">
+                    <div class="product-content-one-left-top"></div>
+                    <div class="product-content-one-left-br"></div>
+                    <div class="product-content-one-left-bottom"></div>
+                </div>
+                <div class="product-content-one-rigth y-right">
+                    <div class="product-content-one-rigth-top">
+                        <h4>伊能启元胶囊</h4>
+                        <span>享誉美国的血糖管控专家</span>
+                    </div>
+                    <div class="product-content-one-rigth-bottom">
+                        <p>天然植物成分 安全无毒副作用 0.65g/粒x90</p>
+                        <div class="product-content-one-buy y-clearfix">
+                            <p class="y-left">市场价：<span>&yen299元</span></p>
+                            <a class="y-left"><button class="buy_now">立即抢购 →</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-title product-part-two-title"></div>
+        <div class="product-box y-width product-part-two">
+            <div class="product-bg"></div>
+            <div class="product-content product-part-two-content y-clearfix">
+                <div class="product-part-two-content-box y-left">
+                    <div class="product-part-two-content-img"></div>
+                    <div class="product-part-two-content-int">
+                        <h4>伊能启元胶囊</h4>
+                        <p>天然植物成分 安全无毒副作用 0.65g/粒x90</p>
+                        <div class="product-part-two-content-buy y-clearfix">
+                            <p class="y-left">市场价：<span>&yen299元</span></p>
+                            <a class="y-left"><button class="buy_now">立即抢购 →</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-part-two-content-box y-left">
+                    <div class="product-part-two-content-img"></div>
+                    <div class="product-part-two-content-int">
+                        <h4>伊能启元胶囊</h4>
+                        <p>天然植物成分 安全无毒副作用 0.65g/粒x90</p>
+                        <div class="product-part-two-content-buy y-clearfix">
+                            <p class="y-left">市场价：<span>&yen299元</span></p>
+                            <a class="y-left"><button class="buy_now">立即抢购 →</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <div id="divfooter"></div>
+</body>
+<script src="/js/data_url.js"></script>
+<script src="/js/jquery-1.8.3.min.js"></script>
+<script src="/js/jquery.tmpl.min.js"></script>
+<!-- 绑定列表数据 -->
+<script id="navTemplate" type="text/x-jquery-tmpl">
+    <li class="y-left nav-first-li" data_id="${id}">
+        <a href="${category_go_url}">${category_name}</a>
+        <ul class="nav-second">
+            {{each(i,item) ChildList}}
+            <li class="nav-second-li" data_id="${item.id}">
+                <a href="${item.category_go_url}">${item.category_name}</a>
+                <ul class="nav-thr">
+                    {{each(i,item) ChildList2}}
+                    <li class="nav-thr-li" data_id="${item.id}">
+                        <a href="${item.category_go_url}">${item.category_name}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
+            {{/each}}
+        </ul>
+    </li>
+</script>
+<!-- 绑定列表数据 end -->
+
+<!--  绑定banner数据 start-->
+<script id="commissionTemplate" type="text/x-jquery-tmpl">
+    <li class="banner-li y-left">
+        <a><img class="banner-img" src="${file_url}" alt=""></a>
+    </li>
+</script>
+<!--  绑定banner数据 end-->
+<script src="/js/head_footer.js"></script>
+<script src="/js/banner.js"></script>
+<script src="/js/product.js"></script>
+
+</html>

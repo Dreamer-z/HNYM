@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keyword" content="希尔生命科技有限公司">
+    <meta name="description" content="希尔生命科技有限公司">
+    <link rel="stylesheet" href="/css/rest.min.css">
+    <link rel="stylesheet" href="/css/head-footer.min.css">
+    <link rel="stylesheet" href="/css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="/css/index.min.css">
+    <title>首页</title>
+</head>
+
+<body>
+    <div id="headbox"></div>
+    <!-- -------banner------- -->
+    <div id="banner">
+        <ul id="banner-content" class="y-clearfix">
+        </ul>
+
+        <ul id="banner-swicth-ul" class="y-clearfix">
+        </ul>
+
+        <span id="banner-swicth-left" class="switchClick"></span>
+        <span id="banner-swicth-right" class="switchClick"></span>
+    </div>
+    <!-- -------end------- -->
+    <!-- 文章 -->
+    <div id="new-center-box" class="y-width">
+        <div class="swiper-container y-clearfix">
+            <div id="new-center" class="y-left swiper-wrapper y-clearfix">
+                <!-- <div class="swiper-slide"><img alt=""></div>
+            <div class="swiper-slide"><img alt=""></div>
+            <div class="swiper-slide"><img alt=""></div> -->
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <!-- ------------尾部 -->
+    <div id="divfooter"></div>
+</body>
+<script src="/js/data_url.js"></script>
+<script src="/js/jquery-1.8.3.min.js"></script>
+<script src="/js/jquery.tmpl.min.js"></script>
+<script src="/js/swiper-3.4.2.jquery.min.js"></script>
+<script src="/js/clamp.min.js"></script>
+<!-- 绑定列表数据 -->
+<script id="navTemplate" type="text/x-jquery-tmpl">
+    <li class="y-left nav-first-li" data_id="${id}">
+        <a href="${category_go_url}">${category_name}</a>
+        <ul class="nav-second">
+            {{each(i,item) ChildList}}
+            <li class="nav-second-li" data_id="${item.id}">
+                <a href="${item.category_go_url}">${item.category_name}</a>
+                <ul class="nav-thr">
+                    {{each(i,item) ChildList2}}
+                    <li class="nav-thr-li" data_id="${item.id}">
+                        <a href="${item.category_go_url}">${item.category_name}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
+            {{/each}}
+        </ul>
+    </li>
+</script>
+<!-- 绑定列表数据 end -->
+
+<!--  绑定banner数据 start-->
+<script id="commissionTemplate" type="text/x-jquery-tmpl">
+    <li class="banner-li y-left">
+        <a><img class="banner-img" src="${file_url}" alt=""></a>
+    </li>
+</script>
+<!--  绑定banner数据 end-->
+
+<!--  绑定文章数据 start-->
+<script id="newTemplate" type="text/x-jquery-tmpl">
+    <div class="y-left swiper-slide newcenterli" data_id="${id}" data_title="${article_title}" data_artid="${article_class_id}">
+        <div class="new-center-box y-left">
+            <img src="${article_image}" alt="">
+        </div>
+        <div class="new-article">
+            <span class="new-article-title">${article_title}</span>
+            <p class="new-article-content">${article_short}</p>
+            <a class="new-aeticle-more"><i>查看更多</i></a>
+        </div>
+    </div>
+</script>
+<!--  绑定文章数据 end-->
+<script src="/js/head_footer.js"></script>
+<script src="/js/index.js"></script>
+<script src="/js/banner.js"></script>
+
+</html>

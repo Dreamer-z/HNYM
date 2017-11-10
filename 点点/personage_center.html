@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/rest.css">
+    <link rel="stylesheet" href="/css/head-foot.css">
+    <link rel="stylesheet" href="/css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="/css/jquery.pagination.css">
+    <link rel="stylesheet" href="/css/personage-center.min.css">
+    <title>个人中心</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="hd-box"></div>
+    <!-- banner -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <!-- banner end -->
+    <div id="person-cb">
+        <div id="p-c" class="y-width y-clearfix">
+            <div id="p-c-l" class="y-left">
+                <h4>个人中心</h4>
+                <ul class="p-c-l-ul">
+                    <li class="p-c-l-li p-c-l-lic">个人资料</li>
+                    <li class="p-c-l-li">我的发布</li>
+                    <li class="p-c-l-li">我的用工</li>
+                    <li class="p-c-l-li">账号管理</li>
+                    <li class="p-c-l-li">密码设置</li>
+                    <li class="p-c-l-li">退出账号</li>
+                </ul>
+            </div>
+            <div class="p-c-r y-left">
+                <div id="p-c-person" class="y-clearfix">
+                    <div class="p-title">
+                        <span class="y-left tit-l">个人资料</span>
+                        <span class="y-left tit-c">温馨提示：资料真实，完善，诚信度大，用工机会大。</span>
+                        <span class="y-right tit-r">修改</span>
+                    </div>
+                    <form class="p-d y-clearfix" method="" action="post">
+                        <div class="p-d-l y-left">
+                            <div class="portrait">
+                                <div>
+                                    <img alt="">
+                                </div>
+                                <input type="file" name="person_img" id="upload">
+                                <label for="upload">＋上传头像</label>
+                            </div>
+                        </div>
+                        <div class="p-d-r y-left y-clearfix">
+                            <ul class="y-clearfix">
+                                <li class="y-left y-clearfix">
+                                    <span class="y-left">姓名：</span>
+                                    <input class="y-left" type="text" name="name">
+                                </li>
+                                <li class="y-left y-clearfix sex">
+                                    <span class="y-left">性别：</span>
+                                    <input class="y-left" type="radio" name="sex" id="men">
+                                    <label class="y-left label-c" for="men">♂ 男</label>
+                                    <input class="y-left" type="radio" name="sex" id="women">
+                                    <label class="y-left" for="women">♀ 女</label>
+                                </li>
+                                <li class="y-left y-clearfix">
+                                    <span class="y-left">出生年月：</span>
+                                    <input class="y-left" type="text" name="data">
+                                </li>
+                                <li class="y-left y-clearfix">
+                                    <span class="y-left">身份证号：</span>
+                                    <input class="y-left" type="text" name="idcard">
+                                </li>
+                                <li class="y-left y-clearfix">
+                                    <span class="y-left">手机号：</span>
+                                    <input class="y-left" type="text" name="tel">
+                                </li>
+                                <li class="y-left y-clearfix">
+                                    <span class="y-left">微信：</span>
+                                    <input class="y-left" type="text" name="wx">
+                                </li>
+                                <li class="y-left y-clearfix addr">
+                                    <span class="y-left">居住地址：</span>
+                                    <input class="y-left" type="text" name="addr">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="id-card-b y-clearfix">
+                            <div class="id-card-z idcard y-left">
+                                <div>
+                                    <img alt="">
+                                </div>
+                                <input id="id-card-z" type="file" name="idcard_img">
+                                <label for="id-card-z">＋上传身份证正面</label>
+                            </div>
+                            <div class="id-card-f idcard y-left">
+                                <div>
+                                    <img alt="">
+                                </div>
+                                <input id="id-card-f" type="file" name="idcard_img">
+                                <label for="id-card-f">＋上传身份证反面</label>
+                            </div>
+                        </div>
+                        <button id="save" type="submit">保存</button>
+                    </form>
+                </div>
+                <div class="p-c-publish">
+                    <div class="p-title">
+                        <span class="y-left tit-l">我的发布</span>
+                        <span class="y-right tit-r">新增发布</span>
+                    </div>
+                    <ul class="pcp-ul">
+                        <li class="pcp-li">
+                            <div class="pcp-li-t y-clearfix">
+                                <span class="pcp-li-n y-left">我的发布1</span>
+                                <span class="pcp-li-e y-right">编辑发布</span>
+                            </div>
+                            <div class="pcp-li-c y-clearfix">
+                                <div class="pcp-li-c-l y-left">
+                                    <img alt="">
+                                </div>
+                                <ul class="pcp-li-c-info y-left">
+                                    <li>
+                                        <p class="cla y-left">服务类别：<span>保姆</span></p>
+                                        <p class="time y-left">发布时间：<span>2017-08-12</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="person-m y-left">陈某某 &nbsp&nbsp女 &nbsp&nbsp34岁</p>
+                                        <p class="person-t y-left">手机号码：<span>18670313429</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="person-sc y-left">服务范围：<span>芙蓉区、天心区</span> </p>
+                                        <p class="person-add y-left"> 住址：<span>长沙五一大道225号</span></p>
+                                    </li>
+                                </ul>
+                                <ul class="pcp-li-c-op y-right y-clearfix">
+                                    <li class="pcp-li-re y-left">刷新</li>
+                                    <li class="pcp-li-c-op y-left">编辑</li>
+                                    <li class="pcp-li-c-op y-left">删除</li>
+                                    <li class="pcp-li-c-op y-left">暂停发布</li>
+                                    <li class="pcp-li-c-op y-left">继续发布</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="pcp-li">
+                            <div class="pcp-li-t y-clearfix">
+                                <span class="pcp-li-n y-left">我的发布1</span>
+                                <span class="pcp-li-e y-right">编辑发布</span>
+                            </div>
+                            <div class="pcp-li-c y-clearfix">
+                                <div class="pcp-li-c-l y-left">
+                                    <img alt="">
+                                </div>
+                                <ul class="pcp-li-c-info y-left">
+                                    <li>
+                                        <p class="cla y-left">服务类别：<span>保姆</span></p>
+                                        <p class="time y-left">发布时间：<span>2017-08-12</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="person-m y-left">陈某某 &nbsp&nbsp女 &nbsp&nbsp34岁</p>
+                                        <p class="person-t y-left">手机号码：<span>18670313429</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="person-sc y-left">服务范围：<span>芙蓉区、天心区</span> </p>
+                                        <p class="person-add y-left"> 住址：<span>长沙五一大道225号</span></p>
+                                    </li>
+                                </ul>
+                                <ul class="pcp-li-c-op y-right y-clearfix">
+                                    <li class="pcp-li-re y-left">刷新</li>
+                                    <li class="pcp-li-c-op y-left">编辑</li>
+                                    <li class="pcp-li-c-op y-left">删除</li>
+                                    <li class="pcp-li-c-op y-left">暂停发布</li>
+                                    <li class="pcp-li-c-op y-left">继续发布</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="my-yg">
+                    <div class="p-title">
+                        <span class="y-left tit-l">我的用工</span>
+                    </div>
+                    <ul class="yg-ul">
+                        <li class="yg-li">
+                            <div class="yg-li-tbox y-clearfix">
+                                <div class="yg-li-t y-clearfix y-left">
+                                    <input class="y-left" type="checkbox" name="ygli">
+                                    <span class="yg-time y-left">2017-08-29</span>
+                                </div>
+                                <div class="yg-li-op y-clearfix y-right">
+                                    <span class="left">评价</span>
+                                    <span class="left">删除</span>
+                                </div>
+                            </div>
+                            <div class="yg-li-cbox y-clearfix">
+                                <div class="yg-li-cl y-left">
+                                    <h5>专业保姆月嫂</h5>
+                                    <p>薪资：3000/月</p>
+                                    <p>地址：天心区友谊路257号环达路桥大厦1栋601室</p>
+                                </div>
+                                <div class="yg-li-cr y-right">
+                                    <span>查看电话</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="yg-li">
+                            <div class="yg-li-tbox y-clearfix">
+                                <div class="yg-li-t y-clearfix y-left">
+                                    <input class="y-left" type="checkbox" name="ygli">
+                                    <span class="yg-time y-left">2017-08-29</span>
+                                </div>
+                                <div class="yg-li-op y-clearfix y-right">
+                                    <span class="left">评价</span>
+                                    <span class="left">删除</span>
+                                </div>
+                            </div>
+                            <div class="yg-li-cbox y-clearfix">
+                                <div class="yg-li-cl y-left">
+                                    <h5>专业保姆月嫂</h5>
+                                    <p>薪资：3000/月</p>
+                                    <p>地址：天心区友谊路257号环达路桥大厦1栋601室</p>
+                                </div>
+                                <div class="yg-li-cr y-right">
+                                    <span>查看电话</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="page-turner">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <div id="ft-box"></div>
+</body>
+<script src="/js/jquery-1.8.3.min.js"></script>
+<script src="/js/head-foot.js"></script>
+<script src="/js/swiper-3.4.2.jquery.min.js"></script>
+<script src="/js/personage-center.js"></script>
+<script src="/js/jquery.pagination.min.js"></script>
+
+</html>

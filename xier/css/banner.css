@@ -1,0 +1,80 @@
+#banner {
+    width: 100%;
+    height: 524px;
+    overflow: hidden;
+    position: relative;
+    z-index: 900;
+}
+
+#banner-content {
+    height: 100%;
+}
+
+#banner-content .banner-li {
+    height: 100%;
+}
+
+#banner-content .banner-li a {
+    display: block;
+}
+
+#banner-content .banner-li a .banner-img {
+    display: block;
+    height: 524px;
+    width: 100%;
+}
+
+#banner-swicth-ul {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    z-index: 990;
+}
+
+#banner-swicth-ul .banner-swicth-li {
+    margin: 0 5px;
+}
+
+#banner-swicth-ul .banner-swicth-li .banner-list-checked {
+    width: 50px;
+    border-radius: 10px;
+    background-color: #393a38;
+}
+
+#banner-swicth-ul .banner-swicth-li i {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #075279;
+    background-color: #fff;
+}
+
+.switchClick {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    z-index: 990;
+    margin-top: -40px;
+    border-radius: 50%;
+    display: none;
+}
+
+#banner:hover .switchClick {
+    display: block;
+}
+
+#banner-swicth-left {
+    left: 120px;
+    background: url(./../images/left.png) no-repeat center;
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#banner-swicth-right {
+    right: 120px;
+    background: url(./../images/right.png) no-repeat center;
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}

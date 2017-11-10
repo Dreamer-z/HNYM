@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/css/rest.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/head-footer.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/jquery.pagination.css" />
+    <link rel="stylesheet" href="/css/balance_article_column.min.css">
+    <title>我糖平衡</title>
+</head>
+
+<body>
+    <!-- 头部 导航 -->
+    <div id="headbox"></div>
+    <!-- 头部 导航 end -->
+    <!-- 当前位置 -->
+    <div id="now-add" class="y-width">
+        <p class="y-right y-clearfix">
+            <i class="y-left"></i>
+            <span class="y-left">当前位置： </span>
+            <a id="firstlist" href="" class="y-left"></a>
+            <span class="y-left">&gt</span>
+            <a id="secendlist" href="" class="y-left"></a>
+            <a id="nowlist" class="y-left"></a>
+            <span id="lastli" class="y-left"></span>
+        </p>
+    </div>
+    <!-- 当前位置 end -->
+
+    <div id="balance-article-box" class="y-width y-clearfix">
+        <div class="ba-l-box">
+            <ul class="ba-l-ui y-clearfix">
+                <li class="ba-l-li y-left">
+                    <a href=""></a>
+                </li>
+                <li class="ba-l-li y-left"></li>
+                <li class="ba-l-li y-left"></li>
+                <li class="ba-l-li y-left"></li>
+            </ul>
+            <ul id="balance-article-left" class="y-left">
+
+            </ul>
+        </div>
+        <div id="balance-article-right" class="y-left">
+            <div id="balance-article-right-one">
+                <img alt="">
+                <video id="example_video" src="" autoplay controls loop>很抱歉，您的浏览器版本太低，不支持此视频播放</video>
+            </div>
+            <!-- <div id="balance-article-right-two">
+                <div class="y-clearfix">
+                    <span class="y-left"></span>
+                    <h4 class="y-left">健康科普</h4>
+                </div>
+                <ul>
+
+                </ul>
+            </div> -->
+
+            <div id="balance-article-right-four">
+                <div id="hot-article">
+                    <h4>热门文章</h4>
+                    <!-- <img src="/images/images/balance_42.png" alt=""> -->
+                </div>
+                <ol id="hot-articleli" type="1">
+
+                </ol>
+            </div>
+            <div id="balance-article-right-three">
+                <a href="" target="_blank"><img alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 分页按钮 -->
+    <div class="page-turner">
+
+    </div>
+    <!-- 尾部 -->
+    <div id="divfooter"></div>
+</body>
+<script src="/js/data_url.js"></script>
+<script src="/js/jquery-1.8.3.min.js"></script>
+<script src="/js/jquery.tmpl.min.js"></script>
+<script src="/js/jquery.pagination.min.js"></script>
+<script src="/js/clamp.min.js"></script>
+<!-- 绑定列表数据 -->
+<script id="navTemplate" type="text/x-jquery-tmpl">
+    <li class="y-left nav-first-li" data_id="${id}">
+        <a href="${category_go_url}">${category_name}</a>
+        <ul class="nav-second">
+            {{each(i,item) ChildList}}
+            <li class="nav-second-li" data_id="${item.id}">
+                <a href="${item.category_go_url}">${item.category_name}</a>
+                <ul class="nav-thr">
+                    {{each(i,item) ChildList2}}
+                    <li class="nav-thr-li" data_id="${item.id}">
+                        <a href="${item.category_go_url}">${item.category_name}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
+            {{/each}}
+        </ul>
+    </li>
+</script>
+<!-- 绑定列表数据 end -->
+<script src="/js/head_footer.js "></script>
+
+<!-- 文章列表 -->
+<script id="balance-article-lefttml" type="text/x-jquery-tmpl">
+    <li data_id="${id}" data_title="${article_title}" data_time="${article_publish_time}">
+        <div class=" balance-article-left-img y-left ">
+            <img src="${article_image} " alt=" ">
+            <div class="play"></div>
+        </div>
+        <div class="balance-article-left-content y-left ">
+            <h4>${article_title}</h4>
+            <p class="ba-art-li">${article_short}</p>
+            <b>${article_publish_time}</b>
+        </div>
+    </li>
+</script>
+<!-- 文章列表end -->
+
+<!-- 三级子栏目列表 -->
+<script id="childtmlp" type="text/x-jquery-tmpl ">
+    <li class="ba-l-li y-left">
+        <a href="${category_go_url}" data_id="${id}">${category_name}</a>
+    </li>
+</script>
+<!-- 三级子栏目列表end -->
+
+<!-- 热门文章列表 -->
+<script id="hotarticletmlp" type="text/x-jquery-tmpl ">
+    <li data_id="${id}" data_title="${article_title}">${article_title}</li>
+</script>
+<!-- 热门文章列表end -->
+
+<script src="/js/balance_article_column.js "></script>
+
+</html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/rest.min.css">
+    <link rel="stylesheet" href="/css/head-footer.min.css">
+    <link rel="stylesheet" href="/css/order-state.min.css">
+    <title>订单状态</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="headbox"></div>
+    <ul class="order-states y-clearfix y-width">
+        <li class="all-od y-left c-states">
+            <h4>所有订单</h4>
+        </li>
+        <li class="wait-pay y-left">
+            <h4>待付款</h4>
+        </li>
+        <li class="wait-deliver y-left">
+            <h4>待发货</h4>
+        </li>
+        <li class="wait-receiving y-left">
+            <h4>待收货</h4>
+        </li>
+        <li class="wait-comment y-left">
+            <h4>待评论</h4>
+        </li>
+    </ul>
+    <div class="order-info y-width">
+        <ul class="oi-ul-t y-clearfix">
+            <li class="y-left com-info-t">商品信息</li>
+            <li class="y-left price-t">单价</li>
+            <li class="y-left amount-t">数量</li>
+            <li class="y-left discounts-t">优惠方式</li>
+            <li class="y-left sub-t">小计</li>
+        </ul>
+        <div class="od-box y-clearfix">
+            <div class="od-op y-clearfix">
+                <input type="checkbox" id="c-all" class="y-left">
+                <label for="c-all" class="y-left">全选</label>
+                <i class="y-left ca-inpt"></i>
+            </div>
+            <!-- 所有订单 -->
+            <ul id="all-od" class="oi-ul-c y-clearfix oi-ul-b">
+                <li class="od-li y-clearfix">
+                    <div class="odd">
+                        <i class="y-left od-del"></i>
+                        <div class="del-aff">
+                            <p>确定要删除该订单吗？</p>
+                            <p class="ac"><span class="aff">确定</span><span class="canc">取消</span></p>
+                        </div>
+                    </div>
+                    <div class="od-t y-clearfix">
+                        <input type="checkbox" class="y-left">
+                        <label for="od-all-1" class="y-left">订单号：<span class="od-num">123213131231232</span></label>
+                        <span class="od-time y-left">2017-9-1</span>
+                    </div>
+                    <div class="oi-c-box y-clearfix">
+                        <div class="oi-c com-info-c y-left">
+                            <img class="y-left" src="/images/od_1.png" alt="">
+                            <div class="cic-s y-left">
+                                <h4 class="cic-s-t">465654</h4>
+                                <p class="cic-s-c">dsdasds asdas sda dsad sdas asdasdasdasdasdadasdasdasdasdasds</p>
+                                <p class="cic-s-s">规格:90粒/盒</p>
+                            </div>
+                        </div>
+                        <div class="oi-c price-c y-left">
+                            <p>&yen<b>399</b></p>
+                        </div>
+                        <div class="oi-c y-left amount-c">
+                            <p>1</p>
+                        </div>
+                        <div class="oi-c y-left discounts-c">
+                            <p>无</p>
+                        </div>
+                        <div class="oi-c y-left sub-c">
+                            <p class="oi-price">&yen<span>399</span></p>
+                            <p class="freight">（含运费）</p>
+                            <div class="od-states-inp">
+                                <span>已完成</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="od-li y-clearfix">
+                    <div class="odd">
+                        <i class="y-left od-del"></i>
+                        <div class="del-aff">
+                            <p>确定要删除该订单吗？</p>
+                            <p class="ac"><span class="aff">确定</span><span class="canc">取消</span></p>
+                        </div>
+                    </div>
+                    <div class="od-t y-clearfix">
+                        <input type="checkbox" class="y-left">
+                        <label for="od-all-2" class="y-left">订单号：<span class="od-num">123213131231232</span></label>
+                        <span class="od-time y-left">2017-9-1</span>
+                    </div>
+                    <div class="oi-c-box y-clearfix">
+                        <div class="oi-c com-info-c y-left">
+                            <img class="y-left" src="/images/od_1.png" alt="">
+                            <div class="cic-s y-left">
+                                <h4 class="cic-s-t">465654</h4>
+                                <p class="cic-s-c">dsdasds asdas sda dsad sdas asdasdasdasdasdadasdasdasdasdasds</p>
+                                <p class="cic-s-s">规格:90粒/盒</p>
+                            </div>
+                        </div>
+                        <div class="oi-c price-c y-left">
+                            <p>&yen<b>399</b></p>
+                        </div>
+                        <div class="oi-c y-left amount-c">
+                            <p>1</p>
+                        </div>
+                        <div class="oi-c y-left discounts-c">
+                            <p>无</p>
+                        </div>
+                        <div class="oi-c y-left sub-c">
+                            <p class="oi-price">&yen<span>399</span></p>
+                            <p class="freight">（含运费）</p>
+                            <div class="od-states-inp">
+                                <span>待付款</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="od-li y-clearfix">
+                    <div class="odd">
+                        <i class="y-left od-del"></i>
+                        <div class="del-aff">
+                            <p>确定要删除该订单吗？</p>
+                            <p class="ac"><span class="aff">确定</span><span class="canc">取消</span></p>
+                        </div>
+                    </div>
+                    <div class="od-t y-clearfix">
+                        <input type="checkbox" class="y-left">
+                        <label for="od-deli-1" class="y-left">订单号：<span class="od-num">123213131231232</span></label>
+                        <span class="od-time y-left">2017-9-1</span>
+                    </div>
+                    <div class="oi-c-box y-clearfix">
+                        <div class="oi-c com-info-c y-left">
+                            <img class="y-left" src="/images/od_1.png" alt="">
+                            <div class="cic-s y-left">
+                                <h4 class="cic-s-t">3333333</h4>
+                                <p class="cic-s-c">dsdasds asdas sda dsad sdas asdasdasdasdasdadasdasdasdasdasds</p>
+                                <p class="cic-s-s">规格:90粒/盒</p>
+                            </div>
+                        </div>
+                        <div class="oi-c price-c y-left">
+                            <p>&yen<b>399</b></p>
+                        </div>
+                        <div class="oi-c y-left amount-c">
+                            <p>1</p>
+                        </div>
+                        <div class="oi-c y-left discounts-c">
+                            <p>无</p>
+                        </div>
+                        <div class="oi-c y-left sub-c">
+                            <p class="oi-price">&yen<span>399</span></p>
+                            <p class="freight">（含运费）</p>
+                            <div class="od-states-inp">
+                                <span>待发货</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="od-li y-clearfix">
+                    <div class="odd">
+                        <i class="y-left od-del"></i>
+                        <div class="del-aff">
+                            <p>确定要删除该订单吗？</p>
+                            <p class="ac"><span class="aff">确定</span><span class="canc">取消</span></p>
+                        </div>
+                    </div>
+                    <div class="od-t y-clearfix">
+                        <input type="checkbox" class="y-left">
+                        <label for="od-deli-1" class="y-left">订单号：<span class="od-num">123213131231232</span></label>
+                        <span class="od-time y-left">2017-9-1</span>
+                    </div>
+                    <div class="oi-c-box y-clearfix">
+                        <div class="oi-c com-info-c y-left">
+                            <img class="y-left" src="/images/od_1.png" alt="">
+                            <div class="cic-s y-left">
+                                <h4 class="cic-s-t">3333333</h4>
+                                <p class="cic-s-c">dsdasds asdas sda dsad sdas asdasdasdasdasdadasdasdasdasdasds</p>
+                                <p class="cic-s-s">规格:90粒/盒</p>
+                            </div>
+                        </div>
+                        <div class="oi-c price-c y-left">
+                            <p>&yen<b>399</b></p>
+                        </div>
+                        <div class="oi-c y-left amount-c">
+                            <p>1</p>
+                        </div>
+                        <div class="oi-c y-left discounts-c">
+                            <p>无</p>
+                        </div>
+                        <div class="oi-c y-left sub-c">
+                            <p class="oi-price">&yen<span>399</span></p>
+                            <p class="freight">（含运费）</p>
+                            <div class="od-states-inp">
+                                <span>待发货</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 所有订单 end -->
+            <!-- 待付款 -->
+            <!-- <ul id="wait-pay" class="oi-ul-c y-clearfix">
+                <li class="y-clearfix">
+                    <div class="odd">
+                        <i class="y-left od-del"></i>
+                        <div class="del-aff">
+                            <p>确定要删除该订单吗？</p>
+                            <p class="ac"><span class="aff">确定</span><span class="canc">取消</span></p>
+                        </div>
+                    </div>
+                    <div class="od-t y-clearfix">
+                        <input type="checkbox" id="od-pay-1" class="y-left">
+                        <label for="ood-pay-1" class="y-left">订单号：<span class="od-num">123213131231232</span></label>
+                        <span class="od-time y-left">2017-9-1</span>
+                    </div>
+                    <div class="oi-c-box y-clearfix">
+                        <div class="oi-c com-info-c y-left">
+                            <img class="y-left" src="/images/od_1.png" alt="">
+                            <div class="cic-s y-left">
+                                <h4 class="cic-s-t">11111111</h4>
+                                <p class="cic-s-c">dsdasds asdas sda dsad sdas asdasdasdasdasdadasdasdasdasdasds</p>
+                                <p class="cic-s-s">规格:90粒/盒</p>
+                            </div>
+                        </div>
+                        <div class="oi-c price-c y-left">
+                            <p>&yen<b>399</b></p>
+                        </div>
+                        <div class="oi-c y-left amount-c">
+                            <p>1</p>
+                        </div>
+                        <div class="oi-c y-left discounts-c">
+                            <p>无</p>
+                        </div>
+                        <div class="oi-c y-left sub-c">
+                            <p class="oi-price">&yen<span>399</span></p>
+                            <p class="freight">（含运费）</p>
+                            <div class="od-states-inp">
+                                <span>待付款</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="y-clearfix">
+                    <div class="odd">
+                        <i class="y-left od-del"></i>
+                        <div class="del-aff">
+                            <p>确定要删除该订单吗？</p>
+                            <p class="ac"><span class="aff">确定</span><span class="canc">取消</span></p>
+                        </div>
+                    </div>
+                    <div class="od-t y-clearfix">
+                        <input type="checkbox" id="od-pay-2" class="y-left">
+                        <label for="od-pay-2" class="y-left">订单号：<span class="od-num">123213131231232</span></label>
+                        <span class="od-time y-left">2017-9-1</span>
+                    </div>
+                    <div class="oi-c-box y-clearfix">
+                        <div class="oi-c com-info-c y-left">
+                            <img class="y-left" src="/images/od_1.png" alt="">
+                            <div class="cic-s y-left">
+                                <h4 class="cic-s-t">2222222</h4>
+                                <p class="cic-s-c">dsdasds asdas sda dsad sdas asdasdasdasdasdadasdasdasdasdasds</p>
+                                <p class="cic-s-s">规格:90粒/盒</p>
+                            </div>
+                        </div>
+                        <div class="oi-c price-c y-left">
+                            <p>&yen<b>399</b></p>
+                        </div>
+                        <div class="oi-c y-left amount-c">
+                            <p>1</p>
+                        </div>
+                        <div class="oi-c y-left discounts-c">
+                            <p>无</p>
+                        </div>
+                        <div class="oi-c y-left sub-c">
+                            <p class="oi-price">&yen<span>399</span></p>
+                            <p class="freight">（含运费）</p>
+                            <div class="od-states-inp">
+                                <span>待付款</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul> -->
+            <!-- 待付款 end -->
+            <!-- 待发货 -->
+            <!-- <ul id="wait-deliver" class="oi-ul-c y-clearfix">
+                <li class="y-clearfix">
+                    <div class="odd">
+                        <i class="y-left od-del"></i>
+                        <div class="del-aff">
+                            <p>确定要删除该订单吗？</p>
+                            <p class="ac"><span class="aff">确定</span><span class="canc">取消</span></p>
+                        </div>
+                    </div>
+                    <div class="od-t y-clearfix">
+                        <input type="checkbox" id="od-deli-1" class="y-left">
+                        <label for="od-deli-1" class="y-left">订单号：<span class="od-num">123213131231232</span></label>
+                        <span class="od-time y-left">2017-9-1</span>
+                    </div>
+                    <div class="oi-c-box y-clearfix">
+                        <div class="oi-c com-info-c y-left">
+                            <img class="y-left" src="/images/od_1.png" alt="">
+                            <div class="cic-s y-left">
+                                <h4 class="cic-s-t">3333333</h4>
+                                <p class="cic-s-c">dsdasds asdas sda dsad sdas asdasdasdasdasdadasdasdasdasdasds</p>
+                                <p class="cic-s-s">规格:90粒/盒</p>
+                            </div>
+                        </div>
+                        <div class="oi-c price-c y-left">
+                            <p>&yen<b>399</b></p>
+                        </div>
+                        <div class="oi-c y-left amount-c">
+                            <p>1</p>
+                        </div>
+                        <div class="oi-c y-left discounts-c">
+                            <p>无</p>
+                        </div>
+                        <div class="oi-c y-left sub-c">
+                            <p class="oi-price">&yen<span>399</span></p>
+                            <p class="freight">（含运费）</p>
+                            <div class="od-states-inp">
+                                <span>待发货</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="y-clearfix">
+                    <div class="odd">
+                        <i class="y-left od-del"></i>
+                        <div class="del-aff">
+                            <p>确定要删除该订单吗？</p>
+                            <p class="ac"><span class="aff">确定</span><span class="canc">取消</span></p>
+                        </div>
+                    </div>
+                    <div class="od-t y-clearfix">
+                        <input type="checkbox" id="od-deli-2" class="y-left">
+                        <label for="od-deli-2" class="y-left">订单号：<span class="od-num">123213131231232</span></label>
+                        <span class="od-time y-left">2017-9-1</span>
+                    </div>
+                    <div class="oi-c-box y-clearfix">
+                        <div class="oi-c com-info-c y-left">
+                            <img class="y-left" src="/images/od_1.png" alt="">
+                            <div class="cic-s y-left">
+                                <h4 class="cic-s-t">444444444</h4>
+                                <p class="cic-s-c">dsdasds asdas sda dsad sdas asdasdasdasdasdadasdasdasdasdasds</p>
+                                <p class="cic-s-s">规格:90粒/盒</p>
+                            </div>
+                        </div>
+                        <div class="oi-c price-c y-left">
+                            <p>&yen<b>399</b></p>
+                        </div>
+                        <div class="oi-c y-left amount-c">
+                            <p>1</p>
+                        </div>
+                        <div class="oi-c y-left discounts-c">
+                            <p>无</p>
+                        </div>
+                        <div class="oi-c y-left sub-c">
+                            <p class="oi-price">&yen<span>399</span></p>
+                            <p class="freight">（含运费）</p>
+                            <div class="od-states-inp">
+                                <span>待发货</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul> -->
+            <!-- 待发货 end -->
+            <!-- 待收货 -->
+            <!-- <ul id="wait-receiving" class="oi-ul-c y-clearfix">
+                <li class="y-clearfix">
+                    <div class="odd">
+                        <i class="y-left od-del"></i>
+                        <div class="del-aff">
+                            <p>确定要删除该订单吗？</p>
+                            <p class="ac"><span class="aff">确定</span><span class="canc">取消</span></p>
+                        </div>
+                    </div>
+                    <div class="od-t y-clearfix">
+                        <input type="checkbox" id="od-rec-1" class="y-left">
+                        <label for="od-rec-1" class="y-left">订单号：<span class="od-num">123213131231232</span></label>
+                        <span class="od-time y-left">2017-9-1</span>
+                    </div>
+                    <div class="oi-c-box y-clearfix">
+                        <div class="oi-c com-info-c y-left">
+                            <img class="y-left" src="/images/od_1.png" alt="">
+                            <div class="cic-s y-left">
+                                <h4 class="cic-s-t">555555</h4>
+                                <p class="cic-s-c">dsdasds asdas sda dsad sdas asdasdasdasdasdadasdasdasdasdasds</p>
+                                <p class="cic-s-s">规格:90粒/盒</p>
+                            </div>
+                        </div>
+                        <div class="oi-c price-c y-left">
+                            <p>&yen<b>399</b></p>
+                        </div>
+                        <div class="oi-c y-left amount-c">
+                            <p>1</p>
+                        </div>
+                        <div class="oi-c y-left discounts-c">
+                            <p>无</p>
+                        </div>
+                        <div class="oi-c y-left sub-c">
+                            <p class="oi-price">&yen<span>399</span></p>
+                            <p class="freight">（含运费）</p>
+                            <div class="od-states-inp">
+                                <span>待收货</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="y-clearfix">
+                    <div class="odd">
+                        <i class="y-left od-del"></i>
+                        <div class="del-aff">
+                            <p>确定要删除该订单吗？</p>
+                            <p class="ac"><span class="aff">确定</span><span class="canc">取消</span></p>
+                        </div>
+                    </div>
+                    <div class="od-t y-clearfix">
+                        <input type="checkbox" id="od-rec-2" class="y-left">
+                        <label for="od-rec-2" class="y-left">订单号：<span class="od-num">123213131231232</span></label>
+                        <span class="od-time y-left">2017-9-1</span>
+                    </div>
+                    <div class="oi-c-box y-clearfix">
+                        <div class="oi-c com-info-c y-left">
+                            <img class="y-left" src="/images/od_1.png" alt="">
+                            <div class="cic-s y-left">
+                                <h4 class="cic-s-t">6666666</h4>
+                                <p class="cic-s-c">dsdasds asdas sda dsad sdas asdasdasdasdasdadasdasdasdasdasds</p>
+                                <p class="cic-s-s">规格:90粒/盒</p>
+                            </div>
+                        </div>
+                        <div class="oi-c price-c y-left">
+                            <p>&yen<b>399</b></p>
+                        </div>
+                        <div class="oi-c y-left amount-c">
+                            <p>1</p>
+                        </div>
+                        <div class="oi-c y-left discounts-c">
+                            <p>无</p>
+                        </div>
+                        <div class="oi-c y-left sub-c">
+                            <p class="oi-price">&yen<span>399</span></p>
+                            <p class="freight">（含运费）</p>
+                            <div class="od-states-inp">
+                                <span>待收货</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul> -->
+            <!-- 待收货 end -->
+            <!-- 待评价 -->
+            <!-- <ul id="wait-comment" class="oi-ul-c y-clearfix">
+                <li class="y-clearfix">
+                    <div class="odd">
+                        <i class="y-left od-del"></i>
+                        <div class="del-aff">
+                            <p>确定要删除该订单吗？</p>
+                            <p class="ac"><span class="aff">确定</span><span class="canc">取消</span></p>
+                        </div>
+                    </div>
+                    <div class="od-t y-clearfix">
+                        <input type="checkbox" id="od-com-1" class="y-left">
+                        <label for="od-com-1" class="y-left">订单号：<span class="od-num">123213131231232</span></label>
+                        <span class="od-time y-left">2017-9-1</span>
+                    </div>
+                    <div class="oi-c-box y-clearfix">
+                        <div class="oi-c com-info-c y-left">
+                            <img class="y-left" src="/images/od_1.png" alt="">
+                            <div class="cic-s y-left">
+                                <h4 class="cic-s-t">777777777</h4>
+                                <p class="cic-s-c">dsdasds asdas sda dsad sdas asdasdasdasdasdadasdasdasdasdasds</p>
+                                <p class="cic-s-s">规格:90粒/盒</p>
+                            </div>
+                        </div>
+                        <div class="oi-c price-c y-left">
+                            <p>&yen<b>399</b></p>
+                        </div>
+                        <div class="oi-c y-left amount-c">
+                            <p>1</p>
+                        </div>
+                        <div class="oi-c y-left discounts-c">
+                            <p>无</p>
+                        </div>
+                        <div class="oi-c y-left sub-c">
+                            <p class="oi-price">&yen<span>399</span></p>
+                            <p class="freight">（含运费）</p>
+                            <div class="od-states-inp">
+                                <span>待评价</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="y-clearfix">
+                    <div class="odd">
+                        <i class="y-left od-del"></i>
+                        <div class="del-aff">
+                            <p>确定要删除该订单吗？</p>
+                            <p class="ac"><span class="aff">确定</span><span class="canc">取消</span></p>
+                        </div>
+                    </div>
+                    <div class="od-t y-clearfix">
+                        <input type="checkbox" id="od-com-2" class="y-left">
+                        <label for="od-com-2" class="y-left">订单号：<span class="od-num">123213131231232</span></label>
+                        <span class="od-time y-left">2017-9-1</span>
+                    </div>
+                    <div class="oi-c-box y-clearfix">
+                        <div class="oi-c com-info-c y-left">
+                            <img class="y-left" src="/images/od_1.png" alt="">
+                            <div class="cic-s y-left">
+                                <h4 class="cic-s-t">888888888888</h4>
+                                <p class="cic-s-c">dsdasds asdas sda dsad sdas asdasdasdasdasdadasdasdasdasdasds</p>
+                                <p class="cic-s-s">规格:90粒/盒</p>
+                            </div>
+                        </div>
+                        <div class="oi-c price-c y-left">
+                            <p>&yen<b>399</b></p>
+                        </div>
+                        <div class="oi-c y-left amount-c">
+                            <p>1</p>
+                        </div>
+                        <div class="oi-c y-left discounts-c">
+                            <p>无</p>
+                        </div>
+                        <div class="oi-c y-left sub-c">
+                            <p class="oi-price">&yen<span>399</span></p>
+                            <p class="freight">（含运费）</p>
+                            <div class="od-states-inp">
+                                <span>待评价</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+            </ul> -->
+            <!-- 待评价 end -->
+        </div>
+    </div>
+    <div class="del-all-aff">
+        <p>确定要删除所有订单吗？</p>
+        <p class="a-ac"><span class="a-aff">确定</span><span class="a-canc">取消</span></p>
+    </div>
+    <!-- 尾部 -->
+    <div id="divfooter"></div>
+</body>
+<script src="/js/data_url.js"></script>
+<script src="/js/jquery-1.8.3.min.js"></script>
+<script src="/js/jquery.tmpl.min.js"></script>
+<!-- 绑定列表数据 -->
+<script id="navTemplate" type="text/x-jquery-tmpl">
+    <li class="y-left nav-first-li" data_id="${id}">
+        <a href="${category_go_url}">${category_name}</a>
+        <ul class="nav-second">
+            {{each(i,item) ChildList}}
+            <li class="nav-second-li" data_id="${item.id}">
+                <a href="${item.category_go_url}">${item.category_name}</a>
+                <ul class="nav-thr">
+                    {{each(i,item) ChildList2}}
+                    <li class="nav-thr-li" data_id="${item.id}">
+                        <a href="${item.category_go_url}">${item.category_name}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
+            {{/each}}
+        </ul>
+    </li>
+</script>
+<!-- 绑定列表数据 end -->
+
+<script src="/js/head_footer.js"></script>
+<script src="/js/order-state.js"></script>
+
+</html>

@@ -1,0 +1,404 @@
+.nav {
+  border-bottom: 3px solid #93bf1f;
+}
+
+.main {
+  height: 30px;
+  margin: 20px auto;
+}
+
+.main .step {
+  height: 100%;
+  width: 300px;
+}
+
+.main .step img {
+  width: 300px;
+  height: 100%;
+}
+
+.c-re {
+  padding-bottom: 60px;
+}
+
+.c-re-t {
+  line-height: 36px;
+  font-size: 16px;
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 28px;
+}
+
+.add-ul .add-li {
+  line-height: 40px;
+  height: 40px;
+  font-size: 16px;
+  margin: 0 250px;
+  position: relative;
+}
+
+.add-ul .add-li .add-lo {
+  color: red;
+  display: none;
+  position: absolute;
+  left: -180px;
+  top: 0;
+  width: 100px;
+  padding-left: 40px;
+}
+
+.add-ul .add-li .add-lo i {
+  width: 25px;
+  height: 30px;
+  margin-top: 5px;
+  margin-right: 10px;
+  background: url(/images/location.png) no-repeat center;
+}
+
+.add-ul .add-li .default {
+  color: #999;
+  position: absolute;
+  right: -180px;
+  top: 0;
+  width: 100px;
+  text-align: center;
+  padding-right: 30px;
+}
+
+.add-ul .add-li .add-box input {
+  width: 14px;
+  height: 14px;
+  margin: 13px 10px;
+}
+
+.add-ul .add-li .add-box label {
+  height: 40px;
+  width: 664px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.add-ul .add-li .default {
+  display: none;
+}
+
+.add-ul .add-li-c {
+  background-color: #fff2f2;
+  border: 1px solid red;
+  margin-bottom: 10px;
+}
+
+.add-ul .add-li-c .add-lo {
+  display: block;
+}
+
+.add-ul .add-li-c .default {
+  display: block;
+}
+
+.new-add {
+  margin-top: 20px;
+  padding: 0 300px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 16px;
+}
+
+.new-add p {
+  display: inline-block;
+  background-color: #f2f2f2;
+  padding: 0 10px;
+  border: 1px solid #dcdcdc;
+}
+
+.new-add p b {
+  color: #93bf1f;
+  margin-right: 5px;
+}
+
+.oi-t {
+  line-height: 36px;
+  font-size: 16px;
+}
+
+.oi-ul-t li {
+  text-align: center;
+  font-size: 14px;
+  line-height: 28px;
+  box-sizing: border-box;
+  margin: 0 5px;
+  border-bottom: 3px solid #93bf1f;
+}
+
+.oi-ul-t .com-info-t {
+  width: 670px;
+}
+
+.oi-ul-t .price-t {
+  width: 100px;
+}
+
+.oi-ul-t .amount-t {
+  width: 160px;
+}
+
+.oi-ul-t .discounts-t {
+  width: 120px;
+}
+
+.oi-ul-t .sub-t {
+  width: 100px;
+}
+
+.od-box {
+  padding: 15px 0;
+  font-size: 16px;
+}
+
+.od-box .od-t {
+  line-height: 36px;
+  font-size: 16px;
+}
+
+.od-box .oi-ul-c {
+  padding: 15px 0;
+  border-top: 1px dashed #999;
+}
+
+.od-box .oi-ul-c li {
+  border-top: 1px dashed #d2d2d2;
+}
+
+.od-box .oi-ul-c li .oi-c {
+  margin: 0 5px;
+  line-height: 32px;
+  background-color: #fbfcff;
+  height: 100px;
+  padding: 20px 0;
+}
+
+.od-box .oi-ul-c li .com-info-c {
+  width: 670px;
+}
+
+.od-box .oi-ul-c li .com-info-c img {
+  width: 80px;
+  height: 80px;
+  margin: 0 12px;
+}
+
+.od-box .oi-ul-c li .com-info-c .cic-s {
+  margin: 0 15px;
+}
+
+.od-box .oi-ul-c li .com-info-c .cic-s .cic-s-t {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.od-box .oi-ul-c li .com-info-c .cic-s .cic-s-c {
+  font-size: 16px;
+  line-height: 20px;
+  max-height: 40px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.od-box .oi-ul-c li .com-info-c .cic-s .cic-s-s {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.od-box .oi-ul-c li .price-c {
+  width: 100px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 32px;
+}
+
+.od-box .oi-ul-c li .amount-c {
+  width: 118px;
+  text-align: center;
+  padding: 20px 21px;
+}
+
+.od-box .oi-ul-c li .amount-c span {
+  height: 26px;
+  width: 26px;
+  line-height: 28px;
+  font-size: 20px;
+  border: 1px solid #dcdcdc;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.od-box .oi-ul-c li .amount-c span:hover {
+  cursor: pointer;
+}
+
+.od-box .oi-ul-c li .amount-c input {
+  width: 60px;
+  height: 26px;
+  text-align: center;
+  font-size: 16px;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.od-box .oi-ul-c li .discounts-c {
+  width: 120px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.od-box .oi-ul-c li .sub-c {
+  width: 100px;
+  text-align: center;
+  font-size: 20px;
+  color: red;
+}
+
+.od-box .od-op {
+  height: 100px;
+  margin-bottom: 5px;
+  border-top: 1px dashed #d2d2d2;
+}
+
+.od-box .od-op .od-op-l {
+  background-color: #f2f7ff;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 26px;
+  width: 616px;
+  margin: 0 2px;
+  height: 80px;
+}
+
+.od-box .od-op .od-op-l p input {
+  height: 24px;
+  width: 450px;
+  padding: 0 10px;
+  border: 1px solid #d2d2d2;
+}
+
+.od-box .od-op .od-op-r {
+  width: 550px;
+  margin: 0 5px;
+  font-size: 16px;
+}
+
+.od-box .od-op .od-op-r div {
+  height: 48px;
+  width: 530px;
+  padding: 0 10px;
+  line-height: 48px;
+  background-color: #f2f7ff;
+}
+
+.od-box .od-op .od-op-r div .od-op-t,
+.od-box .od-op .od-op-r div .od-op-i {
+  color: red;
+}
+
+.od-box .od-op .od-op-r .transport {
+  margin-bottom: 4px;
+}
+
+.od-box .od-op .od-op-r .insurance .ins-p {
+  text-indent: 2rem;
+}
+
+.od-box .od-op .od-op-r .insurance .ins-p #ins-ipt {
+  height: 12px;
+  width: 12px;
+  margin: 18px 5px;
+}
+
+.od-box .od-op .od-op-r .insurance .ins-p label {
+  text-indent: 0;
+  text-align: center;
+  width: 60px;
+  line-height: 20px;
+  height: 20px;
+  margin: 14px 5px;
+  background-color: #ff4400;
+  color: #fff;
+}
+
+.od-box .od-price {
+  height: 72px;
+  padding: 0 15px;
+  background-color: #f2f7ff;
+  border-bottom: 1px dashed #d2d2d2;
+}
+
+.od-box .od-price p {
+  height: 72px;
+  line-height: 72px;
+}
+
+.od-box .od-price p span {
+  color: red;
+  font-size: 20px;
+}
+
+.od-box .anonymity {
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px dashed #d2d2d2;
+}
+
+.od-box .anonymity #am-ipt {
+  height: 14px;
+  width: 14px;
+  margin-top: 16px;
+  margin-right: 5px;
+}
+
+.od-box .payment-box {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.od-box .payment-box .payment {
+  border: 1px solid #ff4400;
+  padding: 10px 20px;
+}
+
+.od-box .payment-box .payment .pay {
+  line-height: 60px;
+  text-align: right;
+}
+
+.od-box .payment-box .payment .pay span {
+  font-size: 24px;
+  color: #ff4400;
+}
+
+.od-box .payment-box .payment .tr-addr,
+.od-box .payment-box .payment .consignee {
+  line-height: 32px;
+}
+
+.od-box .od-sub {
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+.od-box .od-sub button {
+  height: 42px;
+  width: 160px;
+  line-height: 42px;
+  font-size: 22px;
+  color: #fff;
+  background-color: #ff4400;
+  margin-bottom: 15px;
+}
+
+.od-box .od-sub button:hover {
+  cursor: pointer;
+}
+
+.od-box .od-sub p {
+  font-size: 12px;
+}

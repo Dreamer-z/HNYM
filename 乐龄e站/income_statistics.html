@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <title>收益统计(提现)</title>
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="./js/plug/jquery-1.8.3.min.js"></script>
+    <script src="./js/plug/adaptive.js"></script>
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 28;
+        window['adaptive'].maxWidth = 480;
+        window['adaptive'].scaleType = 1;
+        window['adaptive'].init();
+    </script>
+</head>
+
+<body>
+    <div class="income_statistics">
+        <div class="income-price">
+            <p class="income-price-tit">总收益（元）：</p>
+            <p class="income-price-num elli">600.00</p>
+        </div>
+        <div class="extract-op">
+            <div class="can-extract-price">
+                <p class="cep clear">可提取利润（元）：<span class="fr elli">100</span></p>
+            </div>
+            <div class="extract-inp">
+                <button type="">提&nbsp;&nbsp;现</button>
+            </div>
+        </div>
+        <div class="extract-record">
+            <h4>提现记录</h4>
+            <ul class="extract-record-list">
+                <li class="extract-record-li clear">
+                    <div class="extract-record-time fl">
+                        <div class="day">06-15</div>
+                        <div class="year">2017</div>
+                    </div>
+                    <div class="extract-record-amount fr">
+                        <div class="tit">提取金额</div>
+                        <div class="extract-price">￥<span>400</span></div>
+                    </div>
+                </li>
+                <li class="extract-record-li clear">
+                    <div class="extract-record-time fl">
+                        <div class="day">06-15</div>
+                        <div class="year">2017</div>
+                    </div>
+                    <div class="extract-record-amount fr">
+                        <div class="tit">提取金额</div>
+                        <div class="extract-price">￥<span>400</span></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="fullscreen extract-ck-box">
+            <div class="extract-ck">
+                <div class="extract-ck-op">
+                    <p class="extract-ck-qx">取消</p>
+                    <p class="extract-ck-tit">提现</p>
+                    <p class="extract-ck-qd">确定</p>
+                </div>
+                <div class="extract-ck-amount">
+                    <span class="fl">输入金额：</span><input class="fl" type="number" placeholder="请输入提取金额！">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/all.js"></script>
+<script>
+    $(".extract-inp button").click(function() {
+        $(".extract-ck-box").fadeIn(200);
+    });
+    $(".extract-ck-qx").click(function() {
+        $(".extract-ck-box").fadeOut(200);
+    });
+    $(".extract-ck-qd").click(function() {
+        if ($(".extract-ck-amount input").val() == "") {
+            alert("请输入正确的金额！")
+            return;
+        } else {
+            $(".extract-ck-box").fadeOut(200);
+            $(".extract-ck-amount input").val("");
+        }
+    });
+</script>
+
+</html>

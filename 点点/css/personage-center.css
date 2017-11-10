@@ -1,0 +1,419 @@
+#elease-box {
+  display: none;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 395px;
+}
+
+.swiper-button-prev {
+  left: 50px;
+}
+
+.swiper-button-next {
+  right: 50px;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+}
+
+#person-cb {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+#p-c {
+  padding: 20px 0;
+}
+
+#p-c-l {
+  width: 116px;
+  height: 100%;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #dcdbdb;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+#p-c-l h4 {
+  line-height: 36px;
+  font-size: 18px;
+}
+
+#p-c-l .p-c-l-ul {
+  color: #666;
+  line-height: 36px;
+}
+
+#p-c-l .p-c-l-ul .p-c-l-lic {
+  background-color: #EF3922;
+  color: #fff;
+}
+
+#p-c-person,
+.p-c-publish,
+.my-yg {
+  width: 816px;
+  background-color: #fff;
+  border: 2px solid #f5f5f5;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+.p-title {
+  height: 30px;
+  line-height: 30px;
+  color: #EF3922;
+  border-bottom: 1px solid #EF3922;
+}
+
+.p-title span {
+  font-size: 16px;
+}
+
+.p-title .tit-l {
+  margin-right: 80px;
+}
+
+.p-title .tit-c {
+  line-height: 28px;
+  padding: 0 10px;
+  color: #fff;
+  background-color: #EF3922;
+  border-radius: 14px;
+}
+
+.p-title .tit-r {
+  color: blue;
+}
+
+.p-d {
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.p-d-l {
+  width: 135px;
+  margin-right: 15px;
+}
+
+.p-d-l .portrait {
+  width: 80px;
+  position: relative;
+  height: 125px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.p-d-l .portrait div {
+  width: 80px;
+  margin-bottom: 5px;
+}
+
+.p-d-l .portrait div img {
+  width: 80px;
+  height: 100px;
+  border: 0;
+  background: url(/images/center/img.png) no-repeat center;
+}
+
+.p-d-l .portrait input,
+.p-d-l .portrait label {
+  width: 80px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.p-d-l .portrait input {
+  opacity: 0;
+}
+
+.p-d-l .portrait label {
+  color: blue;
+}
+
+.p-d-r {
+  width: 666px;
+}
+
+.p-d-r ul {
+  width: 666px;
+  text-align: center;
+}
+
+.p-d-r ul li {
+  width: 50%;
+  line-height: 30px;
+  text-align: right;
+  margin-bottom: 25px;
+}
+
+.p-d-r ul li span {
+  display: block;
+  width: 80px;
+}
+
+.p-d-r ul li input {
+  width: 180px;
+  height: 28px;
+  padding: 0 10px;
+  border: 1px solid #999;
+}
+
+.p-d-r ul .sex input {
+  width: 0;
+  height: 0;
+}
+
+.p-d-r ul .sex label {
+  text-align: center;
+  display: block;
+  width: 98px;
+  height: 28px;
+  border: 1px solid #999;
+}
+
+.p-d-r ul .sex label:nth-of-type(2) {
+  margin-left: -1px;
+}
+
+.p-d-r ul .sex .label-c {
+  color: #fff;
+  border: 1px solid #EF3922;
+  background-color: #EF3922;
+}
+
+.p-d-r ul .addr {
+  width: 100%;
+}
+
+.p-d-r ul .addr input {
+  width: 510px;
+}
+
+.id-card-b {
+  width: 420px;
+  margin: 10px auto;
+}
+
+.id-card-b .idcard {
+  width: 200px;
+  height: 170px;
+  position: relative;
+}
+
+.id-card-b .idcard div {
+  width: 200px;
+  height: 140px;
+  margin-bottom: 10px;
+}
+
+.id-card-b .idcard div img {
+  width: 200px;
+  height: 140px;
+}
+
+.id-card-b .idcard input,
+.id-card-b .idcard label {
+  width: 120px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -60px;
+}
+
+.id-card-b .idcard input {
+  opacity: 0;
+}
+
+.id-card-b .idcard label {
+  color: blue;
+}
+
+.id-card-b .id-card-z {
+  margin-right: 20px;
+}
+
+.id-card-b .id-card-z img {
+  background: url(/images/center/idcard_z.png) no-repeat center;
+}
+
+.id-card-b .id-card-f img {
+  background: url(/images/center/idcard_f.png) no-repeat center;
+}
+
+#save {
+  display: block;
+  width: 80px;
+  height: 35px;
+  margin: 20px auto;
+  color: #fff;
+  background-color: #EF3922;
+  border-radius: 6px;
+}
+
+.pcp-r {
+  width: 100%;
+}
+
+.pcp-li-t {
+  font-size: 12px;
+  line-height: 36px;
+  height: 36px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.pcp-li-t .pcp-li-n {
+  width: 120px;
+  height: 100%;
+  color: #fff;
+  background: url(/images/center/t_bg.png) no-repeat center;
+}
+
+.pcp-li-t .pcp-li-e {
+  color: blue;
+}
+
+.pcp-li-c-l {
+  width: 80px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.pcp-li-c-l img {
+  width: 80px;
+  height: 100px;
+  background: url(/images/center/img.png) no-repeat center;
+}
+
+.pcp-li-c {
+  width: 100%;
+  font-size: 14px;
+}
+
+.pcp-li-c .pcp-li-c-l {
+  width: 135px;
+  margin-right: 15px;
+}
+
+.pcp-li-c .pcp-li-c-l img {
+  width: 80px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.pcp-li-c .pcp-li-c-info {
+  width: 666px;
+}
+
+.pcp-li-c .pcp-li-c-info li {
+  line-height: 36px;
+  height: 36px;
+}
+
+.pcp-li-c .pcp-li-c-info li p {
+  margin-right: 40px;
+}
+
+.pcp-li-c .pcp-li-c-info li p span {
+  margin-left: 10px;
+}
+
+.pcp-li-c .pcp-li-c-info li .person-add {
+  width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.pcp-li-c .pcp-li-c-op {
+  margin: 20px 0;
+}
+
+.pcp-li-c .pcp-li-c-op li {
+  display: inline-block;
+  margin: 0 33px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  background-color: #EF3922;
+  color: #fff;
+}
+
+.yg-li {
+  margin: 10px 0;
+  border: 1px solid #999;
+  color: #666;
+  font-size: 14px;
+}
+
+.yg-li .yg-li-tbox {
+  line-height: 28px;
+  padding: 0 10px;
+  background-color: #e6e6e6;
+  border-bottom: 1px solid #999;
+}
+
+.yg-li .yg-li-tbox .yg-li-t input {
+  height: 14px;
+  width: 14px;
+  margin-top: 7px;
+  margin-right: 5px;
+}
+
+.yg-li .yg-li-tbox .yg-li-op {
+  color: blue;
+}
+
+.yg-li .yg-li-tbox .yg-li-op span {
+  margin-left: 20px;
+}
+
+.yg-li .yg-li-cbox {
+  padding: 20px 20px;
+}
+
+.yg-li .yg-li-cbox .yg-li-cl {
+  margin-left: 20px;
+}
+
+.yg-li .yg-li-cbox .yg-li-cl h5 {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.yg-li .yg-li-cbox .yg-li-cl p {
+  line-height: 20px;
+}
+
+.yg-li .yg-li-cbox .yg-li-cr span {
+  display: block;
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #EF3922;
+  color: #fff;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+.page-turner {
+  text-align: center;
+}
+
+.page-turner a {
+  display: inline;
+}
+
+.ui-pagination-container .ui-pagination-page-item {
+  border: none;
+}

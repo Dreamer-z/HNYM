@@ -1,0 +1,156 @@
+.nav {
+    width: 100%;
+    height: 140px;
+    line-height: 140px;
+    .nav-content-left {
+        a {
+            display: block;
+            img {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    }
+    .nav-content-right {
+        line-height: 105px;
+        padding-top: 35px;
+        height: 105px;
+        a {
+            display: block;
+            height: 24px;
+            line-height: 24px;
+            color: #666;
+            padding: 40.5px 0;
+            i {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                margin-right: 5px;
+                background: url(./../images/index_03.png)no-repeat center;
+                background-size: 100%;
+            }
+        }
+    }
+}
+
+#sign-box {
+    width: 100%;
+    height: 395px;
+    background: url(./../images/sign_bg.png)no-repeat center;
+    background-size: 100%;
+    padding: 65px 0;
+}
+
+#sign {
+    height: 100%;
+    overflow: hidden;
+    .sign-content {
+        height: 350px;
+        width: 350px;
+        background-color: #fff;
+        padding: 25px 35px;
+        color: #9595aa;
+        &>h4 {
+            font-size: 22px;
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
+        &>ul {
+            font-size: 18px;
+            text-align: center;
+            &>li {
+                position: relative;
+                width: 50%;
+                line-height: 24px;
+            }
+            &>li>span {
+                display: block;
+                height: 100%;
+                width: 50%;
+                margin: 0 auto;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.sign-way {
+    border-bottom: 2px solid #61b14e;
+}
+
+.sign-way-section {
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    width: 270px;
+    box-sizing: border-box;
+    li {
+        height: 50px;
+        width: 100%;
+        line-height: 50px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        .signinp-box {
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+            padding: 0 10px;
+            border: 2px solid #9595aa;
+            border-radius: 6px;
+            input {
+                display: block;
+                width: 100%;
+                height: 14px;
+                margin: 17px 0;
+            }
+        }
+    }
+    .rememberme {
+        font-size: 14px;
+        height: 20px;
+        line-height: 20px;
+        .rememberme-content {
+            padding: 0 5px;
+            width: 100%;
+            .rememberme-content-left {
+                input {
+                    width: 16px;
+                    height: 16px;
+                    margin-top: 2px;
+                    border: none;
+                }
+            }
+        }
+    }
+    .signinp {
+        margin-bottom: 0;
+        button {
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+            font-size: 22px;
+            color: #fff;
+            background-color: #61b14e;
+        }
+    }
+    .login-box {
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 0;
+        a {
+            color: #61b14e;
+        }
+    }
+}
+
+#sign-other {
+    .sign-way-section {
+        display: none;
+    }
+    &>div>img {
+        width: 100%;
+        height: 270px;
+        background-color: #61b14e;
+    }
+}

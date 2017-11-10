@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/css/rest.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/head-footer.min.css" />
+    <link rel="stylesheet" href="/css/index_article.min.css">
+    <title>首页文章</title>
+</head>
+
+<body>
+    <!-- 头部 导航 -->
+    <div id="headbox"></div>
+    <!-- 头部 导航 end -->
+    <!-- 当前位置 -->
+    <div id="now-add" class="y-width">
+        <p class="y-right y-clearfix">
+            <i class="y-left"></i>
+            <span class="y-left">当前位置： </span>
+            <a href="/index.html" class="y-left">首页</a>
+        </p>
+    </div>
+    <!-- 当前位置 end -->
+
+    <div id="article-content-box">
+        <div id="article-content" class="y-width y-clearfix">
+            <h4 id="title"></h4>
+            <ul id="operate" class="y-clearfix">
+                <li id="share" class="y-clearfix y-left">
+                    <div class="bdsharebuttonbox" style="box-sizing:border-box;padding:0 22.5px;">
+                        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                        <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                        <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                        <a href="#" class="bds_more" data-cmd="more"></a>
+                    </div>
+                </li>
+                <li id="reading" class="y-clearfix y-right">
+                    <span class="y-left">阅读：</span>
+                    <i class="y-left"></i>
+                </li>
+                <li id="time" class="y-clearfix y-right">
+                    <span class="y-left">发布时间：</span>
+                    <i class="y-left"></i>
+                </li>
+                <li id="source" class="y-clearfix y-right">
+                    <a target="_blank"></a>
+                </li>
+                <!-- <li id="like" class="y-clearfix y-left">
+                    <b class="y-left"></b><span class="y-left">260</span>
+                </li>
+                <li id="comment" class="y-clearfix y-left">
+                    <b class="y-left"></b><span class="y-left">98</span>
+                </li>
+                <li id="share" class="y-clearfix y-left">
+                    <b class="y-left"></b><span class="y-left">88</span>
+                </li> -->
+            </ul>
+        </div>
+        <div id="article-main" class="y-width">
+            <video src="" autoplay controls>很抱歉，您的浏览器版本太低，不支持此视频播放</video>
+            <div></div>
+            <!-- <div class="article-img">
+                <img src="/images/images/arcticle_img_03.png" alt="">
+            </div>
+            <div id="part-one" class="article-part">
+                <p> 文章内容文章内容文章内容文章内容文章内容，文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内 拷贝 文章内容文章内容文章内容文章内容文章内容，文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内 拷贝</p>
+            </div>
+            <div class="article-img">
+                <video src="" autoplay controls></video>
+            </div>
+            <div id="part-two" class="article-part">
+                <p></p>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- 弹窗提示 -->
+    <div id="tc-box">
+        <div id="tc">
+            <span class="close">X</span>
+            <p>已经没有更多了！<br>您可以看看其他栏目文章！</p>
+            <b class="close">确定</b>
+        </div>
+    </div>
+    <!-- 弹窗提示end -->
+
+    <!-- 尾部 -->
+    <div id="divfooter"></div>
+</body>
+<script src="/js/data_url.js"></script>
+<script src="/js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/jquery.tmpl.min.js" type="text/javascript" charset="utf-8"></script>
+<!-- 绑定列表数据 -->
+<script id="navTemplate" type="text/x-jquery-tmpl">
+    <li class="y-left nav-first-li" data_id="${id}">
+        <a href="${category_go_url}">${category_name}</a>
+        <ul class="nav-second">
+            {{each(i,item) ChildList}}
+            <li class="nav-second-li" data_id="${item.id}">
+                <a href="${item.category_go_url}">${item.category_name}</a>
+                <ul class="nav-thr">
+                    {{each(i,item) ChildList2}}
+                    <li class="nav-thr-li" data_id="${item.id}">
+                        <a href="${item.category_go_url}">${item.category_name}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
+            {{/each}}
+        </ul>
+    </li>
+</script>
+<!-- 绑定列表数据 end -->
+
+<script src="/js/head_footer.js"></script>
+<script src="/js/index_article.js"></script>
+
+</html>

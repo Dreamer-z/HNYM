@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="企业动态">
+    <meta name="description" content="企业动态">
+    <title>企业动态</title>
+    <link rel="stylesheet" type="text/css" href="/css/rest.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/currency.css" />
+    <link rel="stylesheet" type="text/css" href="/css/head-footer.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/jquery.pagination.css" />
+    <link rel="stylesheet" href="/css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/EnterpriseDynamics.css" />
+</head>
+
+<body>
+    <div id="headbox"></div>
+    <!-- -------banner------- -->
+    <div id="banner">
+        <ul id="banner-content" class="y-clearfix">
+        </ul>
+
+        <ul id="banner-swicth-ul" class="y-clearfix">
+        </ul>
+
+        <span id="banner-swicth-left" class="switchClick"></span>
+        <span id="banner-swicth-right" class="switchClick"></span>
+    </div>
+    <!-- -------end------- -->
+
+    <ul class="esli-box y-clearfix y-width">
+        <li class="esli y-left esli-c">企业资讯</li>
+        <li class="esli y-left">媒体报道</li>
+        <li class="esli y-left">自媒体平台</li>
+        <li class="esli y-left">媒体专栏</li>
+        <li class="esli y-left">专题活动</li>
+    </ul>
+    <div id="route">
+        <div class="wrap">
+            <div>
+                <p></p>
+                <i></i> 当前位置 :
+                <a href="/index.html">首页</a>&gt企业动态
+                <span class="nowwr">&gt企业资讯</span>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="content wrap">
+            <div class="content-left">
+                <ul id="jq-newsList">
+
+                </ul>
+                <script id="jq-newsListTemplate" type="text/x-jquery-tmpl">
+                    <li data_id="${id}" data_title="${article_title}">
+                        <div class='letf-img'>
+                            <img src='${article_image}' alt="" />
+                            <div class="play"></div>
+                        </div>
+                        <div class='right-text'>
+                            <i>${id}</i>
+                            <h5>${article_title}</h5>
+                            <p class="rt-c">${article_short}</p>
+                        </div>
+                        <div class="right-time ">${article_publish_time}</div>
+                    </li>
+                </script>
+            </div>
+            <div class="content-right">
+                <div class="vd-b">
+                    <img />
+                    <video id="example_video" src="" autoplay controls loop>很抱歉，您的浏览器版本太低，不支持此视频播放</video>
+                </div>
+                <div>
+                    <h5><i></i>热门文章</h5>
+                    <ul class="content-right-newtitle">
+                        <!-- <li>
+                            <i></i>科普标题科普标题科普标题科普标题科普标题科普标
+                        </li>
+                        <li>
+                            <i></i>科普标题科普标题科普标题科普标题科普标题科普标
+                        </li>
+                        <li>
+                            <i></i>科普标题科普标题科普标题科普标题科普标题科普标
+                        </li>
+                        <li>
+                            <i></i>科普标题科普标题科普标题科普标题科普标题科普标
+                        </li>
+                        <li>
+                            <i></i>科普标题科普标题科普标题科普标题科普标题科普标
+                        </li>
+                        <li>
+                            <i></i>科普标题科普标题科普标题科普标题科普标题科普标
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- <div class="swiper-slide"><img alt=""></div>
+                        <div class="swiper-slide"><img alt=""></div>
+                        <div class="swiper-slide"><img alt=""></div> -->
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="page-turner">
+
+        </div>
+        <div class="wx-wb y-width">
+            <ul class="wx y-clearfix">
+                <li class="st step1 y-left">
+                    <img src="/images/step1.png" alt="">
+                    <p>打开微信扫一扫</p>
+                </li>
+                <li class="nextstep y-left"></li>
+                <li class="st step2 y-left">
+                    <img src="/images/step2.png" alt="">
+                    <div class="gz-ewm">
+                        <img src="/images/ewm.jpg" alt="">
+                        <p>扫码关注公众号</p>
+                    </div>
+                    <p>扫描以上二维码<br> 关注”我糖平衡“公众号</p>
+                </li>
+                <li class="nextstep y-left"></li>
+                <li class="st step3 y-left">
+                    <img src="/images/step3.png" alt="">
+                    <p>完成<br> 随时随地学习健康知识</p>
+                </li>
+            </ul>
+            <hr>
+            <div class="wb y-clearfix">
+                <div class="wb-l y-left">
+                    <img src="/images/c_wb.png" alt="">
+                </div>
+                <div class="wb-r y-left">
+                    <a href="http://weibo.com/u/6289392971?refer_flag=1001030101_" target="_blank">http://weibo.com/u/6289392971?refer_flag=1001030101_</a>
+                    <p>点击链接，即可关注官方微博</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="main-tbox">
+        <ul id="main-t" class="y-width y-clearfix">
+
+        </ul>
+        <div class="page-turner-two">
+
+        </div>
+    </div> -->
+
+    <div id="divfooter"></div>
+</body>
+<script src="/js/data_url.js"></script>
+<script src="/js/jquery-1.8.3.min.js"></script>
+<script src="/js/jquery.pagination.min.js"></script>
+<script src="/js/jquery.tmpl.min.js"></script>
+<script src="/js/clamp.min.js"></script>
+<script src="/js/swiper-3.4.2.jquery.min.js"></script>
+<!-- 绑定列表数据 -->
+<script id="navTemplate" type="text/x-jquery-tmpl">
+    <li class="y-left nav-first-li" data_id="${id}">
+        <a href="${category_go_url}">${category_name}</a>
+        <ul class="nav-second">
+            {{each(i,item) ChildList}}
+            <li class="nav-second-li" data_id="${item.id}">
+                <a href="${item.category_go_url}">${item.category_name}</a>
+                <ul class="nav-thr">
+                    {{each(i,item) ChildList2}}
+                    <li class="nav-thr-li" data_id="${item.id}">
+                        <a href="${item.category_go_url}">${item.category_name}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
+            {{/each}}
+        </ul>
+    </li>
+</script>
+<!-- 绑定列表数据 end -->
+
+<script id="minTemplate" type="text/x-jquery-tmpl">
+    <div class="swiper-slide"><img src="${file_url}" alt=""></div>
+</script>
+<script id="maintTemplate" type="text/x-jquery-tmpl">
+    <li class="main-tli y-left y-clearfix" data_id="${id}" data_title="${article_title}">
+        <div class="main-tli-l  y-left">
+            <img src="${article_image}" alt="">
+        </div>
+        <div class="main-tli-r  y-left">
+            <h4>${article_title}</h4>
+            <p>${article_short}</p>
+            <span class="y-right">查看详情&gt&gt</span>
+        </div>
+    </li>
+</script>
+
+<script id="esliTemplate" type="text/x-jquery-tmpl">
+    <li class="esli y-left" data_id="${id}">${category_name}</li>
+</script>
+<!--  绑定banner数据 start-->
+<script id="commissionTemplate" type="text/x-jquery-tmpl">
+    <li class="banner-li y-left">
+        <a><img class="banner-img" src="${file_url}" alt=""></a>
+    </li>
+</script>
+<!--  绑定banner数据 end-->
+<script id="content-right-newtitle" type="text/x-jquery-tmpl ">
+    <li data_id="${id}" data_title="${article_title}">
+        <i></i>${article_title}
+    </li>
+</script>
+<script src="/js/head_footer.js "></script>
+<script src="/js/EnterpriseDynamics.js"></script>
+<script src="/js/banner.js"></script>
+
+</html>

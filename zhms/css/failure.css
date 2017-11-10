@@ -1,0 +1,50 @@
+body {
+    background-color: #fff;
+}
+
+.main {
+    width: 5.1rem;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 1.1rem;
+    text-align: center;
+}
+
+.m-box {
+    width: 100%;
+}
+
+.m-box img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.m-box p {
+    line-height: 1.5rem;
+    font-size: 0.32rem;
+}
+
+.m-cont {
+    font-size: 0.28rem;
+    line-height: 0.52rem;
+    width: 100%;
+}
+
+.m-op {
+    width: 100%;
+}
+
+.m-op a {
+    display: block;
+    width: 1.95rem;
+    height: 0.55rem;
+    box-sizing: border-box;
+    border: 1px solid #76e32f;
+    color: #76e32f;
+    border-radius: 0.1rem;
+    margin: 0 0.3rem;
+    margin-top: 0.45rem;
+}
+
+.m-op .try {}

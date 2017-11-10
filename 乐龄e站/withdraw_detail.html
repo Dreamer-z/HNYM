@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <title>提现明细</title>
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="./js/plug/jquery-1.8.3.min.js"></script>
+    <script src="./js/plug/adaptive.js"></script>
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 28;
+        window['adaptive'].maxWidth = 480;
+        window['adaptive'].scaleType = 1;
+        window['adaptive'].init();
+    </script>
+</head>
+
+<body>
+    <div class="withdraw-detail">
+        <div class="can-extract">
+            <span class="fl">可提现金额（元）：</span>
+            <span class="can-extract-price fr">300.00</span>
+        </div>
+        <div class="wit-det-state clear">
+            <div class="wds-li all-record fl wds-li-check">全部</div>
+            <div class="wds-li audit-record fl">待审核</div>
+            <div class="wds-li payment-record fl">已打款</div>
+            <div class="wds-li not-pass-record fl">未通过</div>
+        </div>
+        <ul class="record-list">
+            <li class="record-li clear">
+                <div class="time-amount fl">
+                    <p class="time">提款日期：<span>2017-06-15</span></p>
+                    <p class="amount">提款金额：<span>￥100</span></p>
+                </div>
+                <div class="state-time fr">
+                    <p class="state">待审核</p>
+                    <p class="day"></p>
+                </div>
+            </li>
+            <li class="record-li clear">
+                <div class="time-amount fl">
+                    <p class="time">提款日期：<span>2017-06-15</span></p>
+                    <p class="amount">提款金额：<span>￥100</span></p>
+                </div>
+                <div class="state-time fr">
+                    <p class="state">已打款</p>
+                    <p class="day">2017-06-16 15：52：52</p>
+                </div>
+            </li>
+            <li class="record-li clear">
+                <div class="time-amount fl">
+                    <p class="time">提款日期：<span>2017-06-15</span></p>
+                    <p class="amount">提款金额：<span>￥100</span></p>
+                </div>
+                <div class="state-time fr">
+                    <p class="state">未通过</p>
+                    <p class="day"></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+    $(".wds-li").click(function() {
+        $(this).addClass("wds-li-check");
+        $(this).siblings("div").removeClass("wds-li-check");
+    });
+</script>
+
+</html>

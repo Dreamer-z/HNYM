@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <title>证书查询</title>
+    <link rel="stylesheet" href="/css/rest.css">
+    <link rel="stylesheet" href="/js/plug/css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <script src="/js/plug/jquery-1.8.3.min.js"></script>
+    <script src="/js/plug/adaptive.js"></script>
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 28;
+        window['adaptive'].maxWidth = 480;
+        window['adaptive'].scaleType = 1;
+        window['adaptive'].init();
+    </script>
+</head>
+
+<body>
+    <div class="inquire">
+        <div class="main">
+            <div class="title">
+                <span>证书查询</span>
+            </div>
+            <div class="option">
+                <ul class="op-ul">
+                    <li class="op-li clear">
+                        <div class="fl op-title">单位名称:</div>
+                        <div class="fl op-cont name op-c">
+                            <input type="text" required placeholder="请输入单位名称">
+                            <div class="op-cl">×</div>
+                        </div>
+                    </li>
+                    <li class="op-li clear">
+                        <div class="fl op-title">法人代表:</div>
+                        <div class="fl op-cont legal op-c">
+                            <input type="text" required placeholder="请输入法人代表">
+                            <div class="op-cl">×</div>
+                        </div>
+                    </li>
+                    <li class="op-li clear">
+                        <div class="fl op-title">证书类型:</div>
+                        <div class="fl op-cont type">
+                            <select class="type-choose" name="type" required>
+                            <option value="" selected>请选择</option>
+                            <option value="1">总承包</option>
+                            <option value="2">专项设计</option>
+                        </select>
+                        </div>
+                    </li>
+                    <li class="op-li clear">
+                        <div class="fl op-title">证书编号:</div>
+                        <div class="fl op-cont number op-c">
+                            <input type="text" required placeholder="请输入证书编号">
+                            <div class="op-cl">×</div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- <a href=""><button class="sub">立即查询</button></a> -->
+                <button class="sub">立即查询</button>
+            </div>
+        </div>
+        <div class="zz">
+            <div class="ts">
+                <p>请确认信息输入是否完整！</p>
+                <button class="qd">确&nbsp定</button>
+                <button class="qx">取&nbsp消</button>
+                <span class="gb">×</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/inquire.js"></script>
+
+</html>

@@ -1,0 +1,351 @@
+.nav-first-li:nth-of-type(1)>a {
+    color: #a6ce60;
+}
+
+img {
+    z-index: 998;
+}
+
+.play {
+    z-index: 999;
+    background: url(/images/play.png)no-repeat center;
+    background-size: 30%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+video {
+    z-index: 990;
+}
+
+#route {
+    border: 0;
+    margin-bottom: 30px;
+}
+
+#balance li {
+    margin-bottom: 20px;
+}
+
+.balance-title-box {
+    height: 30px;
+    line-height: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 30px;
+}
+
+.balance-title {
+    font-size: 20px;
+}
+
+.balance-title:hover {
+    cursor: pointer;
+}
+
+.balance-column-introduce {
+    font-size: 16px;
+    color: #666;
+}
+
+.balance-column-introduce a {
+    margin: 0 5px;
+}
+
+.balance-common-section {
+    width: 100%;
+    height: 440px;
+    overflow: hidden;
+}
+
+.balance-common-section li {
+    width: 580px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin: 5px 0;
+    border-bottom: 1px dashed #666;
+}
+
+.balance-common-section-img {
+    width: 260px;
+    height: 200px;
+    position: relative;
+}
+
+.balance-common-section-img img,
+.balance-common-section-img .play {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.balance-common-section-cont {
+    width: 280px;
+    height: 200px;
+    padding: 0 10px;
+}
+
+.balance-common-section-cont-title {
+    font-size: 18px;
+    line-height: 54px;
+    color: #666;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.balance-common-section-cont-artic {
+    font-size: 16px;
+    line-height: 30px;
+    color: #999;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+}
+
+.balance-cyclopedia-list {
+    margin-top: 20px;
+    width: 1200px;
+    height: 376px;
+    overflow: hidden;
+}
+
+.balance-cyclopedia-list-box {
+    width: 370px;
+    margin: 0 15px;
+}
+
+.balance-cyclopedia-list-img {
+    width: 100%;
+    height: 260px;
+    position: relative;
+}
+
+.balance-cyclopedia-list-img img,
+.balance-cyclopedia-list-img .play {
+    width: 100%;
+    height: 260px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.balance-cyclopedia-list-cont {
+    background-color: #eee;
+    padding: 15px;
+}
+
+.balance-cyclopedia-list-cont h4 {
+    font-size: 20px;
+    line-height: 42px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.balance-cyclopedia-list-cont p {
+    font-size: 16px;
+    line-height: 24px;
+    height: 24px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #666;
+}
+
+.balance-complication-left-box {
+    margin-right: 10px;
+    width: 560px;
+    height: 440px;
+    overflow: hidden;
+}
+
+.balance-complication-left {
+    height: 220px;
+    width: 560px;
+    position: relative;
+}
+
+.balance-complication-img,
+.balance-complication-left>.play {
+    width: 280px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.balance-complication-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.balance-complication-left:nth-of-type(1) .balance-complication-img,
+.balance-complication-left:nth-of-type(1)>.play {
+    left: 0;
+}
+
+.balance-complication-left:nth-of-type(2) .balance-complication-img,
+.balance-complication-left:nth-of-type(2)>.play {
+    left: 280px;
+}
+
+.balance-complication-cont {
+    width: 240px;
+    height: 180px;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+.balance-complication-left:nth-of-type(1) .balance-complication-cont {
+    left: 280px;
+}
+
+.balance-complication-left:nth-of-type(2) .balance-complication-cont {
+    left: 0;
+}
+
+.balance-complication-cont h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.balance-complication-cont p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    height: 144px;
+    overflow: hidden;
+}
+
+.balance-complication-left i {
+    display: block;
+    width: 0;
+    height: 0px;
+    border: 11px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.balance-complication-left:nth-of-type(1) i {
+    border-right: 11px solid red;
+    margin-top: -12px;
+    margin-left: -23px;
+}
+
+.balance-complication-left:nth-of-type(2) i {
+    border-left: 11px solid red;
+    margin-top: -12px;
+    margin-left: 0;
+}
+
+.balance-complication-right {
+    width: 630px;
+    height: 440px;
+    position: relative;
+}
+
+.balance-complication-right img,
+.balance-complication-right .play,
+#example_video_1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.balance-complication-right h4 {
+    width: 100%;
+    line-height: 40px;
+    text-indent: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.balance-information-box {
+    margin-bottom: 50px;
+    height: 240px;
+}
+
+.balance-information-box li {
+    margin: 0 5px;
+    width: 290px;
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+}
+
+.balance-information-img {
+    width: 100%;
+    height: 100%;
+}
+
+.balance-information-img img {
+    width: 100%;
+    height: 240px;
+}
+
+.balance-information-content {
+    width: 210px;
+    height: 210px;
+    color: #fff;
+    padding: 30px 40px 0 40px;
+    background-color: rgba(135, 180, 31, 0.9);
+    position: absolute;
+    left: -100%;
+    top: 0;
+    transition: all 0.5s;
+}
+
+.balance-information-box li:hover .balance-information-content {
+    left: 0;
+}
+
+.balance-information-content h4 {
+    font-size: 16px;
+    line-height: 30px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.balance-information-content p {
+    font-size: 14px;
+    line-height: 24px;
+    overflow: hidden;
+}
+
+.balance-information-content button {
+    width: 106px;
+    height: 32px;
+    display: block;
+    margin: 15px auto;
+    line-height: 32px;
+    border: 1px solid #fff;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    background-color: #a6ce60;
+}

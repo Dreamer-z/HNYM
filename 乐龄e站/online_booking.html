@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <title>在线预定(国内)</title>
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./js/plug/css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="./js/plug/jquery-1.8.3.min.js"></script>
+    <script src="./js/plug/adaptive.js"></script>
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 28;
+        window['adaptive'].maxWidth = 480;
+        window['adaptive'].scaleType = 1;
+        window['adaptive'].init();
+    </script>
+</head>
+
+<body>
+    <form class="onbook-int" action="#">
+        <div class="onbook-head clear">
+            <div class="onbook-head-img fl">
+                <img src="./img/order/spxq_02.png" alt="">
+            </div>
+            <div class="onbook-head-cont fl">
+                <p class="onbook-head-tit elli2">日本东京+富士山+奈良+大阪（5日游）</p>
+                <p class="onbook-head-price"><span>￥3980</span>/人</p>
+            </div>
+        </div>
+        <div class="onbook-day-box">
+            <div class="onbook-day">
+                <ul class="onbook-day-list clear">
+                    <li class="onb-day-li fl onb-day-choose">
+                        <p class="onbook-time">11/06周六</p>
+                        <p class="onbook-day-price">￥5380</p>
+                    </li>
+                    <li class="onb-day-li fl">
+                        <p class="onbook-time">11/06周六</p>
+                        <p class="onbook-day-price">￥5380</p>
+                    </li>
+                    <li class="onb-day-li fl">
+                        <p class="onbook-time">11/06周六</p>
+                        <p class="onbook-day-price">￥5380</p>
+                    </li>
+                    <li class="onb-day-li fl">
+                        <p class="onbook-time">11/06周六</p>
+                        <p class="onbook-day-price">￥5380</p>
+                    </li>
+                    <li class="onb-day-li fl">
+                        <p class="onbook-time">11/06周六</p>
+                        <p class="onbook-day-price">￥5380</p>
+                    </li>
+                    <li class="onb-day-li fl">
+                        <p class="onbook-time">11/06周六</p>
+                        <p class="onbook-day-price">￥5380</p>
+                    </li>
+                    <li class="onb-day-li fl">
+                        <p class="onbook-time">11/06周六</p>
+                        <p class="onbook-day-price">￥5380</p>
+                    </li>
+                    <li class="onb-day-li fl">
+                        <p class="onbook-time">11/06周六</p>
+                        <p class="onbook-day-price">￥5380</p>
+                    </li>
+                </ul>
+            </div>
+            <span class="lr lr-l"></span>
+            <span class="lr lr-r"></span>
+        </div>
+        <ul class="onbook-insurance">
+            <li class="clear">
+                <input id="insurance-1" class="fl" type="checkbox" name="insurance" state="0">
+                <label for="insurance-1" class="fl elli">某某旅行险（A套餐）￥10/人</label><span class="insurance-num fl">×2</span>
+            </li>
+            <li class="clear">
+                <input id="insurance-2" class="fl" type="checkbox" name="insurance" state="0">
+                <label for="insurance-2" class="fl elli">某某交通险￥10/人</label><span class="insurance-num fl">×2</span>
+            </li>
+        </ul>
+        <div class="onbook-pnum">
+            <div class="onbook-adult clear">
+                <span class="fl">成人</span>
+                <div class="onbook-op fr clear">
+                    <span class="sub fl" data="adult_sub"></span><input class="onbook-adult fl" type="number" name="onbook-adult" value="1"><span class="add fl" data="adult_add"></span>
+                </div>
+            </div>
+            <div class="onbook-child clear">
+                <span class="fl">儿童</span>
+                <div class="onbook-op fr clear">
+                    <span class="sub fl" data="child_sub"></span><input class="onbook-adult fl" type="number" name="onbook-child" value="1"><span class="add fl" data="child_add"></span>
+                </div>
+            </div>
+        </div>
+        <div class="onbook-contacts">
+            <div class="onbook-contacts-tit">联系人</div>
+            <div class="onbook-contacts-name onbook-contacts-li clear">
+                <span class="fl">姓名</span><input class="fl" type="text" name="contacts-name" required placeholder="必填，以便供应商与您联系">
+            </div>
+            <div class="onbook-contacts-tel onbook-contacts-li">
+                <span class="fl">手机</span><input class="fl" type="text" name="contacts-tel" required placeholder="必填，以便供应商与您联系">
+            </div>
+            <div class="onbook-contacts-wx onbook-contacts-li">
+                <span class="fl">微信</span><input class="fl" type="text" name="contacts-wx" placeholder="输入微信号码">
+            </div>
+        </div>
+        <!-- <div class="onbook-people">
+            <div class="onbook-people-tit">出行人</div>
+            <ul class="onbook-people-adult">
+                <li class="onbook-people-li clear">
+                    <a href="">
+                        <span class="fl">成人</span>
+                        <div class="onbook-people-cont fl">
+                            <p class="onbook-people-name">王某某</p>
+                            <p class="onbook-people-id">430821188706433430</p>
+                            <p class="onbook-people-init">请填写出行人信息</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="onbook-people-child">
+                <li class="onbook-people-li clear">
+                    <a href="">
+                        <span class="fl">儿童</span>
+                        <div class="onbook-people-cont fl">
+                            <p class="onbook-people-name"></p>
+                            <p class="onbook-people-id"></p>
+                            <p class="onbook-people-init">请填写出行人信息</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="onbook-people-remark clear">
+                <span class="fl">备注</span><input class="fl" type="text" name="remark" placeholder="您的要求我们的心声">
+            </div>
+        </div> -->
+        <div class="onbook-ticket clear">
+            <span class="fl">优惠券</span>
+            <div class="onbook-ticket-cont fl"></div>
+        </div>
+        <div class="onbook-ticket-zzc fullscreen">
+            <div class="onbook-ticket-box">
+                <ul class="coupon-list">
+                    <li class="coupon-li">
+                        <div class="coupon-li-box">
+                            <div class="coupon-sec clear">
+                                <div class="coupon-sec-limit fl">￥<span>20</span></div>
+                                <div class="coupon-sec-cont fl">
+                                    <p class="coupon-sec-tit">乐龄e站</p>
+                                    <p class="coupon-sec-type">订单满198使用，仅限<span>132****4562</span>用户使用</p>
+                                </div>
+                            </div>
+                            <div class="coupon-validity">有效期<span>2017.08.19-2017.11.20</span></div>
+                        </div>
+                    </li>
+                    <li class="coupon-li">
+                        <div class="coupon-li-box">
+                            <div class="coupon-sec clear">
+                                <div class="coupon-sec-limit fl">￥<span>20</span></div>
+                                <div class="coupon-sec-cont fl">
+                                    <p class="coupon-sec-tit">乐龄e站</p>
+                                    <p class="coupon-sec-type">订单满198使用，仅限<span>132****4562</span>用户使用</p>
+                                </div>
+                            </div>
+                            <div class="coupon-validity">有效期<span>2017.08.19-2017.11.20</span></div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="onbook-ticket-tit">我的优惠券</div>
+            </div>
+        </div>
+        <div class="onbook-agreement clear">
+            <input id="agreement" class="fl" type="checkbox" name="" state="0"><label class="fl" for="agreement">我接受<span class="onbook-agreement-int">《退改协议》</span></label>
+        </div>
+        <div class="onbook-agreement-zzc fullscreen">
+            <div class="onbook-agreement-box">
+                <div class="onbook-agreement-tit">退改协议<span>确定</span></div>
+                <div class="onbook-agreement-sec">
+                    协议内容 协议内容 协议内容 协议内容 协议内容
+                </div>
+            </div>
+        </div>
+        <div class="onbook-tj clear">
+            <p class="fl">总计：<span>￥5600</span></p><button class="fr" type="sub" method="post">提交订单</button>
+        </div>
+    </form>
+</body>
+<script src=" ./js/plug/swiper-3.4.2.jquery.min.js "></script>
+<script src="./js/all.js "></script>
+<script src="./js/online_booking_int.js "></script>
+<script>
+    all.check();
+</script>
+
+</html>

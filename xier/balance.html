@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="血糖平衡">
+    <meta name="description" content="血糖平衡">
+    <title>我糖平衡</title>
+    <link rel="stylesheet" type="text/css" href="/css/rest.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/currency.css" />
+    <link rel="stylesheet" type="text/css" href="/css/balance.css" />
+    <link rel="stylesheet" type="text/css" href="/css/banner.css" />
+    <link rel="stylesheet" type="text/css" href="/css/head-footer.min.css" />
+</head>
+
+<body>
+    <div id="headbox"></div>
+
+    <div id="banner">
+        <ul id="banner-content" class="y-clearfix">
+
+        </ul>
+        <ul id="banner-swicth-ul" class="y-clearfix">
+
+        </ul>
+        <span id="banner-swicth-left" class="switchClick"></span>
+        <span id="banner-swicth-right" class="switchClick"></span>
+    </div>
+    <div id="route">
+        <div class="wrap">
+            <div>
+                <i></i> 当前位置 :
+                <a href="/index.html">首页</a> &gt我糖平衡
+            </div>
+        </div>
+    </div>
+    <div id="balance-box">
+        <ul id="balance">
+            <li class="balance-complication y-width y-clearfix">
+                <div class="balance-title-box y-clearfix">
+                    <h4 class="balance-title y-left"></h4>
+                    <p class="balance-column-introduce y-right">
+
+                    </p>
+                </div>
+                <div class="balance-complication-left-box y-left" data_column="">
+
+                </div>
+                <div class="balance-complication-right y-left">
+                    <img alt="">
+                    <h4></h4>
+                    <div class="play"></div>
+                    <!-- <video id="example_video_1" loop controls>很抱歉，您的浏览器版本太低，不支持此视频播放</video> -->
+                </div>
+            </li>
+            <li class="balance-cyclopedia y-width">
+                <div class="balance-title-box y-clearfix">
+                    <h4 class="balance-title y-left"></h4>
+                    <p class="balance-column-introduce y-right">
+
+                    </p>
+                </div>
+                <ul class="balance-cyclopedia-list y-clearfix" data_column="">
+
+                </ul>
+            </li>
+            <li class="balance-common y-width">
+                <div class="balance-title-box y-clearfix">
+                    <h4 class="balance-title y-left"></h4>
+                    <p class="balance-column-introduce y-right">
+
+                    </p>
+                </div>
+                <ul class="balance-common-section y-clearfix" data_column="">
+
+                </ul>
+            </li>
+            <li class="balance-information y-width">
+                <div class="balance-title-box y-clearfix">
+                    <h4 class="balance-title y-left"></h4>
+                    <p class="balance-column-introduce y-right">
+
+                    </p>
+                </div>
+                <ul class="balance-information-box y-clearfix">
+
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="divfooter"></div>
+</body>
+<script src="/js/data_url.js"></script>
+<script src="/js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/jquery.tmpl.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/clamp.min.js"></script>
+<!-- 绑定列表数据 -->
+<script id="navTemplate" type="text/x-jquery-tmpl">
+    <li class="y-left nav-first-li" data_id="${id}">
+        <a href="${category_go_url}">${category_name}</a>
+        <ul class="nav-second">
+            {{each(i,item) ChildList}}
+            <li class="nav-second-li" data_id="${item.id}">
+                <a href="${item.category_go_url}">${item.category_name}</a>
+                <ul class="nav-thr">
+                    {{each(i,item) ChildList2}}
+                    <li class="nav-thr-li" data_id="${item.id}">
+                        <a href="${item.category_go_url}">${item.category_name}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
+            {{/each}}
+        </ul>
+    </li>
+</script>
+<!-- 绑定列表数据 end -->
+
+<!-- banner -->
+<script id="commissionTemplate" type="text/x-jquery-tmpl">
+    <li class="banner-li y-left">
+        <a><img class="banner-img" src="${file_url}" alt=""></a>
+    </li>
+</script>
+<!-- banner end-->
+<script id="complicationTemplate" type="text/x-jquery-tmpl">
+    <div class="balance-complication-left y-clearfix" data_id="${id}" data_title="${article_title}">
+        <div class="balance-complication-img y-left">
+            <img src="${article_image}" alt="">
+        </div>
+        <div class="play"></div>
+        <div class="balance-complication-cont y-left">
+            <h4>${article_title}</h4>
+            <p class="bcc">${article_short}</p>
+        </div>
+        <i></i>
+    </div>
+</script>
+<script id="cyclopediaTemplate" type="text/x-jquery-tmpl">
+    <li class="balance-cyclopedia-list-box y-left" data_id="${id}" data_title="${article_title}">
+        <div class="balance-cyclopedia-list-img">
+            <img src="${article_image}" alt="">
+            <div class="play"></div>
+        </div>
+        <div class="balance-cyclopedia-list-cont">
+            <h4>${article_title}</h4>
+            <p class="bclc">${article_short}</p>
+        </div>
+    </li>
+</script>
+<script id="commonTemplate" type="text/x-jquery-tmpl">
+    <li class="y-left y-clearfix" data_id="${id}" data_title="${article_title}">
+        <div class="balance-common-section-img y-left">
+            <img src="${article_image}" alt="">
+            <div class="play"></div>
+        </div>
+        <div class="balance-common-section-cont y-left">
+            <h4 class="balance-common-section-cont-title">${article_title}</h4>
+            <p class="balance-common-section-cont-artic">${article_short}</p>
+        </div>
+    </li>
+</script>
+<script id="informationTemplate" type="text/x-jquery-tmpl">
+    <li class="y-left" data_id="${id}" data_title="${article_title}">
+        <div class="balance-information-img">
+            <img src="${article_image}" alt="">
+            <div class="play"></div>
+        </div>
+        <div class="balance-information-content">
+            <h4>${article_title}</h4>
+            <p class="bic">${article_short}</p>
+            <button>查看更多</button>
+        </div>
+    </li>
+</script>
+<script src="/js/head_footer.js"></script>
+<script src="/js/balance.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/banner.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

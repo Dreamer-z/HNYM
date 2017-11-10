@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/rest.css">
+    <link rel="stylesheet" href="/css/head-foot.css">
+    <link rel="stylesheet" href="/css/jquery.pagination.css">
+    <link rel="stylesheet" href="/css/job_screening.min.css">
+    <title>工种筛选</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="hd-box"></div>
+
+    <div id="main-box">
+        <div class="main-t y-width y-clearfix">
+            <p class="m-t"><span>保姆</span></p>
+            <div class="m-op-box y-clearfix">
+                <ul class="m-op-o y-clearfix y-left">
+                    <li class="area-box y-left y-clearfix">
+                        <span class="y-left">区域：</span>
+                        <select name="area" id="area" required class="y-left">
+                            <option value="area" selected>天心区</option>
+                            <option value="area">雨花区</option>
+                            <option value="area">开福区</option>
+                            <option value="area">岳麓区</option>
+                            <option value="area">芙蓉区</option>
+                        </select>
+                    </li>
+                    <li class="appr-box y-left y-clearfix">
+                        <span class="y-left">评价：</span>
+                        <select name="appr" id="appr" required class="y-left">
+                            <option value="appr" selected>非常nice</option>
+                            <option value="appr">不错</option>
+                            <option value="appr">一般</option>
+                            <option value="appr">差劲</option>
+                        </select>
+                    </li>
+                    <li class="perf-box y-left y-clearfix">
+                        <span class="y-left">资料完善度：</span>
+                        <select name="perf" id="perf" required class="y-left">
+                            <option value="perf" selected>100%</option>
+                            <option value="perf">80%</option>
+                            <option value="perf">60%</option>
+                            <option value="perf">40%</option>
+                        </select>
+                    </li>
+                </ul>
+                <ul class="m-op-t y-clearfix y-right">
+                    <li class="labour-box y-left y-clearfix">
+                        <i class="y-left"></i><span class="y-left">工价</span>
+                    </li>
+                    <li class="authen-box y-left y-clearfix">
+                        <input type="checkbox" name="authen" id="authen" class="y-left">
+                        <label for="authen" class="y-left">认证</label>
+                    </li>
+                </ul>
+            </div>
+            <ul class="main-b y-width y-clearfix">
+                <li class="y-clearfix">
+                    <div class="m-b-img y-left">
+                        <img src="/images/index/cl.png" alt="">
+                    </div>
+                    <div class="m-b-cent y-left">
+                        <h4>专业保姆月嫂</h4>
+                        <p>期望薪资：<span>3000元</span>/月</p>
+                        <p>服务区域：<span>天心区、雨花区、芙蓉区</span></p>
+                    </div>
+                    <div class="m-b-det y-right">
+                        <span>查看详情</span>
+                    </div>
+                </li>
+                <li class="y-clearfix">
+                    <div class="m-b-img y-left">
+                        <img src="/images/index/cl.png" alt="">
+                    </div>
+                    <div class="m-b-cent y-left">
+                        <h4>专业保姆月嫂</h4>
+                        <p>期望薪资：<span>3000元</span>/月</p>
+                        <p>服务区域：<span>天心区、雨花区、芙蓉区</span></p>
+                    </div>
+                    <div class="m-b-det y-right">
+                        <span>查看详情</span>
+                    </div>
+                </li>
+                <li class="y-clearfix">
+                    <div class="m-b-img y-left">
+                        <img src="/images/index/cl.png" alt="">
+                    </div>
+                    <div class="m-b-cent y-left">
+                        <h4>专业保姆月嫂</h4>
+                        <p>期望薪资：<span>3000元</span>/月</p>
+                        <p>服务区域：<span>天心区、雨花区、芙蓉区</span></p>
+                    </div>
+                    <div class="m-b-det y-right">
+                        <span>查看详情</span>
+                    </div>
+                </li>
+                <li class="y-clearfix">
+                    <div class="m-b-img y-left">
+                        <img src="/images/index/cl.png" alt="">
+                    </div>
+                    <div class="m-b-cent y-left">
+                        <h4>专业保姆月嫂</h4>
+                        <p>期望薪资：<span>3000元</span>/月</p>
+                        <p>服务区域：<span>天心区、雨花区、芙蓉区</span></p>
+                    </div>
+                    <div class="m-b-det y-right">
+                        <span>查看详情</span>
+                    </div>
+                </li>
+                <li class="y-clearfix">
+                    <div class="m-b-img y-left">
+                        <img src="/images/index/cl.png" alt="">
+                    </div>
+                    <div class="m-b-cent y-left">
+                        <h4>专业保姆月嫂</h4>
+                        <p>期望薪资：<span>3000元</span>/月</p>
+                        <p>服务区域：<span>天心区、雨花区、芙蓉区</span></p>
+                    </div>
+                    <div class="m-b-det y-right">
+                        <span>查看详情</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 分页按钮 -->
+        <div class="page-turner y-width">
+
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <div id="ft-box"></div>
+</body>
+<script src="/js/jquery-1.8.3.min.js"></script>
+<script src="/js/head-foot.js"></script>
+<script src="/js/jquery.pagination.min.js"></script>
+<script src="/js/job_screening.js"></script>
+
+</html>

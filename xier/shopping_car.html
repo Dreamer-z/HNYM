@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/rest.min.css">
+    <link rel="stylesheet" href="/css/head-footer.min.css">
+    <link rel="stylesheet" href="/css/shopping_car.min.css">
+    <title>购物车</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="headbox"></div>
+    <div class="logo y-width y-clearfix">
+        <img class="y-left" src="/images/sp-car.png" alt="">
+        <span class="y-left">购物车</span>
+    </div>
+    <div class="sc-box y-width">
+        <div class="scb-b y-clearfix">
+            <h4 class="sc-box-t y-left">全部商品</h4>
+            <span class="c-all y-right">全部删除</span>
+        </div>
+        <div class="sc-li-t y-clearfix">
+            <p class="y-clearfix">
+                <input type="checkbox" id="all-li" class="all-li y-left"><label for="all-li" class="y-left">全选</label>
+                <span class="y-left commodity-t">商品</span>
+                <span class="y-left price-t">单价</span>
+                <span class="y-left amount-t">数量</span>
+                <span class="y-left total-t">小计</span>
+                <span class="y-left op-t">操作</span>
+            </p>
+        </div>
+        <ul class="od-ul">
+            <li class="od-li y-clearfix">
+                <div class="c-li y-left">
+                    <input type="checkbox" name="" id="">
+                </div>
+                <div class="od-img y-left">
+                    <img src="/images/product/sc_img.png" alt="">
+                </div>
+                <div class="od-com y-left">
+                    <p class="od-c-t">伊能启元胶囊 90粒/盒x1-血糖管控专家</p>
+                    <p class="od-c-s">规格：<span>90粒/盒*2</span></p>
+                </div>
+                <div class="od-price y-left">
+                    <p>&yen<span>299</span></p>
+                </div>
+                <div class="od-amount y-left">
+                    <p class="y-clearfix"><span class="a-add y-left">-</span><input type="number" class="a-val y-left" value="1"><span class="a-sub y-left">+</span></p>
+                </div>
+                <div class="od-total y-left">
+                    <p>&yen<span class="sell-pri">299</span></p>
+                </div>
+                <div class="od-op y-left">
+                    <p class="od-del">删除</p>
+                    <p class="od-col">添加到我的收藏</p>
+                </div>
+            </li>
+            <li class="od-li y-clearfix">
+                <div class="c-li y-left">
+                    <input type="checkbox" name="" id="">
+                </div>
+                <div class="od-img y-left">
+                    <img src="/images/product/sc_img.png" alt="">
+                </div>
+                <div class="od-com y-left">
+                    <p class="od-c-t">伊能启元胶囊 90粒/盒x2-血糖管控专家</p>
+                    <p class="od-c-s">规格：<span>90粒/盒*2</span></p>
+                </div>
+                <div class="od-price y-left">
+                    <p>&yen<span>299</span></p>
+                </div>
+                <div class="od-amount y-left">
+                    <p class="y-clearfix"><span class="a-add y-left">-</span><input type="number" class="a-val y-left" value="1"><span class="a-sub y-left">+</span></p>
+                </div>
+                <div class="od-total y-left">
+                    <p>&yen<span class="sell-pri">299</span></p>
+                </div>
+                <div class="od-op y-left">
+                    <p class="od-del">删除</p>
+                    <p class="od-col">添加到我的收藏</p>
+                </div>
+            </li>
+            <li class="od-li y-clearfix">
+                <div class="c-li y-left">
+                    <input type="checkbox" name="" id="">
+                </div>
+                <div class="od-img y-left">
+                    <img src="/images/product/sc_img.png" alt="">
+                </div>
+                <div class="od-com y-left">
+                    <p class="od-c-t">伊能启元胶囊 90粒/盒x3-血糖管控专家</p>
+                    <p class="od-c-s">规格：<span>90粒/盒*2</span></p>
+                </div>
+                <div class="od-price y-left">
+                    <p>&yen<span>299</span></p>
+                </div>
+                <div class="od-amount y-left">
+                    <p class="y-clearfix"><span class="a-add y-left">-</span><input type="text" class="a-val y-left" value="1"><span class="a-sub y-left">+</span></p>
+                </div>
+                <div class="od-total y-left">
+                    <p>&yen<span class="sell-pri">299</span></p>
+                </div>
+                <div class="od-op y-left">
+                    <p class="od-del">删除</p>
+                    <p class="od-col">添加到我的收藏</p>
+                </div>
+            </li>
+        </ul>
+        <div class="sc-li-c y-clearfix">
+            <div class="y-clearfix">
+                <input type="checkbox" id="all-li-c" class="all-li y-left"><label for="all-li-c" class="y-left">全选</label>
+                <p class="y-left commodity-c">
+                    <span class="cc-del">删除选中的商品</span>
+                    <span class="cc-col">添加到我的收藏</span>
+                </p>
+                <p class="y-left amount-c">已选择件 <span></span> 商品</p>
+                <p class="y-left total-c">总价：<span>&yen</span></p>
+                <p class="y-left op-c">去结算</p>
+            </div>
+        </div>
+    </div>
+    <!-- 确认删除 -->
+    <div class="del-aff">
+        <p>确定要删除吗？</p>
+        <p class="ac"><span class="aff">确定</span><span class="canc">取消</span></p>
+    </div>
+    <!-- 尾部 -->
+    <div id="divfooter"></div>
+</body>
+<script src="/js/data_url.js"></script>
+<script src="/js/jquery-1.8.3.min.js"></script>
+<script src="/js/jquery.tmpl.min.js"></script>
+<!-- 绑定列表数据 -->
+<script id="navTemplate" type="text/x-jquery-tmpl">
+    <li class="y-left nav-first-li" data_id="${id}">
+        <a href="${category_go_url}">${category_name}</a>
+        <ul class="nav-second">
+            {{each(i,item) ChildList}}
+            <li class="nav-second-li" data_id="${item.id}">
+                <a href="${item.category_go_url}">${item.category_name}</a>
+                <ul class="nav-thr">
+                    {{each(i,item) ChildList2}}
+                    <li class="nav-thr-li" data_id="${item.id}">
+                        <a href="${item.category_go_url}">${item.category_name}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
+            {{/each}}
+        </ul>
+    </li>
+</script>
+<!-- 绑定列表数据 end -->
+
+<script src="/js/head_footer.js"></script>
+<script src="/js/shopping_car.js"></script>
+
+</html>

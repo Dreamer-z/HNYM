@@ -1,0 +1,86 @@
+body {
+    background-color: #eee;
+}
+
+.mes-box {
+    width: 7.5rem;
+    box-sizing: border-box;
+    padding: 0 0.3rem;
+}
+
+.mb-li {
+    margin: 0.5rem 0;
+}
+
+.mes-time {
+    width: 100%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+}
+
+.mes-time span {
+    display: block;
+    width: 0.8rem;
+    height: 100%;
+    font-size: 0.2rem;
+    border-radius: 0.06rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    margin: 0 auto;
+}
+
+.mes-cont {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 0.3rem;
+    background-color: #fff;
+    border-radius: 0.06rem;
+    border: 0.01rem solid #eee;
+    border-top: 0.1rem solid #76e32f;
+    padding: 0.2rem;
+}
+
+.mc-tit {
+    font-size: 0.28rem;
+}
+
+.mc-time {
+    line-height: 0.52rem;
+    font-size: 0.2rem;
+    color: #666;
+}
+
+.mc-sec {
+    line-height: 0.34rem;
+    font-size: 0.24rem;
+    margin-bottom: 0.2rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: #666;
+}
+
+.now-check {
+    padding-top: 0.2rem;
+    border-top: 1px solid #eee;
+    font-size: 0.24rem;
+}
+
+.now-check i {
+    width: 0.28rem;
+    height: 0.28rem;
+    background: url(./../img/open.jpg)no-repeat center;
+    background-size: 100%;
+    transform: rotateZ(-90deg);
+}
+
+.no-mes {
+    width: 100%;
+    height: 100%;
+    background: url(./../img/no_message.jpg)no-repeat center;
+    background-size: 50%;
+    background-color: #fff;
+    display: none;
+}

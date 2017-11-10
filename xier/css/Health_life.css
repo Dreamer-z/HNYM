@@ -1,0 +1,212 @@
+.nav-first-li:nth-of-type(2) > a {
+  color: #a6ce60;
+}
+
+#now-add {
+  height: 18px;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 36px auto;
+  margin-top: 15px;
+  color: #898a89;
+}
+
+#now-add p {
+  display: block;
+  text-align: right;
+}
+
+#now-add p i {
+  display: inline-block;
+  width: 20px;
+  height: 18px;
+  background: url(/images/index_03.png) no-repeat center;
+  background-size: 100%;
+}
+
+#now-add p a {
+  color: #898a89;
+}
+
+#sprot-video {
+  height: 440px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid #eff3f4;
+}
+
+#sprot-video #sprot-video-left {
+  height: 100%;
+  width: 770px;
+  position: relative;
+}
+
+#sprot-video #sprot-video-left img,
+#sprot-video #sprot-video-left .play {
+  width: 770px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#sprot-video #sprot-video-left img {
+  z-index: 998;
+}
+
+#sprot-video #sprot-video-left .play {
+  z-index: 999;
+  background: url(/images/play.png) no-repeat center;
+  background-size: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+}
+
+#sprot-video #sprot-video-right {
+  width: 420px;
+  height: 100%;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+#sprot-video #sprot-video-right li {
+  width: 100%;
+  height: 210px;
+  margin-bottom: 10px;
+  background-size: 100%;
+  position: relative;
+}
+
+#sprot-video #sprot-video-right li img,
+#sprot-video #sprot-video-right li .play {
+  display: block;
+  width: 100%;
+  height: 210px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#sprot-video #sprot-video-right li img {
+  z-index: 998;
+}
+
+#sprot-video #sprot-video-right li .play {
+  z-index: 999;
+  background: url(/images/play.png) no-repeat center;
+  background-size: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+}
+
+#sprot-aticle-box {
+  width: 100%;
+}
+
+#sprot-aticle-box #sprot-aticle {
+  padding: 20px 0;
+}
+
+#sprot-aticle-box #sprot-aticle .sprot-aticle-list {
+  width: 380px;
+  margin: 20px 10px;
+  color: #7f8a94;
+}
+
+#sprot-aticle-box #sprot-aticle .sprot-aticle-list .sprot-aticle-img {
+  width: 100%;
+  height: 220px;
+  position: relative;
+}
+
+#sprot-aticle-box #sprot-aticle .sprot-aticle-list .sprot-aticle-img img,
+#sprot-aticle-box #sprot-aticle .sprot-aticle-list .sprot-aticle-img .play {
+  width: 100%;
+  height: 220px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#sprot-aticle-box #sprot-aticle .sprot-aticle-list .sprot-aticle-img img {
+  z-index: 998;
+}
+
+#sprot-aticle-box #sprot-aticle .sprot-aticle-list .sprot-aticle-img .play {
+  z-index: 999;
+  background: url(/images/play.png) no-repeat center;
+  background-size: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+}
+
+#sprot-aticle-box #sprot-aticle .sprot-aticle-list .sprot-aticle-section {
+  padding: 0 10px;
+  width: 360px;
+}
+
+#sprot-aticle-box #sprot-aticle .sprot-aticle-list .sprot-aticle-section h4 {
+  font-size: 22px;
+  line-height: 60px;
+  widows: 100%;
+  height: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#sprot-aticle-box #sprot-aticle .sprot-aticle-list .sprot-aticle-section p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#sprot-aticle-box #sprot-aticle .sprot-aticle-list .sprot-aticle-operate {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+  background-color: #ebeef0;
+  box-shadow: 0 2px 2px #999;
+}
+
+#sprot-aticle-box #sprot-aticle .sprot-aticle-list .sprot-aticle-operate p i {
+  display: inline-block;
+  width: 16px;
+  height: 14px;
+  margin-left: 15px;
+}
+
+#sprot-aticle-box #sprot-aticle .sprot-aticle-list .sprot-aticle-operate p span {
+  margin-left: 5px;
+}
+
+#sprot-aticle-box #sprot-aticle .sprot-aticle-list .sprot-aticle-operate .likeit i {
+  background: url(/images/sprot_icon_03.png) no-repeat center;
+  background-size: 100%;
+}
+
+#sprot-aticle-box #sprot-aticle .sprot-aticle-list .sprot-aticle-operate .comment a {
+  display: block;
+  color: #7f8a94;
+}
+
+#sprot-aticle-box #sprot-aticle .sprot-aticle-list .sprot-aticle-operate .comment i {
+  background: url(/images/sprot_icon_05.png) no-repeat center;
+  background-size: 100%;
+}
+
+#sprot-aticle-box #sprot-aticle .sprot-aticle-list .sprot-aticle-operate .share i {
+  background: url(/images/sprot_icon_07.png) no-repeat center;
+  background-size: 100%;
+}
+
+.page-turner {
+  text-align: center;
+  margin-bottom: 50px;
+}

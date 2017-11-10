@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/rest.min.css">
+    <link rel="stylesheet" href="/css/head-footer.min.css">
+    <link rel="stylesheet" href="/css/ydui.css">
+    <link rel="stylesheet" href="/css/personal_orderadd.min.css">
+    <title>收货地址</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="headbox"></div>
+    <!-- 会员导航 -->
+    <div class="men-nav-box">
+        <ul class="men-nav y-width y-clearfix">
+            <li class="men-nav-li y-left member">
+                <a href="/member.html">会员中心</a>
+                <div class="member-sec men-li-sec">
+                    <img src="/images/mem_img.png" alt="">
+                    <p class="nickname">亲爱的，<span>那啥</span></p>
+                    <p class="wel">欢迎回来</p>
+                    <p class="acc-id">ID:<span>123456789</span></p>
+                    <div class="integral y-clearfix">
+                        <i class="y-left"></i>
+                        <p class="y-left">我的手机积分</p><span class="y-right">888889999分</span>
+                    </div>
+                </div>
+            </li>
+            <li class="men-nav-li y-left">
+                <a href="/index.html">首页</a>
+            </li>
+            <li class="men-nav-li y-left">
+                <a>分销信息</a>
+            </li>
+            <li class="men-nav-li y-left">
+                <a>视频中心</a>
+            </li>
+            <li class="men-nav-li y-left">
+                <a>活动报名</a>
+            </li>
+            <li class="men-nav-li y-left">
+                <a>优惠信息</a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-box y-width y-clearfix">
+        <div class="main">
+            <div class="person y-clearfix">
+                <div class="person-img y-left">
+                    <img src="/images/mem_img.png" alt="">
+                </div>
+                <div class="person-info y-left">
+                    <h4>那啥</h4>
+                    <p class="per-id">ID:<span>123456789</span></p>
+                    <div class="per-inte y-clearfix">
+                        <i class="y-left"></i>
+                        <p class="y-left">我的手机积分</p><span class="y-right">888889999分</span>
+                    </div>
+                </div>
+            </div>
+            <div class="info-revamp">
+                <div class="ir-title">
+                    <span>收货地址</span>
+                </div>
+                <div class="address">
+                    <div class="add-t y-clearfix">
+                        <p class="at-new y-left"><span>新增收货地址</span>电话号码, 手机号选填一项，其余均为必填项</p>
+                        <p class="def y-right"><i></i><span>设为默认</span></p>
+                    </div>
+                    <ul class="add-ul">
+                        <li class="add-li city">
+                            <p class="y-clearfix">
+                                <span class="y-left">所在地区：</span>
+                                <input type="text" class="cell-input y-left" readonly id="J_Address" placeholder="请选择服务区域">
+                            </p>
+                        </li>
+                        <li class="add-li detail">
+                            <p class="y-clearfix">
+                                <span class="y-left">详细地址：</span>
+                                <textarea name="" id="" cols="60" rows="2"></textarea>
+                            </p>
+                        </li>
+                        <li class="add-li people-message y-clearfix">
+                            <p class="y-clearfix y-left p-name">
+                                <span class="y-left">收货人姓名：</span>
+                                <input type="text" class="y-left">
+                            </p>
+                            <p class="y-clearfix y-left phone">
+                                <span class="y-left">手机号码：</span>
+                                <input type="tel" class="y-left">
+                            </p>
+                        </li>
+                        <li class="add-li people-message y-clearfix">
+                            <p class="y-clearfix y-left tel">
+                                <span class="y-left">电话号码：</span>
+                                <input type="tel" class="y-left">
+                            </p>
+                            <p class="y-clearfix y-left postcode">
+                                <span class="y-left">邮政编码：</span>
+                                <input type="number" class="y-left">
+                            </p>
+                        </li>
+                        <li class="add-li addsub">
+                            <button type="submit">保存</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="have-add">
+                    <p class="ha-mes">已保存了2条收货地址，还能保存8条收货地址</p>
+                    <ul class="have-add-t">
+                        <li class="has-person-box y-left">收货人</li>
+                        <li class="has-region-box y-left">所在地区</li>
+                        <li class="has-detailed-address-box y-left">详细地址</li>
+                        <li class="has-postcode-box y-left">邮编</li>
+                        <li class="has-tel-box y-left">手机/电话</li>
+                        <li class="has-op-box y-left">操作</li>
+                        <li class="has-mr-box y-left"></li>
+                    </ul>
+                    <ul class="have-add-sec">
+                        <li class="y-clearfix">
+                            <div class="has-person y-left">1</div>
+                            <div class="has-region y-left">
+                                <textarea name="" disabled>湖南省 长沙市 开福区 福到街</textarea>
+                            </div>
+                            <div class="has-detailed-address y-left">
+                                <textarea name="" disabled>福田路520号满天春园3栋4单元1102</textarea>
+                            </div>
+                            <div class="has-postcode y-left">
+                                <textarea name="" disabled>000000</textarea>
+                            </div>
+                            <div class="has-tel y-left">
+                                <textarea name="" disabled>13814569992</textarea>
+                            </div>
+                            <div class="has-op y-clearfix y-left">
+                                <div class="has-op-c">
+                                    <span class="has-xg y-left">修改</span>
+                                    <i class="has-fgx y-left"></i>
+                                    <span class="has-sc y-left">删除</span>
+                                </div>
+                                <div class="has-op-aff">
+                                    <span class="has-qr y-left">确认</span>
+                                    <i class="has-fgx y-left"></i>
+                                    <span class="has-qx y-left">取消</span>
+                                </div>
+                            </div>
+                            <div class="has-mr has-mr-c y-left"><span>默认收货地址</span></div>
+                        </li>
+                        <li class="y-clearfix">
+                            <div class="has-person y-left">2</div>
+                            <div class="has-region y-left">
+                                <textarea name="" disabled>湖南省 长沙市 开福区 福到街</textarea>
+                            </div>
+                            <div class="has-detailed-address y-left">
+                                <textarea name="" disabled>福田路520号满天春园3栋4单元1102</textarea>
+                            </div>
+                            <div class="has-postcode y-left">
+                                <textarea name="" disabled>000000</textarea>
+                            </div>
+                            <div class="has-tel y-left">
+                                <textarea name="" disabled>13814569992</textarea>
+                            </div>
+                            <div class="has-op y-clearfix y-left">
+                                <div class="has-op-c">
+                                    <span class="has-xg y-left">修改</span>
+                                    <i class="has-fgx y-left"></i>
+                                    <span class="has-sc y-left">删除</span>
+                                </div>
+                                <div class="has-op-aff">
+                                    <span class="has-qr y-left">确认</span>
+                                    <i class="has-fgx y-left"></i>
+                                    <span class="has-qx y-left">取消</span>
+                                </div>
+                            </div>
+                            <div class="has-mr y-left"></div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <div id="divfooter"></div>
+</body>
+
+<script src="/js/data_url.js"></script>
+<script src="/js/jquery-1.8.3.min.js"></script>
+<script src="/js/jquery.tmpl.min.js"></script>
+<script src="/js/ydui.citys.js"></script>
+<script src="/js/ydui.js"></script>
+<!-- 绑定列表数据 -->
+<script id="navTemplate" type="text/x-jquery-tmpl">
+    <li class="y-left nav-first-li" data_id="${id}">
+        <a href="${category_go_url}">${category_name}</a>
+        <ul class="nav-second">
+            {{each(i,item) ChildList}}
+            <li class="nav-second-li" data_id="${item.id}">
+                <a href="${item.category_go_url}">${item.category_name}</a>
+                <ul class="nav-thr">
+                    {{each(i,item) ChildList2}}
+                    <li class="nav-thr-li" data_id="${item.id}">
+                        <a href="${item.category_go_url}">${item.category_name}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
+            {{/each}}
+        </ul>
+    </li>
+</script>
+<!-- 绑定列表数据 end -->
+<script src="/js/head_footer.js"></script>
+<script src="/js/personal_orderadd.js"></script>
+
+</html>

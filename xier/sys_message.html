@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/rest.min.css">
+    <link rel="stylesheet" href="/css/head-footer.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/jquery.pagination.css" />
+    <link rel="stylesheet" href="/css/sys_message.min.css">
+    <title>系统消息</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="headbox"></div>
+    <!-- 会员导航 -->
+    <div class="men-nav-box">
+        <ul class="men-nav y-width y-clearfix">
+            <li class="men-nav-li y-left member">
+                <a href="/member.html">会员中心</a>
+                <div class="member-sec men-li-sec">
+                    <img src="/images/mem_img.png" alt="">
+                    <p class="nickname">亲爱的，<span>那啥</span></p>
+                    <p class="wel">欢迎回来</p>
+                    <p class="acc-id">ID:<span>123456789</span></p>
+                    <div class="integral y-clearfix">
+                        <i class="y-left"></i>
+                        <p class="y-left">我的手机积分</p><span class="y-right">888889999分</span>
+                    </div>
+                </div>
+            </li>
+            <li class="men-nav-li y-left">
+                <a href="/index.html">首页</a>
+            </li>
+            <li class="men-nav-li y-left">
+                <a>分销信息</a>
+            </li>
+            <li class="men-nav-li y-left">
+                <a>视频中心</a>
+            </li>
+            <li class="men-nav-li y-left">
+                <a>活动报名</a>
+            </li>
+            <li class="men-nav-li y-left">
+                <a>优惠信息</a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-box y-width y-clearfix">
+        <div class="main">
+            <div class="person y-clearfix">
+                <div class="person-img y-left">
+                    <img src="/images/mem_img.png" alt="">
+                </div>
+                <div class="person-info y-left">
+                    <h4>那啥</h4>
+                    <p class="per-id">ID:<span>123456789</span></p>
+                    <div class="per-inte y-clearfix">
+                        <i class="y-left"></i>
+                        <p class="y-left">我的手机积分</p><span class="y-right">888889999分</span>
+                    </div>
+                </div>
+            </div>
+            <div class="info-revamp">
+                <div class="ir-title">
+                    <span>系统消息</span>
+                </div>
+                <div class="sys-m">
+                    <ul class="sys-m-ul">
+                        <li class="sys-m-li">
+                            <p class="sys-ml-d">2017-9-11</p>
+                            <p class="sys-ml-t">伊能启元提醒<span>16：40：22</span></p>
+                            <p class="sys-ml-ct">签收通知！</p>
+                            <p class="sys-ml-cc">您的包裹已被签收啦！如包裹有问题可联系伊能启元客服哦。 </p>
+                            <div class="y-clearfix wl">
+                                <span>查看物流</span>
+                            </div>
+                        </li>
+                        <li class="sys-m-li">
+                            <p class="sys-ml-d">2017-9-10</p>
+                            <p class="sys-ml-t">伊能启元提醒<span>16：40：22</span></p>
+                            <p class="sys-ml-ct">陈大大 您好:</p>
+                            <p class="sys-ml-cc">您的订单: 12346789, 伊能启元胶壤一号已经于2017-9-11发货, 运单号:253154651,<span>请您在确实收到宝贝后，在确认收货哦！</span></p>
+                            <div class="y-clearfix wl">
+                                <span>查看物流</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="page-turner">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <div id="divfooter"></div>
+</body>
+
+<script src="/js/data_url.js"></script>
+<script src="/js/jquery-1.8.3.min.js"></script>
+<script src="/js/jquery.tmpl.min.js"></script>
+<script src="/js/jquery.pagination.min.js"></script>
+<!-- 绑定列表数据 -->
+<script id="navTemplate" type="text/x-jquery-tmpl">
+    <li class="y-left nav-first-li" data_id="${id}">
+        <a href="${category_go_url}">${category_name}</a>
+        <ul class="nav-second">
+            {{each(i,item) ChildList}}
+            <li class="nav-second-li" data_id="${item.id}">
+                <a href="${item.category_go_url}">${item.category_name}</a>
+                <ul class="nav-thr">
+                    {{each(i,item) ChildList2}}
+                    <li class="nav-thr-li" data_id="${item.id}">
+                        <a href="${item.category_go_url}">${item.category_name}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
+            {{/each}}
+        </ul>
+    </li>
+</script>
+<!-- 绑定列表数据 end -->
+<script src="/js/head_footer.js"></script>
+<script src="/js/sys_message.js"></script>
+
+</html>

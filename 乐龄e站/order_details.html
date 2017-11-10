@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <title>订单详情</title>
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="./js/plug/jquery-1.8.3.min.js"></script>
+    <script src="./js/plug/adaptive.js"></script>
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 28;
+        window['adaptive'].maxWidth = 480;
+        window['adaptive'].scaleType = 1;
+        window['adaptive'].init();
+    </script>
+</head>
+
+<body>
+    <div class="ord-det fullscreen">
+        <div class="ord-info clear">
+            <div class="ord-info-img fl"></div>
+            <div class="ord-info-sec fl">
+                <div class="ord-info-tit-box">
+                    <p class="ord-info-tit elli">橘子洲湘江游轮(4A)</p>
+                    <p class="ord-info-num">x2</p>
+                    <div class="state-on">已生效</div>
+                </div>
+                <div class="ord-info-type-box">
+                    <p class="ord-info-type">游轮</p>
+                    <p class="unit-price"><span>￥128</span>/人</p>
+                </div>
+            </div>
+        </div>
+        <div class="state-box clear">
+            <div class="state-left fl">
+                <p class="state-on">已生效</p>
+                <p class="state-remind elli">请准备好所有相关证件以免影响您的行程</p>
+            </div>
+            <div class="state-right fl">
+                <p class="state-agg">总计金额</p>
+                <p class="state-agg-price">￥256</p>
+            </div>
+        </div>
+        <div class="trip-msg">
+            <div class="trip-msg-tit">出行人信息</div>
+            <ul class="trip-msg-ul">
+                <li class="trip-msg-li clear">
+                    <div class="tml-l fl">
+                        <div class="tml-tit">王某某</div>
+                        <div class="tml-tel elli">手机号：<span>13756441234</span></div>
+                    </div>
+                    <div class="tml-r fl">
+                        <span class="tk">退款</span>
+                    </div>
+                </li>
+                <li class="trip-msg-li clear">
+                    <div class="tml-l fl">
+                        <div class="tml-tit">李某某</div>
+                        <div class="tml-tel elli">手机号：<span>13756444523</span></div>
+                    </div>
+                    <div class="tml-r fl">
+                        <span class="tk">退款</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="refund-box">
+            <div class="refund">
+                <div class="refund-tit">
+                    <p>退款</p>
+                    <span class="refund-qd">确定</span>
+                </div>
+                <div class="refund-cont clear">
+                    <div class="refund-cont-left fl">
+
+                    </div>
+                    <div class="refund-cont-right fl">
+                        <p>长按识别二维码</p>
+                        <p>添加客服 小微 进行协商及退款</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="question">
+            <div class="question-tit">您可能遇到的问题</div>
+            <ul class="question-ul clear">
+                <li class="question-li fl elli">问题问题问题问题</li>
+                <li class="question-li fl elli">问题问题问题问题</li>
+                <li class="question-li fl elli">问题问题问题问题</li>
+                <li class="question-li fl elli">问题问题问题问题</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="./js/plug/jquery-1.8.3.min.js"></script>
+<script>
+    $(".tk").click(function() {
+        $(".refund-box").fadeIn(200);
+        $(".refund-qd").click(function() {
+            $(".refund-box").fadeOut(200);
+        });
+    });
+</script>
+
+</html>
