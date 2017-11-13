@@ -1,3 +1,4 @@
+// 滑动套餐列表
 $(function() {
     var dom = document.getElementsByClassName("onbook-day-list")[0];
     var lock = false;

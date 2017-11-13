@@ -102,10 +102,10 @@
         <div class="onbook-contacts">
             <div class="onbook-contacts-tit">联系人</div>
             <div class="onbook-contacts-name onbook-contacts-li clear">
-                <span class="fl">姓名</span><input class="fl" type="text" name="contacts-name" required placeholder="必填，以便供应商与您联系">
+                <span class="fl">姓名</span><input class="fl" type="text" name="contacts-name" required placeholder="必填，以便供应商与您联系" oninvalid="setCustomValidity('请输入您的姓名')" oninput="setCustomValidity('');">
             </div>
             <div class="onbook-contacts-tel onbook-contacts-li">
-                <span class="fl">手机</span><input class="fl" type="text" name="contacts-tel" required placeholder="必填，以便供应商与您联系">
+                <span class="fl">手机</span><input class="fl" type="text" name="contacts-tel" required placeholder="必填，以便供应商与您联系" oninvalid="setCustomValidity('请输入您的手机号码')" oninput="setCustomValidity('');">
             </div>
             <div class="onbook-contacts-wx onbook-contacts-li">
                 <span class="fl">微信</span><input class="fl" type="text" name="contacts-wx" placeholder="输入微信号码">
