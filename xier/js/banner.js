@@ -96,24 +96,54 @@ banner.prototype.run = function() {
 
         });
         var lock = false;
+        var ti = false;
         $("#banner").mouseenter(function() {
-            if (lock == true) {
+            if (lock == true || ti == true) {
                 return;
+            } else {
+                lock = true;
+                ti = true;
+                clearInterval(timer);
             };
-            lock = true;
-            // $("#banner-content").stop(true);
-            clearInterval(timer);
         });
         $("#banner").mouseleave(function() {
-            if (lock == false) {
-                return;
-            };
-            lock = true;
             setTimeout(function() {
-                lock = false;
-                timer = setInterval(move, 5000);
+                if (lock == false || ti == false) {
+                    return;
+                };
+                ti = false;
+                if (ti == false) {
+                    setTimeout(function() {
+                        lock = false;
+                        timer = setInterval(move, 5000);
+                    }, 10);
+                };
             }, 1000);
         });
+        document.addEventListener("blur", function() {
+            $("#banner-content").finish();
+            // if (lock == true || ti == true) {
+            //     return;
+            // };
+            lock = true;
+            ti = true;
+            clearInterval(timer);
+        });
+        document.addEventListener("focus", function() {
+            setTimeout(function() {
+                if (lock == false || ti == false) {
+                    return;
+                };
+                ti = false;
+                if (ti == false) {
+                    setTimeout(function() {
+                        lock = false;
+                        timer = setInterval(move, 5000);
+                    }, 10);
+                };
+            }, 1000);
+        });
+
         // $("#banner-swicth-ul").mouseenter(function() {
         //     if (lock == true) {
         //         return;
