@@ -1,8 +1,8 @@
 .starability-basic {
     display: block;
     position: relative;
-    width: 150px;
-    min-height: 60px;
+    min-width: 1.5rem;
+    min-height: .4rem;
     padding: 0;
     border: none;
 }
@@ -15,11 +15,11 @@
 
 .starability-basic>input:checked~label,
 .starability-basic>input:focus~label {
-    background-position: 0 -30px;
+    background-position: 0 -.48rem;
 }
 
 .starability-basic>input:hover~label {
-    background-position: 0 -30px;
+    background-position: 0 -.48rem;
 }
 
 .starability-basic>input:focus+label {
@@ -28,10 +28,9 @@
 
 .starability-basic>label {
     position: relative;
-    display: inline-block;
     float: right;
-    width: 30px;
-    height: 30px;
+    width: .45rem;
+    height: .45rem;
     color: transparent;
     cursor: pointer;
     background-image: url("../starability-images/icons.png");
@@ -43,15 +42,15 @@
 (min-resolution: 192dpi) {
     .starability-basic>label {
         background-image: url("../starability-images/icons@2x.png");
-        background-size: 30px auto;
+        background-size: .48rem auto;
     }
 }
 
 .starability-slot {
     display: block;
     position: relative;
-    width: 150px;
-    min-height: 60px;
+    min-width: 1.5rem;
+    min-height: .4rem;
     padding: 0;
     border: none;
 }
@@ -64,11 +63,11 @@
 
 .starability-slot>input:checked~label,
 .starability-slot>input:focus~label {
-    background-position: 0 -30px;
+    background-position: 0 -.48rem;
 }
 
 .starability-slot>input:hover~label {
-    background-position: 0 -30px;
+    background-position: 0 -.48rem;
 }
 
 .starability-slot>input:focus+label {
@@ -77,10 +76,9 @@
 
 .starability-slot>label {
     position: relative;
-    display: inline-block;
     float: right;
-    width: 30px;
-    height: 30px;
+    width: .45rem;
+    height: .45rem;
     color: transparent;
     cursor: pointer;
     background-image: url("../starability-images/icons.png");
@@ -92,7 +90,7 @@
 (min-resolution: 192dpi) {
     .starability-slot>label {
         background-image: url("../starability-images/icons@2x.png");
-        background-size: 30px auto;
+        background-size: .48rem auto;
     }
 }
 
@@ -119,8 +117,8 @@
 .starability-grow {
     display: block;
     position: relative;
-    width: 150px;
-    min-height: 60px;
+    min-width: 1.5rem;
+    min-height: .4rem;
     padding: 0;
     border: none;
 }
@@ -133,11 +131,11 @@
 
 .starability-grow>input:checked~label,
 .starability-grow>input:focus~label {
-    background-position: 0 -30px;
+    background-position: 0 -.48rem;
 }
 
 .starability-grow>input:hover~label {
-    background-position: 0 -30px;
+    background-position: 0 -.48rem;
 }
 
 .starability-grow>input:focus+label {
@@ -146,10 +144,9 @@
 
 .starability-grow>label {
     position: relative;
-    display: inline-block;
     float: right;
-    width: 30px;
-    height: 30px;
+    width: .45rem;
+    height: .45rem;
     color: transparent;
     cursor: pointer;
     background-image: url("../starability-images/icons.png");
@@ -161,7 +158,7 @@
 (min-resolution: 192dpi) {
     .starability-grow>label {
         background-image: url("../starability-images/icons@2x.png");
-        background-size: 30px auto;
+        background-size: .48rem auto;
     }
 }
 
@@ -169,8 +166,8 @@
     display: none;
     position: absolute;
     content: ' ';
-    width: 30px;
-    height: 30px;
+    width: .45rem;
+    height: .45rem;
     background-image: url("../starability-images/icons.png");
     background-repeat: no-repeat;
     bottom: 0;
@@ -181,7 +178,7 @@
 (min-resolution: 192dpi) {
     .starability-grow>label:before {
         background-image: url("../starability-images/icons@2x.png");
-        background-size: 30px auto;
+        background-size: .48rem auto;
     }
 }
 
@@ -209,8 +206,8 @@
 .starability-growRotate {
     display: block;
     position: relative;
-    width: 150px;
-    min-height: 60px;
+    min-width: 1.5rem;
+    min-height: .4rem;
     padding: 0;
     border: none;
 }
@@ -223,11 +220,11 @@
 
 .starability-growRotate>input:checked~label,
 .starability-growRotate>input:focus~label {
-    background-position: 0 -0.4rem;
+    background-position: 0 -0.48rem;
 }
 
 .starability-growRotate>input:hover~label {
-    background-position: 0 -0.4rem;
+    background-position: 0 -0.48rem;
 }
 
 .starability-growRotate>input:focus+label {
@@ -236,13 +233,12 @@
 
 .starability-growRotate>label {
     position: relative;
-    display: inline-block;
     float: right;
-    width: 0.4rem;
-    height: 0.4rem;
+    width: 0.45rem;
+    height: 0.45rem;
     color: transparent;
     cursor: pointer;
-    background-image: url("../starability-images/icons.png");
+    background-image: url(../starability-images/icons.png);
     background-repeat: no-repeat;
 }
 
@@ -251,8 +247,8 @@
 (min-resolution: 192dpi) {
     .starability-growRotate>label {
         background-image: url("../starability-images/icons@2x.png");
-        background-size: 0.4rem auto;
-        margin: 0 0.1rem;
+        background-size: 0.48rem auto;
+        margin: 0 0.05rem;
     }
 }
 
@@ -260,8 +256,8 @@
     display: none;
     position: absolute;
     content: ' ';
-    width: 0.4rem;
-    height: 0.4rem;
+    width: 0.45rem;
+    height: 0.45rem;
     background-image: url("../starability-images/icons.png");
     background-repeat: no-repeat;
     bottom: 0;
@@ -272,7 +268,7 @@
 (min-resolution: 192dpi) {
     .starability-growRotate>label:before {
         background-image: url("../starability-images/icons@2x.png");
-        background-size: 30px auto;
+        background-size: .48rem auto;
     }
 }
 
@@ -299,8 +295,8 @@
 .starability-fade {
     display: block;
     position: relative;
-    width: 150px;
-    min-height: 60px;
+    min-width: 1.5rem;
+    min-height: .4rem;
     padding: 0;
     border: none;
 }
@@ -313,11 +309,11 @@
 
 .starability-fade>input:checked~label,
 .starability-fade>input:focus~label {
-    background-position: 0 -4rem;
+    background-position: 0 -48rem;
 }
 
 .starability-fade>input:hover~label {
-    background-position: 0 -4rem;
+    background-position: 0 -48rem;
 }
 
 .starability-fade>input:focus+label {
@@ -326,10 +322,9 @@
 
 .starability-fade>label {
     position: relative;
-    display: inline-block;
     float: right;
-    width: 30px;
-    height: 30px;
+    width: 0.45rem;
+    height: 0.45rem;
     color: transparent;
     cursor: pointer;
     background-image: url("../starability-images/icons.png");
@@ -341,7 +336,7 @@
 (min-resolution: 192dpi) {
     .starability-fade>label {
         background-image: url("../starability-images/icons@2x.png");
-        background-size: 30px auto;
+        background-size: .48rem auto;
     }
 }
 
@@ -349,12 +344,12 @@
     display: none;
     position: absolute;
     content: ' ';
-    width: 30px;
-    height: 30px;
+    width: 0.45rem;
+    height: 0.45rem;
     background-image: url("../starability-images/icons.png");
     background-repeat: no-repeat;
-    background-position: 0 -30px;
-    bottom: 30px;
+    background-position: 0 -.48rem;
+    bottom: .3rem;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -362,7 +357,7 @@
 (min-resolution: 192dpi) {
     .starability-fade>label:before {
         background-image: url("../starability-images/icons@2x.png");
-        background-size: 30px auto;
+        background-size: .45rem auto;
     }
 }
 
@@ -394,8 +389,8 @@
 .starability-checkmark {
     display: block;
     position: relative;
-    width: 150px;
-    min-height: 60px;
+    min-width: 1.5rem;
+    min-height: .4rem;
     padding: 0;
     border: none;
 }
@@ -408,11 +403,11 @@
 
 .starability-checkmark>input:checked~label,
 .starability-checkmark>input:focus~label {
-    background-position: 0 -0.4rem;
+    background-position: 0 -0.48rem;
 }
 
 .starability-checkmark>input:hover~label {
-    background-position: 0 -0.4rem;
+    background-position: 0 -0.48rem;
 }
 
 .starability-checkmark>input:focus+label {
@@ -421,10 +416,9 @@
 
 .starability-checkmark>label {
     position: relative;
-    display: inline-block;
     float: right;
-    width: 30px;
-    height: 30px;
+    width: 0.45rem;
+    height: 0.45rem;
     color: transparent;
     cursor: pointer;
     background-image: url("../starability-images/icons-checkmark.png");
@@ -436,7 +430,7 @@
 (min-resolution: 192dpi) {
     .starability-checkmark>label {
         background-image: url("../starability-images/icons-checkmark@2x.png");
-        background-size: 30px auto;
+        background-size: .48rem auto;
     }
 }
 
@@ -449,12 +443,12 @@
     display: none;
     position: absolute;
     content: ' ';
-    width: 30px;
-    height: 30px;
+    width: 0.45rem;
+    height: 0.45rem;
     background-image: url("../starability-images/icons-checkmark.png");
     background-repeat: no-repeat;
-    background-position: 0 -60px;
-    right: -30px;
+    background-position: 0 -.6rem;
+    right: -.3rem;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -462,7 +456,7 @@
 (min-resolution: 192dpi) {
     .starability-checkmark>label:before {
         background-image: url("../starability-images/icons-checkmark@2x.png");
-        background-size: 30px auto;
+        background-size: .48rem auto;
     }
 }
 

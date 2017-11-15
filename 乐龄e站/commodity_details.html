@@ -177,8 +177,8 @@
             ind = $(this).index();
             $(this).addClass("com-pt2-li-c");
             $(this).siblings("li").removeClass("com-pt2-li-c");
-            $(".com-pt2-sec li").eq(ind).addClass("show");
-            $(".com-pt2-sec li").eq(ind).siblings("li").removeClass("show");
+            $(".com-pt2-sec>li").eq(ind).addClass("show");
+            $(".com-pt2-sec>li").eq(ind).siblings("li").removeClass("show");
         });
         // 加入购物车
         $(".addcar").click(function(ev) {
@@ -194,7 +194,7 @@
                     return;
                 } else {
                     $(".addcar-box").animate({
-                        "bottom": "-5rem"
+                        "bottom": "-4rem"
                     }, 400);
                     $(".full1").fadeOut(400);
                 };

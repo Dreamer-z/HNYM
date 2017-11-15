@@ -61,5 +61,11 @@
         </ul>
     </div>
 </body>
+<script>
+    $(".order-type-li").click(function() {
+        $(this).addClass("order-type-check");
+        $(this).siblings().removeClass("order-type-check");
+    });
+</script>
 
 </html>

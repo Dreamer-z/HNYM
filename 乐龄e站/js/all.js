@@ -2,12 +2,12 @@ var all = {
     fullscreen: function() {
         $(".fullscreen").width("7.5rem");
         $(".fullscreen").height($(window).height());
-        $(".fullscreen").css({ "background-color": "rgba(0,0,0,.4)", "position": "fixed", "left": "0", "top": "0", "z-index": "1000", "display": "none" });
+        $(".fullscreen").css({ "background-color": "rgba(0,0,0,.4)", "position": "fixed", "left": "calc(50% - 3.75rem)", "top": "0", "z-index": "1000", "display": "none" });
     },
     fullscreen1: function() {
         $(".fullscreen1").width("7.5rem");
         $(".fullscreen1").height($(window).height());
-        $(".fullscreen1").css({ "background-color": "#eee", "position": "fixed", "left": "0", "top": "0", "z-index": "1000" });
+        $(".fullscreen1").css({ "background-color": "#eee", "position": "fixed", "left": "calc(50% - 3.75rem)", "top": "0", "z-index": "1000" });
     },
     check_inp: function() {
         var state, th;

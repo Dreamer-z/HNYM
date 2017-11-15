@@ -136,7 +136,7 @@ $(function() {
         };
         allpeo = Number($(".onbook-adult .onbook-adult").val()) + Number($(".onbook-child .onbook-adult").val());
         $(".insurance-num").html("×" + allpeo);
-        $(".onbook-tj>p>span").html("&yen" + allpeo * parseInt($(".onb-day-choose .onbook-day-price").html().split("￥")[1]));
+        $(".onbook-tj>p>span").html("&yen" + allpeo * (parseInt($(".onb-day-choose .onbook-day-price").html().split("￥")[1]) + Number($(".insurance span").html())));
     });
     $(".sub").click(function() {
         $(this).addClass("sub-cl");
@@ -157,7 +157,7 @@ $(function() {
         };
         allpeo = Number($(".onbook-adult .onbook-adult").val()) + Number($(".onbook-child .onbook-adult").val());
         $(".insurance-num").html("×" + allpeo);
-        $(".onbook-tj>p>span").html("&yen" + allpeo * parseInt($(".onb-day-choose .onbook-day-price").html().split("￥")[1]));
+        $(".onbook-tj>p>span").html("&yen" + allpeo * (parseInt($(".onb-day-choose .onbook-day-price").html().split("￥")[1]) + Number($(".insurance span").html())));
     });
     // 出行人信息
     $(".onbook-people-cont").each(function(i) {

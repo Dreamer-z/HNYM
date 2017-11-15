@@ -44,13 +44,54 @@
             </div>
         </div>
         <ul class="inl-cont cont">
-
+            <li class="cont-li">
+                <h4 class="tit-sed">推荐</h4>
+                <div class="cont-box">
+                    <div class="cont-sed clear show">
+                        <h4 class="tit-thr">菲律宾</h4>
+                        <span class="li-sed fl">菲律宾</span>
+                        <span class="li-sed fl">马尼拉</span>
+                        <span class="li-sed fl">宿雾</span>
+                        <span class="li-sed fl">长滩岛</span>
+                    </div>
+                    <div class="cont-sed clear">
+                        <h4 class="tit-thr">越南</h4>
+                        <span class="li-sed fl">越南</span>
+                        <span class="li-sed fl">芽庄</span>
+                        <span class="li-sed fl">胡志明市</span>
+                        <span class="li-sed fl">河内</span>
+                        <span class="li-sed fl">岘港</span>
+                        <span class="li-sed fl">会安</span>
+                    </div>
+                </div>
+            </li>
+            <li class="cont-li">
+                <h4 class="tit-sed">港澳台</h4>
+                <div class="cont-box">
+                    <div class="cont-sed clear">
+                        <h4 class="tit-thr">菲律宾</h4>
+                        <span class="li-sed fl">菲律宾</span>
+                        <span class="li-sed fl">马尼拉</span>
+                        <span class="li-sed fl">宿雾</span>
+                        <span class="li-sed fl">长滩岛</span>
+                    </div>
+                    <div class="cont-sed clear">
+                        <h4 class="tit-thr">越南</h4>
+                        <span class="li-sed fl">越南</span>
+                        <span class="li-sed fl">芽庄</span>
+                        <span class="li-sed fl">胡志明市</span>
+                        <span class="li-sed fl">河内</span>
+                        <span class="li-sed fl">岘港</span>
+                        <span class="li-sed fl">会安</span>
+                    </div>
+                </div>
+            </li>
         </ul>
         <ul class="int-cont cont show">
             <li class="cont-li">
                 <h4 class="tit-sed">推荐</h4>
                 <div class="cont-box">
-                    <div class="cont-sed clear show">
+                    <div class="cont-sed clear">
                         <h4 class="tit-thr">菲律宾</h4>
                         <span class="li-sed fl">菲律宾</span>
                         <span class="li-sed fl">马尼拉</span>
@@ -131,9 +172,9 @@
                     </div>
                 </div>
             </li>
-            <li class="cont-li cli-sel">
+            <li class="cont-li">
                 <h4 class="tit-sed">亚洲其他</h4>
-                <div class="cont-box show">
+                <div class="cont-box">
                     <div class="cont-sed clear">
                         <h4 class="tit-thr">菲律宾</h4>
                         <span class="li-sed fl">菲律宾</span>
@@ -205,5 +246,19 @@
         </ul>
     </div>
 </body>
+<script>
+    $(".sel").click(function() {
+        var ind = $(this).index();
+        $(this).addClass("sel-c");
+        $(this).siblings().removeClass("sel-c");
+        $(".cont").eq(ind).addClass("show");
+        $(".cont").eq(ind).siblings("ul").removeClass("show");
+    });
+    $(".locate .cont-li").click(function() {
+        $(this).children(".tit-sed").css("background-color", "#fff");
+        $(this).siblings("li").children(".tit-sed").css("background-color", "#eee");
+        $(this).children(".cont-box").show();
+    });
+</script>
 
 </html>
