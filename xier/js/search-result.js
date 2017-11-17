@@ -84,6 +84,11 @@ var content = {
                                 $("#jq-newsList").html($("#jq-newsListTemplate").tmpl(data.Result));
                                 $("#jq-newsList").attr("data_col", column);
                                 var laynum = data.Result.length / 5;
+                                $(data.Result).each(function(i) {
+                                    if (data.Result[i].article_video != null && data.Result[i].article_video != "" && data.Result[i].article_video != "http://39.108.189.233:8001/") {
+                                        $(".play").eq(i).css("display", "block");
+                                    };
+                                });
                                 $("#jq-newsList li").each(function(i) {
                                     $("#jq-newsList>li").eq(i).click(function() {
                                         localStorage.setItem("column", $("#jq-newsList").attr("data_col"));
