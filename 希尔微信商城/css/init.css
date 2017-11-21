@@ -124,8 +124,20 @@ select::-ms-expand {
     overflow: hidden;
 }
 
+.elli3 {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
 .fgx {
     width: 100%;
     height: 0.2rem;
     background-color: #eee;
+}
+
+.bg-fff {
+    background-color: #fff;
 }
