@@ -1,3 +1,0 @@
-收货地址 delivery_address.html
-订单详情 order_details.html
-动态详情 dynamic_details.html

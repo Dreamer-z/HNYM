@@ -1,0 +1,130 @@
+.task-list {
+    height: 1rem;
+    width: 7.5rem;
+    line-height: 1rem;
+    margin-bottom: .2rem;
+    font-size: .36rem;
+    color: #6a6a6a;
+    text-align: center;
+}
+
+.task-li {
+    width: 2.5rem;
+}
+
+.task-li span {
+    display: inline-block;
+}
+
+.task-li-check span {
+    color: #ffa800;
+    box-sizing: border-box;
+    border-bottom: .01rem solid #ffa800;
+}
+
+.order-li {
+    box-sizing: border-box;
+    width: 7.5rem;
+    padding: .4rem .2rem;
+}
+
+.order-amount-time {
+    margin-bottom: .2rem;
+}
+
+.order-amount,
+.order-time {
+    width: 50%;
+    text-align: center;
+}
+
+.order-amount-num,
+.order-time-num {
+    font-size: .44rem;
+    color: #ff5a00;
+}
+
+.order-amount-tit,
+.order-time-tit {
+    font-size: .28rem;
+    color: #908f8f;
+}
+
+.take-distance {
+    text-align: right;
+    color: #908f8f;
+}
+
+.take-distance span {
+    color: #ff5a00;
+}
+
+.take-order,
+.delivery-order {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: .7rem;
+    font-size: .32rem;
+    position: relative;
+}
+
+.take-order>i,
+.delivery-order>i {
+    position: absolute;
+    left: 0;
+    top: calc(50% - .25rem);
+    width: .5rem;
+    height: .5rem;
+}
+
+.take-order {
+    height: .9rem;
+    line-height: .45rem;
+}
+
+.take-addr {
+    color: #908f8f;
+}
+
+.take-order>i {
+    background: url(./../img/take.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.delivery-order {
+    line-height: .5rem;
+    margin-bottom: .2rem;
+}
+
+.delivery-order>i {
+    background: url(./../img/send.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.order-msg {
+    padding: .2rem;
+    padding-right: .8rem;
+    font-size: .32rem;
+    position: relative;
+}
+
+.payStates,
+.telephone {
+    margin-bottom: .2rem;
+}
+
+.payStates span,
+.telephone span {
+    margin-left: .2rem;
+    color: #ffa800;
+}
+
+.callthis {
+    width: .6rem;
+    height: .6rem;
+    position: absolute;
+    right: 0.2rem;
+    top: calc(50% - .4rem);
+    background: url(./../img/call.png)no-repeat center;
+    background-size: 100% 100%;
+}

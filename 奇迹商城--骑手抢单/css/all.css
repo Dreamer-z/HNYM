@@ -1,0 +1,15 @@
+body {
+    background-color: #eee;
+}
+
+.op-inp1 {
+    display: block;
+    margin: 0 auto;
+    width: 7.1rem;
+    height: .88rem;
+    line-height: .88rem;
+    color: #fff;
+    background-color: #ffa800;
+    border-radius: .2rem;
+    font-size: .36rem;
+}
