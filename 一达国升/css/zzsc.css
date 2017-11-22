@@ -1,0 +1,22 @@
+@charset "utf-8";
+*{ margin:0; padding:0; list-style:none;}
+body{ font-size:12px; text-align:left;}
+a{ text-decoration:none; color:#333;}
+a:hover{ text-decoration:none;}
+
+
+/* 本案例代码begin */
+.left_nav{ width:260px; height:auto; background:#fff; text-align:center;}
+.left_nav dl dt{ width:85px; height:68px; line-height:22px; background:url("long.png")/*tpa=http://47.94.100.219:8358/templates/main/images/long.png*/ no-repeat 12px center #E6238F; padding-left:35px; color:#fff; margin-bottom:4px;}
+.left_nav dl dd{ width:260px; height:68px; position:relative;}
+.left_nav dl dd .nav_right{ width:320px; height:auto; overflow:hidden; position:absolute; left:260px; top:0px; padding:0px 5px 10px 5px;background:#fff; font-size:14px;display:none; border:1px solid #ccc;}
+.left_nav dl dd .nav_right a{ width:110px;height:20px; line-height:20px; text-align:left; color:#666;padding-left:40px; background:url("nav_right_bg.png")/*tpa=http://47.94.100.219:8358/templates/main/images/nav_right_bg.png*/ no-repeat 20px center; display:block; float:left; margin-top:10px; white-space:nowrap;
+ text-overflow:ellipsis;
+ -o-text-overflow:ellipsis;
+ overflow: hidden;}
+.left_nav dl dd .nav_right a:hover{ width:110px;height:20px; line-height:20px; text-align:left; color:#fff;padding-left:40px; background:url("nav_right_bg2.png")/*tpa=http://47.94.100.219:8358/templates/main/images/nav_right_bg2.png*/ no-repeat 20px center #278456; text-decoration:none;}
+.left_nav dl dd a.nav_left{width:260px; font-size:18px;height:68px; line-height:68px; background:#278456; display:block; border-bottom:1px solid #fff;color:#fff; white-space:nowrap;
+ text-overflow:ellipsis;
+ -o-text-overflow:ellipsis;
+ overflow: hidden;}
+.left_nav dl dd a.nav_left:hover{ color:#fff; text-decoration:none;}

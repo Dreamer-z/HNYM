@@ -1,0 +1,826 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>  湖南一达国升网络科技有限公司</title>
+<meta name="keywords" content="动力启航,DTCMS系统,ASP.NET开源,开源CMS,网站管理系统,互联网开发" />
+<meta name="description" content="让更多的人分享互联网开发技术" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" charset="utf-8" src="js/jquery-1.11.2.min.js" ></script>
+<script type="text/javascript" charset="utf-8" src="js/common.js"></script>
+  <style type="text/css">
+
+  </style>
+</head>
+
+<body>
+<!--Header-->
+<div class="header">
+  <div class="header-wrap">
+    <div class="section">
+      <div class="left-box">
+        <!--<a class="logo" href="/index.html">湖南一达国升网络科技有限公司</a>-->
+        <p class="nav">
+          <a href="index.html">欢迎来到湖南元博医药科技推广有限公司</a>
+          <!--<a href="/goods.html">商城</a>-->
+          <!--<a href="/video.html">视频</a>-->
+          <!--<a href="/photo.html">图片</a>-->
+          <!--<a href="/down.html">下载</a>-->
+        </p>
+      </div>
+
+      <div class="right-box">
+      <!--<script type="text/javascript">
+			$.ajax({
+				type: "POST",
+				url: "submit_ajax.ashx-action=user_check_login.htm"/*tpa=http://47.94.100.219:8358/tools/submit_ajax.ashx?action=user_check_login*/,
+				dataType: "json",
+				timeout: 20000,
+				success: function (data, textStatus) {
+					if (data.status == 1) {
+						$("#menu").prepend('<li class="line"><a href="login.html"/*tpa=http://47.94.100.219:8358/user/center/exit.html*/>退出</a></li>');
+						$("#menu").prepend('<li class="login"><em></em><a href="login.html"/*tpa=http://47.94.100.219:8358/user/center/index.html*/>会员中心</a></li>');
+					} else {
+						$("#menu").prepend('<li class="line"><a href="register.html"/*tpa=http://47.94.100.219:8358/register.html*/>注册</a></li>');
+						$("#menu").prepend('<li class="login"><em></em><a href="login.html"/*tpa=http://47.94.100.219:8358/login.html*/>登录</a></li>');
+					}
+				}
+			});
+		</script>-->
+        <ul id="menu">
+          <li class="browse">
+            <a href="#">药品分类概览</a>
+            <i class="icon"></i>
+              <!--药品信息展示-->
+            <div class="products ">
+                  <ul class="products_list">
+                      <li><a href="goods.html" >滋补调养</a></li>
+                      <li><a href="goods.html" >风湿骨痛</a></li>
+                      <li><a href="goods.html" >消化系统</a></li>
+                      <li><a href="goods.html" >神经疾病</a></li>
+                      <li><a href="goods.html" >呼吸疾病</a></li>
+                      <li><a href="goods.html" >肝胆科药</a></li>
+                  </ul>
+              </div>
+          </li>
+          <!--<li><a href="/content/contact.html">联系我们</a></li>-->
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="header-top">
+		<img style="width: 220px; float: left;margin-top: 10px;" src="img/log.png" />
+    <div class="header-search">
+        <ul>
+            <li>湖南元博医药科技推广有限公司-提供药品信息</li>
+            <li>
+                <div class="search">
+                <input id="keywords" name="keywords" class="input" type="text" onkeydown="if(event.keyCode==13){SiteSearch('search.html', '#keywords');return false};" placeholder="输入回车搜索" x-webkit-speech="" />
+                <input class="search-submit" type="submit" onclick="SiteSearch('search.html', '#keywords');" value="搜索" />
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="header-bar">
+    <ul class="header-list">
+        <li><a href="goods.html">所有药品分类</a></li>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="goods.html">药品展示</a></li>
+        <!--<li><a href="contact.html">医疗咨询</a></li>-->
+		<!--<li><a href="news.html" >医学报告（收费）</a></li>-->
+        <!--<li><a href="">全部分类</a></li>-->
+        <li><a href="cart.html">关于我们</a></li>
+    </ul>
+
+</div>
+<script type="text/javascript">
+    $(".browse").mousemove(function () {
+        $(".products").show().css({"background":"#fff","color":"#278456"});
+        $(".browse a").css("color","#278456");
+    });
+    $(".browse").mouseleave(function () {
+        $(".products").hide();
+        $(".browse a").css("color","#fff");
+    });
+</script>
+<!--/Header-->
+
+<div class="good-main">
+  <!--左边-->
+  <div class="goods-left">
+      <script type="text/javascript">
+        /***********************************************
+         * Switch Menu script- by Martial B of http://getElementById.com/
+         * Modified by Dynamic Drive for format & NS4/IE4 compatibility
+         * Visit http://www.dynamicdrive.com/ for full source code
+         ***********************************************/
+        if (document.getElementById){ //DynamicDrive.com change
+          document.write('<style type="text/css">\n')
+          document.write('.submenu{display: none;}\n')
+          document.write('</style>\n')
+        }
+        function SwitchMenu(obj){
+          if(document.getElementById){
+            var el = document.getElementById(obj);
+            var ar = document.getElementById("masterdiv").getElementsByTagName("span"); //DynamicDrive.com change
+            if(el.style.display != "block"){ //DynamicDrive.com change
+              for (var i=0; i<ar.length; i++){
+                if (ar[i].className=="submenu") //DynamicDrive.com change
+                  ar[i].style.display = "none";
+              }
+              el.style.display = "block";
+            }else{
+              el.style.display = "none";
+            }
+          }
+        }
+      </script>
+      <!-- Keep all menus within masterdiv-->
+      <div id="masterdiv">
+        <div class="menutitle" onclick="SwitchMenu('sub1')" >滋补调养</div>
+          <span class="submenu" id="sub1">
+            <a href="goods.html" >肠胃调养</a>
+            <a href="goods.html" >清咽润肺</a>
+            <a href="goods.html">增强免疫</a>
+          </span>
+        <div class="menutitle" onclick="SwitchMenu('sub2')">风湿骨痛</div>
+          <span class="submenu" id="sub2">
+            <a href="goods.html">类风湿</a>
+            <a href="goods.html">骨质疏松</a>
+            <a href="goods.html">痛风</a>
+          </span>
+        <div class="menutitle" onclick="SwitchMenu('sub3')">消化系统</div>
+          <span class="submenu" id="sub3">
+            <a href="goods.html">消化不良</a>
+            <a href="goods.html">胃炎</a>
+            <a href="goods.html">胃痛胀气</a>
+          </span>
+        <div class="menutitle" onclick="SwitchMenu('sub4')">神经科药</div>
+          <span class="submenu" id="sub4">
+            <a href="goods.html">甲亢甲减</a>
+            <a href="goods.html">偏头痛</a>
+            <a href="goods.html">眩晕失眠</a>
+          </span>
+        <div class="menutitle" onclick="SwitchMenu('sub5')">呼吸科药</div>
+          <span class="submenu" id="sub5">
+            <a href="goods.html">气管炎</a>
+            <a href="goods.html">哮喘</a>
+            <a href="goods.html">鼻炎</a>
+          </span>
+        <div class="menutitle" onclick="SwitchMenu('sub6')">肝胆科药</div>
+          <span class="submenu" id="sub6">
+            <a href="goods.html">乙型肝炎</a>
+            <a href="goods.html">胆道系统</a>
+            <a href="goods.html">免疫调节</a>
+          </span>
+      </div>
+    </div>
+  <!--右边-->
+  <div class="goods-right ">
+    <!--分类列表-->
+    
+    <div class="goods-section clearfix">
+      <!--<div class="ntitle">-->
+        <!--<h2>-->
+          <!--<a href="/goods/60.html">肝胆科药<em></em></a>-->
+        <!--</h2>-->
+        <!--<p>-->
+          <!--&lt;!&ndash;小类&ndash;&gt;-->
+          <!---->
+          <!---->
+          <!---->
+          <!--<a class="no-bg" href="/goods/61.html">乙型肝炎</a>-->
+          <!---->
+          <!---->
+          <!---->
+          <!--<a href="/goods/62.html">胆道系统</a>-->
+          <!---->
+          <!---->
+          <!---->
+          <!--<a href="/goods/63.html">免疫调节</a>-->
+          <!---->
+          <!---->
+          <!--&lt;!&ndash;/小类&ndash;&gt;-->
+        <!--</p>-->
+      <!--</div>-->
+      <div class=" igoods clearfix">
+        <div class="img-list2">
+          <ul>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    
+    <div class="goods-section clearfix">
+      <!--<div class="ntitle">-->
+        <!--<h2>-->
+          <!--<a href="/goods/56.html">呼吸科药<em></em></a>-->
+        <!--</h2>-->
+        <!--<p>-->
+          <!--&lt;!&ndash;小类&ndash;&gt;-->
+          <!---->
+          <!---->
+          <!---->
+          <!--<a class="no-bg" href="/goods/57.html">气管炎</a>-->
+          <!---->
+          <!---->
+          <!---->
+          <!--<a href="/goods/58.html">哮喘</a>-->
+          <!---->
+          <!---->
+          <!---->
+          <!--<a href="/goods/59.html">鼻炎</a>-->
+          <!---->
+          <!---->
+          <!--&lt;!&ndash;/小类&ndash;&gt;-->
+        <!--</p>-->
+      <!--</div>-->
+      <div class=" igoods clearfix">
+        <div class="img-list2">
+          <ul>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    
+    <div class="goods-section clearfix">
+      <!--<div class="ntitle">-->
+        <!--<h2>-->
+          <!--<a href="/goods/52.html">神经科药<em></em></a>-->
+        <!--</h2>-->
+        <!--<p>-->
+          <!--&lt;!&ndash;小类&ndash;&gt;-->
+          <!---->
+          <!---->
+          <!---->
+          <!--<a class="no-bg" href="/goods/53.html">甲亢甲减</a>-->
+          <!---->
+          <!---->
+          <!---->
+          <!--<a href="/goods/54.html">偏头痛类</a>-->
+          <!---->
+          <!---->
+          <!---->
+          <!--<a href="/goods/55.html">眩晕失眠</a>-->
+          <!---->
+          <!---->
+          <!--&lt;!&ndash;/小类&ndash;&gt;-->
+        <!--</p>-->
+      <!--</div>-->
+      <div class=" igoods clearfix">
+        <div class="img-list2">
+          <ul>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    
+    <div class="goods-section clearfix">
+      <!--<div class="ntitle">-->
+        <!--<h2>-->
+          <!--<a href="/goods/40.html">滋补调养<em></em></a>-->
+        <!--</h2>-->
+        <!--<p>-->
+          <!--&lt;!&ndash;小类&ndash;&gt;-->
+          <!---->
+          <!---->
+          <!---->
+          <!--<a class="no-bg" href="/goods/43.html">肠胃调养</a>-->
+          <!---->
+          <!---->
+          <!---->
+          <!--<a href="/goods/44.html">清咽润肺</a>-->
+          <!---->
+          <!---->
+          <!---->
+          <!--<a href="/goods/45.html">增强免疫</a>-->
+          <!---->
+          <!---->
+          <!--&lt;!&ndash;/小类&ndash;&gt;-->
+        <!--</p>-->
+      <!--</div>-->
+      <div class=" igoods clearfix">
+        <div class="img-list2">
+          <ul>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    
+    <div class="goods-section clearfix">
+      <!--<div class="ntitle">-->
+        <!--<h2>-->
+          <!--<a href="/goods/41.html">风湿骨痛<em></em></a>-->
+        <!--</h2>-->
+        <!--<p>-->
+          <!--&lt;!&ndash;小类&ndash;&gt;-->
+          <!---->
+          <!---->
+          <!---->
+          <!--<a class="no-bg" href="/goods/46.html">类风湿</a>-->
+          <!---->
+          <!---->
+          <!---->
+          <!--<a href="/goods/47.html">骨质疏松</a>-->
+          <!---->
+          <!---->
+          <!---->
+          <!--<a href="/goods/48.html">痛风</a>-->
+          <!---->
+          <!---->
+          <!--&lt;!&ndash;/小类&ndash;&gt;-->
+        <!--</p>-->
+      <!--</div>-->
+      <div class=" igoods clearfix">
+        <div class="img-list2">
+          <ul>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    
+    <div class="goods-section clearfix">
+      <!--<div class="ntitle">-->
+        <!--<h2>-->
+          <!--<a href="/goods/42.html">消化系统<em></em></a>-->
+        <!--</h2>-->
+        <!--<p>-->
+          <!--&lt;!&ndash;小类&ndash;&gt;-->
+          <!---->
+          <!---->
+          <!---->
+          <!--<a class="no-bg" href="/goods/49.html">消化不良</a>-->
+          <!---->
+          <!---->
+          <!---->
+          <!--<a href="/goods/50.html">胃炎</a>-->
+          <!---->
+          <!---->
+          <!---->
+          <!--<a href="/goods/51.html">胃痛胀气</a>-->
+          <!---->
+          <!---->
+          <!--&lt;!&ndash;/小类&ndash;&gt;-->
+        <!--</p>-->
+      <!--</div>-->
+      <div class=" igoods clearfix">
+        <div class="img-list2">
+          <ul>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="wrap-box">
+                <div class="img-box">
+                  <a title="亮菌口服溶液" href="show.html">
+                  <img src="img/201707191111013592.jpg" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h3><a title="亮菌口服溶液" href="show.html">亮菌口服溶液</a></h3>
+                  <div class="col">
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    
+    <!--/分类列表-->
+  </div>
+</div>
+
+
+<!--Footer-->
+<div class="footer clearfix">
+  <!--<div class="foot-nav">-->
+    <!--<a target="_blank" href="/index.html">首 页</a>|-->
+    <!--<a target="_blank" href="/content/about.html">关于我们</a>|-->
+    <!--<a target="_blank" href="/news.html">新闻资讯</a>|-->
+    <!--<a target="_blank" href="/goods.html">购物商城</a>|-->
+    <!--<a target="_blank" href="/video.html">视频专区</a>|-->
+    <!--<a target="_blank" href="/down.html">资源下载</a>|-->
+    <!--<a target="_blank" href="/photo.html">图片分享</a>|-->
+    <!--<a target="_blank" href="/feedback.html">留言反馈</a>|-->
+    <!--<a target="_blank" href="/link.html">友情链接</a>|-->
+    <!--<a target="_blank" href="/content/contact.html">联系我们</a>-->
+  <!--</div>-->
+  <div class="copyright">
+	<p>公司地址：湖南省长沙市天心区友谊路413号运城大厦1311房   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 咨询电话：073186335658</p>
+	<p>互联网药品信息服务资格证:</p>
+    <p>本网站不涉及药品交易、不撮合药品交易、不发布麻醉药品、精神药品、医疗用毒性药品、放射性药品、性药品、戒毒药品和医疗机构制剂的产品信息</p>
+    <p>药品监管部门提示：本网站展示的药品请到实体药店购买，如发现本网站有直接或变相销售药品行为，请拨打1233举报，举报查实按规定予以奖励</p>
+    <!--<p><script src="http://s24.cnzz.com/stat.php?id=1996164&web_id=1996164&show=pic" language="javascript"></script></p>-->
+  </div>
+</div>
+<!--/Footer-->
+</body>
+</html>

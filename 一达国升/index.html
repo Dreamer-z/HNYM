@@ -1,0 +1,418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>湖南一达国升网络科技有限公司</title>
+    <meta name="keywords" content="动力启航,DTCMS系统,ASP.NET开源,开源CMS,网站管理系统,互联网开发" />
+    <meta name="description" content="让更多的人分享互联网开发技术" />
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/zzsc.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" charset="utf-8" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.flexslider-min.js"></script>
+    <script src="js/swiper-3.4.2.jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/common.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/cebian.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $(".focusbox").flexslider({
+                directionNav: false,
+                pauseOnAction: false
+            });
+        });
+    </script>
+    <script>
+        $(function() {
+            $(".left_nav dd").hover(function() {
+                $(".nav_right", this).show();
+            });
+            $(".left_nav dd").mouseleave(function() {
+                $(".nav_right", this).hide();
+            });
+        });
+    </script>
+
+    <body>
+        <!--Header-->
+        <div class="header">
+            <div class="header-wrap">
+                <div class="section">
+                    <div class="left-box">
+                        <!--<a class="logo" href="/index.html">湖南一达国升网络科技有限公司</a>-->
+                        <p class="nav">
+                            <a href="index.html">欢迎来到湖南元博医药科技推广有限公司</a>
+                            <!--<a href="/goods.html">商城</a>-->
+                            <!--<a href="/video.html">视频</a>-->
+                            <!--<a href="/photo.html">图片</a>-->
+                            <!--<a href="/down.html">下载</a>-->
+                        </p>
+                    </div>
+
+                    <div class="right-box">
+
+                        <!--<script type="text/javascript">
+			$.ajax({
+				type: "POST",
+				url: "/tools/submit_ajax.ashx?action=user_check_login",
+				dataType: "json",
+				timeout: 20000,
+				success: function (data, textStatus) {
+					if (data.status == 1) {
+						$("#menu").prepend('<li class="line"><a href="/user/center/exit.html">退出</a></li>');
+						$("#menu").prepend('<li class="login"><em></em><a href="/user/center/index.html">会员中心</a></li>');
+					} else {
+						$("#menu").prepend('<li class="line"><a href="/register.html">注册</a></li>');
+						$("#menu").prepend('<li class="login"><em></em><a href="/login.html">登录</a></li>');
+					}
+				}
+			});
+		</script>-->
+                        <ul id="menu">
+                            <li class="browse">
+                                <a href="#">药品分类概览</a>
+                                <i class="icon"></i>
+                                <!--药品信息展示-->
+                                <div class="products ">
+                                    <ul class="products_list">
+                                        <li><a href="goods.html">滋补调养滋补滋补调养</a></li>
+                                        <li><a href="goods.html">风湿骨痛</a></li>
+                                        <li><a href="goods.html">消化系统</a></li>
+                                        <li><a href="goods.html">神经疾病</a></li>
+                                        <li><a href="goods.html">呼吸疾病</a></li>
+                                        <li><a href="goods.html">肝胆科药</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!--<li><a href="/content/contact.html">联系我们</a></li>-->
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="header-top">
+            <img style="width: 220px; float: left;margin-top: 10px;" src="img/log.png" />
+            <div class="header-search">
+                <ul>
+                    <li>湖南元博医药科技推广有限公司-提供药品信息</li>
+                    <li>
+                        <div class="search">
+                            <input id="keywords" name="keywords" class="input" type="text" onkeydown="if(event.keyCode==13){SiteSearch('search.html', '#keywords');return false};" placeholder="输入回车搜索" x-webkit-speech="" />
+                            <input class="search-submit" type="submit" onclick="SiteSearch('search.html', '#keywords');" value="搜索" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-bar">
+            <ul class="header-list">
+                <li><a href="goods.html">所有药品分类</a></li>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="goods.html">药品展示</a></li>
+                <!--<li><a href="content/contact.html">医疗咨询</a></li>-->
+                <!--<li><a href="news.html">医学报告（收费）</a></li>-->
+                <!--<li><a href="">全部分类</a></li>-->
+                <li><a href="cart.html">关于我们</a></li>
+            </ul>
+
+        </div>
+        <script type="text/javascript">
+            $(".browse").mousemove(function() {
+                $(".products").show().css({
+                    "background": "#fff",
+                    "color": "#278456"
+                });
+                $(".browse a").css("color", "#278456");
+            });
+            $(".browse").mouseleave(function() {
+                $(".products").hide();
+                $(".browse a").css("color", "#fff");
+            });
+        </script>
+        <!--/Header-->
+
+
+        <div class="section clearfix">
+            <div class="wl">
+                <div class="left_nav">
+                    <dl>
+
+                        <dd>
+                            <a href="goods.html" class="nav_left">滋补调养</a>
+                            <div class="nav_right">
+                                <!--类别-->
+
+                                <a class="no-bg" href="goods.html">肠胃调养</a>
+
+                                <a href="goods.html">清咽润肺</a>
+
+                                <a href="goods.html">增强免疫</a>
+
+                                <!--/类别-->
+                            </div>
+                        </dd>
+                        <dd>
+                            <a href="goods.html" class="nav_left">滋补调养</a>
+                            <div class="nav_right">
+                                <!--类别-->
+
+                                <a class="no-bg" href="goods.html">肠胃调养</a>
+
+                                <a href="goods.html">清咽润肺</a>
+
+                                <a href="goods.html">增强免疫</a>
+
+                                <!--/类别-->
+                            </div>
+                        </dd>
+                        <dd><a href="goods.html" class="nav_left">风湿骨痛</a>
+                            <div class="nav_right">
+                                <!--类别-->
+
+                                <a class="no-bg" href="goods.html">类风湿</a>
+
+                                <a href="goods.html">骨质疏松</a>
+
+                                <a href="goods.html">痛风</a>
+
+                                <!--/类别-->
+                            </div>
+                        </dd>
+                        <dd><a href="goods.html" class="nav_left">消化系统</a>
+                            <div class="nav_right">
+                                <!--类别-->
+
+                                <a class="no-bg" href="goods.html">消化不良</a>
+
+                                <a href="goods.html">胃炎</a>
+
+                                <a href="goods.html">胃痛胀气</a>
+
+                                <!--/类别-->
+                            </div>
+                        </dd>
+                        <dd><a href="goods.html" class="nav_left">神经科药</a>
+                            <div class="nav_right">
+                                <!--类别-->
+
+                                <a class="no-bg" href="goods.html">甲亢甲减</a>
+
+                                <a href="goods.html">偏头痛类</a>
+
+                                <a href="/goods.html">眩晕失眠</a>
+
+                                <!--/类别-->
+                            </div>
+                        </dd>
+                        <dd><a href="goods.html" class="nav_left">呼吸科药</a>
+                            <div class="nav_right">
+                                <a href="goods.html">气管炎</a>
+                                <a href="goods.html">哮喘</a>
+                                <a href="goods.html">鼻炎</a>
+                            </div>
+                        </dd>
+                        <dd><a href="javascript:" class="nav_left">肝胆科药</a>
+                            <div class="nav_right">
+                                < <!--类别-->
+
+                                    <a class="no-bg" href="goods.html">乙型肝炎</a>
+
+                                    <a href="goods.html">胆道系统</a>
+
+                                    <a href="goods.html">免疫调节</a>
+
+                                    <!--/类别-->
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="wr swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/banner_1.png"></div>
+                    <div class="swiper-slide"><img src="img/banner_2.png"></div>
+                    <div class="swiper-slide"><img src="img/banner_3.png"></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="zhanshi">
+            <h1>新品展示</h1>
+        </div>
+        <div class="wrapper clearfix">
+            <ul class="img-list high ilist">
+
+                <li>
+                    <a title="云芝菌胶囊" href="show.html">
+                        <div class="img-box">
+                            <img src="img/201707191111013592.jpg" />
+                        </div>
+                        <div class="info">
+                            <h3>云芝菌胶囊</h3>
+
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a title="维生素E软胶囊(天然型)" href="show.html">
+                        <div class="img-box">
+                            <img src="img/201707191111013592.jpg" />
+                        </div>
+                        <div class="info">
+                            <h3>维生素E软胶囊(天然型)</h3>
+
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a title="维生素AD滴剂(胶囊型)" href="show.html">
+                        <div class="img-box">
+                            <img src="img/201707191111013592.jpg" />
+                        </div>
+                        <div class="info">
+                            <h3>维生素AD滴剂(胶囊型)</h3>
+
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a title="三维葡磷钙咀嚼片(维力盖)" href="show.html">
+                        <div class="img-box">
+                            <img src="img/201707191111013592.jpg" />
+                        </div>
+                        <div class="info">
+                            <h3>三维葡磷钙咀嚼片(维力盖)</h3>
+
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a title="藿香清胃胶囊" href="show.html">
+                        <div class="img-box">
+                            <img src="img/201707191111013592.jpg" />
+                        </div>
+                        <div class="info">
+                            <h3>藿香清胃胶囊</h3>
+
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a title="来氟米特片(关平)" href="show.html">
+                        <div class="img-box">
+                            <img src="img/201707191111013592.jpg" />
+                        </div>
+                        <div class="info">
+                            <h3>来氟米特片(关平)</h3>
+
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a title="熟地黄" href="show.html">
+                        <div class="img-box">
+                            <img src="img/201707191111013592.jpg" />
+                        </div>
+                        <div class="info">
+                            <h3>熟地黄</h3>
+
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a title="蛤蚧大补胶囊" href="show.html">
+                        <div class="img-box">
+                            <img src="img/201707191111013592.jpg" />
+                        </div>
+                        <div class="info">
+                            <h3>蛤蚧大补胶囊</h3>
+
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a title="燕窝盏" href="show.html">
+                        <div class="img-box">
+                            <img src="img/201707191111013592.jpg" />
+                        </div>
+                        <div class="info">
+                            <h3>燕窝盏</h3>
+
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a title="清好牌清畅胶囊(汤臣倍健)" href="show.html">
+                        <div class="img-box">
+                            <img src="img/201707191111013592.jpg" />
+                        </div>
+                        <div class="info">
+                            <h3>清好牌清畅胶囊(汤臣倍健)</h3>
+
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!--Footer-->
+        <div class="footer clearfix">
+            <!--<div class="foot-nav">-->
+            <!--<a target="_blank" href="/index.html">首 页</a>|-->
+            <!--<a target="_blank" href="/content/about.html">关于我们</a>|-->
+            <!--<a target="_blank" href="/news.html">新闻资讯</a>|-->
+            <!--<a target="_blank" href="/goods.html">购物商城</a>|-->
+            <!--<a target="_blank" href="/video.html">视频专区</a>|-->
+            <!--<a target="_blank" href="/down.html">资源下载</a>|-->
+            <!--<a target="_blank" href="/photo.html">图片分享</a>|-->
+            <!--<a target="_blank" href="/feedback.html">留言反馈</a>|-->
+            <!--<a target="_blank" href="/link.html">友情链接</a>|-->
+            <!--<a target="_blank" href="/content/contact.html">联系我们</a>-->
+            <!--</div>-->
+            <div class="copyright">
+                <p>公司地址：湖南省长沙市天心区友谊路413号运城大厦1311房 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 咨询电话：073186335658</p>
+                <p>互联网药品信息服务资格证:</p>
+                <p>本网站不涉及药品交易、不撮合药品交易、不发布麻醉药品、精神药品、医疗用毒性药品、放射性药品、性药品、戒毒药品和医疗机构制剂的产品信息</p>
+                <p>药品监管部门提示：本网站展示的药品请到实体药店购买，如发现本网站有直接或变相销售药品行为，请拨打1233举报，举报查实按规定予以奖励</p>
+                <!--<p><script src="http://s24.cnzz.com/stat.php?id=1996164&web_id=1996164&show=pic" language="javascript"></script></p>-->
+            </div>
+        </div>
+        <!--/Footer-->
+    </body>
+
+    <script>
+        var mySwiper = new Swiper(".wr", {
+            direction: 'horizontal',
+            loop: true,
+            speed: 2000,
+            // 如果需要分页器
+            pagination: '.swiper-pagination',
+            // 如果需要前进后退按钮
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            autoplay: 5000,
+            autoplayDisableOnInteraction: false,
+        });
+        $(".wr").mouseenter(function() {
+            mySwiper.stopAutoplay();
+        });
+        $(".wr").mouseleave(function() {
+            mySwiper.startAutoplay();
+        });
+    </script>
+
+</html>

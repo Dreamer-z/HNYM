@@ -26,6 +26,7 @@
     box-sizing: border-box;
     width: 7.5rem;
     padding: .4rem .2rem;
+    margin-bottom: .1rem;
 }
 
 .order-amount-time {
