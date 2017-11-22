@@ -13,3 +13,7 @@ body {
     border-radius: .2rem;
     font-size: .36rem;
 }
+
+li {
+    background-color: #fff;
+}

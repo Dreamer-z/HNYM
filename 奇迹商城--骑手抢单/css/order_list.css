@@ -1,0 +1,85 @@
+.ord-list {
+    margin: .2rem 0;
+}
+
+.ord-li {
+    padding-left: .2rem;
+    width: 7.3rem;
+    border-top: .01rem solid #eee;
+    border-bottom: .01rem solid #eee;
+    margin-bottom: .2rem;
+}
+
+.ord-finish {
+    height: .86rem;
+    line-height: .86rem;
+    padding-right: .2rem;
+    border-bottom: .01rem solid #eee;
+    font-size: .32rem;
+}
+
+.ord-finish span {
+    font-size: .28rem;
+    color: #999;
+}
+
+.ordNum-amount>div>span,
+.ordIncome span {
+    font-size: .28rem;
+    color: #4a4a4a;
+}
+
+.takeAddr {
+    margin-top: .2rem;
+}
+
+.sendAddr {
+    margin-bottom: .2rem;
+}
+
+.takeAddr span,
+.sendAddr span {
+    font-size: .28rem;
+    color: #191919;
+    margin-left: .3rem;
+}
+
+.takeAddr,
+.sendAddr,
+.ordIncome {
+    box-sizing: border-box;
+    padding-right: .2rem;
+    font-size: .32rem;
+    line-height: .64rem;
+}
+
+.ordNum-amount {
+    padding-top: .2rem;
+    padding-right: .2rem;
+    font-size: .32rem;
+    line-height: .64rem;
+    border-top: .01rem solid #eee;
+}
+
+.ordNum {
+    width: 65%;
+    box-sizing: border-box;
+    padding-right: .1rem;
+}
+
+.amount {
+    text-align: right;
+    width: 35%;
+}
+
+.takeAddr,
+.sendAddr,
+.ordIncome {
+    padding-right: .2rem;
+    font-size: .32rem;
+    line-height: .64rem;
+}
+
+.ordIncome {
+    padding-bottom: .2rem;
+}
