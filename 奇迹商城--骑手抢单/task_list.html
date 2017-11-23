@@ -33,7 +33,7 @@
 
 
     <!-- 新任务列表 -->
-    <ul class="order-list newWai">
+    <ul class="order-list newTask">
         <li class="order-li bg-fff">
             <div class="order-amount-time clear">
                 <div class="order-amount fl">
@@ -85,6 +85,11 @@
             </div>
         </li>
     </ul>
+    <!-- 抢单状态弹窗 -->
+    <div class="stateTc stateTc-yes newTaskTc">
+        <div class="sT-result-img"></div>
+        <div class="sT-result-msg">抢单成功！</div>
+    </div>
 
 
     <!-- 待取货列表 -->
@@ -162,10 +167,15 @@
             </div>
         </li>
     </ul>
+    <!-- 取货状态弹窗 -->
+    <div class="stateTc stateTc-no waiPicTc">
+        <div class="sT-result-img"></div>
+        <div class="sT-result-msg">取货失败！</div>
+    </div>
 
 
     <!-- 送货中列表 -->
-    <ul class="order-list waiPic">
+    <ul class="order-list sendPic">
         <li class="order-li bg-fff">
             <div class="order-amount-time clear">
                 <div class="order-amount fl">
@@ -253,6 +263,13 @@
             </a>
         </div>
     </div>
+    <!-- 送货状态弹窗 -->
+    <div class="stateTc stateTc-yes sendPicTc">
+        <div class="sT-result-img"></div>
+        <div class="sT-result-msg">送货完成！</div>
+    </div>
+
+
 </body>
 <script>
     // 任务列表切换
@@ -266,6 +283,25 @@
         $(".order-list").eq(taind).css("display", "block");
         $(".order-list").eq(taind).siblings("ul").css("display", "none");
         $(document).scrollTop(0);
+    });
+    // 操作结果弹窗
+    $(".newTask .op-inp1").click(function() {
+        $(".newTaskTc").fadeIn(200);
+        setTimeout(() => {
+            $(".newTaskTc").fadeOut(200);
+        }, 1500);
+    });
+    $(".waiPic .op-inp1").click(function() {
+        $(".waiPicTc").fadeIn(200);
+        setTimeout(() => {
+            $(".waiPicTc").fadeOut(200);
+        }, 1500);
+    });
+    $(".sendPic .op-inp1").click(function() {
+        $(".sendPicTc").fadeIn(200);
+        setTimeout(() => {
+            $(".sendPicTc").fadeOut(200);
+        }, 1500);
     });
 </script>
 

@@ -177,6 +177,18 @@ var all = {
                 "background-size": "cover"
             });
         });
+    },
+    // 弹出信息处理事件
+    msg_tc: function(display_inp, msg_tc_dom, confirm_inp, cancel_inp) {
+        $(display_inp).click(function() {
+            $(msg_tc_dom).fadeIn(200);
+        });
+        $(confirm_inp).click(function() {
+            $(msg_tc_dom).fadeOut(200);
+        });
+        $(cancel_inp).click(function() {
+            $(msg_tc_dom).fadeOut(200);
+        });
     }
 };
 window.onload = function() {
@@ -185,4 +197,4 @@ window.onload = function() {
     all.fullscreen2();
     all.check();
     all.inp();
-}
+};

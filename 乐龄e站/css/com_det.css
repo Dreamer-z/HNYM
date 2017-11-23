@@ -1,0 +1,314 @@
+.commodity-details .com-deta-cont {
+    box-sizing: border-box;
+    border-radius: .2rem;
+    width: 7.5rem;
+    padding: .2rem 0;
+    overflow: hidden;
+    background-color: #fff;
+    position: absolute;
+    top: 3.2rem;
+    left: 50%;
+    z-index: 100;
+    margin-left: -3.75rem;
+}
+
+.commodity-details .com-deta-head {
+    padding: 0 .2rem;
+}
+
+.commodity-details .com-deta-head p {
+    margin-bottom: .1rem;
+}
+
+.commodity-details .com-deta-head .com-deta-tit {
+    font-size: .3rem;
+}
+
+.commodity-details .com-deta-head .com-deta-price {
+    font-size: .24rem;
+}
+
+.commodity-details .com-deta-head .com-deta-price span {
+    font-size: .3rem;
+    color: red;
+    margin-right: .1rem;
+}
+
+.commodity-details .commodity-tag {
+    height: .7rem;
+    line-height: .7rem;
+    font-size: .24rem;
+    color: #888;
+    border-top: .01rem solid #eee;
+}
+
+.commodity-details .commodity-tag div {
+    margin: 0 .2rem;
+}
+
+.commodity-details .commodity-tag div i {
+    width: .28rem;
+    height: .28rem;
+    margin-top: .21rem;
+    margin-right: .1rem;
+    background: url(./../img/tag.png)no-repeat center;
+    background-size: 100%;
+}
+
+.commodity-details .commodity-comment {
+    height: 1rem;
+    padding: 0 .2rem;
+    border-top: .1rem solid #eee;
+    border-bottom: .1rem solid #eee;
+}
+
+.commodity-details .commodity-score {
+    text-align: center;
+    width: 1.5rem;
+    padding: .1rem 0;
+    height: .8rem;
+    padding-right: .2rem;
+    line-height: .4rem;
+    color: #06c1ae;
+}
+
+.commodity-details .commodity-score .score {
+    font-size: .24rem;
+}
+
+.commodity-details .commodity-score .score span {
+    font-size: .34rem;
+    margin-right: .1rem;
+}
+
+.commodity-details .commodity-pnum {
+    margin: 0 .1rem;
+}
+
+.commodity-details .commodity-pnum-my {
+    height: .38rem;
+    margin: .11rem 0;
+}
+
+.commodity-details .commodity-pnum-my p {
+    height: .38rem;
+    padding: 0 .1rem;
+    line-height: .38rem;
+    color: #fff;
+    font-size: .24rem;
+    background-color: #06c1ae;
+    text-align: center;
+    border-radius: .19rem;
+}
+
+.commodity-details .commodity-pnum-all {
+    height: .4rem;
+    line-height: .4rem;
+    font-size: .24rem;
+    color: #888;
+}
+
+.commodity-details .commodity-comment-more {
+    width: .3rem;
+    padding: .35rem 0;
+}
+
+.commodity-details .commodity-comment-more i {
+    display: block;
+    width: 100%;
+    height: .3rem;
+    background: url(./../img/more.png)no-repeat center;
+    background-size: 100%;
+    transform: rotate(-90deg);
+}
+
+.commodity-details .commodity-introduce {
+    border-bottom: .1rem solid #eee;
+}
+
+.commodity-details .com-int {
+    height: .8rem;
+    line-height: .8rem;
+    font-size: .28rem;
+    color: #000;
+    padding: 0 .3rem;
+    border-bottom: .01rem solid #eee;
+}
+
+.commodity-details .com-int i {
+    width: .36rem;
+    height: .36rem;
+    margin-top: .22rem;
+    margin-right: .1rem;
+}
+
+.commodity-details .com-int span {
+    color: #888;
+}
+
+.commodity-details .com-int-xc i {
+    background: url(./../img/sp_int_xc.png)no-repeat center;
+    background-size: 100%;
+}
+
+.commodity-details .com-int-cs i {
+    background: url(./../img/sp_int_cs.png)no-repeat center;
+    background-size: 100%;
+}
+
+.commodity-details .com-int-zs i {
+    background: url(./../img/sp_int_zs.png)no-repeat center;
+    background-size: 100%;
+}
+
+.commodity-details .com-int-jd i {
+    background: url(./../img/sp_int_jd.png)no-repeat center;
+    background-size: 100%;
+}
+
+.commodity-details .commodity-introduce-part2 {
+    padding: 0 .3rem;
+    border-bottom: .1rem solid #eee;
+}
+
+.commodity-details .com-pt2-li {
+    width: 2.3rem;
+    text-align: center;
+    border-bottom: .05rem solid transparent;
+}
+
+.commodity-details .com-pt2-tit {
+    height: .8rem;
+    line-height: .8rem;
+    font-size: .3rem;
+}
+
+.commodity-details .com-pt2-li-c {
+    border-bottom: .05rem solid #06c1ae;
+}
+
+.commodity-details .com-pt2-li-c .com-pt2-tit {
+    color: #06c1ae;
+}
+
+.commodity-details .com-pt2-sec {
+    width: 7.5rem;
+    margin-bottom: 1rem;
+}
+
+.commodity-details .com-pt2-sec>li {
+    width: 100%;
+    box-sizing: border-box;
+    padding: .3rem;
+    background-color: #fff;
+    display: none;
+}
+
+.commodity-details .com-pt2-sec>li img {
+    display: block;
+    margin: .1rem auto;
+}
+
+.commodity-details .sche-li {
+    border-bottom: .02rem solid #eee;
+    padding-bottom: .2rem;
+}
+
+.commodity-details .sche-day {
+    height: .45rem;
+    line-height: .45rem;
+    margin-bottom: .1rem;
+}
+
+.commodity-details .sche-day span {
+    padding: .05rem .2rem;
+    background-color: #06c1ae;
+    color: #fff;
+    border-radius: 0 0 30% 30%;
+}
+
+.commodity-details .sche-cont span {
+    font-size: .26rem;
+    line-height: .4rem;
+    color: #999;
+}
+
+.commodity-details .commodity-op {
+    width: 7.5rem;
+    height: .98rem;
+    line-height: .98rem;
+    font-size: .34rem;
+    position: fixed;
+    left: calc(50% - 3.75rem);
+    bottom: 0;
+    z-index: 199;
+    color: #999;
+    background-color: #fff;
+}
+
+.commodity-details .ticket-type-li {
+    width: 100%;
+    border-bottom: .01rem solid #eee;
+}
+
+.commodity-details .ticket-type-tit {
+    margin-bottom: .15rem;
+}
+
+.commodity-details .ticket-type-time {
+    margin-bottom: .25rem;
+    color: #06c1ae;
+    font-size: .24rem;
+}
+
+.commodity-details .ticket-type-sec {
+    line-height: .42rem;
+    margin-bottom: .2rem;
+}
+
+.commodity-details .ticket-type-notice {
+    color: #888;
+    font-size: .22rem;
+    line-height: .3rem;
+}
+
+.commodity-details .ticket-type-price {
+    color: #888;
+    font-size: .24rem;
+}
+
+.commodity-details .ticket-type-price .nowprice {
+    color: red;
+    font-size: .28rem;
+}
+
+.commodity-details .ticket-type-price .yprice {
+    text-decoration: line-through;
+    margin-left: .1rem;
+}
+
+.commodity-details .addcar,
+.commodity-details .reserve {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.commodity-details .addcar {
+    padding: .34rem 0;
+    line-height: .3rem;
+    font-size: .3rem;
+    color: #999;
+    background: url(./../img/car.png)no-repeat .65rem .3rem;
+    background-size: 10%;
+    background-color: #fff;
+}
+
+.commodity-details .reserve {
+    padding: .32rem 0;
+    font-size: .34rem;
+    line-height: .34rem;
+    background-color: #06c1ae;
+    color: #fff;
+}
