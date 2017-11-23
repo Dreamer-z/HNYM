@@ -9,6 +9,11 @@ var all = {
         $(".fullscreen1").height($(window).height());
         $(".fullscreen1").css({ "background-color": "#eee", "position": "fixed", "left": "calc(50% - 3.75rem)", "top": "0", "z-index": "1000" });
     },
+    fullscreen2: function() {
+        $(".fullscreen2").width("7.5rem");
+        $(".fullscreen2").height($(window).height());
+        $(".fullscreen2").css({ "background-color": "#fff", "box-sizing": "border-box" });
+    },
     // 复选带全选功能
     check_inp: function() {
         var state, th;
@@ -166,6 +171,7 @@ var all = {
 window.onload = function() {
     all.fullscreen();
     all.fullscreen1();
+    all.fullscreen2();
     all.check();
     all.inp();
 }

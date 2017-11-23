@@ -1,0 +1,20 @@
+.detInc-li {
+    line-height: .91rem;
+    padding: 0 .2rem;
+    border-top: .01rem solid #eee;
+    border-bottom: .01rem solid #eee;
+    margin-bottom: .2rem;
+}
+
+.detInc-time {
+    text-align: right;
+    border-bottom: .01rem solid #eee;
+}
+
+.detInc-onIn {
+    font-size: .32rem;
+}
+
+.income {
+    color: #ffa800;
+}

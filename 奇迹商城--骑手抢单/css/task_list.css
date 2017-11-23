@@ -31,6 +31,9 @@
     margin-bottom: 1.2rem;
 }
 
+
+/* 订单信息部分在all.css */
+
 .order-li {
     box-sizing: border-box;
     width: 7.5rem;
@@ -38,82 +41,9 @@
     margin-bottom: .2rem;
 }
 
-.order-amount-time {
-    margin-bottom: .2rem;
-}
-
-.order-amount,
-.order-time {
-    width: 50%;
-    text-align: center;
-}
-
-.order-amount-num,
-.order-time-num {
-    font-size: .44rem;
-    color: #ff5a00;
-}
-
-.order-amount-tit,
-.order-time-tit {
-    font-size: .28rem;
-    color: #908f8f;
-}
-
-.take-distance {
-    text-align: right;
-    color: #908f8f;
-}
-
-.take-distance span {
-    color: #ff5a00;
-}
-
-.take-order,
-.delivery-order {
-    box-sizing: border-box;
-    width: 100%;
-    padding-left: .7rem;
-    font-size: .32rem;
-    position: relative;
-}
-
-.take-order>i,
-.delivery-order>i {
-    position: absolute;
-    left: 0;
-    top: calc(50% - .25rem);
-    width: .5rem;
-    height: .5rem;
-}
-
-.take-order {
-    height: .9rem;
-    line-height: .45rem;
-}
-
-.take-addr {
-    color: #908f8f;
-}
-
-.take-order>i {
-    background: url(./../img/take.png)no-repeat center;
-    background-size: 100% 100%;
-}
-
-.delivery-order {
-    line-height: .5rem;
-    margin-bottom: .2rem;
-}
-
-.delivery-order>i {
-    background: url(./../img/send.png)no-repeat center;
-    background-size: 100% 100%;
-}
-
 .order-msg {
     padding: .2rem;
-    padding-right: .8rem;
+    padding-right: 1.1rem;
     font-size: .32rem;
     position: relative;
 }
@@ -129,21 +59,8 @@
     color: #ffa800;
 }
 
-.callthis {
-    width: .6rem;
-    height: .6rem;
-    position: absolute;
-    right: 0.2rem;
-    top: calc(50% - .4rem);
-}
 
-.callthis a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: url(./../img/call.png)no-repeat center;
-    background-size: 100% 100%;
-}
+/* 拨打电话样式在all.css */
 
 
 /* 新任务列表 */
@@ -156,41 +73,39 @@
 /* 底部菜单 */
 
 .menu {
-    width: 7.1rem;
-    height: .8rem;
-    padding: .09rem .2rem;
     line-height: .45rem;
     text-align: center;
-    font-size: .24rem;
     color: #9a9a9a;
-    position: fixed;
-    left: calc(50% - 3.75rem);
-    bottom: 0;
-    z-index: 999;
-    background-color: #fff;
+    padding: .09rem .2rem;
 }
 
 .menu-li {
     width: 50%;
 }
 
-.menu-li>i {
+.menu-li>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-li>a>i {
     display: block;
     width: .35rem;
     height: .35rem;
     margin: 0 auto;
 }
 
-.menu-task>i {
+.menu-task>a>i {
     background: url(./../img/task_on.png)no-repeat center;
     background-size: 100% 100%;
 }
 
-.menu-task {
+.menu-task>a {
     color: #ffa800;
 }
 
-.menu-center>i {
+.menu-center>a>i {
     background: url(./../img/center.png)no-repeat center;
     background-size: 100% 100%;
 }

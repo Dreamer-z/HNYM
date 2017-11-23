@@ -2,6 +2,17 @@ body {
     background-color: #eee;
 }
 
+a {
+    display: block;
+}
+
+li {
+    background-color: #fff;
+}
+
+
+/* 大型按钮类型1 */
+
 .op-inp1 {
     display: block;
     margin: 0 auto;
@@ -12,8 +23,193 @@ body {
     background-color: #ffa800;
     border-radius: .2rem;
     font-size: .36rem;
+    text-align: center;
 }
 
-li {
+
+/* 大型按钮类型2 */
+
+.op-inp2 {
+    display: block;
+    margin: 0 auto;
+    width: 7.1rem;
+    height: 1rem;
+    line-height: 1rem;
     background-color: #fff;
+    border-radius: .2rem;
+    font-size: .32rem;
+    color: #313131;
+    text-align: center;
+}
+
+
+/* 订单任务信息部分 */
+
+.order-amount-time {
+    margin-bottom: .2rem;
+}
+
+.order-amount,
+.order-time {
+    width: 50%;
+    text-align: center;
+}
+
+.order-amount-num,
+.order-time-num {
+    font-size: .44rem;
+    color: #ff5a00;
+}
+
+.order-amount-tit,
+.order-time-tit {
+    font-size: .28rem;
+    color: #908f8f;
+}
+
+.take-distance {
+    text-align: right;
+    color: #908f8f;
+}
+
+.take-distance span {
+    color: #ff5a00;
+}
+
+.take-order,
+.delivery-order {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: .7rem;
+    font-size: .32rem;
+    position: relative;
+}
+
+.take-order>i,
+.delivery-order>i {
+    position: absolute;
+    left: 0;
+    top: calc(50% - .25rem);
+    width: .5rem;
+    height: .5rem;
+}
+
+.take-order {
+    height: .9rem;
+    line-height: .45rem;
+}
+
+.take-addr {
+    color: #908f8f;
+}
+
+.take-order>i {
+    background: url(./../img/take.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.delivery-order {
+    line-height: .5rem;
+    margin-bottom: .2rem;
+}
+
+.delivery-order>i {
+    background: url(./../img/send.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+
+/* 拨打电话 */
+
+.callthis {
+    width: .6rem;
+    height: .6rem;
+    position: absolute;
+    right: 0.4rem;
+    top: calc(50% - .4rem);
+}
+
+.callthis a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(./../img/call.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+
+/* 标题类型*/
+
+.titType1 {
+    font-size: .28rem;
+    color: #404040;
+    padding: 0 .2rem;
+    line-height: .8rem;
+}
+
+.titType2 {
+    font-size: .28rem;
+    color: red;
+    padding: 0 .2rem;
+    line-height: .8rem;
+}
+
+
+/* 底部菜单 */
+
+.menu {
+    width: 7.5rem;
+    height: .98rem;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: .24rem;
+    position: fixed;
+    left: calc(50% - 3.75rem);
+    bottom: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+
+
+/* 提交结果 */
+
+.ssMsg {
+    text-align: center;
+}
+
+.ssMsg-img {
+    width: 1.48rem;
+    height: 1.48rem;
+}
+
+.ssMsg-result {
+    font-size: .32rem;
+    margin-bottom: .2rem;
+}
+
+.ssMsg-msg {
+    font-size: .24rem;
+    margin-bottom: 1rem;
+}
+
+.do-st {
+    text-align: center;
+}
+
+.do-st>a {
+    display: inline-block;
+}
+
+.do-st>a>span {
+    line-height: .6rem;
+    padding: .1rem .2rem;
+    border: .01rem solid #ffa800;
+    color: #ffa800;
+    border-radius: .1rem;
+    margin: 0 .5rem;
+}
+
+.do-st .mall {
+    color: #76e32d;
+    border: .01rem solid #76e32d;
 }

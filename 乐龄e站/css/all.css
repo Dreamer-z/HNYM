@@ -1538,13 +1538,37 @@ body {
     margin: .1rem auto;
 }
 
+.commodity-details .sche-li {
+    border-bottom: .02rem solid #eee;
+    padding-bottom: .2rem;
+}
+
+.commodity-details .sche-day {
+    height: .45rem;
+    line-height: .45rem;
+    margin-bottom: .1rem;
+}
+
+.commodity-details .sche-day span {
+    padding: .05rem .2rem;
+    background-color: #06c1ae;
+    color: #fff;
+    border-radius: 0 0 30% 30%;
+}
+
+.commodity-details .sche-cont span {
+    font-size: .26rem;
+    line-height: .4rem;
+    color: #999;
+}
+
 .commodity-details .commodity-op {
     width: 7.5rem;
     height: .98rem;
     line-height: .98rem;
     font-size: .34rem;
     position: fixed;
-    left: 0;
+    left: calc(50% - 3.75rem);
     bottom: 0;
     z-index: 199;
     color: #999;

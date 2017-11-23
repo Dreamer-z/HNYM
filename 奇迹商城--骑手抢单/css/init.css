@@ -141,3 +141,7 @@ select::-ms-expand {
 .bg-fff {
     background-color: #fff;
 }
+
+.center {
+    margin: 0 auto;
+}

@@ -1,0 +1,154 @@
+.perMsg {
+    width: 7.5rem;
+    height: 3.6rem;
+    background: -webkit-linear-gradient(top, #ffd58c, #ed9d04, #df9e25);
+    position: relative;
+}
+
+.perMsg-in {
+    height: 1.9rem;
+    width: 7rem;
+    position: absolute;
+    left: calc(50% - 3.5rem);
+    top: calc(50% - .95rem);
+    color: #fff;
+    text-align: center;
+}
+
+.perMsg-img {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 0 auto;
+}
+
+.perMsg-name {
+    font-size: .32rem;
+    line-height: .6rem;
+}
+
+.option {
+    width: .48rem;
+    height: .48rem;
+    position: absolute;
+    top: .3rem;
+    right: .3rem;
+}
+
+.option a {
+    display: block;
+    width: .48rem;
+    height: .48rem;
+    background: url(./../img/op.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.income-balance {
+    margin: .2rem 0;
+}
+
+.income {
+    position: relative;
+}
+
+.income a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.incMore {
+    position: absolute;
+    right: .2rem;
+    top: 0;
+}
+
+.income-balance>div {
+    width: 7.5rem;
+    box-sizing: border-box;
+    height: 1rem;
+    border-bottom: .01rem solid #eee;
+    line-height: 1rem;
+    padding: 0 .2rem;
+    padding-right: .6rem;
+    font-size: .32rem;
+    color: #333;
+}
+
+.incBal-tit {
+    width: 2.7rem;
+}
+
+.income-num,
+.balance-num {
+    max-width: 3rem;
+}
+
+.balance-num {
+    color: #ffa800;
+}
+
+.take-price {
+    height: .44rem;
+    line-height: .44rem;
+    width: 1rem;
+    text-align: center;
+    margin-top: .28rem;
+    border: .01rem solid #ffa800;
+    background-color: #ffa800;
+    color: #fff;
+    border-radius: .1rem;
+}
+
+.moreOrd a {
+    display: block;
+    height: 1rem;
+    line-height: 1rem;
+    padding: 0 .8rem;
+    font-size: .32rem;
+    background: url(./../img/ord_icon.png)no-repeat .2rem .29rem, url(./../img/more_l.png)no-repeat 7rem .3rem;
+    background-size: 6%, 2.5%;
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+
+.outLog {
+    margin-bottom: 1.1rem;
+}
+
+.menu {
+    line-height: .45rem;
+    text-align: center;
+    color: #9a9a9a;
+    padding: .09rem .2rem;
+}
+
+.menu-li {
+    width: 50%;
+}
+
+.menu-li>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-li>a>i {
+    display: block;
+    width: .35rem;
+    height: .35rem;
+    margin: 0 auto;
+}
+
+.menu-task>a>i {
+    background: url(./../img/task.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.menu-center>a>i {
+    background: url(./../img/center_on.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.menu-center>a {
+    color: #ffa800;
+}

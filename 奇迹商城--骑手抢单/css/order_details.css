@@ -1,0 +1,86 @@
+.ordMsg {
+    padding: .4rem .2rem;
+}
+
+.clientDet {
+    line-height: .6rem;
+}
+
+.clientDet-cont {
+    position: relative;
+    padding: .2rem;
+    padding-right: 1.1rem;
+}
+
+.clientDet-cont .callthis {
+    top: calc(50% - .3rem);
+}
+
+
+/* 商品列表 */
+
+.ordLi {
+    padding: 0 .2rem;
+    height: .8rem;
+    line-height: .8rem;
+    border-bottom: .01rem solid #eee;
+}
+
+.ordNum,
+.remarks {
+    padding: 0 .2rem;
+    height: .8rem;
+    line-height: .8rem;
+    color: #918e8e;
+}
+
+.comName {
+    width: 65%;
+}
+
+.comNum {
+    width: 15%;
+    text-align: center;
+    color: #918e8e;
+}
+
+.comPrice {
+    width: 20%;
+    text-align: right;
+    color: #918e8e;
+}
+
+.remarks {
+    color: #1e1e1e;
+    margin: .2rem 0;
+    margin-bottom: 1.1rem;
+}
+
+.remarks span {
+    color: #918e8e;
+}
+
+.menu {
+    font-size: .36rem;
+    line-height: .98rem;
+    text-align: center;
+}
+
+.menu-li {
+    width: 50%;
+    height: 100%;
+}
+
+.menu-price {
+    color: #ffa800;
+}
+
+.payWay {
+    color: #565656;
+    font-size: .28rem;
+}
+
+.menu-take {
+    background-color: #ffa800;
+    color: #fff;
+}

@@ -1,2 +1,10 @@
 待取货列表 waite_pickup.html
 订单列表 order_list.html
+订单详情(已抢单) order_details.html
+个人中心 person_center.html
+身份验证 authentication.html
+收入明细 detail_of_income.html
+提交成功 send_success.html
+提交失败 send_defeated.html
+提现 extract_deposit.html
+新订单详情(未抢单) Neworder_details.html

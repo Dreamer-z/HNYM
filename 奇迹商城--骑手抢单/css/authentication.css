@@ -1,0 +1,31 @@
+.auth {
+    position: relative;
+    padding-top: 1.9rem;
+}
+
+.auth-bg {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 0 auto;
+    margin-bottom: 1.9rem;
+    background: url(./../img/auth_bg.png)no-repeat center;
+    background-size: 100% 100%;
+    border-radius: 50%;
+}
+
+.autMsg {
+    text-align: center;
+    color: #999;
+}
+
+.autMsg p {
+    font-size: .36rem;
+    color: #333;
+    margin-bottom: .5rem;
+}
+
+.op-inp1 {
+    position: absolute;
+    left: calc(50% - 3.55rem);
+    bottom: 1rem;
+}

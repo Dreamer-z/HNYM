@@ -1,0 +1,54 @@
+.extDep {
+    margin-bottom: .2rem;
+}
+
+.balance {
+    text-align: center;
+    font-size: .3rem;
+    padding: .5rem 0;
+}
+
+.balance span {
+    font-size: .9rem;
+    color: #fe7e00;
+}
+
+.extDep-inp {
+    padding-bottom: .3rem;
+}
+
+.extDep-inp input {
+    display: block;
+    width: 6rem;
+    height: .8rem;
+    box-sizing: border-box;
+    padding: 0 .1rem;
+    margin: 0 auto;
+    line-height: .8rem;
+    border-radius: .15rem;
+    border: .01rem solid #999;
+}
+
+.extDep-type {
+    height: 1rem;
+    line-height: 1rem;
+    width: 6.5rem;
+    padding: 0 .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.extDep-type p {
+    box-sizing: border-box;
+    width: 6rem;
+    padding-left: .7rem;
+    background: url(./../img/wx.png)no-repeat 0 .29rem;
+    background-size: 8%;
+}
+
+.extDep-type input {
+    width: .5rem;
+    height: .5rem;
+    margin-top: .25rem;
+    border-radius: 50%;
+    border: .01rem solid #999;
+}
