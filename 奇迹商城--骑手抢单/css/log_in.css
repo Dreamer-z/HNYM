@@ -1,0 +1,65 @@
+.titType1 {
+    padding-top: .2rem;
+}
+
+.phone-code {
+    padding: .2rem;
+    margin-bottom: .2rem;
+}
+
+.phNum-inp {
+    box-sizing: border-box;
+    width: 4.8rem;
+    padding: 0 .2rem;
+    height: .88rem;
+    line-height: .88rem;
+    margin-right: .2rem;
+    border: .01rem solid #eee;
+    border-radius: .1rem;
+}
+
+.get-phcode {
+    width: 2.1rem;
+    font-size: .28rem;
+}
+
+.phCod {
+    width: 7.1rem;
+    margin: .2rem;
+}
+
+.phCod input {
+    box-sizing: border-box;
+    width: 100%;
+    height: .88rem;
+    padding: 0 .2rem;
+    line-height: .88rem;
+    border-radius: .1rem;
+}
+
+.logIn-box {
+    margin-top: .8rem;
+    margin-bottom: .2rem;
+}
+
+.agreement {
+    padding: 0 .2rem;
+    line-height: .36rem;
+}
+
+.agrInp {
+    width: .36rem;
+    height: .36rem;
+    border: .01rem solid #ffa800;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: .1rem;
+}
+
+.agreement label {
+    color: #040404;
+}
+
+.agreement label span {
+    color: #0579e6;
+}

@@ -84,3 +84,23 @@
     background-color: #ffa800;
     color: #fff;
 }
+
+.menu-aggregate {
+    box-sizing: border-box;
+    padding-left: .2rem;
+    text-align: left;
+}
+
+.menu-aggregate span {
+    font-size: .28rem;
+}
+
+.menu-aggregate .aggregate {
+    margin-left: .1rem;
+}
+
+.menu-paystate .payState {
+    color: #ffa800;
+    font-size: .28rem;
+    margin-left: .1rem;
+}

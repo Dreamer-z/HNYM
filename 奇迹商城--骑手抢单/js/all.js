@@ -166,6 +166,17 @@ var all = {
                 $(this).parent(".img-li-box").remove();
             });
         });
+    },
+    // 更换头像
+    putpicture: function(inpid, domname) {
+        document.getElementById(inpid).addEventListener("change", function() {
+            var filelist = document.getElementById(inpid).files[0];
+            var imgurl = window.URL.createObjectURL(filelist);
+            $(domname).css({
+                "background": "url(" + imgurl + ")no-repeat center",
+                "background-size": "cover"
+            });
+        });
     }
 };
 window.onload = function() {

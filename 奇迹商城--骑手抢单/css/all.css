@@ -143,14 +143,14 @@ li {
 .titType1 {
     font-size: .28rem;
     color: #404040;
-    padding: 0 .2rem;
+    padding: 0 .3rem;
     line-height: .8rem;
 }
 
 .titType2 {
     font-size: .28rem;
     color: red;
-    padding: 0 .2rem;
+    padding: 0 .3rem;
     line-height: .8rem;
 }
 
@@ -212,4 +212,83 @@ li {
 .do-st .mall {
     color: #76e32d;
     border: .01rem solid #76e32d;
+}
+
+
+/* 信息填写栏类型1 */
+
+.data-photo,
+.data-msg {
+    background-color: #fff;
+    padding: 0 .2rem;
+    border-bottom: .01rem solid #eee;
+}
+
+.data-photo {
+    height: 1.7rem;
+    line-height: 1.7rem;
+}
+
+.data-msg {
+    height: .88rem;
+    line-height: .88rem;
+}
+
+.data-msg input {
+    color: #999;
+}
+
+.data-img,
+#data-img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: .25rem .2rem;
+    border-radius: 50%;
+}
+
+.data-img {
+    background: url(./../img/ls/timg.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.data-put {
+    margin-top: 1.2rem;
+}
+
+
+/* 弹出信息窗口 */
+
+.msgTc {
+    width: 6.8rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border-radius: .2rem;
+    overflow: hidden;
+}
+
+.msgTc-tit {
+    line-height: .48rem;
+    background-color: #ffa800;
+    color: #fff;
+    padding: 0 1rem;
+    position: relative;
+    text-align: center;
+}
+
+.msgTc-qx {
+    position: absolute;
+    left: .2rem;
+    top: 0;
+}
+
+.msgTc-qd {
+    position: absolute;
+    right: .2rem;
+    top: 0;
+}
+
+.msgTc-cont {
+    padding: .2rem;
+    background-color: #fff;
+    line-height: .4rem;
 }

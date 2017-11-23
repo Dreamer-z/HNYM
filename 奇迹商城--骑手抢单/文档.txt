@@ -7,4 +7,7 @@
 提交成功 send_success.html
 提交失败 send_defeated.html
 提现 extract_deposit.html
+填写验证资料 fill_information.html
 新订单详情(未抢单) Neworder_details.html
+修改资料 modified_data.html
+登录 log_in.html

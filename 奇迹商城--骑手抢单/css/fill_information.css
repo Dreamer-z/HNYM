@@ -1,0 +1,104 @@
+.fillName,
+.fillId {
+    height: 1rem;
+    width: 6.9rem;
+    padding: 0 .3rem;
+    margin-bottom: .2rem;
+}
+
+.fillName input,
+.fillId input {
+    height: 1rem;
+    width: 100%;
+    font-size: .36rem;
+    color: #999;
+}
+
+.upId-tit {
+    padding: .4rem .3rem;
+    border-top: .01rem solid #eee;
+    border-bottom: .01rem solid #eee;
+}
+
+.upId-tit1 {
+    font-size: .32rem;
+    color: #787878;
+    margin-bottom: .15rem;
+}
+
+.upId-tit2 {
+    font-size: .24rem;
+    color: #a8a8a8;
+}
+
+.idCard-frontbox,
+.idCard-reversebox {
+    margin-bottom: .2rem;
+}
+
+.idCard-reference,
+.idCard-front,
+.idCard-reverse {
+    box-sizing: border-box;
+    width: 3.35rem;
+    padding: .1rem;
+    border: .01rem solid #eee;
+    margin: .2rem;
+}
+
+.idCard-front,
+.idCard-reverse {
+    padding-top: 2.2rem;
+    position: relative;
+}
+
+.idRef-img,
+.idFro-img,
+.idRev-img,
+#idFro-img,
+#idRev-img {
+    width: 3.2rem;
+    height: 2.1rem;
+    border-radius: .1rem;
+}
+
+.idFro-img,
+.idRev-img,
+#idFro-img,
+#idRev-img {
+    position: absolute;
+    left: .1rem;
+    top: .1rem;
+}
+
+#idFro-img,
+#idRev-img {
+    display: none;
+}
+
+.idRef-tit,
+.idFro-tit,
+.idRev-tit {
+    line-height: .7rem;
+    text-align: center;
+}
+
+.idCard-frontbox .idRef-img {
+    background: url(./../img/id_z.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.idCard-reversebox .idRef-img {
+    background: url(./../img/id_f.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.idFro-img,
+.idRev-img {
+    background: url(./../img/camera.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.putInfo {
+    margin-bottom: .2rem;
+}

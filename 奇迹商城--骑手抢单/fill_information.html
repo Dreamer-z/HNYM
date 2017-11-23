@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <title>填写验证资料</title>
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/fill_information.css">
+    <script src="./js/plug/jquery-1.8.3.min.js"></script>
+    <script src="./js/plug/adaptive.js"></script>
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 28;
+        window['adaptive'].maxWidth = 480;
+        window['adaptive'].scaleType = 1;
+        window['adaptive'].init();
+    </script>
+</head>
+
+<body>
+    <form action="" method="post">
+        <div class="titType2">请使用本人身份信息进行验证，以确保能够正常提现</div>
+        <div class="fillMsg">
+            <div class="fillName bg-fff">
+                <input type="text" name="" id="" placeholder="请输入您的真实姓名">
+            </div>
+            <div class="fillId bg-fff">
+                <input type="number" name="" id="" placeholder="请输入身份证号">
+            </div>
+        </div>
+        <div class="titType1">上传照片需要消耗流量，建议链接wifi操作</div>
+        <div class="uploadIdcard">
+            <div class="idCard-frontbox bg-fff clear">
+                <div class="upId-tit">
+                    <p class="upId-tit1">上传身份证正面照片</p>
+                    <p class="upId-tit2">请保证身份证正面文字清晰可见</p>
+                </div>
+                <div class="idCard-reference fl">
+                    <div class="idRef-img"></div>
+                    <div class="idRef-tit">参考照片</div>
+                </div>
+                <div class="idCard-front fl">
+                    <input type="file" id="idFro-img">
+                    <label class="idFro-img" for="idFro-img"></label>
+                    <div class="idFro-tit">你的照片</div>
+                </div>
+            </div>
+            <div class="idCard-reversebox bg-fff clear">
+                <div class="upId-tit">
+                    <p class="upId-tit1">上传身份证背面照片</p>
+                    <p class="upId-tit2">请保证身份证背面文字清晰可见</p>
+                </div>
+                <div class="idCard-reference fl">
+                    <div class="idRef-img"></div>
+                    <div class="idRef-tit">参考照片</div>
+                </div>
+                <div class="idCard-reverse fl">
+                    <input type="file" id="idRev-img">
+                    <label class="idRev-img" for="idRev-img"></label>
+                    <div class=" idRev-tit ">你的照片</div>
+                </div>
+            </div>
+        </div>
+        <div class="putInfo">
+            <button class="op-inp1" type="submit">提交验证</button>
+        </div>
+    </form>
+</body>
+<script src="./js/all.js "></script>
+<script>
+    all.putpicture("idFro-img", ".idFro-img");
+    all.putpicture("idRev-img", ".idRev-img");
+</script>
+
+</html>

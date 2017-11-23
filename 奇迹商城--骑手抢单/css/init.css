@@ -45,6 +45,10 @@ dl {
     list-style: none;
 }
 
+input[type="file"] {
+    display: none;
+}
+
 input:focus::-webkit-input-placeholder {
     opacity: 0;
 }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <title>修改资料</title>
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="./js/plug/jquery-1.8.3.min.js"></script>
+    <script src="./js/plug/adaptive.js"></script>
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 28;
+        window['adaptive'].maxWidth = 480;
+        window['adaptive'].scaleType = 1;
+        window['adaptive'].init();
+    </script>
+</head>
+
+<body>
+    <form action="" method="post">
+        <div class="data-photo">
+            <span class="fl">头像</span>
+            <input id="data-img" type="file" name="" value="">
+            <label class="data-img fr" for="data-img"></label>
+        </div>
+        <div class="data-msg">
+            <span class="fl">姓名：</span>
+            <input class="data-inp" type="text" name="" value="Mr.Xu">
+        </div>
+        <div class="data-msg">
+            <span class="fl">电话：</span>
+            <input class="data-inp" type="number" name="" value="13786139413">
+        </div>
+        <div class="data-msg">
+            <span class="fl">地址：</span>
+            <input class="data-inp" type="text" name="" value="中国 湖南 长沙">
+        </div>
+        <div class="data-put">
+            <button class="op-inp1" type="submit">确认修改</button>
+        </div>
+    </form>
+</body>
+<script src="./js/all.js"></script>
+<script>
+    all.putpicture("data-img", ".data-img");
+</script>
+
+</html>
