@@ -1,0 +1,62 @@
+/* 个人信息 */
+
+.person-msg .ps-intro {
+    width: 7.5rem;
+    height: 1.6rem;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: .22rem .38rem;
+    line-height: 1.16rem;
+    font-size: .34rem;
+}
+
+.person-msg .ps-img {
+    width: 1.16rem;
+    height: 100%;
+    border-radius: 50%;
+    background: url(./../img/dongtai/dt_img.png)no-repeat center;
+    background-size: cover;
+    margin-right: .2rem;
+}
+
+.person-msg .ps-details {
+    width: 100%;
+    margin-top: .1rem;
+    margin-bottom: 1.1rem;
+}
+
+.person-msg .ps-details div {
+    height: .88rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 .2rem;
+    line-height: .88rem;
+    background-color: #fff;
+    border-bottom: .01rem solid #eee;
+}
+
+.person-msg .ps-details div span {
+    width: 1.3rem;
+    font-size: .3rem;
+}
+
+.person-msg .ps-details div input {
+    width: 5.3rem;
+    height: 100%;
+    line-height: .88rem;
+    padding-left: .1rem;
+    font-size: .28rem;
+    color: #888;
+}
+
+.confirm-amend button {
+    display: block;
+    width: 7.1rem;
+    height: .8rem;
+    line-height: .8rem;
+    margin: 0 auto;
+    background-color: #93d521;
+    color: #fff;
+    font-size: .34rem;
+    border-radius: .1rem;
+}

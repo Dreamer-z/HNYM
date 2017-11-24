@@ -1,0 +1,61 @@
+.publish-box {
+    width: 7.5rem;
+    height: 3.65rem;
+    box-sizing: border-box;
+    padding: .2rem;
+    font-size: .28rem;
+    user-select: none;
+    margin-bottom: .1rem;
+}
+
+.pubImg-li {
+    padding: .2rem .25rem;
+    margin-bottom: 1.1rem;
+}
+
+#pushimg,
+.pushimg {
+    display: block;
+    width: 1.55rem;
+    height: 1.55rem;
+    margin: .2rem .1rem;
+}
+
+#pushimg {
+    display: none;
+}
+
+.pushimg {
+    background: url(./../img/sc_img.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.img-li-box,
+.img-li-box img {
+    width: 1.55rem;
+    height: 1.55rem;
+    border-radius: .1rem;
+}
+
+.img-li-box {
+    margin: .2rem .1rem;
+    position: relative;
+}
+
+.delinp {
+    width: .4rem;
+    height: .4rem;
+    overflow: hidden;
+    position: absolute;
+    right: -.1rem;
+    top: -.2rem;
+    background: url(./../img/del_bg.png)no-repeat top right;
+    background-size: 100%;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.btn1 {
+    position: fixed;
+    bottom: 0;
+}

@@ -82,3 +82,98 @@ body {
 .msg-dis-payment p {
     color: red;
 }
+
+
+/* 按钮类型 */
+
+.btn1 {
+    width: 7.5rem;
+    height: .98rem;
+    background-color: #93d521;
+    color: #fff;
+    font-size: .34rem;
+    text-align: center;
+}
+
+
+/* 底部菜单栏 */
+
+.menu-spacing {
+    margin-bottom: 1.2rem;
+}
+
+.menu {
+    height: .98rem;
+    width: 7.5rem;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    margin-left: -3.75rem;
+    background-color: #fff;
+}
+
+.menu-li {
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: .1rem .2rem;
+}
+
+.menu-li a {
+    display: block;
+    text-align: center;
+}
+
+.menu-li a div {
+    width: .44rem;
+    height: .44rem;
+    margin: 0 auto;
+    margin-bottom: .06rem;
+}
+
+.menu-li a p {
+    font-size: .28rem;
+    line-height: .28rem;
+}
+
+.menu .index div {
+    background: url(./../img/menu_1.png)no-repeat center;
+    background-size: 100%;
+}
+
+.menu .circuit div {
+    background: url(./../img/menu_2.png)no-repeat center;
+    background-size: 90%;
+}
+
+.menu .shopping-car div {
+    background: url(./../img/menu_3.png)no-repeat center;
+    background-size: 90%;
+}
+
+.menu .sales div {
+    background: url(./../img/menu_4.png)no-repeat center;
+    background-size: 100%;
+}
+
+.menu .center div {
+    background: url(./../img/menu_5.png)no-repeat center;
+    background-size: 90%;
+}
+
+.shopping-car {
+    position: relative;
+}
+
+.shopping-car .commodity {
+    position: absolute;
+    right: .3rem;
+    top: 0;
+    width: .4rem;
+    height: .4rem;
+    line-height: .4rem;
+    border-radius: 50%;
+    font-size: .24rem;
+    color: #fff;
+    background-color: #93d521;
+}

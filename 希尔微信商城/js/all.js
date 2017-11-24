@@ -135,7 +135,7 @@ var all = {
             autoplayDisableOnInteraction: false,
         });
     },
-    // 添加评论区图片
+    // 添加评论区图片,向尾部添加
     put: function(inpid, domname) {
         var len = 0;
         document.getElementById(inpid).addEventListener("change", function() {
@@ -160,7 +160,44 @@ var all = {
                     class: "delinp"
                 }).appendTo($(".img-li-box").eq(i));
             });
+            // 删除图片操作
+            $(".delinp").click(function(ev) {
+                ev.stopPropagation();
+                $(this).parent(".img-li-box").remove();
+            });
+        });
+    },
+    // 添加评论区图片,向头部添加
+    putH: function(inpid, domname, imglength) {
+        var len = 0;
+        document.getElementById(inpid).addEventListener("change", function() {
+            var imgArr = [];
+            var imgurl;
+            filelist = document.getElementById(inpid).files;
+            len += filelist.length;
+            if (len > imglength) {
+                len -= filelist.length;
+                return;
+            };
+            for (var i = 0; i < filelist.length; i++) {
+                imgurl = window.URL.createObjectURL(filelist[i]);
+                imgArr.push(imgurl);
+                $("<img/>", {
+                    src: imgArr[i],
+                    class: "img-li"
+                }).appendTo($("<div/>", {
+                    class: "img-li-box fl"
+                }).insertBefore($("." + domname)));
+            };
 
+            $(".img-li-box").each(function(i) {
+                $(".img-li-box").eq(i).children(".delinp").remove();
+                $("<div/>", {
+                    class: "delinp"
+                }).appendTo($(".img-li-box").eq(i));
+            });
+
+            // 删除图片操作
             $(".delinp").click(function(ev) {
                 ev.stopPropagation();
                 $(this).parent(".img-li-box").remove();
