@@ -9,6 +9,11 @@ var all = {
         $(".fullscreen1").height($(window).height());
         $(".fullscreen1").css({ "background-color": "#eee", "position": "fixed", "left": "calc(50% - 3.75rem)", "top": "0", "z-index": "1000" });
     },
+    fullscreen2: function() {
+        $(".fullscreen2").width("7.5rem");
+        $(".fullscreen2").height($(window).height());
+        $(".fullscreen2").css({ "background-color": "#fff", "box-sizing": "border-box" });
+    },
     // 复选带全选功能
     check_inp: function() {
         var state, th;
@@ -58,7 +63,7 @@ var all = {
     check: function() {
         $("input:checkbox").click(function() {
             th = $(this);
-            if ($(this).attr("state") == 0) {
+            if ($(this).attr("state") == 0 || !$(this).attr("state")) {
                 $(this).attr("state", "1");
                 state = $(this).attr("state")
                 select(th, state);
@@ -86,7 +91,7 @@ var all = {
         var state, th;
         $("input:radio").click(function() {
             th = $(this);
-            if ($(this).attr("state") == 0) {
+            if ($(this).attr("state") == 0 || !$(this).attr("state")) {
                 $("input:radio").attr("state", "0");
                 $(this).attr("state", "1");
                 state = $(this).attr("state")
@@ -161,9 +166,35 @@ var all = {
                 $(this).parent(".img-li-box").remove();
             });
         });
+    },
+    // 更换头像
+    putpicture: function(inpid, domname) {
+        document.getElementById(inpid).addEventListener("change", function() {
+            var filelist = document.getElementById(inpid).files[0];
+            var imgurl = window.URL.createObjectURL(filelist);
+            $(domname).css({
+                "background": "url(" + imgurl + ")no-repeat center",
+                "background-size": "100%"
+            });
+        });
+    },
+    // 弹出信息处理事件
+    msg_tc: function(display_inp, msg_tc_dom, confirm_inp, cancel_inp) {
+        $(display_inp).click(function() {
+            $(msg_tc_dom).fadeIn(200);
+        });
+        $(confirm_inp).click(function() {
+            $(msg_tc_dom).fadeOut(200);
+        });
+        $(cancel_inp).click(function() {
+            $(msg_tc_dom).fadeOut(200);
+        });
     }
 };
 window.onload = function() {
     all.fullscreen();
     all.fullscreen1();
-}
+    all.fullscreen2();
+    all.check();
+    all.inp();
+};

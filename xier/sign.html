@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/rest.min.css">
     <link rel="stylesheet" href="/css/head-footer.min.css">
     <link rel="stylesheet" href="/css/sign.min.css">
+    <script src="./js/jquery-1.8.3.min.js"></script>
     <title>登录</title>
 </head>
 
@@ -32,14 +33,14 @@
                 <h4>欢迎登录</h4>
                 <ul class="y-clearfix">
                     <li id="sign-id" class="y-left">
-                        <span class="sign-way">账号登录</span>
-                        <form name="sign" action="#" autocomplete="no" target="_self">
-                            <ul class="sign-way-section">
+                        <span class="signli sign-way">账号登录</span>
+                        <form class="sign-way-section" name="IDsign" action="#" autocomplete="no" target="_self">
+                            <ul>
                                 <li>
-                                    <div class="signinp-box"><input type="number" placeholder="手机号码"></div>
+                                    <div class="signinp-box phone"><input type="number" placeholder="手机号码"></div>
                                 </li>
                                 <li>
-                                    <div class="signinp-box"><input type="number" placeholder="密码"></div>
+                                    <div class="signinp-box password"><input type="number" placeholder="密码"></div>
                                 </li>
                                 <li class="rememberme">
                                     <div class="y-clearfix rememberme-content">
@@ -62,18 +63,44 @@
                         </form>
                     </li>
                     <li id="sign-other" class="y-left">
-                        <span>快捷登录</span>
-                        <div class="sign-way-section">
-                            <img src="" alt="">
-                        </div>
+                        <span class="signli">快捷登录</span>
+                        <form class="sign-way-section" name="Telsign" action="#" autocomplete="no" target="_self">
+                            <ul>
+                                <li>
+                                    <div class="signinp-box phonenumber"><input type="number" placeholder="手机号码"></div>
+                                </li>
+                                <li class="y-clear">
+                                    <div class="signinp-box authCode y-left">
+                                        <input type="number" placeholder="验证码">
+                                    </div>
+                                    <div class="aCbox y-left">
+                                        <span>发送动态密码</span>
+                                    </div>
+                                </li>
+                                <li class="signinp">
+                                    <button type="submit">立即登录</button>
+                                </li>
+                            </ul>
+                        </form>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="footer-ft">
-        <a href="">@1996-2017湖南希尔生命科技有限公司版权所有湘ICP备10202188号-3</a>
+        <a href="" style="color: #999;">@1996-2017湖南希尔生命科技有限公司版权所有湘ICP备10202188号-3</a>
     </div>
 </body>
+<script>
+    $(".sign-way").siblings(".sign-way-section").css("display", "block");
+    $(".signli").click(function() {
+        $(".signli").each(function(i) {
+            $(".signli").eq(i).removeClass("sign-way");
+            $(".signli").eq(i).siblings(".sign-way-section").css("display", "");
+        });
+        $(this).addClass("sign-way");
+        $(this).siblings(".sign-way-section").css("display", "block");
+    });
+</script>
 
 </html>

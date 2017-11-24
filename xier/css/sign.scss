@@ -58,8 +58,8 @@
         &>ul {
             font-size: 18px;
             text-align: center;
+            position: relative;
             &>li {
-                position: relative;
                 width: 50%;
                 line-height: 24px;
             }
@@ -69,6 +69,9 @@
                 width: 50%;
                 margin: 0 auto;
                 font-size: 14px;
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -84,6 +87,7 @@
     top: 35px;
     width: 270px;
     box-sizing: border-box;
+    display: none;
     li {
         height: 50px;
         width: 100%;
@@ -102,6 +106,26 @@
                 width: 100%;
                 height: 14px;
                 margin: 17px 0;
+            }
+        }
+        .authCode {
+            width: 160px;
+            height: 100%;
+            margin-right: 10px;
+        }
+        .aCbox {
+            width: 100px;
+            font-size: 14px;
+            &:hover {
+                cursor: pointer;
+            }
+            span {
+                display: block;
+                width: 98px;
+                height: 48px;
+                border: 1px solid #999;
+                border-radius: 8px;
+                color: #666;
             }
         }
     }
@@ -131,6 +155,9 @@
             font-size: 22px;
             color: #fff;
             background-color: #61b14e;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
     .login-box {

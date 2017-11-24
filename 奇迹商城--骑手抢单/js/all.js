@@ -174,7 +174,7 @@ var all = {
             var imgurl = window.URL.createObjectURL(filelist);
             $(domname).css({
                 "background": "url(" + imgurl + ")no-repeat center",
-                "background-size": "cover"
+                "background-size": "100%"
             });
         });
     },

@@ -66,10 +66,10 @@
 #sign .sign-content > ul {
   font-size: 18px;
   text-align: center;
+  position: relative;
 }
 
 #sign .sign-content > ul > li {
-  position: relative;
   width: 50%;
   line-height: 24px;
 }
@@ -82,6 +82,10 @@
   font-size: 14px;
 }
 
+#sign .sign-content > ul > li > span:hover {
+  cursor: pointer;
+}
+
 .sign-way {
   border-bottom: 2px solid #61b14e;
 }
@@ -92,6 +96,7 @@
   top: 35px;
   width: 270px;
   box-sizing: border-box;
+  display: none;
 }
 
 .sign-way-section li {
@@ -116,6 +121,30 @@
   width: 100%;
   height: 14px;
   margin: 17px 0;
+}
+
+.sign-way-section li .authCode {
+  width: 160px;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.sign-way-section li .aCbox {
+  width: 100px;
+  font-size: 14px;
+}
+
+.sign-way-section li .aCbox:hover {
+  cursor: pointer;
+}
+
+.sign-way-section li .aCbox span {
+  display: block;
+  width: 98px;
+  height: 48px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  color: #666;
 }
 
 .sign-way-section .rememberme {
@@ -147,6 +176,10 @@
   font-size: 22px;
   color: #fff;
   background-color: #61b14e;
+}
+
+.sign-way-section .signinp button:hover {
+  cursor: pointer;
 }
 
 .sign-way-section .login-box {
