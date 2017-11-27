@@ -6,3 +6,5 @@
 分销 distribution.html
 个人信息 person_message.html
 个人中心 person_center.html
+购物车 shopping_car.html
+关于我们 about_us.html

@@ -177,3 +177,10 @@ body {
     color: #fff;
     background-color: #93d521;
 }
+
+input[type="checkbox"] {
+    width: .38rem;
+    height: .38rem;
+    border-radius: 50%;
+    border: .01rem solid #93d521;
+}

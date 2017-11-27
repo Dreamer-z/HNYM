@@ -93,3 +93,133 @@
     width: 100%;
     height: 100%;
 }
+
+.ord-list {
+    padding-top: .2rem;
+    border-bottom: .01rem solid #eee;
+}
+
+.ord-li {
+    width: 1.48rem;
+    height: 1.4rem;
+    line-height: .4rem;
+    text-align: center;
+}
+
+.ord-li a {
+    display: block;
+    width: 1.48rem;
+    height: .4rem;
+    padding-top: .8rem;
+    color: #666;
+    padding-bottom: .2rem;
+}
+
+.waiPay a {
+    background: url(./../img/pec_1.png)no-repeat .45rem .2rem;
+    background-size: 40%;
+}
+
+.waiSend a {
+    background: url(./../img/pec_2.png)no-repeat .48rem .2rem;
+    background-size: 36%;
+}
+
+.waiReceive a {
+    background: url(./../img/pec_3.png)no-repeat .45rem .2rem;
+    background-size: 40%;
+}
+
+.waiCom a {
+    background: url(./../img/pec_4.png)no-repeat .45rem .2rem;
+    background-size: 40%;
+}
+
+.refund a {
+    background: url(./../img/pec_5.png)no-repeat .48rem .2rem;
+    background-size: 36%;
+}
+
+.ord-li-line {
+    width: .02rem;
+    height: .4rem;
+    margin-top: .4rem;
+    background-color: #f0eeef;
+}
+
+.perCen-ord,
+.perCen-li {
+    background-color: #fff;
+}
+
+.perCen-ord a,
+.perCen-li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.perCen-ord a {
+    width: 6.5rem;
+    height: .82rem;
+    line-height: .82rem;
+    padding: 0 .8rem 0 .2rem;
+    margin-bottom: .1rem;
+    background: url(./../img/more_l.png)no-repeat 7rem .24rem;
+    background-size: 2.5%;
+}
+
+.moreOrd {
+    color: #999;
+}
+
+.perCen-li a {
+    width: 5.9rem;
+    height: .82rem;
+    line-height: .82rem;
+    padding: 0 .8rem;
+}
+
+.perCen-collect a {
+    background: url(./../img/peli_1.png)no-repeat .25rem .22rem, url(./../img/more_l.png)no-repeat 7rem .24rem;
+    background-size: 5%, 2.5%;
+}
+
+.perCen-ticket a {
+    background: url(./../img/peli_2.png)no-repeat .25rem .22rem, url(./../img/more_l.png)no-repeat 7rem .24rem;
+    background-size: 4.5%, 2.5%;
+}
+
+.perCen-addr a {
+    background: url(./../img/peli_3.png)no-repeat .25rem .22rem, url(./../img/more_l.png)no-repeat 7rem .24rem;
+    background-size: 4.5%, 2.5%;
+}
+
+.perCen-lesson a {
+    background: url(./../img/peli_4.png)no-repeat .25rem .22rem, url(./../img/more_l.png)no-repeat 7rem .24rem;
+    background-size: 5%, 2.5%;
+}
+
+.perCen-about a {
+    background: url(./../img/peli_5.png)no-repeat .25rem .22rem, url(./../img/more_l.png)no-repeat 7rem .24rem;
+    background-size: 5%, 2.5%;
+}
+
+.perCen-contact a {
+    background: url(./../img/peli_6.png)no-repeat .25rem .22rem, url(./../img/more_l.png)no-repeat 7rem .24rem;
+    background-size: 5%, 2.5%;
+}
+
+.perCen-list {
+    margin-bottom: 1.1rem;
+}
+
+.menu .center div {
+    background: url(./../img/menu_4_on.png)no-repeat center;
+    background-size: 100%;
+}
+
+.menu .center p {
+    color: #93d521;
+}

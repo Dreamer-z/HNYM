@@ -14,22 +14,8 @@ var all = {
         $(".fullscreen2").height($(window).height());
         $(".fullscreen2").css({ "background-color": "#fff", "box-sizing": "border-box" });
     },
-    // 复选带全选功能
-    check_inp: function() {
-        var state, th;
-        $("input:checkbox").click(function() {
-            th = $(this);
-            if ($(this).attr("state") == 0) {
-                $(this).attr("state", "1");
-                state = $(this).attr("state")
-                select(th, state);
-            } else {
-                $(this).attr("state", "0");
-                state = $(this).attr("state")
-                select(th, state);
-            };
-        });
-
+    // 全选功能
+    check_inp: function(allinpID, inpname, delname) {
         function select(dom, num) {
             if (num == 1) {
                 $(dom).removeClass("input-no-checked");
@@ -41,26 +27,39 @@ var all = {
                 $(dom).removeProp("checked");
             }
         };
-        document.getElementById("allinp").addEventListener("change", function() {
-            if ($("#allinp").prop("checked") == true) {
-                $(".ce-inp").each(function(i) {
-                    $(".ce-inp").eq(i).attr("state", "1");
-                    $(".ce-inp").eq(i).addClass("input-checked");
-                    $(".ce-inp").eq(i).prop("checked", "checked");
-                    select($(".ce-inp").eq(i), $(".ce-inp").eq(i).attr("state"));
-                })
+        document.getElementById(allinpID).addEventListener("change", function() {
+            if ($("#" + allinpID).prop("checked") == true) {
+                $("." + inpname).each(function(i) {
+                    $("." + inpname).eq(i).attr("state", "1");
+                    $("." + inpname).eq(i).addClass("input-checked");
+                    $("." + inpname).eq(i).prop("checked", "checked");
+                    select($("." + inpname).eq(i), $("." + inpname).eq(i).attr("state"));
+                });
             } else {
-                $(".ce-inp").each(function(i) {
-                    $(".ce-inp").eq(i).attr("state", "0");
-                    $(".ce-inp").eq(i).removeClass("input-checked");
-                    $(".ce-inp").eq(i).removeProp("checked");
-                    select($(".ce-inp").eq(i), $(".ce-inp").eq(i).attr("state"));
-                })
+                $("." + inpname).each(function(i) {
+                    $("." + inpname).eq(i).attr("state", "0");
+                    $("." + inpname).eq(i).removeClass("input-checked");
+                    $("." + inpname).eq(i).removeProp("checked");
+                    select($("." + inpname).eq(i), $("." + inpname).eq(i).attr("state"));
+                });
             }
+        });
+        // 删除
+        $(delname).click(function() {
+            var sf = true;
+            if (sf == true) {
+                $("." + inpname).each(function(i) {
+                    if ($("." + inpname).eq(i).attr("state") == 1) {
+                        $("." + inpname).eq(i).parent(".sCarselect").parent(".sCar-li").addClass("delli");
+                    };
+                });
+                $(".delli").remove();
+            };
         });
     },
     // 复选按钮
     check: function() {
+        var state, th;
         $("input:checkbox").click(function() {
             th = $(this);
             if ($(this).attr("state") == 0 || !$(this).attr("state")) {
@@ -226,6 +225,10 @@ var all = {
         $(cancel_inp).click(function() {
             $(msg_tc_dom).fadeOut(200);
         });
+    },
+    // 购物车数量
+    scNum: function() {
+        $(".commodity").html();
     }
 };
 window.onload = function() {

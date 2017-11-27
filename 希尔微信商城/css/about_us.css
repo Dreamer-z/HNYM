@@ -1,0 +1,30 @@
+.aboutUs,
+.saleMarket {
+    margin-bottom: .1rem;
+}
+
+.auTit {
+    line-height: .8rem;
+    text-align: center;
+    font-size: .3rem;
+}
+
+.aboutUs-cont,
+.saleMarket-cont {
+    padding: .2rem;
+}
+
+.saleMarket-cont video {
+    display: block;
+    width: 7.1rem;
+    margin: .1rem auto;
+    border-radius: .1rem;
+}
+
+.aboutUs-cont img,
+.saleMarket-cont img {
+    display: block;
+    max-width: 7.1rem;
+    margin: .1rem auto;
+    border-radius: .1rem;
+}

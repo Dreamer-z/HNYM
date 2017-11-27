@@ -1,0 +1,72 @@
+.sCar-op {
+    height: .88rem;
+    padding: 0 .2rem;
+    line-height: .88rem;
+}
+
+#allinp {
+    margin-top: .25rem;
+    margin-right: .15rem;
+}
+
+.del {
+    width: .32rem;
+    height: .38rem;
+    margin-top: .25rem;
+    background: url(./../img/del.png)no-repeat center;
+    background-size: 100%;
+    border-bottom: .01rem solid #eee;
+}
+
+.sCar-list {
+    margin-bottom: 1.1rem;
+}
+
+.sCar-li {
+    height: 1.54rem;
+    padding: .1rem .2rem;
+    border-bottom: .01rem solid #eee;
+    line-height: .4rem;
+}
+
+.sCarinp {
+    margin-top: .57rem;
+    margin-right: .2rem;
+}
+
+.sCarimg {
+    box-sizing: border-box;
+    width: 1.54rem;
+    height: 100%;
+    border: .01rem solid #eee;
+    border-radius: .2rem;
+    margin-right: .2rem;
+}
+
+.sCarname {
+    font-size: .3rem;
+}
+
+.sCarsize {
+    font-size: .24rem;
+    color: #999;
+    margin-bottom: .34rem;
+}
+
+.sCarprice {
+    font-size: .24rem;
+    color: red;
+}
+
+.sCarprice span {
+    font-size: .28rem;
+}
+
+.menu .shopping-car div {
+    background: url(./../img/menu_3_on.png)no-repeat center;
+    background-size: 100%;
+}
+
+.menu .shopping-car p {
+    color: #93d521;
+}
