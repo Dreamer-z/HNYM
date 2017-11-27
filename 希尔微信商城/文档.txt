@@ -5,3 +5,4 @@
 发表 publish.html
 分销 distribution.html
 个人信息 person_message.html
+个人中心 person_center.html
