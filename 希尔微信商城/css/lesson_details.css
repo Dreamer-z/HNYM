@@ -1,0 +1,97 @@
+.lesson-bg {
+    width: 7.5rem;
+    height: 3.5rem;
+    background: url(./../img/dongtai/dt-bg.png)no-repeat center;
+    background-size: 100%;
+    position: fixed;
+    top: 0;
+    left: calc(50% - 3.75rem);
+    z-index: -1;
+}
+
+.lesson-msg {
+    width: 7.5rem;
+}
+
+.lesson-remind {
+    width: 7.5rem;
+    height: .66rem;
+    line-height: .66rem;
+    padding: 1.42rem 0;
+    text-align: center;
+}
+
+.lesson-remSec {
+    display: inline-block;
+    padding: 0 .2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: .1rem;
+}
+
+.lesson-sec {
+    padding-top: .75rem;
+    height: 1.45rem;
+    position: relative;
+    text-align: center;
+}
+
+.lesson-secImg {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: .2rem;
+    background: url(./../img/dongtai/dt-bg.png)no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: -.75rem;
+    left: calc(50% - .75rem);
+    z-index: 99;
+}
+
+.lesson-tit {
+    margin: .2rem 0;
+    color: #93d521;
+}
+
+.lesson-pv {
+    font-size: .24rem;
+    color: #999;
+}
+
+.lesson-int {
+    margin-bottom: 1.1rem;
+}
+
+.lesson-intTit {
+    height: 0.4rem;
+    line-height: .4rem;
+    padding: .5rem 0;
+    font-size: .3rem;
+    background: url(./../img/tit_bg.png)no-repeat 50% 50%;
+    background-size: 40%;
+    text-align: center;
+}
+
+.lesson-intCont {
+    line-height: .4rem;
+    padding: .1rem .2rem;
+}
+
+.bt-op {
+    font-size: .34rem;
+    line-height: .98rem;
+}
+
+.bOp-l,
+.bOp-l a {
+    color: #93d521;
+}
+
+.bOp-r {
+    background-color: #93d521;
+}
+
+.bOp-r,
+.bOp-r a {
+    color: #fff;
+}

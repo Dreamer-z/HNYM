@@ -1,0 +1,47 @@
+.prof-all {
+    width: 7.1rem;
+    margin: 0 auto;
+    padding: .1rem 0;
+}
+
+.pral-li {
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 .2rem;
+    border-radius: .1rem;
+    margin-bottom: .1rem;
+}
+
+.pral-li-person {
+    height: 1rem;
+    line-height: 1rem;
+    font-size: .3rem;
+    color: #333;
+    border-bottom: .01rem solid #eee;
+}
+
+.pral-li-person div {
+    width: .68rem;
+    height: .68rem;
+    border-radius: 50%;
+    margin-top: .16rem;
+    background: url(./../img/dongtai/dt_img.png)no-repeat center;
+    background-size: cover;
+    margin-right: .2rem;
+}
+
+.pral-data li {
+    line-height: .72rem;
+    height: .72rem;
+    font-size: .28rem;
+}
+
+.pral-data li span {
+    font-size: .24rem;
+    color: red;
+}
+
+.pral-data .fixture-date span {
+    color: #888;
+}

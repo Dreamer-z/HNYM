@@ -12,6 +12,7 @@
 .aboutUs-cont,
 .saleMarket-cont {
     padding: .2rem;
+    padding-top: 0;
 }
 
 .saleMarket-cont video {
