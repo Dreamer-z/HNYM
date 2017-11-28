@@ -12,3 +12,4 @@
 节日优惠 festival_discounts.html
 课堂详情 lesson_details.html
 利润分配 profits_allot.html
+联系我们 contact_us.html
