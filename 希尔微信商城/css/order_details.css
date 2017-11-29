@@ -117,3 +117,12 @@
     color: #999;
     margin-bottom: .38rem;
 }
+
+.msg-dis-freight,
+.msg-dis-orderID {
+    margin-top: .1rem;
+}
+
+.msg-dis-payment p {
+    color: red;
+}

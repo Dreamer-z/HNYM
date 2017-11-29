@@ -18,3 +18,9 @@
 收货地址 delivery_address.html
 收益统计(提现) income_statistics.html
 首页 index.html
+糖友福利 member_benefits.html
+糖友圈 friends_circle.html
+优惠福利 discounts_benefits.html
+提交订单 send_orders.html
+提交订单(福利) send_benefitsorders.html
+提交订单(积分) send_pointsorders.html

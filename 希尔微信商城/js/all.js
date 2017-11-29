@@ -113,6 +113,7 @@ var all = {
             }
         };
     },
+    // 横向banner
     banner: function(obj) {
         var mySwiper = new Swiper(obj, {
             direction: 'horizontal',
@@ -121,6 +122,18 @@ var all = {
             // 如果需要分页器
             pagination: '.swiper-pagination',
             autoplay: 4000,
+            autoplayDisableOnInteraction: false,
+        });
+    },
+    // 纵向banner   
+    banner1: function(obj) {
+        var mySwiper = new Swiper(obj, {
+            direction: 'vertical',
+            loop: true,
+            speed: 2000,
+            noSwiping: true, //禁止拖动
+            noSwipingClass: 'stop-swiping', //禁止拖动
+            autoplay: 8000,
             autoplayDisableOnInteraction: false,
         });
     },
@@ -226,6 +239,30 @@ var all = {
             $(msg_tc_dom).fadeOut(200);
         });
     },
+    // 数量选择
+    addSub: function() {
+        var pnum;
+        var len;
+        var type = "";
+        var allpeo;
+        $(".add").click(function() {
+            $(this).addClass("add-cl");
+            $(this).siblings(".sub").removeClass("sub-cl");
+            pnum = $(this).siblings("input").val();
+            pnum++;
+            $(this).siblings("input").val(pnum);
+        });
+        $(".sub").click(function() {
+            $(this).addClass("sub-cl");
+            $(this).siblings(".add").removeClass("add-cl");
+            if ($(this).siblings("input").val() == 0) {
+                return;
+            };
+            pnum = $(this).siblings("input").val();
+            pnum--;
+            $(this).siblings("input").val(pnum);
+        });
+    },
     // 购物车数量
     scNum: function() {
         $(".commodity").html();
@@ -237,4 +274,5 @@ window.onload = function() {
     all.fullscreen2();
     all.check();
     all.inp();
+    all.addSub();
 };

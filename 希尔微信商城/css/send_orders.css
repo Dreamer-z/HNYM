@@ -1,0 +1,147 @@
+.ordDet-msg {
+    margin-bottom: .1rem;
+}
+
+.ordDet-msg-person {
+    font-size: .28rem;
+    padding: .2rem 1rem;
+}
+
+.ordDet-msg-addr {
+    padding: 0 1rem;
+    font-size: .24rem;
+    line-height: .4rem;
+    color: #999;
+    margin-bottom: .2rem;
+}
+
+
+/* 彩色线条 */
+
+.dd-xt {
+    width: 7.5rem;
+    height: .08rem;
+    background: url(./../img/dd_xt.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.ordDet-commodity {
+    margin-bottom: .02rem;
+}
+
+.ordDet-commodity-cont {
+    width: 7.1rem;
+    padding: .38rem .2rem;
+}
+
+.ordDet-commodity-img {
+    width: 1.58rem;
+    height: 1.58rem;
+    border: .01rem solid #eee;
+    margin-right: .2rem;
+}
+
+.ordDet-commodity-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.ordDet-commodity-msg {
+    width: 3rem;
+    max-height: 100%;
+    overflow: hidden;
+    margin-right: .2rem;
+}
+
+.ordDet-commodity-name {
+    font-size: .3rem;
+    line-height: .4rem;
+}
+
+.ordDet-commodity-size {
+    font-size: .24rem;
+    line-height: .4rem;
+    color: #999;
+}
+
+.ordDet-commodity-pnum {
+    width: 2.1rem;
+    font-size: .24rem;
+    line-height: .4rem;
+    text-align: right;
+}
+
+.ordDet-commodity-num {
+    color: #999;
+    margin-bottom: .38rem;
+}
+
+.msg-dis {
+    height: .98rem;
+    line-height: .98rem;
+    font-size: .3rem;
+}
+
+.md-number,
+.md-remind {
+    margin-bottom: .1rem;
+}
+
+.md-remind span {
+    width: .8rem;
+}
+
+.md-remind input {
+    height: .98rem;
+    width: 6.3rem;
+    line-height: .98rem;
+    font-size: .28rem;
+}
+
+.carriage {
+    color: #999;
+}
+
+.cTicket {
+    background: url(./../img/more_l.png)no-repeat 4.15rem .28rem;
+    background-size: 4%;
+}
+
+
+/* 数量 */
+
+.onbook-op .add,
+.onbook-op .sub {
+    width: .6rem;
+    height: .5rem;
+    margin-top: .24rem;
+    border-radius: .15rem;
+    overflow: hidden;
+}
+
+.onbook-op .add {
+    background: url(./../img/as_add.png)no-repeat center;
+    background-size: 100%;
+}
+
+.onbook-op .sub {
+    background: url(./../img/as_sub.png)no-repeat center;
+    background-size: 100%;
+}
+
+.onbook-op .add-cl {
+    background: url(./../img/as_add_cl.png)no-repeat center;
+    background-size: 100%;
+}
+
+.onbook-op .sub-cl {
+    background: url(./../img/as_sub_cl.png)no-repeat center;
+    background-size: 100%;
+}
+
+.onbook-op input {
+    width: 1rem;
+    height: .5rem;
+    margin-top: .24rem;
+    text-align: center;
+}

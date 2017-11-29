@@ -12,7 +12,6 @@
     <title>动态详情</title>
     <link rel="stylesheet" href="./css/init.css">
     <link rel="stylesheet" href="./css/all.css">
-    <link rel="stylesheet" href="./css/dynamic_details.css">
     <script src="./js/plug/jquery-1.8.3.min.js"></script>
     <script src="./js/plug/adaptive.js"></script>
     <script type="text/javascript">
@@ -22,6 +21,13 @@
         window['adaptive'].scaleType = 1;
         window['adaptive'].init();
     </script>
+    <style>
+        .dynDet-comment-inp {
+            position: fixed;
+            left: calc(50% - 3.75rem);
+            bottom: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,7 +37,7 @@
             <p class="dynDet-person-name">Miss.Monica</p>
             <p class="dynDet-person-time">9月20日 22:30</p>
         </div>
-        <div class="dynDet-person-attention fr"><span>＋ 关注</span></div>
+        <div class="dynDet-person-attention fr"><span>＋关注</span></div>
     </div>
     <div class="dynDet-contbox bg-fff">
         <div class="dynDet-cont">
@@ -66,9 +72,9 @@
             </div>
         </div>
     </div>
-    <form class="dynDet-comment-inp bg-fff" action="" method="post">
+    <div class="dynDet-comment-inp bg-fff" action="" method="post">
         <input type="text" name="comment" value="" placeholder="评论...">
-    </form>
+    </div>
 </body>
 
 </html>

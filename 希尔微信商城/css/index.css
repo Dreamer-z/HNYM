@@ -49,3 +49,320 @@
 .indBanner .swiper-pagination-bullet-active {
     background-color: #616d64;
 }
+
+
+/* 快报 */
+
+.bulletin {
+    height: .72rem;
+    line-height: .72rem;
+    padding: 0 .2rem;
+    margin-bottom: .03rem;
+}
+
+.bulletin .swiper-wrapper {
+    transition-timing-function: linear;
+    color: #000;
+}
+
+.beTit {
+    width: 1.4rem;
+    height: 100%;
+}
+
+.beTit span {
+    display: inline-block;
+    width: .8rem;
+    height: .36rem;
+    margin: .18rem 0;
+    background: url(./../img/bulletin_bg.png)no-repeat center;
+    background-size: 90%;
+}
+
+.beCont {
+    width: 4.6rem;
+    height: 100%;
+    margin: 0 .1rem;
+}
+
+.beMore {
+    box-sizing: border-box;
+    line-height: .3rem;
+    width: .9rem;
+    text-align: center;
+    margin: .21rem 0;
+    border-left: .01rem solid #666;
+}
+
+
+/* 首页菜单 */
+
+.indMenu {
+    width: 7.5rem;
+    height: 1.6rem;
+}
+
+.indMenu-li {
+    width: 25%;
+    height: 100%;
+    line-height: .6rem;
+    text-align: center;
+}
+
+.indMenu-li a {
+    display: block;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.iM-welfare a {
+    background: url(./../img/indMenu_1.png)no-repeat .56rem .2rem;
+    background-size: 40%;
+}
+
+.iM-integral a {
+    background: url(./../img/indMenu_2.png)no-repeat .56rem .2rem;
+    background-size: 40%;
+}
+
+.iM-self-service a {
+    background: url(./../img/indMenu_3.png)no-repeat .56rem .2rem;
+    background-size: 40%;
+}
+
+.iM-lesson a {
+    background: url(./../img/indMenu_4.png)no-repeat .56rem .2rem;
+    background-size: 40%;
+}
+
+
+/* 广告 */
+
+.advertisement {
+    width: 7.5rem;
+    height: 3.13rem;
+    margin: .1rem 0;
+}
+
+.advertisement img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 首页版块-限时优惠 */
+
+.flash-sale {
+    margin-bottom: .1rem;
+}
+
+.sectionTit {
+    width: 7.5rem;
+    line-height: .75rem;
+    font-size: .32rem;
+    text-align: center;
+    color: #666;
+    background: url(./../img/isec_bg.png)no-repeat 2.25rem .2rem;
+    background-size: 40%;
+    background-color: #fff;
+    border-bottom: .03rem solid #eee;
+}
+
+.fsL,
+.fsR {
+    width: 50%;
+    height: 3.62rem;
+    box-sizing: border-box;
+}
+
+.fsL {
+    padding: .2rem;
+    border-right: .02rem solid #eee;
+}
+
+.fsL-name {
+    text-align: center;
+    font-size: .28rem;
+    line-height: .42rem;
+}
+
+.fsL-discount {
+    color: red;
+    margin-left: .1rem;
+}
+
+.fsL-img {
+    display: block;
+    width: 100%;
+    height: 2.8rem;
+}
+
+.fsR {
+    border-left: .02rem solid #eee;
+}
+
+.fsR-top,
+.fsR-bot {
+    height: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: .1rem;
+    overflow: hidden;
+}
+
+.fsR-top {
+    border-bottom: .02rem solid #eee;
+}
+
+.fsR-bot {
+    border-top: .02rem solid #eee;
+}
+
+.fsR-Cont,
+.fsR-img {
+    width: 50%;
+    height: 100%;
+}
+
+.fsR-tit {
+    color: #93d521;
+}
+
+.fsR-intro {
+    color: #999;
+}
+
+.fsR-name {
+    font-size: .26rem;
+}
+
+.fsR-short {
+    font-size: .24rem;
+}
+
+.fsR-price {
+    margin-top: .1rem;
+    font-size: .24rem;
+    color: #fff;
+}
+
+.fsR-price p {
+    display: inline-block;
+    background-color: #fa5656;
+    padding: .03rem .1rem;
+    border-radius: .1rem;
+}
+
+.fsR-img {
+    box-sizing: border-box;
+    padding: .1rem;
+}
+
+.fsR-img img {
+    widows: 100%;
+    height: 100%;
+}
+
+
+/* 首页版块-热销产品 */
+
+.hot-product {
+    margin-bottom: 1rem;
+}
+
+.hpUl {
+    overflow: hidden;
+}
+
+.hpLi {
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    margin-bottom: .1rem;
+    background-color: #fff;
+}
+
+.hpLi a {
+    display: block;
+}
+
+.hpLi:nth-child(2n+1) {
+    border-right: .03rem solid #eee;
+}
+
+.hpLi:nth-child(2n) {
+    border-left: .02rem solid #eee;
+}
+
+.hpImg {
+    box-sizing: border-box;
+    width: 100%;
+    height: 3.54rem;
+    padding: .3rem;
+}
+
+.hpImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.hpSec {
+    padding: 0 .2rem;
+    border-top: .03rem solid #eee;
+}
+
+.hpTit {
+    color: #222;
+    line-height: .5rem;
+    border-bottom: .01rem dashed #999;
+}
+
+.hpShort {
+    line-height: .56rem;
+    font-size: .24rem;
+    color: #999;
+}
+
+.hpgCont {
+    height: .45rem;
+    line-height: .45rem;
+    font-size: .24rem;
+    margin-bottom: .2rem;
+    color: #999;
+}
+
+.hpPrice {
+    color: #fff;
+    background-color: #fa5656;
+    padding: 0 .3rem 0 .1rem;
+    border-radius: .05rem .22rem .22rem .05rem;
+    margin-right: .2rem;
+}
+
+.hpPrice span {
+    font-size: .3rem;
+}
+
+.hpOriginalprice {
+    text-decoration: line-through;
+    margin-right: .4rem;
+}
+
+.addSc {
+    height: .45rem;
+    width: .45rem;
+    background: url(./../img/sCar.png)no-repeat center;
+    background-size: 100%;
+}
+
+
+/* 底部菜单 */
+
+.menu .index div {
+    background: url(./../img/menu_3_on.png)no-repeat center;
+    background-size: 100%;
+}
+
+.menu .index p {
+    color: #93d521;
+}

@@ -74,15 +74,6 @@ body {
     border-bottom: .01rem solid #eee;
 }
 
-.msg-dis-freight,
-.msg-dis-orderID {
-    margin-top: .1rem;
-}
-
-.msg-dis-payment p {
-    color: red;
-}
-
 
 /* 按钮类型 */
 
@@ -261,4 +252,292 @@ input[type="checkbox"] {
     color: #fff;
     background-color: #93d521;
     border-radius: .1rem;
+}
+
+
+/* 优惠券 */
+
+.coupon-list {
+    padding: .2rem 0;
+}
+
+.coupon-li {
+    box-sizing: border-box;
+    width: 7.1rem;
+    height: 1.64rem;
+    margin: .15rem auto;
+    padding: .2rem 0;
+    background: url(./../img/coupon_bg.png)no-repeat center;
+    background-size: 100%;
+}
+
+.coupon-sec-limit {
+    height: 100%;
+    line-height: 1.25rem;
+    width: 1.42rem;
+    text-align: center;
+}
+
+.coupon-sec-limit span {
+    font-size: .34rem;
+}
+
+.coupon-sec-img {
+    box-sizing: border-box;
+    width: 1.3rem;
+    height: 100%;
+    margin: 0 .2rem;
+    border-radius: .1rem;
+    border: .01rem solid #eee;
+}
+
+.coupon-sec-cont {
+    width: 3.55rem;
+    font-size: .3rem;
+}
+
+.coupon-sec-size,
+.coupon-sec-pri {
+    font-size: .24rem;
+    color: #999;
+}
+
+.coupon-sec-size {
+    margin-bottom: .2rem;
+}
+
+.coupon-sec-pri {
+    color: #93d521;
+}
+
+.coupon-sec-limit {
+    width: 1.8rem;
+    height: 100%;
+    line-height: 1.24rem;
+    margin-left: .05rem;
+}
+
+.coupon-sec-limit a {
+    color: #93d521;
+}
+
+.lose a {
+    color: #999;
+}
+
+
+/* 圈子动态列表 */
+
+.dynDet-person {
+    padding: .1rem .3rem;
+}
+
+.dynDet-person-img {
+    height: .8rem;
+    width: .8rem;
+    border-radius: 50%;
+    margin-right: .1rem;
+}
+
+.dynDet-person-nati {
+    line-height: .4rem;
+    font-size: .3rem;
+}
+
+.dynDet-person-time {
+    font-size: .24rem;
+    color: #999;
+}
+
+.dynDet-person-attention span {
+    font-size: .24rem;
+    color: #93d521;
+    line-height: .8rem;
+    padding: .1rem .15rem;
+    border: .01rem solid #93d521;
+    border-radius: .1rem;
+}
+
+.dynDet-contbox {
+    border-top: .01rem solid #eee;
+    padding: .2rem;
+}
+
+.dynDet-cont {
+    font-size: .28rem;
+    line-height: .36rem;
+    margin-bottom: .1rem;
+}
+
+.dynDet-cont img {
+    display: block;
+    margin: .1rem auto;
+    max-width: 7.1rem;
+}
+
+.dynDet-cont-option {
+    height: .75rem;
+    line-height: .75rem;
+    color: #999;
+    font-size: .3rem;
+}
+
+.dynDet-like,
+.dynDet-comment {
+    padding-left: .6rem;
+    margin: 0 .2rem;
+}
+
+.dynDet-like {
+    background: url(./../img/like.png)no-repeat .1rem .2rem;
+    background-size: 40%;
+}
+
+.dynDet-like-on {
+    background: url(./../img/like_on.png)no-repeat .1rem .2rem;
+    background-size: 40%;
+}
+
+.dynDet-comment {
+    background: url(./../img/comment.png)no-repeat .1rem .2rem;
+    background-size: 42%;
+}
+
+.dynDet-comment-on {
+    background: url(./../img/comment_on.png)no-repeat .1rem .2rem;
+    background-size: 42%;
+}
+
+.dynDet-share {
+    height: .45rem;
+    width: .45rem;
+    margin: .15rem;
+    background: url(./../img/share.png)no-repeat center;
+    background-size: 80%;
+}
+
+.dynDet-comment-cont {
+    padding-top: .2rem;
+    border-top: .01rem solid #eee;
+    font-size: .28rem;
+    line-height: .4rem;
+}
+
+.comCont-person,
+.comContreply-person,
+.comContreply-master {
+    color: #93d521;
+}
+
+.comContreply-li,
+.comCont-sec,
+.comContreply-sec {
+    color: #666;
+}
+
+
+/* 动态评论 */
+
+.dynDet-comment-inp {
+    box-sizing: border-box;
+    width: 7.5rem;
+    height: .98rem;
+    padding: .14rem .2rem;
+}
+
+.dynDet-comment-inp input {
+    width: 6.9rem;
+    padding: 0 .1rem;
+    height: .7rem;
+    line-height: .7rem;
+    box-sizing: border-box;
+    border: .01rem solid #eee;
+    border-radius: .1rem;
+}
+
+
+/* 福利商品信息列表 */
+
+.fesDis-li {
+    width: 7.5rem;
+    height: 2.7rem;
+    padding: .2rem 0;
+    margin-bottom: .02rem;
+}
+
+.fesDis-li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.fesDis-img {
+    box-sizing: border-box;
+    width: 3rem;
+    height: 2.7rem;
+    margin: 0 .35rem;
+    border: .01rem solid #eee;
+}
+
+.fesDis-cont {
+    width: 3.45rem;
+    height: 2.7rem;
+    margin-right: .35rem;
+}
+
+.fesDis-tag {
+    font-size: .24rem;
+    line-height: .4rem;
+    padding: 0 .1rem;
+    margin-right: .1rem;
+    color: #fff;
+    background-color: #93d521;
+    border-radius: .1rem;
+}
+
+.fesDis-name {
+    font-size: .3rem;
+}
+
+.fesDis-msg {
+    margin: .2rem 0;
+}
+
+.fesDis-discount span {
+    font-size: .24rem;
+    padding: 0 .1rem;
+    line-height: .28rem;
+    border: .01rem solid #93d521;
+    color: #93d521;
+    border-radius: .1rem;
+}
+
+.fesDis-discount {
+    margin-bottom: .3rem;
+}
+
+.fesDis-price {
+    height: .45rem;
+    line-height: .45rem;
+}
+
+.curPrice {
+    text-align: center;
+    font-size: .24rem;
+    height: .45rem;
+    width: 1.2rem;
+    color: #fff;
+    background-color: #fa5656;
+    margin-right: .2rem;
+    border-radius: .1rem 0.22rem .22rem .1rem / .1rem .22rem .22rem .1rem;
+}
+
+.curPrice span {
+    font-size: .3rem;
+}
+
+.oriCost {
+    font-size: .24rem;
+    color: #999;
+    text-decoration: line-through;
 }
