@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <title>收货地址</title>
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/delivery_address.css">
+    <script src="./js/plug/jquery-1.8.3.min.js"></script>
+    <script src="./js/plug/adaptive.js"></script>
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 28;
+        window['adaptive'].maxWidth = 480;
+        window['adaptive'].scaleType = 1;
+        window['adaptive'].init();
+    </script>
+</head>
+
+<body>
+    <ul class="addrUl">
+        <li class="addrLi bg-fff">
+            <div class="deliMsg clear">
+                <p class="deliName fl">收货人：<span>李某某</span></p>
+                <p class="deliTel fl">137 8564 4569</p>
+            </div>
+            <div class="deliAddr elli2">
+                <a href="">
+                    <p>收货地址：<span>湖南省 长沙市 雨花区 某某小区 4栋 湖南省 长沙市 雨花区 某某小区 4栋 5楼</span></p>
+                </a>
+            </div>
+            <div class="deliAddr-op clear">
+                <p class="defaultInp fl clear"><span class="dfInp fl dfInp-check" data_check="1"></span><span class="fl">默认地址</span></p>
+                <p class="delBtn fr"></p>
+            </div>
+        </li>
+        <li class="addrLi bg-fff">
+            <div class="deliMsg clear">
+                <p class="deliName fl">收货人：<span>李某某</span></p>
+                <p class="deliTel fl">137 8564 4569</p>
+            </div>
+            <div class="deliAddr elli2">
+                <a href="">
+                    <p>收货地址：<span>湖南省 长沙市 雨花区 某某小区 4栋 湖南省 长沙市 雨花区 某某小区 4栋 5楼</span></p>
+                </a>
+            </div>
+            <div class="deliAddr-op clear">
+                <p class="defaultInp fl clear"><span class="dfInp fl" data_check="0"></span><span class="fl">默认地址</span></p>
+                <p class="delBtn fr"></p>
+            </div>
+        </li>
+        <li class="addrLi bg-fff">
+            <div class="deliMsg clear">
+                <p class="deliName fl">收货人：<span>李某某</span></p>
+                <p class="deliTel fl">137 8564 4569</p>
+            </div>
+            <div class="deliAddr elli2">
+                <a href="">
+                    <p>收货地址：<span>湖南省 长沙市 雨花区 某某小区 4栋 湖南省 长沙市 雨花区 某某小区 4栋 5楼</span></p>
+                </a>
+            </div>
+            <div class="deliAddr-op clear">
+                <p class="defaultInp fl clear"><span class="dfInp fl" data_check="0"></span><span class="fl">默认地址</span></p>
+                <p class="delBtn fr"></p>
+            </div>
+        </li>
+    </ul>
+    <!-- 弹窗 -->
+    <div class="popups">
+        <div class="popups-remind">提示</div>
+        <div class="popups-cont">确定要删除吗？</div>
+        <div class="popups-op">
+            <button class="affirm">确认</button>
+            <button class="cancel">取消</button>
+        </div>
+    </div>
+    <!-- 新增地址 -->
+    <div class="newAddr">
+        <a href=""><button type="submit">新增地址</button></a>
+    </div>
+</body>
+<script>
+    $(".defaultInp").click(function() {
+        if ($(this).children(".dfInp").attr("data_check") == 0) {
+            $(".dfInp").each(function(i) {
+                $(".dfInp").eq(i).removeClass("dfInp-check");
+                $(".dfInp").eq(i).attr("data_check", "0");
+            });
+            $(this).children(".dfInp").addClass("dfInp-check");
+            $(this).children(".dfInp").attr("data_check", "1");
+        } else {
+            $(this).children(".dfInp").removeClass("dfInp-check");
+            $(this).children(".dfInp").attr("data_check", "0");
+        };
+    });
+    var th = 0;
+    $(".delBtn").click(function() {
+        th = $(this).parent(".deliAddr-op").parent(".addrLi").index();
+        $(".popups").fadeIn(100);
+    });
+    $(".affirm").click(function() {
+        $(".addrLi").eq(th).remove();
+        $(".popups").fadeOut(100);
+    });
+    $(".cancel").click(function() {
+        $(".popups").fadeOut(100);
+    });
+</script>
+
+</html>

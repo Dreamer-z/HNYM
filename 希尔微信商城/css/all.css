@@ -222,3 +222,43 @@ input[type="checkbox"] {
     -ms-filter: blur(.1rem);
     filter: blur(.1rem);
 }
+
+
+/* 确认取消弹窗操作栏 */
+
+.popups {
+    width: 4rem;
+    background-color: #fff;
+    position: fixed;
+    left: calc(50% - 2.1rem);
+    top: 30%;
+    border: .01rem solid #eee;
+    border-radius: .1rem;
+    text-align: center;
+    overflow: hidden;
+    display: none;
+}
+
+.popups-remind {
+    padding: 0 0.2rem;
+    font-size: .3rem;
+    line-height: .52rem;
+    color: #fff;
+    background-color: #93d521;
+}
+
+.popups-cont {
+    padding: .2rem;
+}
+
+.popups-op {
+    padding: .2rem;
+}
+
+.popups-op button {
+    padding: .1rem .2rem;
+    margin: 0 .2rem;
+    color: #fff;
+    background-color: #93d521;
+    border-radius: .1rem;
+}

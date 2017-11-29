@@ -1,0 +1,160 @@
+/* 收益统计(提现) */
+
+.income-price {
+    height: 2.28rem;
+    width: 7.5rem;
+    background-color: #93d521;
+    color: #fff;
+    font-size: .3rem;
+    line-height: .4rem;
+    box-sizing: border-box;
+    padding: .24rem;
+}
+
+.income-price-tit {
+    margin-bottom: 1rem;
+}
+
+.income-price-num {
+    text-align: right;
+    font-size: .34rem;
+}
+
+.extract-op {
+    height: 1.9rem;
+    width: 7.5rem;
+    font-size: .3rem;
+}
+
+.can-extract-price {
+    line-height: .8rem;
+    height: .8rem;
+    box-sizing: border-box;
+    padding: 0 .2rem;
+    background-color: #fff;
+}
+
+.can-extract-price span {
+    color: red;
+    text-align: right;
+    max-width: 3.5rem;
+}
+
+.extract-inp {
+    height: 1.1rem;
+    text-align: center;
+}
+
+.extract-inp button {
+    height: .7rem;
+    width: 3rem;
+    margin: .2rem auto;
+    background-color: #93d521;
+    color: #fff;
+    font-size: .3rem;
+    border-radius: .15rem;
+}
+
+.extract-record {
+    font-size: .3rem;
+}
+
+.extract-record>h4 {
+    line-height: .88rem;
+    margin-bottom: .1rem;
+    background-color: #fff;
+    padding: 0 .2rem;
+    font-weight: normal;
+}
+
+.extract-record-list {
+    margin-bottom: .3rem;
+}
+
+.extract-record-li {
+    height: .88rem;
+    padding: 0 .2rem;
+    background-color: #fff;
+    border-bottom: .01rem solid #eee;
+}
+
+.extract-record-amount,
+.extract-record-time {
+    line-height: .44rem;
+}
+
+.extract-record-time .year {
+    color: #888;
+}
+
+.extract-record-time .year,
+.extract-record-amount .extract-price {
+    font-size: .24rem;
+}
+
+.extract-record-amount .extract-price span {
+    font-size: .28rem;
+    color: red;
+}
+
+.extract-ck {
+    width: 6.7rem;
+    height: 1.38rem;
+    margin: 0 auto;
+    margin-top: 3.2rem;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: .2rem;
+}
+
+.extract-ck-op {
+    width: 100%;
+    height: .68rem;
+    line-height: .68rem;
+    font-size: .3rem;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.extract-ck-tit {
+    width: 3.1rem;
+    padding: 0 2rem;
+    background-color: #93d521;
+}
+
+.extract-ck-qx,
+.extract-ck-qd {
+    padding: 0 .2rem;
+    position: absolute;
+    top: 0;
+}
+
+.extract-ck-qx {
+    left: 0;
+}
+
+.extract-ck-qd {
+    right: 0;
+}
+
+.extract-ck-amount {
+    width: 100%;
+    height: .7rem;
+    line-height: .7rem;
+    padding: 0 .2rem;
+    box-sizing: border-box;
+}
+
+.extract-ck-amount span,
+.extract-ck-amount input {
+    height: .7rem;
+}
+
+.extract-ck-amount span {
+    font-size: .3rem;
+}
+
+.extract-ck-amount input {
+    font-size: .24rem;
+}

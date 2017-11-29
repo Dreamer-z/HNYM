@@ -1,0 +1,97 @@
+/* 评价 */
+
+.all-comment {
+    background-color: #fff;
+    padding: 0 .3rem;
+    margin-bottom: .1rem;
+}
+
+.all-comment-num {
+    line-height: .8rem;
+    font-size: .3rem;
+    color: #333;
+}
+
+
+/* 
+.comment-sort {
+    font-size: .26rem;
+    color: #fff;
+    padding: .3rem 0;
+    border-top: .01rem solid #eee;
+}
+
+.comment-sort p {
+    background-color: #06c1ae;
+    line-height: .62rem;
+    width: 2.1rem;
+    text-align: center;
+    margin: 0 .1rem;
+    border-radius: .1rem;
+} */
+
+.comment-li {
+    background-color: #fff;
+    padding: 0 .2rem;
+}
+
+.comment-head {
+    height: .8rem;
+    line-height: .8rem;
+    font-size: .3rem;
+    border-bottom: .01rem solid #eee;
+}
+
+.comment-name {
+    box-sizing: border-box;
+    max-width: 5.6rem;
+    padding-right: .6rem;
+}
+
+.comment-star {
+    width: 1.5rem;
+    height: .3rem;
+    margin: .25rem 0;
+}
+
+.comment-cont {
+    padding: .2rem .3rem;
+}
+
+.comment-cont-sec {
+    font-size: .26rem;
+    line-height: .5rem;
+}
+
+.comment-cont-img img {
+    height: 1.12rem;
+    margin: .1rem;
+}
+
+
+/* 评分等级 */
+
+.star1 {
+    background: url(./../img/star_one.png)no-repeat center;
+    background-size: 100%;
+}
+
+.star2 {
+    background: url(./../img/star_two.png)no-repeat center;
+    background-size: 100%;
+}
+
+.star3 {
+    background: url(./../img/star_three.png)no-repeat center;
+    background-size: 100%;
+}
+
+.star4 {
+    background: url(./../img/star_four.png)no-repeat center;
+    background-size: 100%;
+}
+
+.star5 {
+    background: url(./../img/star_five.png)no-repeat center;
+    background-size: 100%;
+}

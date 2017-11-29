@@ -1,4 +1,4 @@
-收货地址 delivery_address.html
+新增收货地址 Newdelivery_address.html
 订单详情 order_details.html
 动态详情 dynamic_details.html
 二维码 qrcode.html
@@ -13,3 +13,8 @@
 课堂详情 lesson_details.html
 利润分配 profits_allot.html
 联系我们 contact_us.html
+评价 comment.html
+商品详情 commodity_details.html
+收货地址 delivery_address.html
+收益统计(提现) income_statistics.html
+首页 index.html
