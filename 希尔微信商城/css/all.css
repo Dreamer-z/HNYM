@@ -30,6 +30,9 @@ body {
     color: #999;
 }
 
+
+/* 地区选择 */
+
 .msg-inp #J_Address {
     width: 4rem;
     padding-right: .5rem;

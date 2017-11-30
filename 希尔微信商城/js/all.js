@@ -239,30 +239,7 @@ var all = {
             $(msg_tc_dom).fadeOut(200);
         });
     },
-    // 数量选择
-    addSub: function() {
-        var pnum;
-        var len;
-        var type = "";
-        var allpeo;
-        $(".add").click(function() {
-            $(this).addClass("add-cl");
-            $(this).siblings(".sub").removeClass("sub-cl");
-            pnum = $(this).siblings("input").val();
-            pnum++;
-            $(this).siblings("input").val(pnum);
-        });
-        $(".sub").click(function() {
-            $(this).addClass("sub-cl");
-            $(this).siblings(".add").removeClass("add-cl");
-            if ($(this).siblings("input").val() == 0) {
-                return;
-            };
-            pnum = $(this).siblings("input").val();
-            pnum--;
-            $(this).siblings("input").val(pnum);
-        });
-    },
+
     // 购物车数量
     scNum: function() {
         $(".commodity").html();
@@ -274,5 +251,4 @@ window.onload = function() {
     all.fullscreen2();
     all.check();
     all.inp();
-    all.addSub();
 };

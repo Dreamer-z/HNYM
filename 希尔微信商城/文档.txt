@@ -24,3 +24,4 @@
 提交订单 send_orders.html
 提交订单(福利) send_benefitsorders.html
 提交订单(积分) send_pointsorders.html
+提交评价 submit_evaluation.html

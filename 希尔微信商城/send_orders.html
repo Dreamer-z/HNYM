@@ -42,16 +42,16 @@
                 <p class="ordDet-commodity-size">规格：<span>20粒/盒</span></p>
             </div>
             <div class="ordDet-commodity-pnum fl">
-                <p class="ordDet-commodity-price">￥<span>50</span></p>
-                <p class="ordDet-commodity-num">x<span>1</span></p>
-                <p class="ordDet-commodity-total">合计：￥<span>50</span></p>
+                <p class="ordDet-commodity-price">￥<span class="ocPrice">50</span></p>
+                <p class="ordDet-commodity-num">x<span class="ocnum">0</span></p>
+                <p class="ordDet-commodity-total">合计：￥<span class="ocTotal">50</span></p>
             </div>
         </div>
     </div>
     <div class="msg-dis clear bg-fff md-number">
         <span class="fl">数量:</span>
         <div class="onbook-op fr clear">
-            <span class="sub fl" data="adult_sub"></span><input class="onbook-adult fl" type="number" name="onbook-adult" value="1" disabled><span class="add fl" data="adult_add"></span>
+            <span class="sub fl" data="adult_sub"></span><input id="adult" class="onbook-adult fl" type="number" name="onbook-adult" value="1" disabled><span class="add fl" data="adult_add"></span>
         </div>
     </div>
     <div class="msg-dis clear bg-fff md-remind">
@@ -62,11 +62,55 @@
         <span class="fl">运费：</span>
         <div class="fr carriage">&yen<span>00.00</span></div>
     </div>
-    <div class="msg-dis clear bg-fff md-ticket">
-        <p class="cTicket">选择优惠券</p>
+    <div class="msg-dis clear bg-fff md-ticket clear">
+        <p class="fl">选择优惠券</p>
+        <p class="cTicket fr elli"></p>
+    </div>
+    <div class="bt-op">
+        <div class="bOp-l">
+            需付：<span>￥<span class="aggregate">96.00</span></span>
+        </div>
+        <div class="bOp-r pay">付款</div>
     </div>
 
+    <!-- 优惠券列表 -->
+    <div class="ticket-zzc fullscreen">
+        <div class="ticket-box">
+            <ul class="coupon-list">
+                <li class="coupon-li2">
+                    <div class="coupon-li-box">
+                        <div class="coupon-sec clear">
+                            <div class="coupon-limit fl">￥<span>20</span></div>
+                            <div class="coupon-sec-cont fl">
+                                <p class="coupon-sec-tit">希尔药业某某商品</p>
+                                <p class="coupon-sec-type">订单满198使用，仅限<span>132****4562</span>用户使用</p>
+                            </div>
+                        </div>
+                        <div class="coupon-validity">有效期<span>2017.08.19-2017.11.20</span></div>
+                    </div>
+                </li>
+                <li class="coupon-li2">
+                    <div class="coupon-li-box">
+                        <div class="coupon-sec clear">
+                            <div class="coupon-limit fl">￥<span>20</span></div>
+                            <div class="coupon-sec-cont fl">
+                                <p class="coupon-sec-tit">希尔药业某某商品</p>
+                                <p class="coupon-sec-type">订单满198使用，仅限<span>132****4562</span>用户使用</p>
+                            </div>
+                        </div>
+                        <div class="coupon-validity">有效期<span>2017.08.19-2017.11.20</span></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="myTicket">我的优惠券</div>
+        </div>
+    </div>
 </body>
 <script src="./js/all.js"></script>
+<script src="./js/send_orders.js"></script>
+<script>
+    nb();
+    ticket();
+</script>
 
 </html>
