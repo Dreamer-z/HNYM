@@ -12,7 +12,7 @@
     <title>提交评价</title>
     <link rel="stylesheet" href="./css/init.css">
     <link rel="stylesheet" href="./css/all.css">
-    <link rel="stylesheet" href="./js/plug/css/starability-all.css">
+    <link rel="stylesheet" href="./css/starability-all.css">
     <link rel="stylesheet" href="./css/submit_evaluation.css">
     <script src="./js/plug/jquery-1.8.3.min.js"></script>
     <script src="./js/plug/adaptive.js"></script>
@@ -26,7 +26,91 @@
 </head>
 
 <body>
-
+    <form action="#" method="post">
+        <div class="sub-info clear">
+            <div class="sub-info-img fl"></div>
+            <div class="sub-info-sec fl">
+                <div class="sub-info-tit-box">
+                    <p class="sub-info-tit elli">产品名称</p>
+                    <p class="sub-info-num">x1</p>
+                    <div class="state-on">已收货</div>
+                </div>
+                <div class="sub-info-type-box">
+                    <p class="unit-price"><span>￥128</span></p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="sub-sort clear">
+            <input type="button" class="satisfaction fl" name="satisfaction" value="非常满意">
+            <input type="button" class="ordinary fl" name="satisfaction" value="一般">
+            <input type="button" class="yawp fl" name="satisfaction" value="不满意">
+        </div> -->
+        <div class="comment-score clear">
+            <div class="stars">
+                <em class="fl" style="margin-right: 0.2rem;">评价</em>
+                <fieldset class="starability-growRotate fr">
+                    <input type="radio" id="rate5-4" name="rating" value="5" />
+                    <label for="rate5-4" title="Amazing">5 stars</label>
+                    <input type="radio" id="rate4-4" name="rating" value="4" />
+                    <label for="rate4-4" title="Very good">4 stars</label>
+                    <input type="radio" id="rate3-4" name="rating" value="3" />
+                    <label for="rate3-4" title="Average">3 stars</label>
+                    <input type="radio" id="rate2-4" name="rating" value="2" />
+                    <label for="rate2-4" title="Not good">2 stars</label>
+                    <input type="radio" id="rate1-4" name="rating" value="1" />
+                    <label for="rate1-4" title="Terrible">1 star</label>
+                </fieldset>
+            </div>
+        </div>
+        <div class="comment-sec">
+            <div class="comment-img clear">
+                <div class="comment-li fl">晒图</div>
+                <div class="add-img fl clear">
+                    <input type="file" id="sc" class="fl" name="sc" accept="image/*" multiple>
+                    <label for="sc" class="add-op fl"></label>
+                </div>
+            </div>
+            <div class="comment-write clear">
+                <div class="comment-li fl clear">评价</div>
+                <div class="comment-box fl">
+                    <textarea placeholder="说点什么吧..." maxlength="300" name="commen_section"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="tj">
+            <button type="submit">提交评价</button>
+        </div>
+    </form>
+    <!-- <div class="fullscreen">
+        <div class="tj-zzc">
+            <div class="tj-success">
+                <div class="tj-tit">
+                    <p>提交</p>
+                    <span class="qd">确定</span>
+                </div>
+                <div class="tj-result">
+                    <span>提交成功</span>
+                </div>
+            </div>
+        </div>
+    </div> -->
 </body>
+<script src="./js/all.js"></script>
+<script>
+    // 选择满意度
+    // $(".sub-sort input").click(function() {
+    //     $(this).addClass("com-checked");
+    //     $(this).siblings("input").removeClass("com-checked");
+    // });
+    // 提交评论
+    $(".tj button").click(function() {
+        $(".fullscreen").fadeIn(400);
+        $(".qd").click(function() {
+            $(".fullscreen").fadeOut(200);
+        });
+    });
+    // 上传图片
+    all.putH("sc", "add-op", 9);
+</script>
 
 </html>

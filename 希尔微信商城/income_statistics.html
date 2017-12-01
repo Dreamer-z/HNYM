@@ -62,14 +62,14 @@
             </li>
         </ul>
     </div>
-    <div class="fullscreen extract-ck-box">
-        <div class="extract-ck">
-            <div class="extract-ck-op">
-                <p class="extract-ck-qx">取消</p>
-                <p class="extract-ck-tit">提现</p>
-                <p class="extract-ck-qd">确定</p>
+    <div class="fullscreen remind-box">
+        <div class="remind">
+            <div class="remind-op">
+                <p class="remind-qx">取消</p>
+                <p class="remind-tit">提现</p>
+                <p class="remind-qd">确定</p>
             </div>
-            <div class="extract-ck-amount">
+            <div class="remind-amount">
                 <span class="fl">输入金额：</span><input class="fl" type="number" placeholder="请输入提取金额！">
             </div>
         </div>
@@ -78,18 +78,18 @@
 <script src="./js/all.js"></script>
 <script>
     $(".extract-inp button").click(function() {
-        $(".extract-ck-box").fadeIn(200);
+        $(".remind-box").fadeIn(200);
     });
-    $(".extract-ck-qx").click(function() {
-        $(".extract-ck-box").fadeOut(200);
+    $(".remind-qx").click(function() {
+        $(".remind-box").fadeOut(200);
     });
-    $(".extract-ck-qd").click(function() {
-        if ($(".extract-ck-amount input").val() == "") {
+    $(".remind-qd").click(function() {
+        if ($(".remind-amount input").val() == "") {
             alert("请输入正确的金额！")
             return;
         } else {
-            $(".extract-ck-box").fadeOut(200);
-            $(".extract-ck-amount input").val("");
+            $(".remind-box").fadeOut(200);
+            $(".remind-amount input").val("");
         }
     });
 </script>

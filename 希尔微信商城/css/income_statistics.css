@@ -97,64 +97,24 @@
     color: red;
 }
 
-.extract-ck {
-    width: 6.7rem;
+.remind {
     height: 1.38rem;
-    margin: 0 auto;
-    margin-top: 3.2rem;
-    background-color: #fff;
-    overflow: hidden;
-    border-radius: .2rem;
 }
 
-.extract-ck-op {
-    width: 100%;
-    height: .68rem;
-    line-height: .68rem;
-    font-size: .3rem;
-    position: relative;
-    text-align: center;
-    color: #fff;
-}
-
-.extract-ck-tit {
-    width: 3.1rem;
-    padding: 0 2rem;
-    background-color: #93d521;
-}
-
-.extract-ck-qx,
-.extract-ck-qd {
-    padding: 0 .2rem;
-    position: absolute;
-    top: 0;
-}
-
-.extract-ck-qx {
-    left: 0;
-}
-
-.extract-ck-qd {
-    right: 0;
-}
-
-.extract-ck-amount {
-    width: 100%;
+.remind-amount {
     height: .7rem;
     line-height: .7rem;
-    padding: 0 .2rem;
-    box-sizing: border-box;
 }
 
-.extract-ck-amount span,
-.extract-ck-amount input {
+.remind-amount span,
+.remind-amount input {
     height: .7rem;
 }
 
-.extract-ck-amount span {
+.remind-amount span {
     font-size: .3rem;
 }
 
-.extract-ck-amount input {
+.remind-amount input {
     font-size: .24rem;
 }

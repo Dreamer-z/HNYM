@@ -1,0 +1,77 @@
+.logisticsStatus {
+    padding: .3rem;
+    font-size: .24rem;
+    line-height: .34rem;
+    color: #666;
+}
+
+.goodsImg {
+    box-sizing: border-box;
+    border: .01rem solid #eee;
+    border-radius: .1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .3rem;
+}
+
+.status {
+    color: #333;
+    font-size: .3rem;
+}
+
+.status span {
+    color: #93d521;
+    margin-left: .3rem;
+    line-height: .5rem;
+}
+
+.officialTel {
+    color: #999;
+}
+
+.tit {
+    line-height: .8rem;
+    text-align: center;
+}
+
+.logisticsUi {
+    padding: .3rem 0;
+}
+
+.logisticsLi {
+    margin-bottom: .2rem;
+    color: #999;
+}
+
+.stasusRemind {
+    width: 1.2rem;
+}
+
+.light {
+    display: block;
+    width: .28rem;
+    height: .28rem;
+    margin: 0 auto;
+    margin-top: .05rem;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+.logisticsLi:nth-child(1) {
+    color: #93d521;
+}
+
+.logisticsLi:nth-child(1) .light {
+    width: .45rem;
+    height: .45rem;
+    background-color: #93d521;
+    border: .04rem solid #dff3c1;
+}
+
+.detailMsg {
+    box-sizing: border-box;
+    width: 6rem;
+    padding-right: .3rem;
+    padding-bottom: .6rem;
+    border-bottom: .01rem solid #eee;
+}

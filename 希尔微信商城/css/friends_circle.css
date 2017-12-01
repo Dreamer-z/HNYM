@@ -1,0 +1,155 @@
+.dynDet-li {
+    margin-bottom: .1rem;
+}
+
+.cutDom {
+    box-sizing: border-box;
+    width: 7.5rem;
+    padding: 0 2.05rem;
+    height: .88rem;
+    line-height: .88rem;
+    text-align: center;
+    font-size: .34rem;
+    position: fixed;
+    top: 0;
+    left: calc(50% - 3.75rem);
+}
+
+.message {
+    margin-top: .9rem;
+}
+
+.cutDomLi {
+    width: 50%;
+}
+
+.cutDomLi span {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 .2rem;
+}
+
+.cCutDomLi span {
+    color: #93d521;
+    border-bottom: .03rem solid #93d521;
+}
+
+.dynDet {
+    position: relative;
+}
+
+.publish {
+    width: .45rem;
+    height: .45rem;
+    position: absolute;
+    right: -3.5rem;
+    top: 0.25rem;
+    display: none;
+}
+
+.publish a {
+    display: block;
+    width: .45rem;
+    height: .45rem;
+    background: url(./../img/publish.png)no-repeat center;
+    background-size: 100%;
+}
+
+.cCutDomLi .publish {
+    display: block;
+}
+
+.newsSec {
+    display: none;
+}
+
+.newsLi {
+    margin-bottom: .05rem;
+}
+
+.newsHead {
+    height: .82rem;
+    line-height: .82rem;
+    border-bottom: .01rem solid #eee;
+}
+
+.icon {
+    width: 1.28rem;
+    height: .62rem;
+    margin: .1rem .2rem;
+}
+
+.nameTime {
+    line-height: .4rem;
+    padding: .01rem 0;
+}
+
+.name {
+    font-size: .3rem;
+}
+
+.time {
+    font-size: .24rem;
+    color: #999;
+}
+
+.newsCont {
+    padding: 0 .2rem;
+}
+
+.newsTit {
+    font-size: .3rem;
+    margin-top: .1rem;
+}
+
+.newsImg {
+    width: 100%;
+    height: 3.4rem;
+    overflow: hidden;
+    margin: .1rem 0;
+    position: relative;
+}
+
+.newsImg img,
+.newsImg video,
+.play {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: .1rem 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.newsImg img {
+    z-index: 99;
+}
+
+.newsImg video {
+    z-index: 98;
+}
+
+.play {
+    z-index: 100;
+    background: url(./../img/play.png)no-repeat center;
+    background-size: 20%;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.newsData {
+    padding: .15rem 0;
+    font-size: .3rem;
+    color: #999;
+}
+
+.Notlike {
+    padding-left: .5rem;
+    background: url(./../img/like.png)no-repeat .1rem .08rem;
+    background-size: 40%;
+}
+
+.likeIt {
+    background: url(./../img/like_on.png)no-repeat .1rem .08rem;
+    background-size: 40%;
+}

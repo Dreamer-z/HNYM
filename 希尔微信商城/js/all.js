@@ -148,13 +148,20 @@ var all = {
         });
     },
     // 添加评论区图片,向尾部添加
-    put: function(inpid, domname) {
+    put: function(inpid, domname, imglength) {
         var len = 0;
         document.getElementById(inpid).addEventListener("change", function() {
             var imgArr = [];
             var imgurl;
             filelist = document.getElementById(inpid).files;
             len += filelist.length;
+            if (len > imglength) {
+                len -= filelist.length;
+                if (imglength) {
+                    alert("最多只能上传" + imglength + "张图片哦！");
+                };
+                return;
+            };
             for (var i = 0; i < filelist.length; i++) {
                 imgurl = window.URL.createObjectURL(filelist[i]);
                 imgArr.push(imgurl);
@@ -189,6 +196,9 @@ var all = {
             len += filelist.length;
             if (len > imglength) {
                 len -= filelist.length;
+                if (imglength) {
+                    alert("最多只能上传" + imglength + "张图片哦！");
+                };
                 return;
             };
             for (var i = 0; i < filelist.length; i++) {
@@ -221,7 +231,7 @@ var all = {
         document.getElementById(inpid).addEventListener("change", function() {
             var filelist = document.getElementById(inpid).files[0];
             var imgurl = window.URL.createObjectURL(filelist);
-            $(domname).css({
+            $("." + domname).css({
                 "background": "url(" + imgurl + ")no-repeat center",
                 "background-size": "100%"
             });

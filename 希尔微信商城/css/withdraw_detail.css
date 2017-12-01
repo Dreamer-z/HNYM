@@ -1,0 +1,67 @@
+/* 提现明细 */
+
+.can-extract {
+    height: .88rem;
+    line-height: .88rem;
+    font-size: .3rem;
+    background-color: #fff;
+    border-bottom: .01rem solid #eee;
+    padding: 0 .2rem;
+}
+
+.can-extract-price {
+    color: red;
+}
+
+.wit-det-state {
+    background-color: #fff;
+    margin-bottom: .1rem;
+    line-height: .88rem;
+    font-size: .3rem;
+    text-align: center;
+}
+
+.wds-li {
+    width: 25%;
+}
+
+.wds-li-check {
+    color: #93d521;
+}
+
+.record-list {
+    background-color: #fff;
+}
+
+.record-li {
+    padding: .2rem;
+    border-bottom: .01rem solid #eee;
+}
+
+.time-amount,
+.state-time {
+    max-width: 50%;
+}
+
+.state-time {
+    text-align: right;
+    color: #93d521;
+}
+
+.time-amount>p,
+.state-time>p {
+    line-height: .4rem;
+    font-size: .28rem;
+}
+
+.time-amount>p>span {
+    font-size: .24rem;
+}
+
+.time-amount .amount>span {
+    color: red;
+}
+
+.state-time .day {
+    font-size: .24rem;
+}

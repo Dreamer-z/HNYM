@@ -1,0 +1,94 @@
+/* 小店设置 */
+
+.store-set .store-set-li {
+    background-color: #fff;
+    border-bottom: .01rem solid #eee;
+}
+
+.store-set .store-set-li,
+.store-set .store-set-li>input {
+    line-height: .88rem;
+    padding: 0 .2rem;
+}
+
+.store-set .store-set-li>input {
+    width: 5.7rem;
+}
+
+.store-set .store-set-li span {
+    width: 1rem;
+    font-size: .3rem;
+}
+
+.store-set .store-set-icon>input {
+    display: none;
+}
+
+.store-set .store-set-icon>label {
+    width: .68rem;
+    height: .68rem;
+    background: url(./../img/dongtai/dt-bg.png)no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: .1rem;
+}
+
+.store-set .store-set-dz {
+    padding: .1rem .2rem;
+}
+
+.store-set .store-set-dz .add-img,
+.sub_eval .store-set-dz .comment-box {
+    width: 5.8rem;
+}
+
+.store-set .store-set-dz .add-img img,
+.store-set .store-set-dz .add-op {
+    display: block;
+    width: 1.15rem;
+    height: 1.15rem;
+    border-radius: .1rem;
+}
+
+.store-set .store-set-dz .add-op {
+    margin: .1rem;
+}
+
+.store-set .store-set-dz .add-img .img-li-box {
+    position: relative;
+    padding: .15rem;
+}
+
+.store-set .store-set-dz .add-img .delinp {
+    width: .3rem;
+    height: .3rem;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(./../img/del_bg.png)no-repeat top right;
+    background-size: 100%;
+    border-radius: 50%;
+}
+
+.store-set .store-set-dz #sc {
+    display: none;
+}
+
+.store-set .store-set-dz .add-op {
+    background: url(./../img/sc_img.png)no-repeat center;
+    background-size: 100%;
+}
+
+.tj button {
+    display: block;
+    width: 7.1rem;
+    height: .8rem;
+    line-height: .8rem;
+    color: #fff;
+    background-color: #93d521;
+    font-size: .34rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    border-radius: .1rem;
+}

@@ -1,0 +1,23 @@
+.type {
+    border-bottom: .01rem solid #eee;
+}
+
+.typeTit {
+    width: 33.3333%;
+    line-height: .88rem;
+    font-size: .3rem;
+    text-align: center;
+}
+
+.typeTit span {
+    display: inline-block;
+}
+
+.ctypeTit {
+    color: #93d521;
+}
+
+.ctypeTit span {
+    box-sizing: border-box;
+    border-bottom: .03rem solid #93d521;
+}

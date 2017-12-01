@@ -1,0 +1,59 @@
+.collectLi {
+    padding: .2rem;
+    background-color: #fff;
+    font-size: .24rem;
+    color: #888;
+    margin-bottom: .05rem;
+}
+
+.collectImg {
+    box-sizing: border-box;
+    border: .01rem solid #eee;
+    border-radius: .1rem;
+    width: 1.58rem;
+    height: 1.58rem;
+    margin-right: .22rem;
+}
+
+.collectMsg {
+    height: 1.58rem;
+    width: 2.9rem;
+    overflow: hidden;
+}
+
+.collectTit {
+    font-size: .28rem;
+    color: #333;
+}
+
+.collectShort {
+    line-height: .36rem;
+}
+
+.collectCont {
+    margin-top: .12rem;
+}
+
+.playing {
+    color: red;
+}
+
+.playing span {
+    font-size: .3rem;
+}
+
+.colOp {
+    width: 2.3rem;
+    height: .45rem;
+    line-height: .45rem;
+    margin-top: 1.13rem;
+}
+
+.buyNow {
+    display: inline-block;
+    padding: 0 .1rem;
+    background-color: #fa5656;
+    color: #fff;
+    border-radius: .1rem;
+    margin-left: .1rem;
+}

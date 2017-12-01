@@ -258,6 +258,55 @@ input[type="checkbox"] {
 }
 
 
+/* 弹窗提示栏 */
+
+.remind {
+    width: 6.7rem;
+    margin: 0 auto;
+    margin-top: 3.2rem;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: .2rem;
+}
+
+.remind-op {
+    width: 100%;
+    height: .68rem;
+    line-height: .68rem;
+    font-size: .3rem;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.remind-tit {
+    width: 3.1rem;
+    padding: 0 2rem;
+    background-color: #93d521;
+}
+
+.remind-qx,
+.remind-qd {
+    padding: 0 .2rem;
+    position: absolute;
+    top: 0;
+}
+
+.remind-qx {
+    left: 0;
+}
+
+.remind-qd {
+    right: 0;
+}
+
+.remind-amount {
+    width: 100%;
+    padding: 0 .2rem;
+    box-sizing: border-box;
+}
+
+
 /* 优惠券 */
 
 .coupon-list {
