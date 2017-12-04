@@ -104,6 +104,7 @@ body {
     bottom: 0;
     margin-left: -3.75rem;
     background-color: #fff;
+    z-index: 10;
 }
 
 .menu-li {
@@ -191,6 +192,7 @@ input[type="checkbox"] {
     background-color: #fff;
     overflow: hidden;
     text-align: center;
+    z-index: 10;
 }
 
 .bt-op a {
@@ -231,6 +233,7 @@ input[type="checkbox"] {
     text-align: center;
     overflow: hidden;
     display: none;
+    z-index: 100;
 }
 
 .popups-remind {

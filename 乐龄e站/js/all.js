@@ -157,9 +157,49 @@ var all = {
                 $(this).parent(".img-li-box").remove();
             });
         });
+    },
+    menu: function() {
+        $(".menu-li").each(function(i) {
+            $(".menu-li").eq(i).children("a").children("div").css({
+                "background": "url(./img/menu_" + (i + 1) + ".png)no-repeat center",
+                "background-size": "100%"
+            });
+            $(".menu-li").eq(i).children("a").children("p").css("color", "#000")
+        });
+        $(".menu-li").click(function() {
+            localStorage.setItem("bgind", $(this).index());
+        });
+        if (localStorage.getItem("bgind")) {
+            var ind = localStorage.getItem("bgind");
+            $(".menu-li").each(function(i) {
+                $(".menu-li").eq(i).children("a").children("div").css({
+                    "background": "url(./img/menu_" + (parseInt(i) + 1) + ".png)no-repeat center",
+                    "background-size": "100%"
+                });
+                $(".menu-li").eq(i).children("a").children("p").css("color", "#000")
+                $(".menu-li").eq(ind).children("a").children("div").css({
+                    "background": "url(./img/menu_" + (parseInt(ind) + 1) + "_on.png)no-repeat center",
+                    "background-size": "100%"
+                });
+                $(".menu-li").eq(ind).children("a").children("p").css("color", "#06c1ae")
+            });
+        } else {
+            $(".menu-li").each(function(i) {
+                $(".menu-li").eq(i).children("a").children("div").css({
+                    "background": "url(./img/menu_" + (parseInt(i) + 1) + ".png)no-repeat center",
+                    "background-size": "100%"
+                });
+                $(".menu-li").eq(0).children("a").children("div").css({
+                    "background": "url(./img/menu_" + (1) + "_on.png)no-repeat center",
+                    "background-size": "100%"
+                });
+            });
+        }
     }
 };
 window.onload = function() {
     all.fullscreen();
     all.fullscreen1();
+    all.menu();
+
 }

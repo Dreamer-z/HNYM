@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/rest.min.css">
+    <link rel="stylesheet" href="/css/head-footer.min.css">
+    <link rel="stylesheet" href="/css/comment.css">
+    <title>评价</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="headbox">
+
+    </div>
+    <div class="main y-width">
+        <div class="step">
+            <img src="/images/od_evaluate_bg_03.png" alt="">
+        </div>
+
+    </div>
+    <div class="odNumber">
+        <p class="y-width">评价订单</p>
+        <div class="numDate y-width y-clearfix">
+            <p class="number y-left">订单号：<span>123456789123</span></p>
+            <p class="date y-left">2017-11-05 00:40:58</p>
+        </div>
+    </div>
+    <div class="commentBox y-width y-clearfix">
+        <div class="product y-left">
+            <div class="pImg" style="background:url(./images/product/product_03.png)no-repeat center;background-size:cover"></div>
+            <div class="pShort">自启糖平衡，激活胰动能，美国市场 畅销7年，掌握专利技术，植物天然 成分专利配方</div>
+            <div class="pSize">规格：<span>90粒/盒</span></div>
+            <div class="pPrice">￥<span>299</span></div>
+            <div class="pTit">糖平衡-伊能启元胶囊 -血糖管控专家</div>
+        </div>
+        <div class="commentOp y-left">
+            <div class="pCom y-clearfix">
+                <p class="comTit y-left">商品评分</p>
+                <div id="proCom" class="comStar y-left y-clearfix">
+                    <input class="y-left" type="radio" name="pStar" value="1" id="ps1"><label class="y-left" for="ps1"></label>
+                    <input class="y-left" type="radio" name="pStar" value="2" id="ps2"><label class="y-left" for="ps2"></label>
+                    <input class="y-left" type="radio" name="pStar" value="3" id="ps3"><label class="y-left" for="ps3"></label>
+                    <input class="y-left" type="radio" name="pStar" value="4" id="ps4"><label class="y-left" for="ps4"></label>
+                    <input class="y-left" type="radio" name="pStar" value="5" id="ps5"><label class="y-left" for="ps5"></label>
+                </div>
+            </div>
+            <div class="pCom y-clearfix">
+                <p class="comTit y-left">物流评分</p>
+                <div id="logCom" class="comStar y-left y-clearfix">
+                    <input class="y-left" type="radio" name="lStar" value="1" id="ls1"><label class="y-left" for="ls1"></label>
+                    <input class="y-left" type="radio" name="lStar" value="2" id="ls2"><label class="y-left" for="ls2"></label>
+                    <input class="y-left" type="radio" name="lStar" value="3" id="ls3"><label class="y-left" for="ls3"></label>
+                    <input class="y-left" type="radio" name="lStar" value="4" id="ls4"><label class="y-left" for="ls4"></label>
+                    <input class="y-left" type="radio" name="lStar" value="5" id="ls5"><label class="y-left" for="ls5"></label>
+                </div>
+            </div>
+            <div class="pCom y-clearfix">
+                <p class="comTit y-left">服务态度</p>
+                <div id="serAtt" class="comStar y-left y-clearfix">
+                    <input class="y-left" type="radio" name="sStar" value="1" id="ss1"><label class="y-left" for="ss1"></label>
+                    <input class="y-left" type="radio" name="sStar" value="2" id="ss2"><label class="y-left" for="ss2"></label>
+                    <input class="y-left" type="radio" name="sStar" value="3" id="ss3"><label class="y-left" for="ss3"></label>
+                    <input class="y-left" type="radio" name="sStar" value="4" id="ss4"><label class="y-left" for="ss4"></label>
+                    <input class="y-left" type="radio" name="sStar" value="5" id="ss5"><label class="y-left" for="ss5"></label>
+                </div>
+            </div>
+            <div class="commentbox y-clearfix">
+                <p class="comTit y-left">评价晒单</p>
+                <div class="commentInp y-left">
+                    <textarea class="comment" placeholder="商品是否给力，快分享你的喜悦吧！" maxlength="500"></textarea>
+                </div>
+            </div>
+            <div class="pubImg-li y-clearfix">
+                <input class="y-left" id="pushimg" type="file" name="pushimg" multiple>
+                <label class="pushimg y-left" for="pushimg"></label>
+            </div>
+        </div>
+
+    </div>
+    <div class="pushData">
+        <button>提&nbsp;&nbsp;交</button>
+    </div>
+    <!-- 尾部 -->
+    <div id="divfooter"></div>
+</body>
+<script src="/js/data_url.js"></script>
+<script src="/js/jquery-1.8.3.min.js"></script>
+<script src="/js/jquery.tmpl.min.js"></script>
+<!-- 绑定列表数据 -->
+<script id="navTemplate" type="text/x-jquery-tmpl">
+    <li class="y-left nav-first-li" data_id="${id}">
+        <a href="${category_go_url}">${category_name}</a>
+        <ul class="nav-second">
+            {{each(i,item) ChildList}}
+            <li class="nav-second-li" data_id="${item.id}">
+                <a href="${item.category_go_url}">${item.category_name}</a>
+                <ul class="nav-thr">
+                    {{each(i,item) ChildList2}}
+                    <li class="nav-thr-li" data_id="${item.id}">
+                        <a href="${item.category_go_url}">${item.category_name}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
+            {{/each}}
+        </ul>
+    </li>
+</script>
+<!-- 绑定列表数据 end -->
+
+<script src="/js/head_footer.js"></script>
+<script src="/js/comment.js"></script>
+
+</html>

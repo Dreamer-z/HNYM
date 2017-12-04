@@ -137,11 +137,11 @@ var all = {
             autoplayDisableOnInteraction: false,
         });
     },
-    banner2: function(obj) {
+    banner2: function(obj, perview = 3) {
         var mySwiper = new Swiper(obj, {
             direction: 'horizontal',
             loop: true,
-            slidesPerView: 3,
+            slidesPerView: perview,
             speed: 1000,
             autoplay: 3000,
             autoplayDisableOnInteraction: false,
