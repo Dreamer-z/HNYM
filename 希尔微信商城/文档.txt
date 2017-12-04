@@ -33,4 +33,6 @@
 喜健课堂 lesson.html
 小店设置 store_set.html
 优惠券 coupon.html
-在线客服 online_service.html
+知识详情 knowledge_details.html
+资讯详情 news_details.html
+自动服务 self_service.html

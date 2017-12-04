@@ -1,0 +1,42 @@
+.question-list {
+    margin-top: .2rem;
+}
+
+.question-li {
+    padding: 0 .2rem;
+    margin-bottom: .2rem;
+}
+
+.question-tit {
+    line-height: .8rem;
+    height: .8rem;
+    background-color: #93d521;
+    font-size: .3rem;
+    padding: 0 .2rem;
+    color: #fff;
+    border-radius: .1rem;
+}
+
+.answer-box {
+    width: 100%;
+    box-sizing: border-box;
+    padding: .2rem;
+    font-size: .28rem;
+    line-height: .4rem;
+    color: #999;
+    background-color: #fff;
+    border-radius: .1rem;
+    display: none;
+}
+
+.question-push button {
+    display: block;
+    width: 7rem;
+    height: .8rem;
+    margin: 0 auto;
+    background-color: #93d521;
+    color: #fff;
+    border-radius: .1rem;
+    margin-top: 1.5rem;
+    font-size: .3rem;
+}

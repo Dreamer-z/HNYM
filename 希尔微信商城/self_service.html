@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <title>自动服务</title>
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/self_service.css">
+    <script src="./js/plug/jquery-1.8.3.min.js"></script>
+    <script src="./js/plug/adaptive.js"></script>
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 28;
+        window['adaptive'].maxWidth = 480;
+        window['adaptive'].scaleType = 1;
+        window['adaptive'].init();
+    </script>
+</head>
+
+<body>
+    <ul class="question-list">
+        <li class="question-li" state="false">
+            <p class="question-tit" data-state="false">1、如何成为会员？</p>
+            <div class="answer-box">假装这是答案，是的，没错！</div>
+        </li>
+        <li class="question-li" state="false">
+            <p class="question-tit" data-state="false">2、会员积分这样获得？？</p>
+            <div class="answer-box">假装这是答案，是的，没错！</div>
+        </li>
+        <li class="question-li" state="false">
+            <p class="question-tit" data-state="false">3、会员积分怎么样兑换礼品？</p>
+            <div class="answer-box">在主页上的积分兑换可以用积分加少量现金可兑换部分商品哦。
+            </div>
+        </li>
+    </ul>
+    <div class="question-push">
+        <button>确认提交</button>
+    </div>
+</body>
+<script>
+    var th;
+    $(".question-li").click(function() {
+        th = $(this);
+        if ($(this).attr("state") == 'true') {
+            $(this).attr("state", "false");
+        } else {
+            $(this).attr("state", "true");
+        };
+        slide(th);
+        // $(this).children(".answer-box").slideToggle("slow");
+        // $(this).siblings("li").children(".answer-box").slideUp("slow");
+    })
+
+    function slide(dom) {
+        if ($(dom).attr("state") == 'true') {
+            $(dom).siblings("li").attr("state", "false");
+            $(dom).siblings("li").children(".answer-box").slideUp(10);
+            $(dom).children(".answer-box").slideDown(100);
+        } else {
+            $(dom).children(".answer-box").slideUp(100);
+        }
+    };
+</script>
+
+</html>
