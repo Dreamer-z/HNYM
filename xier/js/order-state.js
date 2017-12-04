@@ -1,11 +1,36 @@
 var fn = {
+    // 订单类型切换
     qh: function() {
+        $(".od-li").each(function(i) {
+            if ($(".od-li").eq(i).attr("status") == "待收货") {
+                $(".waiTake").eq(i).css("display", "block");
+            } else if ($(".od-li").eq(i).attr("status") == "待发货") {
+                $(".waiSend").eq(i).css("display", "block");
+            } else if ($(".od-li").eq(i).attr("status") == "待付款") {
+                $(".waiPay").eq(i).css("display", "block");
+            } else if ($(".od-li").eq(i).attr("status") == "待评论") {
+                $(".waiComment").eq(i).css("display", "block");
+            } else if ($(".od-li").eq(i).attr("status") == "已完成") {
+                $(".odFinish").eq(i).css("display", "block");
+            };
+        })
         $(".order-states>li").each(function(i) {
             $(".order-states>li").eq(i).click(function() {
                 $(this).siblings().removeClass("c-states");
                 $(this).addClass("c-states");
-                $(".oi-ul-c").eq(i).siblings().removeClass("oi-ul-b");
-                $(".oi-ul-c").eq(i).addClass("oi-ul-b");
+                $(".od-li").each(function(i) {
+                    if ($(".od-li").eq(i).attr("status") == "待收货") {
+                        $(".waiTake").eq(i).css("display", "block");
+                    } else if ($(".od-li").eq(i).attr("status") == "待发货") {
+                        $(".waiSend").eq(i).css("display", "block");
+                    } else if ($(".od-li").eq(i).attr("status") == "待付款") {
+                        $(".waiPay").eq(i).css("display", "block");
+                    } else if ($(".od-li").eq(i).attr("status") == "待评论") {
+                        $(".waiComment").eq(i).css("display", "block");
+                    } else if ($(".od-li").eq(i).attr("status") == "已完成") {
+                        $(".odFinish").eq(i).css("display", "block");
+                    };
+                })
             });
         });
     },
@@ -20,56 +45,6 @@ var fn = {
                 $(this).parent().parent().fadeOut(200);
             });
         });
-        // $("#all-od .od-del").click(function() {
-        //     var i = $(this).index();
-        //     $(this).siblings().fadeIn(200);
-        //     $(this).siblings().children($(".aff")).click(function() {
-        //         $(this).parent().parent().parent().remove();
-        //     });
-        //     $(this).siblings().children($(".canc")).click(function() {
-        //         $(this).parent().parent().fadeOut(200);
-        //     });
-        // });
-        // $("#wait-pay .od-del").click(function() {
-        //     var i = $(this).index();
-        //     $(this).siblings().fadeIn(200);
-        //     $(this).siblings().children($(".aff")).click(function() {
-        //         $(this).parent().parent().parent().remove();
-        //     });
-        //     $(this).siblings().children($(".canc")).click(function() {
-        //         $(this).parent().parent().fadeOut(200);
-        //     });
-        // });
-        // $("#wait-deliver .od-del").click(function() {
-        //     var i = $(this).index();
-        //     $(this).siblings().fadeIn(200);
-        //     $(this).siblings().children($(".aff")).click(function() {
-        //         $(this).parent().parent().parent().remove();
-        //     });
-        //     $(this).siblings().children($(".canc")).click(function() {
-        //         $(this).parent().parent().fadeOut(200);
-        //     });
-        // });
-        // $("#wait-receiving .od-del").click(function() {
-        //     var i = $(this).index();
-        //     $(this).siblings().fadeIn(200);
-        //     $(this).siblings().children($(".aff")).click(function() {
-        //         $(this).parent().parent().parent().remove();
-        //     });
-        //     $(this).siblings().children($(".canc")).click(function() {
-        //         $(this).parent().parent().fadeOut(200);
-        //     });
-        // });
-        // $("#wait-comment .od-del").click(function() {
-        //     var i = $(this).index();
-        //     $(this).siblings().fadeIn(200);
-        //     $(this).siblings().children($(".aff")).click(function() {
-        //         $(this).parent().parent().parent().remove();
-        //     });
-        //     $(this).siblings().children($(".canc")).click(function() {
-        //         $(this).parent().parent().fadeOut(200);
-        //     });
-        // });
     },
     del_all: function() {
         var cn = 1;
@@ -103,9 +78,29 @@ var fn = {
             cn = 1;
         });
     },
+    // 翻页
+    page: function() {
+        var dislay, lay;
+        var nowlay = 1;
+        $(".page-turner").pagination({
+            currentPage: nowlay, // 当前页数
+            totalPage: lay, // 总页数
+            isShow: true, // 是否显示首尾页
+            count: dislay, // 显示个数
+            homePageText: "回到首页", // 首页文本
+            endPageText: "跳到尾页", // 尾页文本
+            prevPageText: "上一页", // 上一页文本
+            nextPageText: "下一页", // 下一页文本 
+            callback: function(current) {
+                // 回调,current(当前页数)
+                nowlay = current;
+            }
+        });
+    }
 };
 $(function() {
-    // fn.qh();
+    fn.qh();
     fn.del();
     fn.del_all();
+    fn.page();
 })

@@ -250,10 +250,10 @@
   height: 100px;
   width: 100%;
   margin-bottom: 7.5px;
+  overflow: hidden;
 }
 
 .ts-bt .ts-bt-cont li img {
-  height: 100%;
   width: 100%;
 }
 
@@ -263,9 +263,15 @@
   background-color: #eee;
 }
 
-.ts-big img {
+.ts-big a {
+  display: block;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+}
+
+.ts-big a img {
+  width: 100%;
 }
 
 .part-two {
@@ -311,6 +317,12 @@
 
 .video-box .video-center .vc-l li img {
   width: 100%;
+}
+
+.video-box .video-center .vc-l li video {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .video-box .vc-c {

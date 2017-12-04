@@ -4,7 +4,7 @@
     line-height: .88rem;
     font-size: .3rem;
     color: #fff;
-    background: url(./../img/service_1.png)no-repeat .2rem .15rem;
+    background: url(./../希尔微信商城/img/service_1.png)no-repeat .2rem .15rem;
     background-size: 8%;
     background-color: #93d521;
 }
@@ -47,13 +47,13 @@
 
 .service .sessionBg {
     left: -.1rem;
-    background: url(./../img/session_r.png)no-repeat center;
+    background: url(./../希尔微信商城/img/session_r.png)no-repeat center;
     background-size: 100%;
 }
 
 .client .sessionBg {
     right: -.1rem;
-    background: url(./../img/session_l.png)no-repeat center;
+    background: url(./../希尔微信商城/img/session_l.png)no-repeat center;
     background-size: 100%;
 }
 
