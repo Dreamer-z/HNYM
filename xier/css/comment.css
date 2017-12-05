@@ -105,7 +105,7 @@
 .commentInp {
     box-sizing: border-box;
     padding: 10px;
-    width: 685px;
+    width: 680px;
     height: 152px;
     font-size: 16px;
     border: 1px solid #eee;
@@ -132,7 +132,7 @@ textarea::-webkit-scrollbar {
 .pubImg-li {
     margin: 10px;
     box-sizing: border-box;
-    padding: 20px 20px 20px 120px;
+    padding: 20px 20px 20px 100px;
     user-select: none;
 }
 
@@ -199,4 +199,12 @@ textarea::-webkit-scrollbar {
     color: #fff;
     margin: 30px auto;
     border-radius: 5px;
+}
+
+.inpLength {
+    text-align: right;
+    padding-right: 20px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #bababa;
 }

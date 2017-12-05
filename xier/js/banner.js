@@ -204,7 +204,7 @@ function getBanner() {
             $(".banner-li").eq(0).clone().appendTo($("#banner-content"));
             $("#banner-content").width($("#banner-content>li").length * 100 + "%");
             $("#banner-content>li").width(100 / $("#banner-content>li").length + "%");
-            $("#banner-swicth-ul").width($(".banner-swicth-li").length * ($(".banner-swicth-li").width()) + 60);
+            // $("#banner-swicth-ul").width($(".banner-swicth-li").length * $(".banner-swicth-li").width() + 80);
             $("#banner-swicth-ul").css("margin-left", $("#banner-swicth-ul").width() / -2);
             $("#new-center").width($("#new-center>li").width * $("#new-center>li").length);
             var bn = new banner();

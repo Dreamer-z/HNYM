@@ -1,0 +1,144 @@
+.nav {
+    border-bottom: 3px solid #93bf1f;
+}
+
+.mainTit {
+    line-height: 60px;
+    border-bottom: 1px solid #eee;
+}
+
+.odNumber {
+    line-height: 60px;
+}
+
+.elli {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.productMsg {
+    padding: 25px 0;
+    border-bottom: 1px dashed #eee;
+    border-top: 1px dashed #eee;
+}
+
+.productImg {
+    width: 125px;
+    height: 125px;
+    margin: 0 25px;
+}
+
+.productCont {
+    width: 900px;
+    height: 125px;
+    font-size: 16px;
+}
+
+.pname {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #262726;
+}
+
+.pshort {
+    margin-bottom: 15px;
+    line-height: 24px;
+    max-height: 48px;
+    overflow: hidden;
+}
+
+.priceNumber {
+    width: 125px;
+    text-align: right;
+}
+
+.price {
+    color: #ff4100;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.number span {
+    font-size: 24px;
+}
+
+.logDetails {
+    padding: 25px 0;
+    line-height: 28px;
+}
+
+.logDet div {
+    margin-right: 80px;
+}
+
+.logistics {
+    font-size: 18px;
+    border-top: 1px solid #eee;
+    background-color: #f3f3f3;
+}
+
+.logTit {
+    line-height: 68px;
+    font-size: 20px;
+    background-color: #fff;
+}
+
+.logcont {
+    box-sizing: border-box;
+    padding: 42px 0;
+    padding-left: 50px;
+    color: #333;
+    font-size: 16px;
+}
+
+.logDay {
+    width: 225px;
+    overflow: hidden;
+}
+
+.logYear,
+.logWeek {
+    margin: 0 25px;
+}
+
+.logTime {
+    margin-right: 40px;
+    width: 70px;
+    overflow: hidden;
+}
+
+.logcontLi {
+    line-height: 24px;
+}
+
+.logDay,
+.logcont2-li {
+    padding: 5px 0;
+}
+
+.logcont2-li {
+    position: relative;
+}
+
+.light,
+.line {
+    position: absolute;
+    background-color: #d8d5d5;
+}
+
+.line {
+    left: -255px;
+    top: 24px;
+    width: 2px;
+    min-height: 18px;
+}
+
+.line:last-child() .light {
+    left: -260px;
+    top: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}

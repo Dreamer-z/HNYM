@@ -1,0 +1,35 @@
+.nav {
+    border-bottom: 3px solid #93bf1f;
+}
+
+.comtent {
+    box-sizing: border-box;
+    width: 541px;
+    height: 297px;
+    margin: 80px auto;
+    margin-bottom: 120px;
+    padding: 40px 0;
+    box-shadow: 0 0 10px #999;
+    text-align: center;
+}
+
+.statusBox {
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 76px;
+    line-height: 48px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #90c221;
+    background: url(./../images/success_03.png)no-repeat 130px 0;
+    background-size: 20%;
+}
+
+.option {
+    margin-top: 20px;
+}
+
+.option a {
+    color: #219ec2;
+    margin: 0 10px;
+}
