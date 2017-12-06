@@ -182,6 +182,7 @@ var all = {
             // 删除图片操作
             $(".delinp").click(function(ev) {
                 ev.stopPropagation();
+                len -= 1;
                 $(this).parent(".img-li-box").remove();
             });
         });
@@ -222,6 +223,7 @@ var all = {
             // 删除图片操作
             $(".delinp").click(function(ev) {
                 ev.stopPropagation();
+                len -= 1;
                 $(this).parent(".img-li-box").remove();
             });
         });

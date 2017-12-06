@@ -41,53 +41,55 @@
     <div id="peatured-product">
         <div class="product-title  product-part-one-title"></div>
         <div class="product-box y-width product-part-one y-clearfix">
-            <div class="product-bg"></div>
-            <div class="product-content product-part-one-content">
-                <div class="product-content-one-left y-left">
-                    <div class="product-content-one-left-top"></div>
-                    <div class="product-content-one-left-br"></div>
-                    <div class="product-content-one-left-bottom"></div>
-                </div>
-                <div class="product-content-one-rigth y-right">
-                    <div class="product-content-one-rigth-top">
-                        <h4>伊能启元胶囊</h4>
-                        <span>享誉美国的血糖管控专家</span>
+            <div class="product-bg">
+                <a href="" class="product-content product-part-one-content">
+                    <div class="product-content-one-left y-left">
+                        <div class="product-content-one-left-top"></div>
+                        <div class="product-content-one-left-br"></div>
+                        <div class="product-content-one-left-bottom"></div>
                     </div>
-                    <div class="product-content-one-rigth-bottom">
-                        <p>天然植物成分 安全无毒副作用 0.65g/粒x90</p>
-                        <div class="product-content-one-buy y-clearfix">
-                            <p class="y-left">市场价：<span>&yen299元</span></p>
-                            <a class="y-left"><button class="buy_now">立即抢购 →</button></a>
+                    <div class="product-content-one-rigth y-right">
+                        <div class="product-content-one-rigth-top">
+                            <h4>伊能启元胶囊</h4>
+                            <span>享誉美国的血糖管控专家</span>
+                        </div>
+                        <div class="product-content-one-rigth-bottom">
+                            <p>天然植物成分 安全无毒副作用 0.65g/粒x90</p>
+                            <div class="product-content-one-buy y-clearfix">
+                                <p class="y-left">市场价：<span>&yen299元</span></p>
+                                <button class="buy_now y-left">立即抢购 →</button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
         <div class="product-title product-part-two-title"></div>
         <div class="product-box y-width product-part-two">
-            <div class="product-bg"></div>
-            <div class="product-content product-part-two-content y-clearfix">
-                <div class="product-part-two-content-box y-left">
-                    <div class="product-part-two-content-img"></div>
-                    <div class="product-part-two-content-int">
-                        <h4>伊能启元胶囊</h4>
-                        <p>天然植物成分 安全无毒副作用 0.65g/粒x90</p>
-                        <div class="product-part-two-content-buy y-clearfix">
-                            <p class="y-left">市场价：<span>&yen299元</span></p>
-                            <a class="y-left"><button class="buy_now">立即抢购 →</button></a>
+            <div class="product-bg">
+                <div class="product-content product-part-two-content y-clearfix">
+                    <a href="" class="product-part-two-content-box y-left">
+                        <div class="product-part-two-content-img"></div>
+                        <div class="product-part-two-content-int">
+                            <h4>伊能启元胶囊伊能启元胶囊伊能启元胶囊伊能启元胶囊伊能启元胶囊伊能启元胶囊伊能启元胶囊伊能启元胶囊伊能启元胶囊伊能启元胶囊</h4>
+                            <p>天然植物成分 安全无毒副作用 0.65g/粒x90</p>
+                            <div class="product-part-two-content-buy y-clearfix">
+                                <p class="y-left">市场价：<span>&yen299元</span></p>
+                                <button class="buy_now y-left">立即抢购 →</button>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="product-part-two-content-box y-left">
-                    <div class="product-part-two-content-img"></div>
-                    <div class="product-part-two-content-int">
-                        <h4>伊能启元胶囊</h4>
-                        <p>天然植物成分 安全无毒副作用 0.65g/粒x90</p>
-                        <div class="product-part-two-content-buy y-clearfix">
-                            <p class="y-left">市场价：<span>&yen299元</span></p>
-                            <a class="y-left"><button class="buy_now">立即抢购 →</button></a>
+                    </a>
+                    <a href="" class="product-part-two-content-box y-left">
+                        <div class="product-part-two-content-img"></div>
+                        <div class="product-part-two-content-int">
+                            <h4>伊能启元胶囊</h4>
+                            <p>天然植物成分 安全无毒副作用 0.65g/粒x90</p>
+                            <div class="product-part-two-content-buy y-clearfix">
+                                <p class="y-left">市场价：<span>&yen299元</span></p>
+                                <button class="buy_now y-left">立即抢购 →</button>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -129,6 +131,14 @@
 <!--  绑定banner数据 end-->
 <script src="/js/head_footer.js"></script>
 <script src="/js/banner.js"></script>
-<!-- <script src="/js/product.js"></script> -->
+<script>
+    // $(".product-box").each(function(i) {
+    //     $(".product-box").eq(i).height($(".product-box").children(".product-content").height());
+    // });
+    $(".product-bg").each(function(i) {
+        $(".product-bg").eq(i).height($(".product-bg").eq(i).children(".product-content").height() + 110);
+        $(".product-box").eq(i).height($(".product-bg").eq(i).height());
+    });
+</script>
 
 </html>

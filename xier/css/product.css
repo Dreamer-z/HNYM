@@ -38,29 +38,25 @@
 }
 
 .product-box {
-  position: relative;
-  height: 640px;
+  min-height: 640px;
   margin-bottom: 60px !important;
 }
 
 .product-box .product-bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
+  position: relative;
   background-color: #b0c400;
 }
 
-.product-box .product-content {
+.product-box .product-bg .product-content {
+  box-sizing: border-box;
   position: absolute;
   left: -26px;
   top: 26px;
-  width: 1090px;
-  height: 530px;
+  width: 1200px;
   background-color: #f7f7f5;
   box-shadow: 0 0 20px #999;
   padding: 55px;
+  color: #000;
 }
 
 .product-part-one-title {
@@ -119,7 +115,7 @@
 }
 
 .product-content-one-rigth .product-content-one-rigth-top {
-  margin: 145px 0 115px 0;
+  margin: 80px 0 60px 0;
 }
 
 .product-content-one-rigth .product-content-one-rigth-top h4 {
@@ -158,11 +154,7 @@
   font-weight: bold;
 }
 
-.product-content-one-rigth .product-content-one-rigth-bottom .product-content-one-buy a {
-  display: block;
-}
-
-.product-content-one-rigth .product-content-one-rigth-bottom .product-content-one-buy a button {
+.product-content-one-rigth .product-content-one-rigth-bottom .product-content-one-buy button {
   font-size: 28px;
   height: 50px;
   line-height: 50px;
@@ -172,11 +164,13 @@
 }
 
 .product-part-two .product-part-two-content-box {
+  display: block;
   width: 50%;
   overflow: hidden;
   box-sizing: border-box;
   height: 100%;
   text-align: center;
+  color: #000;
 }
 
 .product-part-two .product-part-two-content-box .product-part-two-content-img {
@@ -216,11 +210,7 @@
   font-weight: bold;
 }
 
-.product-part-two .product-part-two-content-box .product-part-two-content-int .product-part-two-content-buy a {
-  display: block;
-}
-
-.product-part-two .product-part-two-content-box .product-part-two-content-int .product-part-two-content-buy a button {
+.product-part-two .product-part-two-content-box .product-part-two-content-int .product-part-two-content-buy button {
   padding: 0 15px;
   font-size: 16px;
   color: #fff;

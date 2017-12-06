@@ -34,26 +34,22 @@
 }
 
 .product-box {
-    position: relative;
-    height: 640px;
+    min-height: 640px;
     margin-bottom: 60px !important;
     .product-bg {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0px;
-        top: 0px;
+        position: relative;
         background-color: #b0c400;
-    }
-    .product-content {
-        position: absolute;
-        left: -26px;
-        top: 26px;
-        width: 1090px;
-        height: 530px;
-        background-color: #f7f7f5;
-        box-shadow: 0 0 20px #999;
-        padding: 55px;
+        .product-content {
+            box-sizing: border-box;
+            position: absolute;
+            left: -26px;
+            top: 26px;
+            width: 1200px;
+            background-color: #f7f7f5;
+            box-shadow: 0 0 20px #999;
+            padding: 55px;
+            color: #000;
+        }
     }
 }
 
@@ -108,7 +104,7 @@
     width: 540px;
     height: 100%;
     .product-content-one-rigth-top {
-        margin: 145px 0 115px 0;
+        margin: 80px 0 60px 0;
         h4 {
             font-size: 30px;
             line-height: 60px;
@@ -140,16 +136,13 @@
                     font-weight: bold;
                 }
             }
-            a {
-                display: block;
-                button {
-                    font-size: 28px;
-                    height: 50px;
-                    line-height: 50px;
-                    padding: 0 20px;
-                    color: #fff;
-                    background-color: #ff0505;
-                }
+            button {
+                font-size: 28px;
+                height: 50px;
+                line-height: 50px;
+                padding: 0 20px;
+                color: #fff;
+                background-color: #ff0505;
             }
         }
     }
@@ -157,11 +150,13 @@
 
 .product-part-two {
     .product-part-two-content-box {
+        display: block;
         width: 50%;
         overflow: hidden;
         box-sizing: border-box;
         height: 100%;
         text-align: center;
+        color: #000;
         .product-part-two-content-img {
             width: 100%;
             height: 380px;
@@ -193,16 +188,13 @@
                         font-weight: bold;
                     }
                 }
-                a {
-                    display: block;
-                    button {
-                        padding: 0 15px;
-                        font-size: 16px;
-                        color: #fff;
-                        height: 38px;
-                        line-height: 38px;
-                        background-color: #ff0505;
-                    }
+                button {
+                    padding: 0 15px;
+                    font-size: 16px;
+                    color: #fff;
+                    height: 38px;
+                    line-height: 38px;
+                    background-color: #ff0505;
                 }
             }
         }

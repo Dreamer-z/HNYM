@@ -6,13 +6,26 @@
 }
 
 .store-set .store-set-li,
-.store-set .store-set-li>input {
+.store-set .store-set-li>input,
+.store-set .store-set-li>textarea {
     line-height: .88rem;
     padding: 0 .2rem;
 }
 
-.store-set .store-set-li>input {
+.store-set .store-set-li>input,
+.store-set .store-set-li>textarea {
     width: 5.7rem;
+}
+
+.store-set .store-set-li>textarea {
+    height: .42rem;
+    line-height: .44rem;
+    margin: .23rem 0;
+    overflow-x: auto;
+}
+
+.store-set .store-set-li>textarea::-webkit-scrollbar {
+    display: none;
 }
 
 .store-set .store-set-li span {
