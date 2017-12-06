@@ -91,11 +91,16 @@
     padding-left: 50px;
     color: #333;
     font-size: 16px;
+    margin-bottom: 60px;
 }
 
 .logDay {
     width: 225px;
     overflow: hidden;
+}
+
+.logcont2 {
+    width: 925px;
 }
 
 .logYear,
@@ -104,9 +109,13 @@
 }
 
 .logTime {
-    margin-right: 40px;
+    margin-right: 60px;
     width: 70px;
     overflow: hidden;
+}
+
+.logMsg {
+    width: 795px;
 }
 
 .logcontLi {
@@ -130,12 +139,12 @@
 
 .line {
     left: -255px;
-    top: 24px;
+    top: 23px;
     width: 2px;
     min-height: 18px;
 }
 
-.line:last-child() .light {
+.light {
     left: -260px;
     top: 10px;
     width: 12px;

@@ -89,4 +89,4 @@ window.onload = function() {
     fn.date();
     fn.cimg();
     fn.cvideo();
-}
+};

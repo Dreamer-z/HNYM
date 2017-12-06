@@ -1,6 +1,6 @@
 function star(parentId) {
     var dom = document.getElementById(parentId);
-    var ind = 0,
+    var ind = -1,
         ind2;
 
     function starbg1() {
@@ -19,7 +19,21 @@ function star(parentId) {
         $("#" + parentId).children("label:gt(" + ind2 + ")").each(function(i) {
             $("#" + parentId).children("label:gt(" + ind2 + ")").eq(i).css({ "background": "url(./../images/collect.png)no-repeat center", "background-size": "100%" });
         });
-    }
+    };
+    $("#" + parentId).children("label").each(function(i) {
+        $("#" + parentId).children("label").eq(i).mouseenter(function() {
+            ind2 = i;
+            starbg2();
+        });
+        $("#" + parentId).children("label").eq(i).mouseleave(function() {
+            if (ind == -1) {
+                $("#" + parentId).children("label").css({ "background": "url(./../images/collect.png)no-repeat center", "background-size": "100%" });
+            } else {
+                ind2 = ind;
+                starbg2();
+            }
+        });
+    });
     dom.addEventListener("click", function() {
         $("#" + parentId).children("input").each(function(i) {
             if ($("#" + parentId).children("input").eq(i).prop("checked")) {
@@ -35,20 +49,7 @@ function star(parentId) {
             //     $("#" + parentId).children("label:gt(" + ind + ")").eq(i).css({ "background": "url(./../images/collect.png)no-repeat center", "background-size": "100%" });
             // });
     });
-    $("#" + parentId).children("label").each(function(i) {
-        $("#" + parentId).children("label").eq(i).mouseenter(function() {
-            ind2 = i;
-            starbg2();
-        });
-        $("#" + parentId).children("label").eq(i).mouseleave(function() {
-            if (ind == 0) {
-                $("#" + parentId).children("label").css({ "background": "url(./../images/collect.png)no-repeat center", "background-size": "100%" });
-            } else {
-                ind2 = ind;
-                starbg2();
-            }
-        });
-    });
+
 };
 star("proCom");
 star("logCom");

@@ -39,22 +39,33 @@
 }
 
 .logisticsLi {
-    margin-bottom: .2rem;
     color: #999;
+    padding-left: 1.2rem;
+    padding-bottom: .2rem;
+    position: relative;
 }
 
-.stasusRemind {
-    width: 1.2rem;
+.light,
+.line {
+    position: absolute;
+    background-color: #ddd;
 }
 
 .light {
-    display: block;
+    left: .47rem;
+    top: .05rem;
     width: .28rem;
     height: .28rem;
-    margin: 0 auto;
-    margin-top: .05rem;
     border-radius: 50%;
-    background-color: #ddd;
+    z-index: 10;
+}
+
+.line {
+    top: .33rem;
+    left: .58rem;
+    width: .05rem;
+    height: 100%;
+    z-index: 9;
 }
 
 .logisticsLi:nth-child(1) {
@@ -62,10 +73,19 @@
 }
 
 .logisticsLi:nth-child(1) .light {
-    width: .45rem;
-    height: .45rem;
+    left: .38rem;
+    width: .4rem;
+    height: .4rem;
     background-color: #93d521;
     border: .04rem solid #dff3c1;
+}
+
+.logisticsLi:nth-child(1) .line {
+    top: .2rem;
+}
+
+.logisticsLi:nth-last-child(1) .line {
+    display: none;
 }
 
 .detailMsg {
