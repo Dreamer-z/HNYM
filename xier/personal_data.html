@@ -71,7 +71,7 @@
                     <ul class="info-op">
                         <li class="y-clearfix io-li io-li-t io-li-img">
                             <span class="y-left io-t">当前头像：</span>
-                            <img class="y-left" src="/images/mem_img.png" alt="">
+                            <img class="y-left" src="/images/mem_img.png">
                             <input type="file" name="" id="io-img">
                             <label for="io-img">编辑头像</label>
                         </li>
@@ -132,6 +132,16 @@
 </script>
 <!-- 绑定列表数据 end -->
 <script src="/js/head_footer.js"></script>
-<script src="/js/personal_data.js"></script>
+<script>
+    // 更换头像
+    function putpicture(inpid, domname) {
+        document.getElementById(inpid).addEventListener("change", function() {
+            var filelist = document.getElementById(inpid).files[0];
+            var imgurl = window.URL.createObjectURL(filelist);
+            $("." + domname).attr("src", imgurl);
+        });
+    };
+    putpicture("io-img", "io-li-img>img");
+</script>
 
 </html>
