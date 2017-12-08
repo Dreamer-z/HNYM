@@ -1,4 +1,6 @@
 .sCar-op {
+    box-sizing: border-box;
+    width: 7.5rem;
     height: .88rem;
     padding: 0 .2rem;
     line-height: .88rem;
@@ -20,6 +22,8 @@
 
 .sCar-list {
     margin-bottom: 1.1rem;
+    box-sizing: border-box;
+    width: 7.5rem;
 }
 
 .sCar-li {
