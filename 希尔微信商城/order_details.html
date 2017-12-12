@@ -37,7 +37,7 @@
     </div>
     <div class="ordDet-msg bg-fff">
         <div class="ordDet-msg-person clear">
-            <span class="fl">收货人：李某某</span><span class="fr">137 **** 4569</span>
+            <span class="fl">收货人：李某某</span><span class="phoneNum fr">137****4569</span>
         </div>
         <div class="ordDet-msg-addr">收货地址：<span>湖南省 长沙市 雨花区 某某小区 4栋 湖南省 长沙市 雨花区 某某小区 4栋 5楼</span></div>
         <div class="dd-xt"></div>
@@ -70,13 +70,22 @@
         <p class="fl">￥<span>50</span></p>
     </div>
     <div class="msg-dis clear bg-fff msg-dis-orderID">
-        <span class="fl">订单号:</span>
+        <span class="fl">订单号：</span>
         <p class="fl">123456789123</p>
     </div>
     <div class="msg-dis clear bg-fff msg-dis-orderTime">
-        <span class="fl">下单时间:</span>
+        <span class="fl">下单时间：</span>
         <p class="fl">2017-09-30 10:22:03</p>
     </div>
 </body>
+<!-- <script>
+    // 手机号中间四位隐藏
+    var phone;
+    $(function() {
+        phone = $('.phoneNum').text();
+        var mphone = phone.substr(0, 3) + ' **** ' + phone.substr(7);
+        $('.phoneNum').text(mphone)
+    });
+</script> -->
 
 </html>

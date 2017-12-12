@@ -57,13 +57,12 @@
 <script src="./js/plug/ydui.js"></script>
 <script src="./js/all.js"></script>
 <script>
-    all.check();
     //地区选择
     ! function() {
         var $target = $('#J_Address');
         $target.citySelect({
             provance: '湖南',
-            city: '长沙市',
+            city: '',
             area: ''
         });
         $target.on('click', function(event) {

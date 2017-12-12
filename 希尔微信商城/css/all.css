@@ -2,6 +2,22 @@ body {
     background-color: #eee;
 }
 
+a {
+    color: #333;
+}
+
+
+/* 单选按钮、复选按钮 */
+
+.input-checked {
+    background: url(./../img/success_1.png)no-repeat center;
+    background-size: 120%;
+}
+
+.input-no-checked {
+    background: transparent;
+}
+
 
 /* 收货地址 */
 
