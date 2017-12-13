@@ -7,8 +7,7 @@
 
 html,
 body {
-    width: 100%;
-    color: #292829;
+    color: #333;
     font-family: "微软雅黑", "arial";
     -webkit-touch-callout: none;
     -webkit-text-size-adjust: none;
@@ -73,6 +72,9 @@ button {
     border: 0;
     background-color: transparent;
     -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-progress-appearance: none;
+    appearance: none;
     /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
 }
 
