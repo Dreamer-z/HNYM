@@ -104,11 +104,23 @@
     width: .8rem;
 }
 
-.md-remind input {
+.md-remind div {
     height: .98rem;
     width: 6.3rem;
-    line-height: .98rem;
+    overflow: hidden;
+}
+
+.md-remind input,
+.md-remind textarea {
+    height: .4rem;
+    width: 6.3rem;
+    margin: .28rem 0;
+    line-height: .44rem;
     font-size: .28rem;
+}
+
+.md-remind textarea::-webkit-scrollbar {
+    display: none;
 }
 
 .carriage {
@@ -121,6 +133,7 @@
     background-size: 3%;
     background-color: #fff;
     padding-right: .9rem;
+    margin-bottom: 1.1rem;
 }
 
 .cTicket {

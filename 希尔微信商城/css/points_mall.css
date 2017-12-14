@@ -13,3 +13,8 @@
     font-size: .3rem;
     background: -webkit-linear-gradient(left, #86c716, #bbf156);
 }
+
+.coupon-li {
+    background: url(./../img/coupon_bg_3.png)no-repeat center;
+    background-size: 100%;
+}

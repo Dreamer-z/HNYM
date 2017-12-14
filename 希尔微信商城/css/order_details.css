@@ -23,7 +23,7 @@
 .ordDet-state .ordDet-shipments {
     font-size: .28rem;
     padding-left: .6rem;
-    background: url(./../img/dsh.png)no-repeat .02rem .08rem;
+    background: url(./../img/dsh.png)no-repeat .04rem .05rem;
     background-size: 20%;
 }
 

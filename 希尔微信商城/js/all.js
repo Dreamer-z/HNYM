@@ -161,6 +161,10 @@ var all = {
                     alert("最多只能上传" + imglength + "张图片哦！");
                 };
                 return;
+            } else if (len == imglength) {
+                $("." + domname).hide();
+            } else {
+                $("." + domname).fadeIn(100);
             };
             for (var i = 0; i < filelist.length; i++) {
                 imgurl = window.URL.createObjectURL(filelist[i]);
@@ -184,6 +188,11 @@ var all = {
                 ev.stopPropagation();
                 len -= 1;
                 $(this).parent(".img-li-box").remove();
+                if ($("." + domname).show()) {
+                    return;
+                } else {
+                    $("." + domname).fadeIn(100);
+                }
             });
         });
     },
@@ -201,6 +210,10 @@ var all = {
                     alert("最多只能上传" + imglength + "张图片哦！");
                 };
                 return;
+            } else if (len == imglength) {
+                $("." + domname).hide();
+            } else {
+                $("." + domname).fadeIn(100);
             };
             for (var i = 0; i < filelist.length; i++) {
                 imgurl = window.URL.createObjectURL(filelist[i]);
@@ -225,6 +238,11 @@ var all = {
                 ev.stopPropagation();
                 len -= 1;
                 $(this).parent(".img-li-box").remove();
+                if ($("." + domname).show()) {
+                    return;
+                } else {
+                    $("." + domname).fadeIn(100);
+                }
             });
         });
     },
