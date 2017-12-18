@@ -1,0 +1,426 @@
+body {
+    background-color: #eee;
+}
+
+
+/* 抽奖 */
+
+.layLottery {
+    background: url(./../img/lottery_bg.jpg)no-repeat center;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    padding-top: 4rem;
+}
+
+.lotteryBox {
+    padding: .2rem .5rem;
+}
+
+.lotteryBoxTit {
+    color: #fff;
+    font-size: .3rem;
+    text-align: right;
+    margin-bottom: .2rem;
+}
+
+.lotteryBoxCont {
+    /* height: 4.4rem; */
+    width: 6.5rem;
+    color: #333;
+}
+
+.lotteryBoxCont table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.lotteryBoxCont .draw {
+    box-sizing: border-box;
+    /* width: 100%;
+    height: 100%; */
+    margin: 0 auto;
+}
+
+.lotteryBoxCont .draw .item {
+    width: 2rem;
+    height: 1.3rem;
+    padding: 0 .15rem;
+    background-color: #fff;
+    box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, .4);
+}
+
+.lotteryBoxCont .draw .item.active {
+    width: 2rem;
+    height: 1.3rem;
+    background-image: url(./../img/lotto_0.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #fff;
+}
+
+.lotteryBoxCont .draw .img {
+    box-sizing: border-box;
+    display: table-cell;
+    width: 2rem;
+    height: .6rem;
+    padding: .1rem;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.lotteryBoxCont .draw .img img {
+    vertical-align: top;
+    height: 100%;
+}
+
+.lotteryBoxCont .draw .gap {
+    width: .05rem;
+}
+
+.lotteryBoxCont .draw .gap-2 {
+    height: .05rem;
+}
+
+.lotteryBoxCont .draw .name {
+    display: block;
+    margin-top: .1rem;
+    font-size: .22rem;
+}
+
+.lotteryBoxCont .draw .draw-btn {
+    display: block;
+    height: .8rem;
+    line-height: .4rem;
+    padding: .25rem 0;
+    border-radius: .2rem;
+    font-size: .25rem;
+    font-weight: 700;
+    text-decoration: none;
+    background-image: url(./../img/lotto_0.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    text-shadow: .05rem .05rem .1rem rgba(0, 0, 0, .4);
+}
+
+.layui-m-layerchild {
+    font-size: .24rem;
+}
+
+.layui-m-layer * {
+    width: 7.5rem;
+}
+
+.layui-m-layercont .close {
+    position: absolute;
+    top: 0.1rem;
+    width: .5rem;
+    height: .5rem;
+    right: .5rem;
+    border-radius: 50%;
+    background-image: url(./../img/del_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #fff;
+}
+
+.layui-m-layercont h1 {
+    color: #e04538;
+    position: absolute;
+    top: 1.25rem;
+    width: 2.32rem;
+    left: 50%;
+    margin-left: -1.11rem;
+    text-align: center;
+    font-size: .48rem;
+    line-height: .56rem;
+}
+
+.layLotteryMsg {
+    width: 7.1rem;
+    height: 3.5rem;
+    margin: .3rem auto;
+    background-image: url(./../img/lotto_list.png);
+    background-repeat: no-repeat;
+    background-size: 101.5% 101.5%;
+    border-radius: .2rem;
+}
+
+.layLotteryMsg .title {
+    text-align: center;
+    height: .71rem;
+    line-height: .71rem;
+    background-image: url(./../img/lotto_list_l.png), url(./../img/lotto_list_r.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 66% .25rem, 34% .25rem;
+    background-size: 10%, 10%;
+}
+
+.layLotteryMsg .list {
+    width: 100%;
+    height: 2.72rem;
+    overflow: hidden;
+}
+
+.layLotteryMsg .list .swiper-slide {
+    box-sizing: border-box;
+    height: .93rem;
+    width: 100%;
+    padding: .15rem .2rem;
+}
+
+.layLotteryMsg .list .photo {
+    width: .63rem;
+    height: 100%;
+    border-radius: 50%;
+    margin-right: .15rem;
+}
+
+.layLotteryMsg .list .cont {
+    font-size: .24rem;
+    line-height: .31rem;
+}
+
+.layLotteryMsg .list .msg span {
+    color: #f8c830;
+}
+
+.layLotteryMsg .list .time {
+    color: #999;
+}
+
+.lotteryBoxCont .info {
+    width: 4.5rem;
+    height: 3.7rem;
+}
+
+.cannotLottery .option a {
+    display: inline-block;
+    width: 50%;
+    background-color: #fff;
+}
+
+
+/* 我的中奖纪录 */
+
+.winRecLi {
+    box-sizing: border-box;
+    width: 7.5rem;
+    height: 1.01rem;
+    background-color: #fff;
+    padding: .1rem .3rem;
+    line-height: .8rem;
+    font-size: .3rem;
+    border-bottom: .01rem solid #eee;
+}
+
+.winRecLi .stateTime {
+    line-height: .4rem;
+}
+
+.winRecLi .time {
+    font-size: .24rem;
+    color: #999;
+}
+
+.winRecLi .price {
+    color: #ed9906;
+}
+
+
+/* 等级特权 */
+
+.level_mian .level_introduce {
+    width: 7.5rem;
+    background: -moz-linear-gradient(top, #4e4857, #25222d);
+    background: -webkit-linear-gradient(top, #4e4857, #25222d);
+    background: -o-linear-gradient(top, #4e4857, #25222d);
+    box-sizing: border-box;
+    padding: .2rem .3rem;
+}
+
+.level_mian .level_bg {
+    width: 100%;
+    height: 1.91rem;
+    background-image: url(./../img/level_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: .2rem;
+}
+
+.level_mian .level_rank {
+    width: 100%;
+    margin-top: .5rem;
+    font-size: .22rem;
+    padding-bottom: .7rem;
+    position: relative;
+}
+
+.level_mian .level_rank_num {
+    color: #fff;
+    position: absolute;
+    top: 1.5rem;
+}
+
+.level_mian .level_rank_num:nth-of-type(1) {
+    left: 16%;
+}
+
+.level_mian .level_rank_num:nth-of-type(2) {
+    left: 35%;
+}
+
+.level_mian .level_rank_num:nth-of-type(3) {
+    left: 55%;
+}
+
+.level_mian .level_rank_num:nth-of-type(4) {
+    left: 75%;
+}
+
+.level_mian .level_rank_li {
+    width: 20%;
+    text-align: center;
+    color: #fff;
+}
+
+.level_mian .level_rank_bg {
+    width: .53rem;
+    height: .53rem;
+    margin: 0 auto;
+}
+
+.level_mian .level_rank_tit {
+    margin: .2rem 0;
+}
+
+.level_mian .level_rank_li:nth-child(1) .level_rank_bg {
+    background-image: url(./../img/member_1_on.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: .2rem;
+}
+
+.level_mian .level_rank_li:nth-child(2) .level_rank_bg {
+    background-image: url(./../img/member_2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: .2rem;
+}
+
+.level_mian .level_rank_li:nth-child(3) .level_rank_bg {
+    background-image: url(./../img/member_3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: .2rem;
+}
+
+.level_mian .level_rank_li:nth-child(4) .level_rank_bg {
+    background-image: url(./../img/member_4.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: .2rem;
+}
+
+.level_mian .level_rank_li:nth-child(5) .level_rank_bg {
+    background-image: url(./../img/member_5.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: .2rem;
+}
+
+.level_mian .level_rank_line {
+    width: 96%;
+    height: .05rem;
+    margin: 0 auto;
+}
+
+.level_mian .level_rank_li:nth-child(1) .level_rank_line {
+    background-color: #d2cade;
+}
+
+.level_mian .level_rank_li:nth-child(2) .level_rank_line {
+    background-color: #aea7b8;
+}
+
+.level_mian .level_rank_li:nth-child(3) .level_rank_line {
+    background-color: #847c8f;
+}
+
+.level_mian .level_rank_li:nth-child(4) .level_rank_line {
+    background-color: #67626f;
+}
+
+.level_mian .level_rank_li:nth-child(5) .level_rank_line {
+    background-color: #534e60;
+}
+
+.level_mian .level_privileges {
+    background-color: #fff;
+    padding: .2rem .2rem 1rem .2rem;
+}
+
+.level_mian .level_privilegesTit {
+    margin: .4rem 0;
+    font-size: .3rem;
+}
+
+.level_mian .privilegesCont {
+    text-align: center;
+    color: #999;
+}
+
+
+/* 推广二维码 */
+
+.popularizeCode {
+    width: 5.6rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    text-align: center;
+    color: #fff;
+    font-size: .32rem;
+}
+
+.popularizeCode .qrCode {
+    width: 100%;
+    border-radius: .2rem;
+    overflow: hidden;
+}
+
+.popularizeCode .qrCodeTit {
+    line-height: 1rem;
+    background-color: #37343f;
+}
+
+.popularizeCode .qrCodeCont {
+    padding: 0 1rem;
+    padding-bottom: .7rem;
+    background-color: #fff;
+}
+
+.popularizeCode .qrCodeCont img {
+    width: 3.6rem;
+    height: 3.6rem;
+    margin-top: .7rem;
+}
+
+.popularizeCode .qrCodeCont p {
+    margin-top: .4rem;
+    color: #333;
+}
+
+.popularizeCode button {
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    background-color: #37343f;
+    color: #fff;
+    margin-top: .7rem;
+    border-radius: .2rem;
+    font-size: .32rem;
+}
+
+
+/* 人员统计 */

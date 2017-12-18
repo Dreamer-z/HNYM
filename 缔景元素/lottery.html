@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <title>抽奖</title>
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/layer.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="">
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="./js/adaptive.js"></script>
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 28;
+        window['adaptive'].maxWidth = 480;
+        window['adaptive'].scaleType = 1;
+        window['adaptive'].init();
+    </script>
+</head>
+
+<body>
+    <div class="layLottery fullscreen2">
+        <div class="lotteryBox">
+            <p class="lotteryBoxTit">我的中奖纪录</p>
+            <div class="lotteryBoxCont">
+                <div class="draw" id="lottery">
+                    <table>
+                        <tr>
+                            <td class="item lottery-unit lottery-unit-0">
+                                <div class="img">
+                                    <img src="./img/lotto_1.png" alt="">
+                                </div>
+                                <span class="name">谢谢参与</span>
+                            </td>
+                            <td class="gap"></td>
+                            <td class="item lottery-unit lottery-unit-1">
+                                <div class="img">
+                                    <img src="./img/lotto_2.png" alt="">
+                                </div>
+                                <span class="name">50元代金券</span>
+                            </td>
+                            <td class="gap"></td>
+                            <td class="item lottery-unit lottery-unit-2">
+                                <div class="img">
+                                    <img src="./img/lotto_1.png" alt="">
+                                </div>
+                                <span class="name">谢谢参与</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gap-2" colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td class="item lottery-unit lottery-unit-7">
+                                <div class="img">
+                                    <img src="./img/lotto_2.png" alt="">
+                                </div>
+                                <span class="name">10元代金券</span>
+                            </td>
+                            <td class="gap"></td>
+                            <td class="">
+                                <a class="draw-btn" href="javascript:">
+                                    <h3>点击抽奖</h3>
+                                    <p>剩余抽奖次数<span>0</span>次</p>
+                                </a>
+                            </td>
+                            <td class="gap"></td>
+                            <td class="item lottery-unit lottery-unit-3">
+                                <div class="img">
+                                    <img src="./img/lotto_2.png" alt="">
+                                </div>
+                                <span class="name">20元代金券</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gap-2" colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td class="item lottery-unit lottery-unit-6">
+                                <div class="img">
+                                    <img src="./img/lotto_1.png" alt="">
+                                </div>
+                                <span class="name">谢谢参与</span>
+                            </td>
+                            <td class="gap"></td>
+                            <td class="item lottery-unit lottery-unit-5">
+                                <div class="img">
+                                    <img src="./img/lotto_2.png" alt="">
+                                </div>
+                                <span class="name">50元代金券</span>
+                            </td>
+                            <td class="gap"></td>
+                            <td class="item lottery-unit lottery-unit-4">
+                                <div class="img">
+                                    <img src="./img/lotto_1.png" alt="">
+                                </div>
+                                <span class="name">谢谢参与</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id='info' style="display : none">
+                    <div class="close"></div>
+                    <img src="./img/tk_img.png">
+                    <a class="prizeInp" href="">
+                        <img src="./img/tk_img_1.png">
+                    </a>
+                    <h1>10元</h1>
+                </div>
+            </div>
+        </div>
+        <div class="layLotteryMsg">
+            <div class="title">中奖纪录</div>
+            <div class="list swiper-container">
+                <div class="swiper-wrapper clear">
+                    <div class="clear fl swiper-slide">
+                        <div class="photo fl" style="background-image: url(./img/ls/photo.png);background-repeat: no-repeat;background-size: 100% 100%;"></div>
+                        <div class="cont fl">
+                            <p class="name">Mr.Xu</p>
+                            <p class="msg">抽中<span>10元代金券</span></p>
+                        </div>
+                        <div class="time fr">
+                            <p><span>1</span>分钟前</p>
+                        </div>
+                    </div>
+                    <div class="clear fl swiper-slide">
+                        <div class="photo fl" style="background-image: url(./img/ls/photo.png);background-repeat: no-repeat;background-size: 100% 100%;"></div>
+                        <div class="cont fl">
+                            <p class="name">Mr.Xu</p>
+                            <p class="msg">抽中<span>20元代金券</span></p>
+                        </div>
+                        <div class="time fr">
+                            <p><span>1</span>分钟前</p>
+                        </div>
+                    </div>
+                    <div class="clear fl swiper-slide">
+                        <div class="photo fl" style="background-image: url(./img/ls/photo.png);background-repeat: no-repeat;background-size: 100% 100%;"></div>
+                        <div class="cont fl">
+                            <p class="name">Mr.Xu</p>
+                            <p class="msg">抽中<span>50元代金券</span></p>
+                        </div>
+                        <div class="time fr">
+                            <p><span>1</span>分钟前</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 没有抽奖权限弹窗 -->
+    <div class="fullscreen">
+        <div class="cannotLottery popup">
+            <div class="tit">您当前没有抽奖机会</div>
+            <div class="cont">
+                <p>您可打开个人中心进入点击积分商城</p>
+                <p>进入积分商城或点击下方”去兑换“ 兑换抽奖次数</p>
+            </div>
+            <div class="option">
+                <a class="seeagin">再看看</a><a href="">去兑换</a>
+            </div>
+        </div>
+    </div>
+</body>
+<!--弹窗layer-->
+<script src="./js/layer.js"></script>
+<script src="./js/swiper-3.4.2.jquery.min.js"></script>
+<script src="./js/all.js"></script>
+<script type="text/javascript">
+    all.fullscreen2();
+    all.fullscreen();
+    all.banner2(".list", 3);
+    var lottery = {
+        index: -1, //当前转动到哪个位置，起点位置
+        count: 0, //总共有多少个位置
+        timer: 0, //setTimeout的ID，用clearTimeout清除
+        speed: 20, //初始转动速度
+        times: 0, //转动次数
+        cycle: 50, //转动基本次数：即至少需要转动多少次再进入抽奖环节
+        prize: -1, //中奖位置
+        init: function(id) {
+            if ($('#' + id).find('.lottery-unit').length > 0) {
+                $lottery = $('#' + id);
+                $units = $lottery.find('.lottery-unit');
+                this.obj = $lottery;
+                this.count = $units.length;
+                $lottery.find('.lottery-unit.lottery-unit-' + this.index).addClass('active');
+            };
+        },
+        roll: function() {
+            var index = this.index;
+            var count = this.count;
+            var lottery = this.obj;
+            $(lottery).find('.lottery-unit.lottery-unit-' + index).removeClass('active');
+            index += 1;
+            if (index > count - 1) {
+                index = 0;
+            };
+            $(lottery).find('.lottery-unit.lottery-unit-' + index).addClass('active');
+            this.index = index;
+            return false;
+        },
+        stop: function(index) {
+            this.prize = index;
+            return false;
+        }
+    };
+
+    function roll() {
+        lottery.times += 1;
+        lottery.roll(); //转动过程调用的是lottery的roll方法，这里是第一次调用初始化
+
+        if (lottery.times > lottery.cycle + 10 && lottery.prize == lottery.index) {
+            clearTimeout(lottery.timer);
+            console.log(lottery.prize);
+            $("#info").children("h1").html($(".lottery-unit-" + lottery.prize).children(".name").html());
+            if ($(".lottery-unit-" + lottery.prize).children(".name").html() == "谢谢参与") {
+                $(".prizeInp").css("display", "none");
+            };
+            layer.open({
+                type: 1,
+                shadeClose: true,
+                shade: false,
+                maxmin: true, //开启最大化最小化按钮
+                area: ['3.5rem', '4.5rem'],
+                content: $("#info").html()
+            });
+
+            $(".close").click(function() {
+                $(".layui-m-layermain").fadeOut(100);
+            });
+            lottery.prize = -1;
+            lottery.times = 0;
+            click = false;
+        } else {
+            if (lottery.times < lottery.cycle) {
+                lottery.speed -= 10;
+            } else if (lottery.times == lottery.cycle) {
+                var index = Math.random() * (lottery.count) | 0; //静态演示，随机产生一个奖品序号，实际需请求接口产生
+                lottery.prize = index;
+            } else {
+                if (lottery.times > lottery.cycle + 10 && ((lottery.prize == 0 && lottery.index == 7) || lottery.prize == lottery.index + 1)) {
+                    lottery.speed += 110;
+                } else {
+                    lottery.speed += 20;
+                }
+            }
+            if (lottery.speed < 40) {
+                lottery.speed = 40;
+            };
+            lottery.timer = setTimeout(roll, lottery.speed); //循环调用
+        }
+        return false;
+    };
+    var click = false; //click控制一次抽奖过程中不能重复点击抽奖按钮，后面的点击不响应
+    var permission = false; //抽奖权限，true为有抽奖权限
+    window.onload = function() {
+        lottery.init('lottery');
+        if (permission == true) {
+            $('.draw-btn').click(function() {
+                if (click) {
+                    return false;
+                } else {
+                    lottery.speed = 100;
+                    roll(); //转圈过程不响应click事件，会将click置为false
+                    click = true; //一次抽奖完成后，设置click为true，可继续抽奖		
+                    return false;
+                };
+            });
+        } else {
+            $('.draw-btn').click(function() {
+                $(".fullscreen").fadeIn(100);
+            });
+
+            $(".seeagin").click(function() {
+                $(".fullscreen").fadeOut(100);
+            });
+        }
+
+    };
+</script>
+
+</html>
