@@ -9,11 +9,7 @@ $(function() {
     var pge = 0;
     dom.addEventListener("touchstart", function(ev) {
         var ev = event || window.event;
-        // clearTimeout(ds);
         initX = ev.touches[0].clientX;
-        // ds = setTimeout(function() {
-        //     lock = true;
-        // }, 350);
     });
     dom.addEventListener("touchmove", function(ev) {
         var ev = event || window.event;
@@ -21,10 +17,7 @@ $(function() {
     });
     dom.addEventListener("touchend", function() {
         dist = nowX - initX;
-        // if (lock == true) {
-        // lock = false;
         if (dist > 0) {
-            // alert("left")
             if (dist % wd >= .5 && dist / wd > 0) {
                 pge -= Number(parseInt(dist / wd) + 1);
                 move(".5");
@@ -38,7 +31,6 @@ $(function() {
                 });
             }
         } else {
-            // alert("right")
             dist = Math.abs(dist);
             if (dist % wd >= .5 && dist / wd > 0) {
                 pge += Number(parseInt(dist / wd) + 1);
@@ -53,10 +45,6 @@ $(function() {
                 });
             };
         };
-        // } else {
-        //     clearTimeout(ds);
-        //     return;
-        // };
     });
 
     function move(t) {

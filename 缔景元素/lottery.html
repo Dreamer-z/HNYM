@@ -261,7 +261,7 @@
         return false;
     };
     var click = false; //click控制一次抽奖过程中不能重复点击抽奖按钮，后面的点击不响应
-    var permission = false; //抽奖权限，true为有抽奖权限
+    var permission = true; //抽奖权限，true为有抽奖权限
     window.onload = function() {
         lottery.init('lottery');
         if (permission == true) {

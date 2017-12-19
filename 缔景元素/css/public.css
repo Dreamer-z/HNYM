@@ -59,6 +59,30 @@
 }
 
 
+/* 统计窗2 */
+
+.total1 {
+    box-sizing: border-box;
+    width: 7.5rem;
+    height: 2.72rem;
+    padding: 0 .2rem;
+    background: -moz-linear-gradient(top, #4e4857, #25222d);
+    background: -webkit-linear-gradient(top, #4e4857, #25222d);
+    background: -o-linear-gradient(top, #4e4857, #25222d);
+    color: #fff;
+}
+
+.total1 .title {
+    font-size: .3rem;
+    line-height: 1.2rem;
+}
+
+.total1 .totalNum {
+    font-size: .8rem;
+    line-height: 1rem;
+}
+
+
 /* 纪录列表 */
 
 .recordLi {
@@ -69,10 +93,12 @@
     padding: .1rem .3rem;
     font-size: .3rem;
     border-bottom: .01rem solid #eee;
+    overflow: hidden;
 }
 
-.recordLi .titleTime {
+.recordLi .stateTime {
     line-height: .4rem;
+    float: left;
 }
 
 .recordLi .time {
@@ -81,5 +107,24 @@
 }
 
 .recordLi .price {
+    float: right;
     color: #ed9906;
+}
+
+
+/* 标题+数据列表 */
+
+.tData {
+    box-sizing: border-box;
+    width: 7.5rem;
+    height: .88rem;
+    line-height: .88rem;
+    background-color: #fff;
+    font-size: .3rem;
+    padding: 0 .4rem;
+    border-bottom: .01rem solid #eee;
+}
+
+.tData .cont {
+    margin-left: .3rem;
 }
