@@ -3,3 +3,4 @@
 等级特权 level_privileges.html
 推广二维码 popularize_code.html
 人员统计 personnel_statistics.html
+收益统计 income_statistics.html

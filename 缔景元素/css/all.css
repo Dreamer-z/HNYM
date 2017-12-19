@@ -424,3 +424,79 @@ body {
 
 
 /* 人员统计 */
+
+.personnel_statistics .title {
+    font-size: .32rem;
+    line-height: .88rem;
+    padding: 0 .2rem;
+}
+
+.personnel_statistics .list li {
+    padding: 0 .3rem;
+    background-color: #fff;
+    margin-top: .1rem;
+}
+
+.personnel_statistics .personnel_msg,
+.personnel_statistics .integral {
+    box-sizing: border-box;
+    height: .83rem;
+    line-height: .83rem;
+}
+
+.personnel_statistics .personnel_msg {
+    border-bottom: .02rem dashed #eee;
+}
+
+.personnel_statistics .personnel_msg .photo {
+    width: .51rem;
+    height: .51rem;
+    margin: .16rem 0;
+}
+
+.personnel_statistics .personnel_msg .name {
+    font-size: .34rem;
+    margin-left: .2rem;
+}
+
+.personnel_statistics .personnel_msg .time {
+    font-size: .24rem;
+    color: #999;
+}
+
+.personnel_statistics .integral {
+    font-size: .3rem;
+}
+
+.personnel_statistics .integralNum {
+    color: #f39700;
+}
+
+
+/* 收益统计 */
+
+.income_statistics .income_statistics .income_record .title {
+    line-height: .8rem;
+    font-size: .3rem;
+    padding: 0 .2rem;
+}
+
+.income_statistics .income_list {
+    margin-top: .1rem;
+}
+
+.income_statistics .income_list li {
+    background-color: #fff;
+    border-bottom: .01rem solid #eee;
+    padding: .2rem;
+    font-size: .3rem;
+}
+
+.income_statistics .income_list .time {
+    font-size: .24rem;
+    color: #999;
+}
+
+.income_statistics .income_list .number {
+    color: #f39700;
+}
