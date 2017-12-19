@@ -1,5 +1,6 @@
 // 滑动套餐列表
-function touchmove(parentdom, childdom, time) {
+// 参数：方向（left，top），父元素，子元素，动画时间
+function touchmove(direction, parentdom, childdom, time) {
     var dom = document.getElementsByClassName(parentdom)[0];
     var lock = false;
     var ds, dist;
@@ -69,14 +70,14 @@ function touchmove(parentdom, childdom, time) {
             })
         };
     };
-    $(".lr-l").click(function() {
-        pge--;
-        move(time);
-    });
-    $(".lr-r").click(function() {
-        pge++;
-        move(time);
-    });
+    // $(".lr-l").click(function() {
+    //     pge--;
+    //     move(time);
+    // });
+    // $(".lr-r").click(function() {
+    //     pge++;
+    //     move(time);
+    // });
 
     $(childdom).click(function(ev) {
         ev.stopPropagation();
