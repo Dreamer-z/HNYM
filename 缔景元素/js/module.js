@@ -8,6 +8,7 @@ function touchmove(direction, parentdom, childdom, time) {
     var initX;
     var nowX;
     var pge = 0;
+    dire = "margin-" + direction;
     dom.addEventListener("touchstart", function(ev) {
         var ev = event || window.event;
         initX = ev.touches[0].clientX;
@@ -28,7 +29,7 @@ function touchmove(direction, parentdom, childdom, time) {
             } else {
                 pge = pge;
                 $(parentdom).css({
-                    "margin-left": -pge * wd
+                    dire: -pge * wd
                 });
             }
         } else {
@@ -42,7 +43,7 @@ function touchmove(direction, parentdom, childdom, time) {
             } else {
                 pge = pge;
                 $(parentdom).css({
-                    "margin-left": -pge * wd
+                    dire: -pge * wd
                 });
             };
         };
@@ -53,20 +54,20 @@ function touchmove(direction, parentdom, childdom, time) {
             pge = 0;
             $(parentdom).css({
                 "transition": "all " + t + "s",
-                "margin-left": -pge * wd
+                dire: -pge * wd
             });
             return;
         } else if (pge >= $(childdom).length - 4) {
             pge = $(childdom).length - 4;
             $(parentdom).css({
                 "transition": "all " + t + "s",
-                "margin-left": -pge * wd
+                dire: -pge * wd
             });
             return;
         } else {
             $(parentdom).css({
                 "transition": "all " + t + "s",
-                "margin-left": -pge * wd,
+                dire: -pge * wd,
             })
         };
     };
