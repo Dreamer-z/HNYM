@@ -544,7 +544,8 @@ body {
 }
 
 .wallet-filtrate {
-    height: 5rem;
+    /* height: 5rem; */
+    height: 3.5rem;
     width: 7.5rem;
     box-sizing: border-box;
     padding: .2rem .3rem;
@@ -579,6 +580,33 @@ body {
 
 .wallet-filtrate .affirm {
     line-height: .8rem;
+}
+
+.wallet-filtrate .selType {
+    height: 1.2rem;
+    width: 1.4rem;
+    margin: 0 auto;
+    display: none;
+    text-align: center;
+}
+
+.wallet-filtrate .selType li {
+    height: .4rem;
+    line-height: .4rem;
+}
+
+.wallet-filtrate .selType2 {
+    width: 2.8rem;
+}
+
+.wallet-filtrate .selBox {
+    height: 1.2rem;
+    overflow: hidden;
+}
+
+.wallet-filtrate .filtrate-select {
+    box-sizing: border-box;
+    width: 1.4rem;
 }
 
 
