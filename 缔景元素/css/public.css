@@ -128,3 +128,116 @@
 .tData .cont {
     margin-left: .3rem;
 }
+
+
+/* 底部菜单 */
+
+.menu {
+    width: 7.5rem;
+    height: .98rem;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    margin-left: -3.75rem;
+    overflow: hidden;
+}
+
+.menuli {
+    width: 2.5rem;
+    height: 100%;
+    background-color: #fff;
+    float: left;
+    text-align: center;
+}
+
+.menuli a {
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    padding: .1rem 0;
+    color: #999;
+}
+
+.iconfont {
+    font-size: .3rem;
+    font-size: 0.4rem;
+    color: #999;
+}
+
+.menuli.check a,
+.menuli.check .iconfont {
+    color: #333;
+}
+
+
+/* 信息填写栏 */
+
+.writeColumn {
+    line-height: .88rem;
+    font-size: .3rem;
+    padding: 0 .3rem;
+    background-color: #fff;
+    margin-bottom: .02rem;
+    overflow: hidden;
+}
+
+.writeColumn-photo {
+    height: 1.66rem;
+    line-height: 1.66rem;
+}
+
+.writeColumn-photo input[type="file"] {
+    display: none;
+}
+
+.writeColumn-photo label {
+    background: url(./../img/ls/photo.png)no-repeat center;
+    background-size: cover;
+}
+
+.writeColumn-photo .photo {
+    float: right;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    margin-top: .22rem;
+}
+
+.writeColumn span {
+    float: left;
+    max-width: 2.4rem;
+}
+
+.writeColumn input,
+.writeColumn textarea {
+    float: left;
+    color: #666;
+    font-size: .3rem;
+    min-width: 5.2rem;
+}
+
+.writeColumn input {
+    height: .52rem;
+    line-height: .54rem;
+    margin-top: .2rem;
+}
+
+.writeColumn textarea {
+    height: 1.08rem;
+    line-height: .54rem;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+}
+
+.writeColumn-submit {
+    display: block;
+    width: 6rem;
+    height: .76rem;
+    line-height: .76rem;
+    color: #fff;
+    background-color: #37343f;
+    font-size: .36rem;
+    border-radius: .2rem;
+    margin: 0 auto;
+    margin-top: 1.2rem;
+}

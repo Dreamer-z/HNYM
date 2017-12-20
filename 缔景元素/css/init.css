@@ -86,6 +86,14 @@ textarea {
     resize: none;
 }
 
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+button {
+    text-align: center;
+}
+
 .input-checked {
     background: url(./../img/success.png)no-repeat center;
     background-size: 120%;

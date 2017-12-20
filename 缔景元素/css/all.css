@@ -369,6 +369,7 @@ body {
 .level_mian .privilegesCont {
     text-align: center;
     color: #999;
+    padding: .2rem;
 }
 
 
@@ -662,4 +663,468 @@ body {
     text-align: center;
     line-height: .88rem;
     height: .88rem;
+}
+
+
+/* 会员中心 */
+
+.memberHead {
+    box-sizing: border-box;
+    width: 7.5rem;
+    height: 3.12rem;
+    background: -moz-linear-gradient(top, #4e4857, #25222d);
+    background: -webkit-linear-gradient(top, #4e4857, #25222d);
+    background: -o-linear-gradient(top, #4e4857, #25222d);
+    padding: .6rem .2rem 0 .2rem;
+    color: #fff;
+    position: relative;
+}
+
+.memberHeadcont .member-img {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    border: .1rem solid #666;
+    margin-right: .3rem;
+}
+
+.memberHeadcont .name-rank {
+    line-height: .34rem;
+    margin: .2rem 0;
+}
+
+.memberHeadcont .name {
+    font-size: .32rem;
+}
+
+.memberHeadcont .rank {
+    display: inline-block;
+    padding-left: .5rem;
+    font-size: .24rem;
+    background: url(./../img/member_1_on.png)no-repeat .1rem .01rem;
+    background-size: 22%;
+    margin-left: .1rem;
+}
+
+.memberHeadcont .levelNum,
+.memberHeadcont .level {
+    margin-bottom: .2rem;
+}
+
+.memberHeadcont .levelNum {
+    font-size: .22rem;
+}
+
+.memberHeadcont .levelNum p {
+    margin-right: .2rem;
+}
+
+.memberHeadcont .levelline {
+    height: .1rem;
+    width: 3.6rem;
+    border-radius: .05rem;
+    overflow: hidden;
+    background-color: #aaa8ad;
+}
+
+.memberHeadcont .line {
+    height: .1rem;
+    border-radius: .05rem;
+    background-color: #595461;
+}
+
+.memberHeadcont .check-ins {
+    text-align: center;
+    width: 1.14rem;
+    height: .45rem;
+    line-height: .45rem;
+    font-size: .26rem;
+    border: .01rem solid #fff;
+    border-radius: .23rem;
+}
+
+.option {
+    width: .42rem;
+    height: .42rem;
+    background: url(./../img/op.png)no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    right: .3rem;
+    top: .3rem;
+}
+
+.memberAsset {
+    height: 1.1rem;
+    overflow: hidden;
+    margin-bottom: .1rem;
+}
+
+.memberAsset .assetLi {
+    box-sizing: border-box;
+    width: 33.3333%;
+    line-height: .4rem;
+    float: left;
+    background-color: #302c3a;
+    color: #fff;
+    padding: .15rem 0;
+    text-align: center;
+}
+
+.memberAsset .assetLi:nth-child(1),
+.memberAsset .assetLi:nth-child(2) {
+    border-right: .01rem solid #eee;
+}
+
+.memberAsset .title span {
+    position: relative;
+}
+
+.memberAsset .title i {
+    position: absolute;
+    right: -0.35rem;
+    top: .06rem;
+    width: .28rem;
+    height: .28rem;
+    background: url(./../img/query.png)no-repeat center;
+    background-size: 100%;
+}
+
+.memberTitle {
+    height: .8rem;
+    line-height: .8rem;
+    padding: 0 .2rem;
+    font-size: .3rem;
+    background-color: #fff;
+    margin-bottom: .02rem;
+}
+
+.member-benefit .cont {
+    overflow: hidden;
+}
+
+.member-benefit .cont li {
+    box-sizing: border-box;
+    width: 50%;
+    height: 2.84rem;
+    padding: .4rem .8rem;
+    float: left;
+    background-color: #fff;
+}
+
+.member-benefit .cont li:nth-child(2n+1) {
+    border-right: .01rem solid #eee;
+}
+
+.member-benefit .cont li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.member-benefit .benefit a {
+    display: block;
+    color: #999;
+    height: .8rem;
+    line-height: .8rem;
+    padding: 0 .6rem 0 .8rem;
+    background: url(./../img/benefit.png)no-repeat .2rem .2rem, url(./../img/more.png)no-repeat 7rem .2rem;
+    background-size: 6%, 3%;
+    background-color: #fff;
+    margin-top: .01rem;
+    margin-bottom: .1rem;
+}
+
+.recommendFriend {
+    margin-bottom: 1.1rem;
+}
+
+.recommendFriend .cont {
+    overflow: hidden;
+}
+
+.recommendFriend .cont li {
+    box-sizing: border-box;
+    width: 2.5rem;
+    height: 2.5rem;
+    float: left;
+    background-color: #fff;
+    text-align: center;
+}
+
+.recommendFriend .cont li:nth-child(1),
+.recommendFriend .cont li:nth-child(2) {
+    border-right: .01rem solid #eee;
+}
+
+.recommendFriend .cont li a {
+    display: block;
+    height: 100%;
+    color: #999;
+}
+
+.recommendFriend .bg {
+    width: .54rem;
+    height: .54rem;
+    margin: 0 auto;
+    margin-top: .6rem;
+    margin-bottom: .4rem;
+}
+
+.recommendFriend li:nth-child(1) .bg {
+    background: url(./../img/ewm.png)no-repeat center;
+    background-size: 100%;
+}
+
+.recommendFriend li:nth-child(2) .bg {
+    background: url(./../img/earnings.png)no-repeat center;
+    background-size: 100%;
+}
+
+.recommendFriend li:nth-child(3) .bg {
+    background: url(./../img/people.png)no-repeat center;
+    background-size: 100%;
+}
+
+
+/* 优惠券 */
+
+.couponType {
+    height: .88rem;
+    line-height: .88rem;
+    background-color: #fff;
+}
+
+.couponType .type {
+    text-align: center;
+    font-size: .32rem;
+    width: 50%;
+    height: 100%;
+}
+
+.couponType .type .couponCont {
+    display: none;
+}
+
+.couponType .type .title {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+    padding: 0 .2rem;
+}
+
+.couponType .check .couponCont {
+    display: block;
+}
+
+.couponType .type.check .title {
+    border-bottom: .05rem solid #37343f;
+}
+
+
+/* 未使用券 */
+
+.couponCont {
+    width: 7.5rem;
+    position: absolute;
+    left: 0;
+    top: .88rem;
+    overflow: hidden;
+}
+
+.couponLi {
+    box-sizing: border-box;
+    padding: .15rem;
+    width: 6.9rem;
+    height: 1.66rem;
+    margin: .2rem auto;
+    background: url(./../img/ticket.png)no-repeat center;
+    background-size: 100%;
+}
+
+.couponLi .value {
+    float: left;
+    color: #fff;
+    width: 1.55rem;
+    height: 100%;
+    line-height: 1.36rem;
+    font-size: .3rem;
+    text-align: center;
+}
+
+.couponLi .value span {
+    font-size: .5rem;
+}
+
+.couponLi .msg {
+    float: left;
+    box-sizing: border-box;
+    height: 100%;
+    width: 3.3rem;
+    padding: .28rem .1rem;
+    line-height: .4rem;
+    margin-left: .25rem;
+    text-align: left;
+}
+
+.couponLi .msg .msgTit {
+    font-size: .3rem;
+}
+
+.couponLi .msg .msgSec {
+    font-size: .24rem;
+}
+
+.couponLi .useIt {
+    float: left;
+    height: 100%;
+    width: 1.5rem;
+}
+
+.couponLi .useIt a {
+    display: block;
+    height: .54rem;
+    line-height: .54rem;
+    width: 1.32rem;
+    font-size: .24rem;
+    margin-top: .41rem;
+    border-radius: .1rem;
+    border: .01rem solid #37343f;
+}
+
+
+/* 已使用券 */
+
+.couponLi1 {
+    box-sizing: border-box;
+    width: 7rem;
+    height: 1.98rem;
+    margin: .2rem auto;
+    padding: 0 .3rem;
+    background: url(./../img/ticket_1.png)no-repeat center;
+    background-size: 100%;
+}
+
+.couponLi1 .content {
+    width: 100%;
+    height: 1.3rem;
+}
+
+.couponLi1 .content .value,
+.couponLi1 .content .contMsg {
+    float: left;
+    padding: .2rem;
+    line-height: .45rem;
+}
+
+.couponLi1 .content .value {
+    color: #00a0e9;
+}
+
+.couponLi1 .content .contMsg {
+    text-align: left;
+}
+
+.couponLi1 .content .contMsg .msgtTime {
+    font-size: .22rem;
+    color: #ed9906;
+}
+
+.couponLi1 .content .value .price span {
+    font-size: .5rem;
+}
+
+.couponLi1 .msg {
+    width: 100%;
+    height: .6rem;
+    line-height: .6rem;
+    color: #636363;
+    font-size: .22rem;
+    text-align: left;
+}
+
+
+/* 兑换券 */
+
+.cash {
+    margin-top: 2rem;
+}
+
+.couponLi2 {
+    box-sizing: border-box;
+    padding: .15rem;
+    width: 6.9rem;
+    height: 1.5rem;
+    margin: .2rem auto;
+    background: url(./../img/ticket_2.png)no-repeat center;
+    background-size: 100%;
+}
+
+.couponLi2 .value {
+    float: left;
+    color: #fff;
+    width: 1.7rem;
+    height: 100%;
+    line-height: 1.2rem;
+    font-size: .4rem;
+    text-align: center;
+}
+
+.couponLi2 .value span {
+    font-size: .76rem;
+}
+
+.couponLi2 .msg {
+    float: left;
+    box-sizing: border-box;
+    height: 100%;
+    width: 3.3rem;
+    line-height: .4rem;
+    margin-left: .4rem;
+    font-size: .24rem;
+    text-align: left;
+}
+
+.couponLi2 .msg .msgTime {
+    font-size: .22rem;
+    color: #666;
+}
+
+.couponLi2 .msg .msgSec {
+    color: red;
+}
+
+.couponLi2 .cashIt {
+    float: left;
+    height: 100%;
+    width: 1.2rem;
+}
+
+.couponLi2 .cashIt a {
+    display: block;
+    box-sizing: border-box;
+    height: .54rem;
+    line-height: .54rem;
+    width: 1.2rem;
+    font-size: .24rem;
+    margin-top: .41rem;
+    border-radius: .1rem;
+    border: .01rem solid red;
+    color: red;
+}
+
+
+/* 我的积分 */
+
+.my-integral>.title,
+.my-integral .integralGetTpye {
+    padding: 0 .2rem;
+    line-height: .8rem;
+}
+
+.my-integral .integralGetTpye a {
+    display: block;
+    box-sizing: border-box;
+    padding-right: .3rem;
+    background: url(./../img/more.png)no-repeat 6.9rem .24rem;
+    background-size: 2.5%;
 }

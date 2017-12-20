@@ -5,3 +5,7 @@
 人员统计 personnel_statistics.html
 收益统计 income_statistics.html
 钱包 wallet.html
+会员中心 member_center.html
+修改资料 modified_data.html
+优惠券 coupon.html
+我的积分 my_integral.html
