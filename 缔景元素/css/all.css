@@ -520,13 +520,9 @@ body {
     font-size: .34rem;
 }
 
-.wallet-tData2 {
-    position: relative;
-}
-
 .wallet-tData2 .cont {
     line-height: .88rem;
-    color: #999;
+    color: #333;
     font-size: .28rem;
 }
 
@@ -544,16 +540,15 @@ body {
 }
 
 .wallet-filtrate {
-    /* height: 5rem; */
-    height: 3.5rem;
+    height: 5rem;
     width: 7.5rem;
     box-sizing: border-box;
     padding: .2rem .3rem;
     background-color: #fff;
-    position: absolute;
+    position: fixed;
+    top: 4.5rem;
     left: 50%;
     margin-left: -3.75rem;
-    top: .88rem;
     display: none;
 }
 
@@ -583,16 +578,63 @@ body {
 }
 
 .wallet-filtrate .selType {
-    height: 1.2rem;
+    height: 2.4rem;
     width: 1.4rem;
     margin: 0 auto;
     display: none;
     text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.wallet-filtrate .line {
+    height: .02rem;
+    background-color: skyblue;
+    position: absolute;
+}
+
+.wallet-filtrate .line1,
+.wallet-filtrate .line2,
+.wallet-filtrate .line3,
+.wallet-filtrate .line4,
+.wallet-filtrate .line5,
+.wallet-filtrate .line6 {
+    width: 1rem;
+}
+
+.wallet-filtrate .line1 {
+    top: .8rem;
+    left: .2rem;
+}
+
+.wallet-filtrate .line2 {
+    top: 1.6rem;
+    left: .2rem;
+}
+
+.wallet-filtrate .line3,
+.wallet-filtrate .line4 {
+    top: .8rem;
+}
+
+.wallet-filtrate .line3,
+.wallet-filtrate .line5 {
+    left: .2rem;
+}
+
+.wallet-filtrate .line4,
+.wallet-filtrate .line6 {
+    right: .2rem;
+}
+
+.wallet-filtrate .line5,
+.wallet-filtrate .line6 {
+    top: 1.6rem;
 }
 
 .wallet-filtrate .selType li {
-    height: .4rem;
-    line-height: .4rem;
+    height: .8rem;
+    line-height: .8rem;
 }
 
 .wallet-filtrate .selType2 {
@@ -600,40 +642,13 @@ body {
 }
 
 .wallet-filtrate .selBox {
-    height: 1.2rem;
-    overflow: hidden;
+    height: 2.4rem;
 }
 
 .wallet-filtrate .filtrate-select {
     box-sizing: border-box;
     width: 1.4rem;
 }
-
-
-/* .wallet-filtrate .selType {
-    height: .3rem;
-    width: 2.9rem;
-    margin: 0 auto;
-    display: none;
-}
-
-.wallet-filtrate .selType1 {
-    width: 1.45rem;
-    display: block;
-}
-
-.wallet-filtrate .filtrate-select {
-    box-sizing: border-box;
-    width: 1rem;
-    padding: 0 1%;
-    margin: 0 .2rem;
-}
-
-.wallet-filtrate .filtrate-select option {
-    display: block;
-    height: .3rem;
-    text-align: center;
-} */
 
 .wallet-filtrate .selVal {
     color: #126e98;

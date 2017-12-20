@@ -43,65 +43,51 @@
     <div class="wallet-tData2 tData">
         <div class="clear">
             <p class="fl">消费记录</p>
-            <input id="picker-name" class="cont fl" value="2017-05">
+            <input id="picker-name" class="cont fl" value="2017-05" disabled>
             <p class="option fr"></p>
         </div>
-        <div class="wallet-filtrate">
-            <div class="title clear">
-                <span class="changType fl">按月选择</span>
-                <span class="affirm fr">确认</span>
-            </div>
-            <div class="selVal"><input placeholder="请选择..."></div>
-            <!-- <div class="selBox">
-                <div class="selType selType1">
-                    <ul class="filtrate-select filtrate-select1" size="3"></ul>
-                </div>
-                <div class="selType selType2">
-                    <ul class="filtrate-select filtrate-select2" size="3"></ul>
-                    <ul class="filtrate-select filtrate-select3" size="3">
-                        <li status="0">1</li>
-                        <li status="0">2</li>
-                        <li status="0">3</li>
-                        <li status="0">4</li>
-                        <li status="0">5</li>
-                        <li status="0">6</li>
-                        <li status="1">7</li>
-                        <li status="0">8</li>
-                        <li status="0">9</li>
-                        <li status="0">10</li>
-                        <li status="0">11</li>
-                        <li status="0">12</li>
-                    </ul>
-                </div>
-            </div> -->
-
+    </div>
+    <div class="wallet-filtrate">
+        <div class="title clear">
+            <span class="changType fl">按月选择</span>
+            <span class="affirm fr">确认</span>
+        </div>
+        <div class="selVal"><input placeholder="请选择..." disabled></div>
+        <div class="selBox">
             <div class="selType selType1">
-                <select class="filtrate-select filtrate-select1" size="3">
-
-                </select>
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <ul class="filtrate-select filtrate-select1">
+                    <li status="0"></li>
+                </ul>
             </div>
-            <div class="selType selType2">
-                <select class="filtrate-select filtrate-select2" size="3">
-                    
-                </select>
-                <select class="filtrate-select filtrate-select3" size="3">
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="" selected>3</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                    <option value="">6</option>
-                    <option value="">7</option>
-                    <option value="">8</option>
-                    <option value="">9</option>
-                    <option value="">10</option>
-                    <option value="">11</option>
-                    <option value="">12</option>
-                </select>
+            <div class="selType selType2 clear">
+                <div class="line line3"></div>
+                <div class="line line4"></div>
+                <div class="line line5"></div>
+                <div class="line line6"></div>
+                <ul class="filtrate-select filtrate-select2 fl">
+                    <li status="0"></li>
+                </ul>
+                <ul class="filtrate-select filtrate-select3 fl">
+                    <li status="0"></li>
+                    <li status="0">1</li>
+                    <li status="0">2</li>
+                    <li status="0">3</li>
+                    <li status="0">4</li>
+                    <li status="0">5</li>
+                    <li status="0">6</li>
+                    <li status="1">7</li>
+                    <li status="0">8</li>
+                    <li status="0">9</li>
+                    <li status="0">10</li>
+                    <li status="0">11</li>
+                    <li status="0">12</li>
+                </ul>
             </div>
         </div>
     </div>
+
     <div class="wallet-record">
         <div class="recordLi">
             <div class="stateTime">
@@ -120,30 +106,52 @@
     </div>
 
 </body>
+<script src="./js/all.js"></script>
 <script src="./js/module.js"></script>
 <script>
+    selectFn1(".filtrate-select1", 1980, 2300, 2017);
+    selectFn1(".filtrate-select2", 1980, 2300, 2017);
+    $(".filtrate-select3 li").click(function() {
+        var a;
+        var b = $(this).text();
+        $(".filtrate-select2 li").each(function(i) {
+            if ($(".filtrate-select2 li").eq(i).attr("status") == "1") {
+                a = $(".filtrate-select2 li").eq(i).text();
+            };
+        });
+        $("#picker-name").val(a + "-" + b);
+        $(".selVal input").val(a + "-" + b);
+    });
+
     var status = 1;
     $(".changType").click(function() {
         status++;
-        if (status % 2 == 0) {
-            $(".changType").html("按年选择");
+        if (status % 2 != 0) {
+            $(".changType").html("按月选择");
             $(".selType2").css("display", "block");
             $(".selType1").css("display", "none");
-            return a();
+            $(".filtrate-select3 li").click(function() {
+                var a;
+                var b = $(this).text();
+                $(".filtrate-select2 li").each(function(i) {
+                    if ($(".filtrate-select2 li").eq(i).attr("status") == "1") {
+                        a = $(".filtrate-select2 li").eq(i).text();
+                    };
+                });
+                $("#picker-name").val(a + "-" + b);
+                $(".selVal input").val(a + "-" + b);
+            });
         } else {
-            $(".changType").html("按月选择");
+            $(".changType").html("按年选择");
             $(".selType1").css("display", "block");
             $(".selType2").css("display", "none");
-            return $(".filtrate-select1").click();
+            $(".filtrate-select1 li").click(function() {
+                console.log($(this).text());
+                $("#picker-name").val($(this).text());
+                $(".selVal input").val($(this).text());
+            });
         };
     });
-
-    function a() {
-        $(".filtrate-select2").click();
-        $(".filtrate-select2 option").click(function() {
-            return $(".filtrate-select3").click();
-        });
-    };
     var c1 = 1;
     $("#picker-name").click(function(ev) {
         ev.stopPropagation();
@@ -153,6 +161,7 @@
         ev.stopPropagation();
         tc();
     });
+    var c1 = 1;
 
     function tc() {
         c1++;
@@ -168,66 +177,73 @@
         } else {
             $(".wallet-filtrate").fadeOut(100);
         };
-        // $(document).click(function(ev) {
-        //     if (ev.target == $(".wallet-filtrate")[0] || ev.target == $(".title")[0] || ev.target == $(".changType")[0] || ev.target == $(".affirm")[0] || ev.target == $(".selVal")[0] || ev.target == $(".selVal input")[0] || ev.target == $(".selType")[0] || ev.target == $(".filtrate-select")[0]) {
-        //         return;
-        //     };
-        //     $(".wallet-filtrate").fadeOut(100);
-        // })
     };
-    $(".filtrate-select1 option").click(function() {
-        if (status % 2 != 0) {
-            $("#picker-name").val($(".filtrate-select1").find("option:selected").text());
-            $(".selVal input").val($(".filtrate-select1").find("option:selected").text());
-        };
-    });
-    $(".filtrate-select3 option").click(function() {
-        var a = $(".filtrate-select2").find("option:selected").text();
-        var b = $(".filtrate-select3").find("option:selected").text()
-        $("#picker-name").val(a + "-" + b);
-        $(".selVal input").val(a + "-" + b);
-    });
+
+
     $(".affirm").click(function() {
         $(".wallet-filtrate").css("display", "none");
         result();
     });
-    document.addEventListener("change", function() {
+    document.addEventListener("touchend", function() {
         result();
     });
 
+    result();
+
     function result() {
+        var stc, sta, stb;
         if (status % 2 != 0) {
-            $("#picker-name").val($(".filtrate-select1").find("option:selected").text());
-            $(".selVal input").val($(".filtrate-select1").find("option:selected").text());
+            $(".filtrate-select2 li").each(function(i) {
+                if ($(".filtrate-select2 li").eq(i).attr("status") == "1") {
+                    sta = $(".filtrate-select2 li").eq(i).text();
+                    // var ind = i - 1;
+                    // $(".filtrate-select2").css("margin-top", -ind * .4 + "rem");
+                };
+            });
+            $(".filtrate-select3 li").each(function(i) {
+                if ($(".filtrate-select3 li").eq(i).attr("status") == "1") {
+                    stb = $(".filtrate-select3 li").eq(i).text();
+                    // var ind = i - 1;
+                    // $(".filtrate-select3").css("margin-top", -ind * .4 + "rem");
+                };
+            });
+            $("#picker-name").val(sta + " - " + stb);
+            $(".selVal input").val(sta + " - " + stb);
         } else {
-            var a = $(".filtrate-select2").find("option:selected").text();
-            var b = $(".filtrate-select3").find("option:selected").text()
-            $("#picker-name").val(a + " - " + b);
-            $(".selVal input").val(a + " - " + b);
+            $(".filtrate-select1 li").each(function(i) {
+                if ($(".filtrate-select1 li").eq(i).attr("status") == "1") {
+                    stc = $(".filtrate-select1 li").eq(i).text();
+                    // var ind = i - 1;
+                    // $(".filtrate-select1").css("margin-top", -ind * .4 + "rem");
+                };
+            });
+            $("#picker-name").val(stc);
+            $(".selVal input").val(stc);
+
         };
     };
     // 年份起始、结尾、初始值
     function selectFn1(dom, star, end, init) {
         var b = star;
         var a = init - star;
-        console.log(a);
         for (let i = b; i <= end; i++) {
             if (i == init) {
-                $("<option>", {
-                    value: i,
+                $("<li>", {
+                    status: "1",
                     text: i,
-                    selected: "selected"
                 }).appendTo($(dom));
             } else {
-                $("<option>", {
-                    value: i,
+                $("<li>", {
+                    status: "0",
                     text: i
                 }).appendTo($(dom));
             }
         };
     };
-    selectFn1(".filtrate-select1", 1980, 2300, 2017);
-    selectFn1(".filtrate-select2", 1980, 2300, 2017);
+    // 参数：方向（left，top），父元素，子元素，动画时间
+    touchmove(".filtrate-select1", ".filtrate-select1 li", .5, 3, ".8");
+    touchmove(".filtrate-select3", ".filtrate-select3 li", .5, 3, ".8");
+    touchmove(".filtrate-select2", ".filtrate-select2 li", .5, 3, ".8");
 </script>
 
 </html>

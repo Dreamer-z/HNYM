@@ -6,20 +6,24 @@ function touchmove(parentdom, childdom, time, size, childdom_height) {
     var dom = $(parentdom).get(0);
     var lock = false;
     var ds, dist, dir;
-    var wd = 3;
+    var wd = $(childdom).height();
     var initX;
     var nowX;
     var pge = 0;
     dom.addEventListener("touchstart", function(ev) {
         var ev = event || window.event;
+        ev.stopPropagation();
+        ev.preventDefault();
         initX = ev.touches[0].clientY;
     });
     dom.addEventListener("touchmove", function(ev) {
         var ev = event || window.event;
+        ev.stopPropagation();
+        ev.preventDefault();
         nowX = ev.touches[0].clientY;
+        dist = nowX - initX;
     });
     dom.addEventListener("touchend", function() {
-        dist = nowX - initX;
         if (dist > 0) {
             if (dist % wd >= .5 && dist / wd > 0) {
                 pge -= Number(parseInt(dist / wd) + 1);
@@ -48,10 +52,11 @@ function touchmove(parentdom, childdom, time, size, childdom_height) {
                 });
             };
         };
+        return;
     });
 
     function move(t) {
-        if (pge <= 0) {
+        if (pge < 0) {
             pge = 0;
             $(parentdom).css({
                 "transition": "all " + t + "s",
@@ -59,7 +64,7 @@ function touchmove(parentdom, childdom, time, size, childdom_height) {
             });
             value()
             return;
-        } else if (pge >= $(childdom).length - size) {
+        } else if (pge >= $(childdom).length - (size - 1)) {
             pge = $(childdom).length - (size - 1);
             $(parentdom).css({
                 "transition": "all " + t + "s",
@@ -77,7 +82,7 @@ function touchmove(parentdom, childdom, time, size, childdom_height) {
     };
 
     function value() {
-        ind = pge;
+        ind = pge + 1;
         $(childdom).eq(ind).siblings("li").attr("status", "0");
         $(childdom).eq(ind).attr("status", "1");
     };
