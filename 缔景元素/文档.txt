@@ -9,3 +9,4 @@
 修改资料 modified_data.html
 优惠券 coupon.html
 我的积分 my_integral.html
+积分商城 integral_mall.html

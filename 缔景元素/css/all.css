@@ -1128,3 +1128,15 @@ body {
     background: url(./../img/more.png)no-repeat 6.9rem .24rem;
     background-size: 2.5%;
 }
+
+
+/* 积分商城 */
+
+.iMallHead {
+    width: 7.5rem;
+    height: 2.45rem;
+    background: url(./../img/mallBg.png)no-repeat center;
+    background-size: 100%;
+    color: #fff;
+    text-align: center;
+}
