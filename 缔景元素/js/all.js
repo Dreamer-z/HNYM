@@ -12,7 +12,7 @@ var all = {
     fullscreen2: function() {
         $(".fullscreen2").width("7.5rem");
         $(".fullscreen2").height($(window).height());
-        $(".fullscreen2").css({ "background-color": "#fff", "box-sizing": "border-box" });
+        $(".fullscreen2").css({ "box-sizing": "border-box" });
     },
     // 全选功能
     check_inp: function(allinpID, inpname, delname) {

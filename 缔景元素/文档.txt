@@ -10,3 +10,11 @@
 优惠券 coupon.html
 我的积分 my_integral.html
 积分商城 integral_mall.html
+注册 sign_up.html
+签到 check_ins.html
+关于我们 about_us.html
+首页 index.html
+付款方式 pay_way.html
+双方协议 mutual_agreement.html
+我的作品 my_works.html
+我的作品详情 my_works_details.html

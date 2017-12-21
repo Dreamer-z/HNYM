@@ -733,7 +733,7 @@ body {
     background-color: #595461;
 }
 
-.memberHeadcont .check-ins {
+.memberHeadcont>.check-ins {
     text-align: center;
     width: 1.14rem;
     height: .45rem;
@@ -1205,4 +1205,760 @@ body {
     padding: .05rem .1rem;
     border: .01rem solid #333;
     border-radius: .2rem;
+}
+
+
+/* 设计师注册 */
+
+.signUpBg {
+    background: url(./../img/signUp.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.signUpBg>.title {
+    font-size: .4rem;
+    color: #aca4b9;
+    text-align: center;
+    padding: 1rem 0 .8rem 0;
+}
+
+.signUpBg .msgli {
+    height: .6rem;
+    width: 6rem;
+    margin: 0 auto;
+    margin-top: .5rem;
+    color: #fff;
+    font-size: .3rem;
+    border-bottom: .01rem solid #fff;
+}
+
+.signUpBg .msgli:nth-child(4) {
+    border: 0;
+}
+
+.signUpBg .msgli:nth-child(2) .title {
+    background: url(./../img/msg_name.png)no-repeat .15rem 0;
+    background-size: 18%;
+}
+
+.signUpBg .msgli:nth-child(3) .title {
+    background: url(./../img/msg_tel.png)no-repeat .15rem 0;
+    background-size: 14%;
+}
+
+.signUpBg .msgli:nth-child(5) .title {
+    background: url(./../img/msg_company.png)no-repeat .15rem 0;
+    background-size: 20%;
+}
+
+.signUpBg .inp2 {
+    border-bottom: .01rem solid #fff;
+}
+
+.signUpBg .msgli .title {
+    float: left;
+    height: .32rem;
+    width: .8rem;
+    text-align: center;
+    line-height: .32rem;
+    margin-top: .14rem;
+    padding-left: .45rem;
+    padding-right: .25rem;
+    border-right: .01rem solid #fff;
+}
+
+.signUpBg .msgli .inp2,
+.signUpBg .msgli .inp,
+.signUpBg .msgli .getCode {
+    box-sizing: border-box;
+    float: left;
+    height: .6rem;
+    width: 4.1rem;
+    line-height: .6rem;
+    color: #fff;
+    font-size: .3rem;
+}
+
+.signUpBg .msgli .inp {
+    padding: 0 .2rem
+}
+
+.signUpBg .msgli .inp2 {
+    width: 4rem;
+    padding: 0 .2rem;
+    margin-right: .1rem;
+}
+
+.signUpBg .msgli .getCode {
+    width: 1.9rem;
+    height: 100%;
+    border: .01rem solid #fff;
+    border-radius: .2rem;
+}
+
+.signUpBg .push {
+    display: block;
+    width: 6rem;
+    height: .76rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    border: .01rem solid #fff;
+    color: #fff;
+    font-size: .36rem;
+    border-radius: .2rem;
+}
+
+
+/* 签到 */
+
+.checkInsMain {
+    width: 7.5rem;
+    height: 3.65rem;
+    background: url(./../img/check_ins.png)no-repeat center;
+    background-size: 100% 100%;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.checkInsMain .checkIntiegral {
+    width: 2rem;
+    height: .4rem;
+    line-height: .4rem;
+    font-size: .22rem;
+    position: absolute;
+    left: .2rem;
+    top: 1.4rem;
+}
+
+.checkInsMain .checkIntiegral span {
+    font-size: .28rem;
+}
+
+.checkInsPin {
+    width: .25rem;
+    height: .25rem;
+    border-radius: 50%;
+    background-color: #1c696f;
+    position: absolute;
+    left: 3.65rem;
+    top: .14rem;
+    z-index: 99;
+}
+
+.checkInsMain .checkInsStatus {
+    width: 1.62rem;
+    height: .86rem;
+    line-height: .86rem;
+    padding-top: .8rem;
+    font-size: .4rem;
+    border-radius: .1rem;
+    position: absolute;
+    left: 2.95rem;
+    top: .14rem;
+    z-index: 90;
+    background: url(./../img/check_ins_1.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.checkInsMain .animation1 {
+    transform: rotateX(0deg);
+    animation: fz 1s;
+}
+
+.checkInsMain .animation1 p {
+    color: #fff;
+}
+
+@keyframes fz {
+    0% {
+        transform: rotateX(0deg);
+    }
+    50% {
+        transform: rotateX(-80deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+.checkInsMain .animation2 {
+    transform: rotateX(0deg);
+    animation: fz2 3s;
+    transform-origin: 50% 0;
+}
+
+@keyframes fz2 {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    10% {
+        transform: rotateZ(-40deg);
+    }
+    20% {
+        transform: rotateZ(40deg);
+    }
+    30% {
+        transform: rotateZ(-30deg);
+    }
+    40% {
+        transform: rotateZ(30deg);
+    }
+    50% {
+        transform: rotateZ(-15deg);
+    }
+    60% {
+        transform: rotateZ(15deg);
+    }
+    70% {
+        transform: rotateZ(-8deg);
+    }
+    80% {
+        transform: rotateZ(8deg);
+    }
+    90% {
+        transform: rotateZ(-4deg);
+    }
+    95% {
+        transform: rotateZ(2deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+.checkInsMain .checkInsTime {
+    width: 6.3rem;
+    height: .08rem;
+    position: absolute;
+    left: 50%;
+    bottom: .8rem;
+    margin-left: -3.15rem;
+    background-color: #fff;
+    border-radius: .05rem;
+}
+
+.checkInsMain .checkInsTimePoint {
+    float: left;
+    width: .15rem;
+    height: .15rem;
+    margin-left: .87rem;
+    margin-top: -.04rem;
+    position: relative;
+}
+
+.checkInsMain .checkInsTimePoint::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: .15rem;
+    height: .15rem;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.checkInsMain .checkInsTimePoint:nth-of-type(1) {
+    margin-left: .02rem;
+}
+
+.checkInsMain .checkInsTimePoint .point {
+    position: absolute;
+    left: -.3rem;
+    top: -.48rem;
+    width: .74rem;
+    height: .48rem;
+    font-size: .22rem;
+    line-height: .36rem;
+    background: url(./../img/point.png)no-repeat center;
+    background-size: 100% 100%;
+    display: none;
+}
+
+.checkInsMain .checkInsTimePoint.check::after {
+    background-color: #1c696f;
+    transform: scale(1.5);
+    opacity: 1;
+    animation: op 1s;
+}
+
+@keyframes op {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .4;
+    }
+    75% {
+        opacity: .8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.checkInsMain .checkInsTimePoint.check .point {
+    display: block;
+    opacity: 1;
+    animation: op 1s;
+}
+
+.checkInsMain .checkInsTimePoint .weekday {
+    position: absolute;
+    left: -.3rem;
+    top: .25rem;
+    width: .74rem;
+    height: .36rem;
+    font-size: .22rem;
+    line-height: .36rem;
+}
+
+.checkInstitle {
+    height: .88rem;
+    line-height: .88rem;
+    padding: 0 .7rem 0 .3rem;
+    margin-bottom: .1rem;
+    background: url(./../img/calendar.png)no-repeat 6.7rem .23rem;
+    background-size: 6%;
+    background-color: #fff;
+}
+
+
+/* 关于我们 */
+
+.aboutUs {
+    padding: .3rem;
+    background-color: #fff;
+}
+
+.aboutUs img {
+    display: block;
+    max-width: 6.9rem;
+    margin: .1rem auto;
+    border-radius: .1rem;
+}
+
+
+/* 首页 */
+
+.indexHead {
+    padding: .2rem;
+    margin-bottom: .1rem;
+}
+
+.indexHead .indexBanner {
+    width: 7.1rem;
+    height: 3.25rem;
+    border-radius: .2rem;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.indexHead .indexNews {
+    padding-left: .5rem;
+    height: .58rem;
+    line-height: .58rem;
+    font-size: .26rem;
+    background: url(./../img/voice.png)no-repeat 0 .1rem;
+    background-size: 5%;
+    background-color: #fff;
+    margin-top: .2rem;
+}
+
+.indexHead .newsBanner {
+    height: 100%;
+}
+
+.indexMenu {
+    background-color: #fff;
+    padding: .3rem 0;
+    line-height: .54rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.indexMenu .indexMenuli {
+    float: left;
+    padding-top: .56rem;
+    width: 25%;
+}
+
+.indexMenu .indexMenuli a {
+    display: block;
+}
+
+.indexMenu .indexMenuli:nth-of-type(1) {
+    background: url(./../img/iMenu_1.png)no-repeat .69rem 0;
+    background-size: 25%;
+}
+
+.indexMenu .indexMenuli:nth-of-type(2) {
+    background: url(./../img/iMenu_2.png)no-repeat .7rem 0;
+    background-size: 24%;
+}
+
+.indexMenu .indexMenuli:nth-of-type(3) {
+    background: url(./../img/iMenu_3.png)no-repeat .68rem 0;
+    background-size: 26%;
+}
+
+.indexMenu .indexMenuli:nth-of-type(4) {
+    background: url(./../img/iMenu_4.png)no-repeat .68rem 0;
+    background-size: 26%;
+}
+
+.indexModule {
+    margin-top: .1rem;
+    margin-bottom: 1.1rem;
+    background-color: #fff;
+    padding: .3rem .2rem;
+    overflow: hidden;
+}
+
+.indexModule .moduleLi {
+    width: 3.45rem;
+    height: 2rem;
+    float: left;
+    border-radius: .2rem;
+    color: #fff;
+    font-size: .34rem;
+    margin-bottom: .1rem;
+}
+
+.indexModule .moduleLi:nth-of-type(2n+1) {
+    margin-right: .2rem;
+}
+
+.indexModule .moduleLi:nth-of-type(1) {
+    background: url(./../img/module_1.png)no-repeat center;
+    background-size: 100%;
+}
+
+.indexModule .moduleLi:nth-of-type(2) {
+    background: url(./../img/module_2.png)no-repeat center;
+    background-size: 100%;
+}
+
+.indexModule .moduleLi:nth-of-type(3) {
+    background: url(./../img/module_3.png)no-repeat center;
+    background-size: 100%;
+}
+
+.indexModule .moduleLi:nth-of-type(4) {
+    background: url(./../img/module_4.png)no-repeat center;
+    background-size: 100%;
+}
+
+.indexModule .moduleCont {
+    height: .8rem;
+    line-height: .8rem;
+    margin-top: .45rem;
+    padding-left: .3rem;
+    padding-right: 1.4rem;
+    color: #fff;
+}
+
+
+/* 付款方式 */
+
+.payWayMain .payeeMsgLi {
+    height: .88rem;
+    line-height: .88rem;
+    padding: 0 .2rem;
+    background-color: #fff;
+    margin-bottom: .02rem;
+}
+
+.payWayMain .payeeMsgLi span {
+    font-size: .26rem;
+    color: #999;
+}
+
+.payWayMain .qrcode {
+    box-sizing: border-box;
+    width: 3rem;
+    height: 3rem;
+    padding: .2rem;
+    margin: .6rem auto;
+    background-color: #fff;
+}
+
+.payWayMain .qrcode img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 双方协议 */
+
+.mutual-agreement {
+    padding: .2rem;
+}
+
+.mutual-agreement .agreementSec {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: .2rem;
+    background-color: #fff;
+    border-radius: .2rem;
+    overflow-x: auto;
+    text-indent: 2em;
+}
+
+.mutual-agreement .agreementSec::-webkit-scrollbar {
+    display: none;
+}
+
+.mutual-agreement .agreementTit {
+    text-align: center;
+    font-size: .28rem;
+    margin-bottom: .2rem;
+}
+
+
+/* 我的作品 */
+
+.myWorksHead {
+    position: relative;
+    margin-bottom: 1.4rem;
+}
+
+.myWorksHead .headBg {
+    width: 7.5rem;
+    height: 2.35rem;
+    background: url(./../img/myworks_bg.png)no-repeat center;
+    background-size: 100%;
+}
+
+.myWorksHead .resume {
+    width: 7.1rem;
+    position: absolute;
+    top: .8rem;
+    left: 50%;
+    margin-left: -3.55rem;
+}
+
+.myWorksHead .resume .message {
+    position: relative;
+    font-size: .24rem;
+    text-align: center;
+    color: #fff;
+}
+
+.myWorksHead .resume .message h3 {
+    font-weight: normal;
+}
+
+.myWorksHead .resume .message .msgImgBg {
+    width: 1.15rem;
+    height: 1.25rem;
+    margin: 0 auto;
+    background: url(./../img/myworks_bg1.png)no-repeat center;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.myWorksHead .resume .message .msgImgBg .msgImg {
+    width: 1.05rem;
+    height: 1.05rem;
+    border-radius: 50%;
+    position: absolute;
+    left: .05rem;
+    top: .04rem;
+}
+
+.myWorksHead .resume .message .msgCompany {
+    position: absolute;
+    left: 0;
+    bottom: .2rem;
+}
+
+.myWorksHead .resume .message .msgTel {
+    position: absolute;
+    right: 0;
+    bottom: .2rem;
+}
+
+.myWorksHead .resume .message .msgCompany,
+.myWorksHead .resume .message .msgTel {
+    max-width: 2.4rem;
+}
+
+.myWorksHead .resume .introduce {
+    box-sizing: border-box;
+    height: 1.6rem;
+    width: 100%;
+    padding: .2rem .3rem;
+    border-radius: .15rem;
+    background-color: #fff;
+}
+
+.myWorksHead .resume .introduce .name {
+    text-align: center;
+    font-size: .3rem;
+    color: #999;
+    margin-bottom: .1rem;
+}
+
+.myWorksHead .resume .introduce .name span {
+    color: #333;
+}
+
+.myWorksHead .resume .introduce .introduceCont {
+    font-size: .26rem;
+}
+
+.myWorksHead .resume .introduce .introduceCont span {
+    color: #999;
+}
+
+.myWorksDispaly {
+    margin-bottom: 1rem;
+}
+
+.myWorksSearchBox {
+    padding: .2rem;
+}
+
+.myWorksSearch {
+    box-sizing: border-box;
+    width: 100%;
+    height: .6rem;
+    border-radius: .3rem;
+    padding: 0 .2rem;
+    background-color: #eee;
+}
+
+.myWorksSearch input,
+.myWorksSearch button {
+    display: inline-block;
+    height: 100%;
+    line-height: .6rem;
+    font-size: .3rem;
+}
+
+.myWorksSearch button {
+    width: 1.2rem;
+}
+
+.myWorksSearch input {
+    box-sizing: border-box;
+    width: 5.5rem;
+    height: .4rem;
+    line-height: .4rem;
+    margin: .1rem 0;
+    padding: 0 .1rem;
+    border-right: .01rem solid #666;
+}
+
+.myWorksList {
+    overflow: hidden;
+}
+
+.myWorksList .myWorksLi {
+    width: 3.7rem;
+    float: left;
+    background-color: #fff;
+    margin-bottom: .1rem;
+}
+
+.myWorksList .myWorksLi:nth-of-type(2n+1) {
+    margin-right: .1rem;
+}
+
+.myWorksList .myWorksLi .myWorksImg {
+    height: 2.1rem;
+}
+
+.myWorksList .myWorksLi .myWorksName {
+    padding: .1rem .2rem;
+}
+
+.myWorksList .myWorksLi .myWorksStyle {
+    padding: 0 .2rem;
+    padding-bottom: .2rem;
+    font-size: .24rem;
+    color: #999;
+}
+
+
+/* 我的作品详情 */
+
+.worksDetails {
+    background-color: #fff;
+}
+
+.worksDetails .worksName {
+    padding: .2rem;
+    font-size: .34rem;
+}
+
+.worksDetails .worksCompany {
+    padding: 0 .2rem;
+    color: #999;
+}
+
+.worksDetails .worksCompany span {
+    color: #333;
+}
+
+.worksDetails .designer {
+    padding: .2rem;
+    height: .72rem;
+    line-height: .72rem;
+}
+
+.worksDetails .designer .photo {
+    width: .72rem;
+    height: 100%;
+    margin-right: .2rem;
+    border-radius: 50%;
+}
+
+.worksDetails .short {
+    color: #999;
+    padding: .2rem;
+}
+
+.worksDetails .short .shortTime {
+    color: #333;
+    text-align: right;
+    font-size: .24rem;
+}
+
+.worksDetails .worksIntroduce {
+    margin-top: .5rem;
+}
+
+.worksDetails .worksIntroduce .worksImgBox {
+    position: relative;
+    padding: .1rem 0;
+}
+
+.worksDetails .worksIntroduce .worksImgBox img {
+    display: block;
+    max-width: 7.5rem;
+    margin: 0 auto;
+}
+
+.worksDetails .worksIntroduce .VR {
+    position: absolute;
+    top: .2rem;
+    right: .2rem;
+    height: .48rem;
+    line-height: .48rem;
+    padding: 0 .2rem;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    border-radius: .18rem;
+}
+
+.worksDetails .worksIntroduce .worksCont {
+    padding: .2rem;
+    text-indent: 2em;
 }
