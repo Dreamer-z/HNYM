@@ -1962,3 +1962,73 @@ body {
     padding: .2rem;
     text-indent: 2em;
 }
+
+.worksDetails .callMe {
+    margin-top: .5rem;
+}
+
+.worksDetails .callMe .designerIntroduce {
+    box-sizing: border-box;
+    width: 7.1rem;
+    height: 2.65rem;
+    padding: .2rem;
+    margin: 0 auto;
+    background-color: #eee;
+}
+
+.worksDetails .callMe .designerIntroduce .designerImg {
+    width: .86rem;
+    height: 100%;
+}
+
+.worksDetails .callMe .designerIntroduce .designerImg div {
+    width: 100%;
+    height: .86rem;
+    border-radius: 50%;
+}
+
+.worksDetails .callMe .designerIntroduce .designerName {
+    box-sizing: border-box;
+    width: 5.84rem;
+    height: 100%;
+    padding-left: .2rem;
+}
+
+.worksDetails .callMe .designerIntroduce .designerName .name {
+    margin: .1rem 0;
+}
+
+.worksDetails .callMe .designerIntroduce .designerName .secondShort {
+    margin-top: .2rem;
+    color: #999;
+    font-size: .26rem;
+}
+
+.worksDetails .footer {
+    padding: .2rem 0;
+    text-align: center;
+    color: #999;
+}
+
+
+/* 意见反馈 */
+
+.feedback {
+    padding: .2rem;
+}
+
+.feedback .writeInp {
+    box-sizing: border-box;
+    width: 7.1rem;
+    height: 5rem;
+    line-height: .4rem;
+    border-radius: .2rem;
+    padding: .2rem;
+    background-color: #fff;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+.feedback .writeInp::-webkit-scrollbar {
+    display: none;
+}

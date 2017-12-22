@@ -9,23 +9,64 @@
     border-radius: .2rem;
     overflow: hidden;
     text-align: center;
+    font-size: .26rem;
 }
 
 .popup .tit {
-    height: .8rem;
-    line-height: .8rem;
+    box-sizing: border-box;
+    height: .7rem;
+    line-height: .7rem;
     width: 100%;
     background-color: #37343f;
     color: #fff;
     font-size: .3rem;
+    padding: 0 2rem;
+}
+
+.popup .confirm,
+.popup .cancel {
+    display: inline-block;
+    height: .7rem;
+    line-height: .7rem;
+    padding: 0 .15rem;
+    position: absolute;
+    right: .1rem;
+    top: 0;
+    color: #fff;
+}
+
+.popup .cancel {
+    left: .1rem;
 }
 
 .popup .cont {
     box-sizing: border-box;
     width: 100%;
-    padding: .5rem .2rem;
+    padding: .3rem .2rem;
     background-color: #fff;
     color: #888;
+}
+
+.popup .cont .status span {
+    display: inline-block;
+    padding-left: .6rem;
+    height: .6rem;
+    line-height: .6rem;
+    font-size: .34rem;
+}
+
+.popup .cont .status.succeed span {
+    background: url(./../img/correct.png)no-repeat 0 .05rem;
+    background-size: 25%;
+}
+
+.popup .cont .status.failure span {
+    background: url(./../img/del_bg.png)no-repeat 0 .05rem;
+    background-size: 25%;
+}
+
+.popup .cont .msg {
+    margin-top: .1rem;
 }
 
 .popup .option {
@@ -241,4 +282,19 @@
     border-radius: .2rem;
     margin: 0 auto;
     margin-top: 1.2rem;
+}
+
+
+/* 提交按钮 */
+
+.pushInp {
+    display: block;
+    height: .8rem;
+    line-height: .8rem;
+    width: 6rem;
+    border-radius: .1rem;
+    background-color: #37343f;
+    color: #fff;
+    margin: 0 auto;
+    font-size: .34rem;
 }

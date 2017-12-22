@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <title>意见反馈</title>
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="./js/adaptive.js"></script>
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 28;
+        window['adaptive'].maxWidth = 480;
+        window['adaptive'].scaleType = 1;
+        window['adaptive'].init();
+    </script>
+</head>
+
+<body>
+    <div class="feedback">
+        <textarea class="writeInp" placeholder="请填写您的意见"></textarea>
+        <button class="pushInp" type="submit">提交意见</button>
+    </div>
+    <div class="feedbackPopup fullscreen">
+        <div class="popup">
+            <div class="tit">提交成功</div>
+            <div class="confirm">确认</div>
+            <div class="cont">
+                <div class="status succeed"><span>提交成功</span></div>
+                <div class="msg">忠心的感谢您的配合与支持 祝您生活愉快</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/all.js"></script>
+<script>
+    // 提交结果弹窗
+    $(".pushInp").click(function() {
+        $(".feedbackPopup").fadeIn(100);
+        $(".popup .confirm").click(function() {
+            $(".feedbackPopup").fadeOut(100);
+        });
+    });
+</script>
+
+</html>
