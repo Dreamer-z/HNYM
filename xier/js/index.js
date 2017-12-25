@@ -44,5 +44,5 @@ var indexFun = {
 
 $(function() {
     indexFun.GetIndexAricle();
-    $("#jiathis_webchat img").attr("src", "/images/ewm.jpg");
+    // $("#jiathis_webchat img").attr("src", "/images/ewm.jpg");
 });

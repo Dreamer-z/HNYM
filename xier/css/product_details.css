@@ -450,6 +450,7 @@
 }
 
 .pro-int-sec {
+  width: 750px;
   padding: 15px 0;
   display: none;
 }
@@ -459,9 +460,9 @@
 }
 
 .part-sec img {
-  width: 800px;
-  margin: 0 auto;
-  margin-top: 20px;
+  display: block;
+  max-width: 750px;
+  margin: 5px auto;
 }
 
 .spe-sec table {
@@ -490,7 +491,7 @@
 }
 
 .as-sec {
-  width: 960px;
+  width: 710px;
   margin: 0 auto;
 }
 
@@ -604,7 +605,7 @@
 }
 
 .comment .com-li .com-img {
-  width: 230px;
+  width: 140px;
   text-align: center;
   font-size: 18px;
 }
@@ -620,7 +621,7 @@
 }
 
 .comment .com-li .com-con {
-  width: 800px;
+  width: 440px;
   padding-right: 170px;
 }
 

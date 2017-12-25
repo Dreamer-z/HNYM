@@ -23,6 +23,9 @@
     padding: 0 2rem;
 }
 
+
+/* 确认取消 */
+
 .popup .confirm,
 .popup .cancel {
     display: inline-block;
@@ -47,6 +50,9 @@
     color: #888;
 }
 
+
+/* 提交状态 */
+
 .popup .cont .status span {
     display: inline-block;
     padding-left: .6rem;
@@ -55,15 +61,24 @@
     font-size: .34rem;
 }
 
+
+/* 成功 */
+
 .popup .cont .status.succeed span {
     background: url(./../img/correct.png)no-repeat 0 .05rem;
     background-size: 25%;
 }
 
+
+/* 失败 */
+
 .popup .cont .status.failure span {
     background: url(./../img/del_bg.png)no-repeat 0 .05rem;
     background-size: 25%;
 }
+
+
+/* 提交结果反馈信息 */
 
 .popup .cont .msg {
     box-sizing: border-box;

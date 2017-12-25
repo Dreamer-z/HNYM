@@ -743,7 +743,7 @@ body {
     border-radius: .23rem;
 }
 
-.option {
+.memberHeadcont .option {
     width: .42rem;
     height: .42rem;
     background: url(./../img/op.png)no-repeat center;
@@ -1296,12 +1296,26 @@ body {
     border-radius: .2rem;
 }
 
+.signUpBg .msgli input[type="checkbox"] {
+    display: block;
+    width: .25rem;
+    height: .25rem;
+    margin-top: .03rem;
+    margin-right: .1rem;
+    border: .01rem solid #fff;
+}
+
+.signUpBg .protocolMsgLi {
+    border: 0;
+    line-height: .3rem;
+}
+
 .signUpBg .push {
     display: block;
     width: 6rem;
     height: .76rem;
     margin: 0 auto;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     border: .01rem solid #fff;
     color: #fff;
     font-size: .36rem;
@@ -1392,35 +1406,50 @@ body {
     0% {
         transform: rotateZ(0deg);
     }
-    10% {
-        transform: rotateZ(-40deg);
-    }
-    20% {
-        transform: rotateZ(40deg);
-    }
-    30% {
+    5% {
         transform: rotateZ(-30deg);
     }
-    40% {
+    10% {
         transform: rotateZ(30deg);
     }
+    18% {
+        transform: rotateZ(-25deg);
+    }
+    27% {
+        transform: rotateZ(25deg);
+    }
+    39% {
+        transform: rotateZ(-20deg);
+    }
     50% {
-        transform: rotateZ(-15deg);
+        transform: rotateZ(20deg);
     }
     60% {
-        transform: rotateZ(15deg);
+        transform: rotateZ(-16deg);
     }
     70% {
-        transform: rotateZ(-8deg);
+        transform: rotateZ(14deg);
     }
     80% {
+        transform: rotateZ(-10deg);
+    }
+    86% {
         transform: rotateZ(8deg);
     }
     90% {
-        transform: rotateZ(-4deg);
+        transform: rotateZ(-6deg);
+    }
+    93% {
+        transform: rotateZ(4deg);
     }
     95% {
-        transform: rotateZ(2deg);
+        transform: rotateZ(-2deg);
+    }
+    97% {
+        transform: rotateZ(1deg);
+    }
+    99% {
+        transform: rotateZ(-1deg);
     }
     100% {
         transform: rotateZ(0deg);

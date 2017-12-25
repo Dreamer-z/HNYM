@@ -86,7 +86,7 @@
 .pay-way {
   width: 960px;
   margin: 10px auto;
-  margin-bottom: 100px;
+  margin-bottom: 130px;
 }
 
 .pay-way li {
@@ -213,6 +213,7 @@
   font-size: 24px;
   text-align: right;
   line-height: 50px;
+  margin-top: 20px;
 }
 
 .pw-p p {
@@ -242,4 +243,55 @@
 
 .qr-p button:hover {
   cursor: pointer;
+}
+
+.pay-way2 {
+  padding: 20px;
+  overflow: hidden;
+  border-top: 1px dashed #eee;
+  border-bottom: 1px dashed #eee;
+}
+
+.pay-way2Type {
+  float: left;
+  width: 184px;
+  padding-top: 25px;
+  margin-left: 100px;
+}
+
+.pay-way2List {
+  float: left;
+  width: 876px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.pay-way2Li {
+  overflow: hidden;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 15px 0;
+}
+
+.pay-way2Li .bank {
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin-top: 4px;
+  margin-right: 60px;
+}
+
+.pay-way2Li .bankName {
+  float: left;
+  margin-right: 60px;
+}
+
+.pay-way2Li .cardNumber {
+  float: left;
+  margin-right: 60px;
+}
+
+.pay-way2Li .cardType {
+  float: left;
+  margin-right: 60px;
 }
