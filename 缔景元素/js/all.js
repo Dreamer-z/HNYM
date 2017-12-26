@@ -283,11 +283,6 @@ var all = {
             $(msg_tc_dom).fadeOut(200);
         });
     },
-
-    // 购物车数量
-    scNum: function() {
-        $(".commodity").html();
-    }
 };
 window.onload = function() {
     all.fullscreen();
