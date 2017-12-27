@@ -319,16 +319,17 @@
 }
 
 #divfooter {
-  height: 272px;
   overflow: hidden;
   width: 100%;
 }
 
 .blogroll {
-  line-height: 30px;
+  float: left;
+  line-height: 36px;
   font-size: 12px;
-  color: #595959;
-  background-color: #eaeaea;
+  width: 300px;
+  margin-left: 100px;
+  margin-top: 20px;
 }
 
 .cont {
@@ -336,9 +337,31 @@
   margin: 0 auto;
 }
 
+.blogroll .cont {
+  float: left;
+  width: 300px;
+}
+
 .blogroll a {
-  color: #595959;
+  display: block;
+  color: #d6dbd5;
   margin-right: 90px;
+  padding-left: 45px;
+}
+
+.blogroll .blogroll1 {
+  background: url(/images/blogroll_1.png) no-repeat 5px 11px;
+  background-size: 14%;
+}
+
+.blogroll .blogroll2 {
+  background: url(/images/blogroll_2.png) no-repeat 8px 7px;
+  background-size: 10%;
+}
+
+.blogroll .blogroll3 {
+  background: url(/images/blogroll_3.png) no-repeat 8px 6px;
+  background-size: 10%;
 }
 
 .footerBottom {
@@ -411,7 +434,6 @@
 }
 
 .bot {
-  height: .62rem;
   padding-top: 10px;
 }
 

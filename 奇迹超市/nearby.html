@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+    <title>附近</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #eee;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .nearby .title {
+            text-align: center;
+            line-height: .84rem;
+            padding: 0 .2rem;
+            font-size: .32rem;
+            background: url(img/nearby.png)no-repeat 1.86rem .4rem;
+            background-size: 50%;
+            background-color: #fff;
+            border-bottom: .01rem solid #eee;
+        }
+        
+        .nearby .storeList {
+            overflow: hidden;
+        }
+        
+        .nearby .storeLi {
+            box-sizing: border-box;
+            font-size: .3rem;
+            background-color: #fff;
+            width: 7.5rem;
+            margin-bottom: .01rem;
+            padding: .3rem;
+            overflow: hidden;
+        }
+        
+        .nearby .storeBg {
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: .12rem;
+            float: left;
+        }
+        
+        .nearby .comment-distance {
+            box-sizing: border-box;
+            width: 5.3rem;
+            padding-left: .3rem;
+            float: left;
+            overflow: hidden;
+        }
+        
+        .nearby .storename,
+        .nearby .storeSales,
+        .nearby .address {
+            box-sizing: border-box;
+            width: 100%;
+        }
+        
+        .nearby .storename {
+            font-size: .32rem;
+        }
+        
+        .nearby .storeSales {
+            padding: .1rem 0;
+            overflow: hidden;
+            line-height: .36rem;
+            font-size: .22rem;
+        }
+        
+        .nearby .comment,
+        .nearby .sales {
+            float: left;
+        }
+        
+        .nearby .timeDistance {
+            float: right;
+        }
+        
+        .nearby .comment {
+            width: 1.2rem;
+            height: .22rem;
+            margin-top: .05rem;
+        }
+        
+        .nearby .sales {
+            margin-left: .1rem;
+            color: #999;
+        }
+        
+        .nearby .address {
+            margin-top: .1rem;
+            padding-left: .35rem;
+            font-size: .22rem;
+            height: .4rem;
+            line-height: .4rem;
+            background: url(img/addr.png)no-repeat .05rem .08rem;
+            background-size: 4%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+        
+        .star1 {
+            background: url(img/star_1.png)no-repeat center;
+            background-size: 100%;
+        }
+        
+        .star2 {
+            background: url(img/star_2.png)no-repeat center;
+            background-size: 100%;
+        }
+        
+        .star3 {
+            background: url(img/star_3.png)no-repeat center;
+            background-size: 100%;
+        }
+        
+        .star4 {
+            background: url(img/star_4.png)no-repeat center;
+            background-size: 100%;
+        }
+        
+        .star5 {
+            background: url(img/star_5.png)no-repeat center;
+            background-size: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nearby">
+        <div class="title">附近超市</div>
+        <ul class="storeList">
+            <li class="storeLi">
+                <div class="storeBg" style="background:url()no-repeat center;background-size:cover;"></div>
+                <div class="comment-distance">
+                    <div class="storename">奇迹超市（九峰小区店）</div>
+                    <div class="storeSales">
+                        <div class="comment star1"></div>
+                        <div class="sales">月售<span>372</span></div>
+                        <div class="timeDistance">
+                            <span class="time"><span>30</span>分钟</span>丨<span class="distance"><span>400</span>m</span>
+                        </div>
+                    </div>
+                    <div class="address">长沙市天心区黑石铺街道创谷广告产业园A3栋13楼</div>
+                </div>
+            </li>
+            <li class="storeLi">
+                <div class="storeBg" style="background:url()no-repeat center;background-size:cover;"></div>
+                <div class="comment-distance">
+                    <div class="storename">奇迹超市（九峰小区店）</div>
+                    <div class="storeSales">
+                        <div class="comment star2"></div>
+                        <div class="sales">月售<span>372</span></div>
+                        <div class="timeDistance">
+                            <span class="time"><span>30</span>分钟</span>丨<span class="distance"><span>400</span>m</span>
+                        </div>
+                    </div>
+                    <div class="address">长沙市天心区黑石铺街道创谷广告产业园A3栋13楼</div>
+                </div>
+            </li>
+            <li class="storeLi">
+                <div class="storeBg" style="background:url()no-repeat center;background-size:cover;"></div>
+                <div class="comment-distance">
+                    <div class="storename">奇迹超市（九峰小区店）</div>
+                    <div class="storeSales">
+                        <div class="comment star3"></div>
+                        <div class="sales">月售<span>372</span></div>
+                        <div class="timeDistance">
+                            <span class="time"><span>30</span>分钟</span>丨<span class="distance"><span>400</span>m</span>
+                        </div>
+                    </div>
+                    <div class="address">长沙市天心区黑石铺街道创谷广告产业园A3栋13楼</div>
+                </div>
+            </li>
+            <li class="storeLi">
+                <div class="storeBg" style="background:url()no-repeat center;background-size:cover;"></div>
+                <div class="comment-distance">
+                    <div class="storename">奇迹超市（九峰小区店）</div>
+                    <div class="storeSales">
+                        <div class="comment star4"></div>
+                        <div class="sales">月售<span>372</span></div>
+                        <div class="timeDistance">
+                            <span class="time"><span>30</span>分钟</span>丨<span class="distance"><span>400</span>m</span>
+                        </div>
+                    </div>
+                    <div class="address">长沙市天心区黑石铺街道创谷广告产业园A3栋13楼</div>
+                </div>
+            </li>
+            <li class="storeLi">
+                <div class="storeBg" style="background:url()no-repeat center;background-size:cover;"></div>
+                <div class="comment-distance">
+                    <div class="storename">奇迹超市（九峰小区店）</div>
+                    <div class="storeSales">
+                        <div class="comment star5"></div>
+                        <div class="sales">月售<span>372</span></div>
+                        <div class="timeDistance">
+                            <span class="time"><span>30</span>分钟</span>丨<span class="distance"><span>400</span>m</span>
+                        </div>
+                    </div>
+                    <div class="address">长沙市天心区黑石铺街道创谷广告产业园A3栋13楼</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+
+</html>
