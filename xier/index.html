@@ -205,7 +205,7 @@
         });
         $("#newBanner").mouseenter(function() {
             clearInterval(ds);
-            $('#wrap li').stop();
+            $('#wrap li').stop(true, true);
             lock = true;
         });
         $("#newBanner").mouseleave(function() {
