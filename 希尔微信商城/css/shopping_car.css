@@ -28,7 +28,7 @@
 
 .sCar-li {
     height: 1.54rem;
-    padding: .1rem .2rem;
+    padding: .2rem;
     border-bottom: .01rem solid #eee;
     line-height: .4rem;
 }
@@ -73,4 +73,42 @@
 
 .menu .shopping-car p {
     color: #93d521;
+}
+
+.compute-op .add,
+.compute-op .sub {
+    width: .6rem;
+    height: .5rem;
+    margin-top: 1rem;
+    border-radius: .15rem;
+    overflow: hidden;
+}
+
+.compute-op .add {
+    background: url(./../img/as_add.png)no-repeat center;
+    background-size: 100%;
+}
+
+.compute-op .sub {
+    background: url(./../img/as_sub.png)no-repeat center;
+    background-size: 100%;
+}
+
+.compute-op .add-cl {
+    background: url(./../img/as_add_cl.png)no-repeat center;
+    background-size: 100%;
+}
+
+.compute-op .sub-cl {
+    background: url(./../img/as_sub_cl.png)no-repeat center;
+    background-size: 100%;
+}
+
+.compute-op input {
+    box-sizing: border-box;
+    width: 1rem;
+    height: .5rem;
+    margin-top: 1rem;
+    padding-left: .25rem;
+    text-align: center;
 }

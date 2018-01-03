@@ -81,6 +81,7 @@
 }
 
 #article-content-box #article-main {
+  width: 1000px;
   padding-bottom: 40px;
   margin-top: 40px;
 }

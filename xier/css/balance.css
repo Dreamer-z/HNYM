@@ -64,6 +64,7 @@ video {
     padding-bottom: 20px;
     margin: 5px 0;
     border-bottom: 1px dashed #666;
+    cursor: pointer;
 }
 
 .balance-common-section-img {
@@ -117,6 +118,7 @@ video {
 .balance-cyclopedia-list-box {
     width: 370px;
     margin: 0 15px;
+    cursor: pointer;
 }
 
 .balance-cyclopedia-list-img {
@@ -164,6 +166,7 @@ video {
     width: 560px;
     height: 440px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .balance-complication-left {
@@ -255,6 +258,7 @@ video {
     width: 630px;
     height: 440px;
     position: relative;
+    cursor: pointer;
 }
 
 .balance-complication-right img,
@@ -293,6 +297,7 @@ video {
     height: 240px;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .balance-information-img {

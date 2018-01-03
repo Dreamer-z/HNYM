@@ -230,7 +230,7 @@
         function move() {
             $('#wrap li').removeClass('curr');
             $('#wrap li').eq(ind).addClass('curr');
-            $('.curr').stop().animate({
+            $('.curr').stop(true, true).animate({
                 width: (wd - 6 * length) + "px"
             }, 300, 'linear');
             $('.curr').css({
@@ -241,6 +241,7 @@
             }, 300, 'linear');
         };
     };
+    $(".borderimg").fadeOut(100);
     $(".borderimg").click(function() {
         if ($(".close").is(":animated")) {
             return;

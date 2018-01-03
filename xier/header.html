@@ -97,8 +97,8 @@
                 localStorage.setItem("column", $(this).attr("data_id"));
             });
             $(".nav-first-li").click(function() {
+                $(".nav-first-li").children("a").css("color", "#000");
                 $(this).children("a").css("color", "#a6ce60");
-                $(this).siblings().children("a").css("color", "#000");
                 localStorage.setItem("column", $(this).attr("data_id"));
                 localStorage.setItem("column_child_init", $(this).children(".nav-second").children(".nav-second-li").eq(0).attr("data_id"));
                 localStorage.setItem("column_child_val", $(this).children(".nav-second").children(".nav-second-li").eq(0).children("a").html());

@@ -32,39 +32,18 @@
     </div>
     <ul class="sCar-list">
         <li class="sCar-li bg-fff clear">
-            <div class="sCarselect">
+            <div class="sCarselect fl clear">
                 <input class="sCarinp fl" type="checkbox" name="">
             </div>
             <div class="sCarimg fl" style="background: url(./img/dingdan/sp_img.png)no-repeat center;
     background-size:cover"></div>
-            <div class="sCarmsg">
+            <div class="sCarmsg fl">
                 <p class="sCarname">商品名称</p>
                 <p class="sCarsize">规格：1盒/50g</p>
                 <p class="sCarprice">￥<span>128</span></p>
             </div>
-        </li>
-        <li class="sCar-li bg-fff clear">
-            <div class="sCarselect">
-                <input class="sCarinp fl" type="checkbox" name="">
-            </div>
-            <div class="sCarimg fl" style="background: url(./img/dingdan/sp_img.png)no-repeat center;
-    background-size:cover"></div>
-            <div class="sCarmsg">
-                <p class="sCarname">商品名称</p>
-                <p class="sCarsize">规格：1盒/50g</p>
-                <p class="sCarprice">￥<span>128</span></p>
-            </div>
-        </li>
-        <li class="sCar-li bg-fff clear">
-            <div class="sCarselect">
-                <input class="sCarinp fl" type="checkbox" name="">
-            </div>
-            <div class="sCarimg fl" style="background: url(./img/dingdan/sp_img.png)no-repeat center;
-    background-size:cover"></div>
-            <div class="sCarmsg">
-                <p class="sCarname">商品名称</p>
-                <p class="sCarsize">规格：1盒/50g</p>
-                <p class="sCarprice">￥<span>128</span></p>
+            <div class="compute-op fr clear">
+                <span class="sub fl" data="child_sub"></span><input class="onbook-adult fl" type="number" name="onbook-child" value="1" disabled><span class="add fl" data="child_add"></span>
             </div>
         </li>
     </ul>
@@ -115,6 +94,30 @@
 <script src="./js/all.js"></script>
 <script>
     all.check_inp("allinp", "sCarinp", ".del");
+    var pnum, price, pDom;
+    $(".add").click(function() {
+        $(this).addClass("add-cl");
+        $(this).siblings(".sub").removeClass("sub-cl");
+        pnum = $(this).siblings("input").val();
+        pnum++;
+        $(this).siblings("input").val(pnum);
+        pDom = $(this).parent(".compute-op").siblings(".sCarmsg").children(".sCarprice").children("span");
+        price = pdom.text();
+        pDom.text(price * pnum);
+    });
+    $(".sub").click(function() {
+        $(this).addClass("sub-cl");
+        $(this).siblings(".add").removeClass("add-cl");
+        if ($(this).siblings("input").val() == 1) {
+            return;
+        };
+        pnum = $(this).siblings("input").val();
+        pnum--;
+        $(this).siblings("input").val(pnum);
+        pDom = $(this).parent(".compute-op").siblings(".sCarmsg").children(".sCarprice").children("span");
+        price = pdom.text();
+        pDom.text(price * pnum);
+    });
 </script>
 
 </html>

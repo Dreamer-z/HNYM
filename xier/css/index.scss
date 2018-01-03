@@ -141,6 +141,10 @@
     top: 0;
 }
 
+.indexDisplay .part2 .part2-newsLi:hover .part2-newsTit {
+    text-decoration: underline;
+}
+
 .indexDisplay .part2 .part2-newsLi {
     box-sizing: border-box;
     padding-left: 15px;
@@ -176,6 +180,10 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     position: relative;
+}
+
+.indexDisplay .part3 .part3-list:hover {
+    text-decoration: underline;
 }
 
 .indexDisplay .part3 .part3-list::before {
