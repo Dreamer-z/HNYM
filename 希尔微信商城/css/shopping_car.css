@@ -21,7 +21,7 @@
 }
 
 .sCar-list {
-    margin-bottom: 1.1rem;
+    margin-bottom: 2.1rem;
     box-sizing: border-box;
     width: 7.5rem;
 }
@@ -111,4 +111,25 @@
     margin-top: 1rem;
     padding-left: .25rem;
     text-align: center;
+}
+
+.bt-op {
+    bottom: .98rem;
+    line-height: .98rem;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.bt-op .bOp-l>span {
+    color: red;
+    font-size: .2rem;
+}
+
+.bt-op .bOp-l>span>span {
+    font-size: .28rem;
+}
+
+.bt-op .bOp-r {
+    background-color: #93d521;
+    color: #fff;
 }
