@@ -1,0 +1,4 @@
+个人中心 person_center.html
+修改资料 modified_data.html
+购买记录 buy_record.html
+我的视频 my_video.html

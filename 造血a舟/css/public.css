@@ -1,0 +1,544 @@
+/* 列表标题 */
+
+.listTitle.title {
+    height: .88rem;
+    line-height: .88rem;
+    padding: 0 .2rem;
+    font-size: .36rem;
+    overflow: hidden;
+    margin-bottom: .02rem;
+}
+
+.listTitle.title .icon-left {
+    float: left;
+    width: .4rem;
+    height: .4rem;
+    margin: .22rem 0;
+    margin-right: .2rem;
+    background: url(./../img/buyRecord_icon.png)no-repeat center;
+    background-size: 100%;
+}
+
+.listTitle.title .titleCont {
+    float: left;
+}
+
+.listTitle.title .icon-right {
+    float: right;
+    width: .4rem;
+    height: .6rem;
+    margin: .12rem 0;
+    background: url(./../img/del.png)no-repeat center;
+    background-size: 100%;
+}
+
+
+/* 提示信息弹窗 */
+
+.popup {
+    width: 7.1rem;
+    position: fixed;
+    left: 50%;
+    margin-left: -3.55rem;
+    top: 4rem;
+    border-radius: .2rem;
+    overflow: hidden;
+    text-align: center;
+    font-size: .26rem;
+}
+
+.popup .tit {
+    box-sizing: border-box;
+    height: .7rem;
+    line-height: .7rem;
+    width: 100%;
+    background-color: #37343f;
+    color: #fff;
+    font-size: .3rem;
+    padding: 0 2rem;
+}
+
+
+/* 确认取消 */
+
+.popup .confirm,
+.popup .cancel {
+    display: inline-block;
+    height: .7rem;
+    line-height: .7rem;
+    padding: 0 .15rem;
+    position: absolute;
+    right: .1rem;
+    top: 0;
+    color: #fff;
+}
+
+.popup .cancel {
+    left: .1rem;
+}
+
+.popup .cont {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .3rem .2rem;
+    background-color: #fff;
+    color: #888;
+}
+
+
+/* 提交状态 */
+
+.popup .cont .status span {
+    display: inline-block;
+    padding-left: .6rem;
+    height: .6rem;
+    line-height: .6rem;
+    font-size: .34rem;
+}
+
+
+/* 成功 */
+
+.popup .cont .status.succeed span {
+    background: url(./../img/correct.png)no-repeat 0 .05rem;
+    background-size: 25%;
+}
+
+
+/* 失败 */
+
+.popup .cont .status.failure span {
+    background: url(./../img/del_bg.png)no-repeat 0 .05rem;
+    background-size: 25%;
+}
+
+
+/* 提交结果反馈信息 */
+
+.popup .cont .msg {
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    margin-top: .1rem;
+}
+
+.popup .option {
+    font-size: .3rem;
+    color: #333;
+    height: .8rem;
+    line-height: .8rem;
+}
+
+
+/* 统计窗 */
+
+.total {
+    width: 7.1rem;
+    height: 2.28rem;
+    padding: 0 .2rem;
+    background-image: url(./../img/total_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+.total .title {
+    font-size: .3rem;
+    line-height: .9rem;
+}
+
+.total .totalNum {
+    font-size: .8rem;
+    line-height: 1rem;
+}
+
+
+/* 统计窗2 */
+
+.total1 {
+    box-sizing: border-box;
+    width: 7.5rem;
+    height: 2.72rem;
+    padding: 0 .2rem;
+    background: -moz-linear-gradient(top, #4e4857, #25222d);
+    background: -webkit-linear-gradient(top, #4e4857, #25222d);
+    background: -o-linear-gradient(top, #4e4857, #25222d);
+    color: #fff;
+}
+
+.total1 .title {
+    font-size: .3rem;
+    line-height: 1.2rem;
+}
+
+.total1 .totalNum {
+    font-size: .8rem;
+    line-height: 1rem;
+}
+
+
+/* 纪录列表 */
+
+.recordLi {
+    box-sizing: border-box;
+    width: 7.5rem;
+    height: 1.01rem;
+    background-color: #fff;
+    padding: .1rem .3rem;
+    font-size: .3rem;
+    border-bottom: .01rem solid #eee;
+    overflow: hidden;
+}
+
+.recordLi .stateTime {
+    line-height: .4rem;
+    float: left;
+}
+
+.recordLi .time {
+    font-size: .24rem;
+    color: #999;
+}
+
+.recordLi .price {
+    float: right;
+    color: #ed9906;
+}
+
+
+/* 标题+数据列表 */
+
+.tData {
+    box-sizing: border-box;
+    width: 7.5rem;
+    height: .88rem;
+    line-height: .88rem;
+    background-color: #fff;
+    font-size: .3rem;
+    padding: 0 .4rem;
+    border-bottom: .01rem solid #eee;
+}
+
+.tData .cont {
+    margin-left: .3rem;
+}
+
+
+/* 信息填写栏 */
+
+.writeColumn {
+    line-height: .88rem;
+    font-size: .3rem;
+    padding: 0 .3rem;
+    background-color: #fff;
+    margin-bottom: .02rem;
+    overflow: hidden;
+}
+
+.writeColumn-photo {
+    height: 1.66rem;
+    line-height: 1.66rem;
+}
+
+.writeColumn-photo input[type="file"] {
+    display: none;
+}
+
+.writeColumn-photo label {
+    background: url(./../img/ls/photo.png)no-repeat center;
+    background-size: cover;
+}
+
+.writeColumn-photo .photo {
+    float: right;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    margin-top: .22rem;
+}
+
+.writeColumn span {
+    float: left;
+    max-width: 2.4rem;
+}
+
+.writeColumn input,
+.writeColumn textarea {
+    float: left;
+    color: #666;
+    font-size: .3rem;
+    min-width: 5.2rem;
+}
+
+.writeColumn input {
+    height: .52rem;
+    line-height: .54rem;
+    margin-top: .2rem;
+}
+
+.writeColumn textarea {
+    height: 1.08rem;
+    line-height: .54rem;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+}
+
+.writeColumn-submit {
+    display: block;
+    width: 6rem;
+    height: .76rem;
+    line-height: .76rem;
+    color: #fff;
+    background: -webkit-linear-gradient(left, #df252b, #ec492d, #f96d30);
+    background: linear-gradient(left, #df252b, #ec492d, #f96d30);
+    font-size: .36rem;
+    border-radius: .2rem;
+    margin: 0 auto;
+    margin-top: 1.2rem;
+}
+
+
+/* 提交按钮 */
+
+.pushInp {
+    display: block;
+    height: .8rem;
+    line-height: .8rem;
+    width: 6rem;
+    border-radius: .1rem;
+    background-color: #37343f;
+    color: #fff;
+    margin: 0 auto;
+    font-size: .34rem;
+}
+
+
+/* 信息展示栏 */
+
+.msg-dis {
+    padding: 0 .2rem;
+    height: 1.1rem;
+    line-height: .5rem;
+    font-size: .26rem;
+    padding: .3rem;
+    background-color: #fff;
+    border-bottom: .01rem solid #eee;
+    overflow: hidden;
+}
+
+.msg-dis>a {
+    display: block;
+    height: 100%;
+}
+
+.msg-dis .icon {
+    float: left;
+    width: .32rem;
+    height: .32rem;
+    margin: .09rem 0;
+    margin-right: .2rem;
+    overflow: hidden;
+}
+
+.msg-dis .content {
+    float: left;
+}
+
+.msg-dis.personMsg {
+    height: 2rem;
+    line-height: 1.4rem;
+    font-size: .32rem;
+}
+
+.msg-dis.personMsg .photo {
+    float: left;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.msg-dis.personMsg .name {
+    float: left;
+    margin-left: .3rem;
+}
+
+
+/* 按钮类型 */
+
+.btn1 {
+    width: 7.5rem;
+    height: .98rem;
+    background-color: #93d521;
+    color: #fff;
+    font-size: .34rem;
+    text-align: center;
+}
+
+
+/* 底部菜单栏 */
+
+.menu-spacing {
+    margin-bottom: 1.2rem;
+}
+
+.menu {
+    height: .98rem;
+    width: 7.5rem;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    margin-left: -3.75rem;
+    background-color: #fff;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.menu-li {
+    float: left;
+    width: 2.5rem;
+    height: 100%;
+    box-sizing: border-box;
+    padding: .1rem .2rem;
+}
+
+.menu-li a {
+    display: block;
+    color: #666;
+    text-align: center;
+}
+
+.menu-li.check a {
+    color: #b62b30;
+}
+
+.menu-li a div {
+    width: .44rem;
+    height: .44rem;
+    font-size: .42rem;
+    margin: 0 auto;
+    margin-bottom: .06rem;
+}
+
+.menu-li a p {
+    font-size: .28rem;
+    line-height: .28rem;
+}
+
+.shopping-car {
+    position: relative;
+}
+
+.shopping-car .commodity {
+    position: absolute;
+    right: .35rem;
+    top: .05rem;
+    width: .3rem;
+    height: .3rem;
+    line-height: .3rem;
+    border-radius: 50%;
+    font-size: .24rem;
+    color: #fff;
+    background-color: #93d521;
+    overflow: hidden;
+}
+
+input[type="checkbox"] {
+    width: .38rem;
+    height: .38rem;
+    border-radius: 50%;
+    border: .01rem solid #93d521;
+}
+
+
+/* 单选按钮、复选按钮 */
+
+.input-checked {
+    background: url(./../img/success_1.png)no-repeat center;
+    background-size: 120%;
+}
+
+.input-no-checked {
+    background: transparent;
+}
+
+
+/* 模糊效果 */
+
+.blur {
+    -webkit-filter: blur(.1rem);
+    -moz-filter: blur(.1rem);
+    -o-filter: blur(.1rem);
+    -ms-filter: blur(.1rem);
+    filter: blur(.1rem);
+}
+
+
+/* 优惠券 */
+
+.coupon-list {
+    padding: .2rem 0;
+}
+
+.coupon-li {
+    box-sizing: border-box;
+    width: 7.1rem;
+    min-height: 1.64rem;
+    margin: .15rem auto;
+    padding: .2rem 0;
+    background: url(./../img/coupon_bg.png)no-repeat center;
+    background-size: 100%;
+}
+
+.coupon-sec-limit {
+    height: 100%;
+    line-height: 1.25rem;
+    width: 1.42rem;
+    text-align: center;
+}
+
+.coupon-sec-limit span {
+    font-size: .34rem;
+}
+
+.coupon-sec-img {
+    box-sizing: border-box;
+    width: 1.3rem;
+    height: 1.24rem;
+    margin: 0 .2rem;
+    border-radius: .1rem;
+    border: .01rem solid #eee;
+}
+
+.coupon-sec-cont {
+    width: 3.55rem;
+    font-size: .3rem;
+}
+
+.coupon-sec-size,
+.coupon-sec-pri {
+    font-size: .24rem;
+    color: #999;
+}
+
+.coupon-sec-size {
+    margin-bottom: .2rem;
+}
+
+.coupon-sec-pri {
+    color: #93d521;
+}
+
+.coupon-sec-limit {
+    width: 1.8rem;
+    height: 100%;
+    line-height: 1.24rem;
+    margin-left: .05rem;
+}
+
+.coupon-sec-limit a {
+    color: #93d521;
+}
+
+.lose a {
+    color: #999;
+}
