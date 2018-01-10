@@ -26,26 +26,181 @@
 
 <body>
     <div class="myVideoList">
-        <div class="type">
-            <div class="title"><span>最近学习</span></div>
-            <div class="content">
-                <div class="listTitle title bg-fff">
-                    <i class="icon-left"></i>
-                    <p class="titleCont">a舟课堂</p>
-                    <i class="icon-right"></i>
-                </div>
-                <div class="list">
-                    <div class="li">
-                        <div class="cover"></div>
-                        <div class="secondContent">
-                            <div class="title"></div>
-                            <div class="short"></div>
-                        </div>
+        <div class="listType">
+            <div class="headline check"><span>最近学习</span></div>
+            <div class="headline"><span>已购视频</span></div>
+        </div>
+        <div class="listContent">
+            <div class="listTitle title bg-fff">
+                <i class="icon-left"></i>
+                <p class="titleCont">a舟课堂</p>
+                <i class="icon-right"></i>
+            </div>
+            <div class="videoList">
+                <div class="li">
+                    <div class="del">
+                        <input type="checkbox">
                     </div>
+                    <a href="">
+                        <div class="cover" style="background:url(./img/ls/video.png)no-repeat center;background-size:cover;">
+                            <div class="play"></div>
+                        </div>
+                        <div class="secondContent">
+                            <div class="title elli">【地中海贫血患者如何进行日常护理】</div>
+                            <div class="short elli"> 地中海贫血是一组遗传性溶血性贫血疾病......</div>
+                            <div class="optionMsg">
+                                <p><i class="icon"></i><span class="amount">1.7万次</span></p>
+                                <p>丨</p>
+                                <p class="subtitle">全国第一血液专家</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
+                <div class="li">
+                    <div class="del">
+                        <input type="checkbox">
+                    </div>
+                    <a href="">
+                        <div class="cover" style="background:url(./img/ls/video.png)no-repeat center;background-size:cover;">
+                            <div class="play"></div>
+                        </div>
+                        <div class="secondContent">
+                            <div class="title elli">【地中海贫血患者如何进行日常护理】</div>
+                            <div class="short elli"> 地中海贫血是一组遗传性溶血性贫血疾病......</div>
+                            <div class="optionMsg">
+                                <p><i class="icon"></i><span class="amount">1.7万次</span></p>
+                                <p>丨</p>
+                                <p class="subtitle">全国第一血液专家</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="li">
+                    <div class="del">
+                        <input type="checkbox">
+                    </div>
+                    <a href="">
+                        <div class="cover" style="background:url(./img/ls/video.png)no-repeat center;background-size:cover;">
+                            <div class="play"></div>
+                        </div>
+                        <div class="secondContent">
+                            <div class="title elli">【地中海贫血患者如何进行日常护理】</div>
+                            <div class="short elli"> 地中海贫血是一组遗传性溶血性贫血疾病......</div>
+                            <div class="optionMsg">
+                                <p><i class="icon"></i><span class="amount">1.7万次</span></p>
+                                <p>丨</p>
+                                <p class="subtitle">全国第一血液专家</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="li">
+                    <div class="del">
+                        <input type="checkbox">
+                    </div>
+                    <a href="">
+                        <div class="cover" style="background:url(./img/ls/video.png)no-repeat center;background-size:cover;">
+                            <div class="play"></div>
+                        </div>
+                        <div class="secondContent">
+                            <div class="title elli">【地中海贫血患者如何进行日常护理】</div>
+                            <div class="short elli"> 地中海贫血是一组遗传性溶血性贫血疾病......</div>
+                            <div class="optionMsg">
+                                <p><i class="icon"></i><span class="amount">1.7万次</span></p>
+                                <p>丨</p>
+                                <p class="subtitle">全国第一血液专家</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="li">
+                    <div class="del">
+                        <input type="checkbox">
+                    </div>
+                    <a href="">
+                        <div class="cover" style="background:url(./img/ls/video.png)no-repeat center;background-size:cover;">
+                            <div class="play"></div>
+                        </div>
+                        <div class="secondContent">
+                            <div class="title elli">【地中海贫血患者如何进行日常护理】</div>
+                            <div class="short elli"> 地中海贫血是一组遗传性溶血性贫血疾病......</div>
+                            <div class="optionMsg">
+                                <p><i class="icon"></i><span class="amount">1.7万次</span></p>
+                                <p>丨</p>
+                                <p class="subtitle">全国第一血液专家</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="bt-op">
+                <div class="bOp-l"><input type="checkbox" id="allInp"><label for="allInp">全选</label></div>
+                <div class="bOp-r">确定</div>
             </div>
         </div>
     </div>
+    <div class="fullscreen">
+        <div class="popup">
+            <div class="tit">是否确认？</div>
+            <div class="confirm">确定</div>
+            <div class="cancel">取消</div>
+            <div class="cont">您确认要删除吗？</div>
+        </div>
+    </div>
 </body>
+<script src="./js/all.js"></script>
+<script>
+    all.check_inp("allInp", $(".listContent").children(".videoList"));
+    var del = false;
+    // 删除
+    $(".bOp-r").click(function() {
+        var sf = true;
+        var dom = $(".listContent.check").children(".videoList").children(".li");
+        $(".fullscreen").fadeIn(200);
+        $(".confirm").click(function() {
+            dom.each(function(i) {
+                if (dom.children(".del").children("input").eq(i).attr("state") == 1) {
+                    dom.eq(i).addClass("delli");
+                };
+            });
+            $(".delli").remove();
+            $(".fullscreen").fadeOut(200);
+            // $(".bt-op").fadeOut(300);
+            $("#allInp").attr("state", "0");
+            $("#allInp").removeClass("input-checked");
+            $("#allInp").addClass("input-no-checked");
+            $("#allInp").removeProp("checked");
+            del = false;
+        });
+        $(".cancel").click(function() {
+            $(".fullscreen").fadeOut(200);
+        });
+    });
+    $(".headline").click(function() {
+        $(".headline").removeClass("check");
+        $(this).addClass("check");
+        $(".bt-op").fadeOut(300);
+        $(".listContent").removeClass("check");
+        $("input:checkbox").removeClass("input-checked");
+        $("input:checkbox").addClass("input-no-checked");
+        $("input:checkbox").prop("checked", "checked");
+        $("input:checkbox").attr("state", "0");
+        del = false;
+    });
+    $(".icon-right").click(function() {
+        del = !del;
+        if (del == false) {
+            $(".listContent").removeClass("check");
+            $(".bt-op").hide();
+            $("input:checkbox").removeClass("input-checked");
+            $("input:checkbox").addClass("input-no-checked");
+            $("input:checkbox").prop("checked", "checked");
+            $("input:checkbox").attr("state", "0");
+        } else {
+            $(".listContent").addClass("check");
+            $(".bt-op").fadeIn(200);
+        }
+    });
+</script>
 
 </html>

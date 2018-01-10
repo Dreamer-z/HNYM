@@ -22,6 +22,48 @@
         window['adaptive'].scaleType = 1;
         window['adaptive'].init();
     </script>
+    <!-- 新增 -->
+    <link rel="stylesheet" href="./js/plug/css/swiper-3.4.2.min.css">
+    <style>
+        .popularity-banner {
+            height: 2.98rem;
+            width: 100%;
+            margin: .3rem 0;
+            padding-bottom: .1rem;
+            background-color: #fff;
+        }
+        
+        .popularity-banner .p-banner {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .popularity-banner .swiper-slide {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 0 .1rem;
+        }
+        
+        .popularity-banner .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 2.3rem;
+            margin: 0 auto;
+        }
+        
+        .popularity-banner .swiper-slide .rq-cont {
+            height: .56rem;
+            margin: .06rem 0;
+            line-height: .28rem;
+            text-align: center;
+            color: #fff;
+            font-size: .24rem;
+            background: url(./img/rq_banner_bg.png)no-repeat center;
+            background-size: 100%;
+        }
+    </style>
+    <!-- 新增 -->
 </head>
 
 <body>
@@ -37,6 +79,47 @@
             </div>
             <div class="custom-attention">注：我们将根据你选择的出发地和目的地为您精心推荐玩 乐的路线</div>
         </div>
+        <!-- 新增 -->
+        <div class="popularity-banner swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/order/i_banner1.png">
+                    <div class="rq-cont">
+                        <p class="rq-tit">￥150起</p>
+                        <p class="rq-price">长沙世界之窗</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/order/i_banner1.png">
+                    <div class="rq-cont">
+                        <p class="rq-tit">￥150起</p>
+                        <p class="rq-price">长沙世界之窗</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/order/i_banner1.png">
+                    <div class="rq-cont">
+                        <p class="rq-tit">￥150起</p>
+                        <p class="rq-price">长沙世界之窗</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/order/i_banner1.png">
+                    <div class="rq-cont">
+                        <p class="rq-tit">￥150起</p>
+                        <p class="rq-price">长沙世界之窗</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/order/i_banner1.png">
+                    <div class="rq-cont">
+                        <p class="rq-tit">￥150起</p>
+                        <p class="rq-price">长沙世界之窗</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 新增 -->
         <div class="recommend-custom">
             <div class="play-exc clear">
                 <p class="rec-cus-play fl">推荐定制玩法</p>
@@ -112,6 +195,13 @@
     </div>
 </body>
 <script src="./js/plug/kuCity.js"></script>
+<!-- 新增 -->
+<script src="./js/plug/swiper-3.4.2.jquery.min.js"></script>
+<script src="./js/all.js"></script>
+<script>
+    all.banner2('.popularity-banner');
+</script>
+<!-- 新增 -->
 <script>
     var city = null;
     $(".search1").kuCity();

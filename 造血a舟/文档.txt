@@ -2,3 +2,6 @@
 修改资料 modified_data.html
 购买记录 buy_record.html
 我的视频 my_video.html
+我的收藏 my_collect.html
+再生障碍性贫血 disease_knowledge.html
+日常保健 daily_care.html

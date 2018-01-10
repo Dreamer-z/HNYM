@@ -15,46 +15,34 @@ var all = {
         $(".fullscreen2").css({ "background-color": "#fff", "box-sizing": "border-box" });
     },
     // 全选功能
-    check_inp: function(allinpID, inpname, delname) {
-        function select(dom, num) {
+    check_inp: function(allinpID, inputparent) {
+        function select(num) {
             if (num == 1) {
-                $(dom).removeClass("input-no-checked");
-                $(dom).addClass("input-checked");
-                $(dom).prop("checked", "checked");
+                $(inputparent).find("input:checkbox").removeClass("input-no-checked");
+                $(inputparent).find("input:checkbox").addClass("input-checked");
+                $(inputparent).find("input:checkbox").prop("checked", "checked");
             } else {
-                $(dom).removeClass("input-checked");
-                $(dom).addClass("input-no-checked");
-                $(dom).removeProp("checked");
+                $(inputparent).find("input:checkbox").removeClass("input-checked");
+                $(inputparent).find("input:checkbox").addClass("input-no-checked");
+                $(inputparent).find("input:checkbox").removeProp("checked");
             }
         };
         document.getElementById(allinpID).addEventListener("change", function() {
             if ($("#" + allinpID).prop("checked") == true) {
-                $("." + inpname).each(function(i) {
-                    $("." + inpname).eq(i).attr("state", "1");
-                    $("." + inpname).eq(i).addClass("input-checked");
-                    $("." + inpname).eq(i).prop("checked", "checked");
-                    select($("." + inpname).eq(i), $("." + inpname).eq(i).attr("state"));
+                $(inputparent).find("input:checkbox").each(function(i) {
+                    $(inputparent).find("input:checkbox").eq(i).attr("state", "1");
+                    $(inputparent).find("input:checkbox").eq(i).addClass("input-checked");
+                    $(inputparent).find("input:checkbox").eq(i).prop("checked", "checked");
+                    select($(inputparent).find("input:checkbox").eq(i).attr("state"));
                 });
             } else {
-                $("." + inpname).each(function(i) {
-                    $("." + inpname).eq(i).attr("state", "0");
-                    $("." + inpname).eq(i).removeClass("input-checked");
-                    $("." + inpname).eq(i).removeProp("checked");
-                    select($("." + inpname).eq(i), $("." + inpname).eq(i).attr("state"));
+                $(inputparent).find("input:checkbox").each(function(i) {
+                    $(inputparent).find("input:checkbox").eq(i).attr("state", "0");
+                    $(inputparent).find("input:checkbox").eq(i).removeClass("input-checked");
+                    $(inputparent).find("input:checkbox").eq(i).removeProp("checked");
+                    select($(inputparent).find("input:checkbox").eq(i).attr("state"));
                 });
             }
-        });
-        // 删除
-        $(delname).click(function() {
-            var sf = true;
-            if (sf == true) {
-                $("." + inpname).each(function(i) {
-                    if ($("." + inpname).eq(i).attr("state") == 1) {
-                        $("." + inpname).eq(i).parent(".sCarselect").parent(".sCar-li").addClass("delli");
-                    };
-                });
-                $(".delli").remove();
-            };
         });
     },
     // 复选按钮
@@ -114,14 +102,14 @@ var all = {
         };
     },
     // 横向banner
-    banner: function(obj) {
+    banner: function(obj, time) {
         var mySwiper = new Swiper(obj, {
             direction: 'horizontal',
             loop: true,
             speed: 1500,
             // 如果需要分页器
             pagination: '.swiper-pagination',
-            autoplay: 4000,
+            autoplay: time,
             autoplayDisableOnInteraction: false,
         });
     },

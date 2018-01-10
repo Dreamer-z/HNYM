@@ -25,21 +25,172 @@
 
 .listTitle.title .icon-right {
     float: right;
-    width: .4rem;
-    height: .6rem;
-    margin: .12rem 0;
+    width: .3rem;
+    height: .5rem;
+    margin: .17rem 0;
     background: url(./../img/del.png)no-repeat center;
     background-size: 100%;
+}
+
+
+/* 左边竖线标题 */
+
+.leftLine {
+    padding: 0 .2rem;
+    line-height: .36rem;
+    height: .36rem;
+    border-left: .05rem solid #f67d24;
+}
+
+
+/* 视频列表展示 */
+
+.videoList .li {
+    padding: .2rem;
+    background-color: #fff;
+    margin-top: .02rem;
+    overflow: hidden;
+}
+
+.videoList .li .del {
+    float: left;
+    width: .36rem;
+    height: 1.2rem;
+    margin-right: .24rem;
+    margin-left: -.8rem;
+}
+
+.videoList .li .del input[type="checkbox"] {
+    margin: .42rem 0;
+}
+
+.videoList .li .cover {
+    float: left;
+    width: 1.8rem;
+    height: 1.2rem;
+}
+
+.videoList .li .secondContent {
+    float: left;
+    width: 4.86rem;
+    height: 1.2rem;
+    margin-left: .2rem;
+    overflow: hidden;
+}
+
+.videoList .li .secondContent>.title {
+    line-height: .4rem;
+}
+
+.videoList .li .secondContent>.short {
+    line-height: .3rem;
+    color: #999;
+    margin: .1rem 0;
+}
+
+.videoList .li .secondContent .optionMsg {
+    height: .3rem;
+    line-height: .3rem;
+    color: #999;
+    font-size: .2rem;
+    overflow: hidden;
+}
+
+.videoList .li .secondContent .optionMsg p {
+    overflow: hidden;
+    float: left;
+}
+
+.videoList .li .secondContent .optionMsg p>.icon {
+    float: left;
+    width: .3rem;
+    height: .3rem;
+    background: url(./../img/play_1.png)no-repeat center;
+    background-size: 90%;
+}
+
+.videoList .li .secondContent .optionMsg p span {
+    float: left;
+}
+
+
+/* 动态列表展示 */
+
+.listType {
+    float: left;
+    line-height: .88rem;
+    width: 7.5rem;
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: .02rem;
+    overflow: hidden;
+}
+
+.listType .headline {
+    float: left;
+}
+
+.listType .headline span {
+    padding: .2rem .15rem;
+}
+
+.listType .headline.check span {
+    border-bottom: .02rem solid #b62b30;
+    color: #b62b30;
+}
+
+.listContent {
+    width: 7.5rem;
+    margin-bottom: 1.1rem;
+}
+
+.listContent.check .videoList .li .del {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    margin-left: 0;
+}
+
+.listContent.check .videoList .li .secondContent {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    width: 4.5rem;
+}
+
+.listContent .bt-op {
+    display: none;
+}
+
+.listContent .bt-op .bOp-l {
+    padding: .31rem 0;
+    line-height: .36rem;
+}
+
+.listContent .bt-op .bOp-l input {
+    float: left;
+    margin-left: 20%;
+    margin-right: .2rem;
+}
+
+.listContent .bt-op .bOp-l label {
+    float: left;
+}
+
+.listContent .bt-op .bOp-r {
+    line-height: .98rem;
+    background-color: red;
+    color: #fff;
 }
 
 
 /* 提示信息弹窗 */
 
 .popup {
-    width: 7.1rem;
+    width: 6.9rem;
     position: fixed;
     left: 50%;
-    margin-left: -3.55rem;
+    margin-left: -3.45rem;
     top: 4rem;
     border-radius: .2rem;
     overflow: hidden;
@@ -52,7 +203,7 @@
     height: .7rem;
     line-height: .7rem;
     width: 100%;
-    background-color: #37343f;
+    background-color: #07d7fc;
     color: #fff;
     font-size: .3rem;
     padding: 0 2rem;
@@ -68,9 +219,12 @@
     line-height: .7rem;
     padding: 0 .15rem;
     position: absolute;
-    right: .1rem;
     top: 0;
     color: #fff;
+}
+
+.popup .confirm {
+    right: .1rem;
 }
 
 .popup .cancel {
@@ -442,19 +596,48 @@
     overflow: hidden;
 }
 
-input[type="checkbox"] {
-    width: .38rem;
-    height: .38rem;
-    border-radius: 50%;
-    border: .01rem solid #93d521;
+
+/* 底部操作 */
+
+.bt-op {
+    height: .98rem;
+    width: 7.5rem;
+    position: fixed;
+    left: calc(50% - 3.75rem);
+    bottom: 0;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+    z-index: 10;
+}
+
+.bt-op a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.bOp-l,
+.bOp-r {
+    width: 50%;
+    height: 100%;
+    float: left;
 }
 
 
 /* 单选按钮、复选按钮 */
 
+input[type="checkbox"] {
+    display: block;
+    width: .36rem;
+    height: .36rem;
+    border-radius: 50%;
+    border: .01rem solid #b62b30;
+}
+
 .input-checked {
     background: url(./../img/success_1.png)no-repeat center;
-    background-size: 120%;
+    background-size: 110%;
 }
 
 .input-no-checked {
@@ -541,4 +724,14 @@ input[type="checkbox"] {
 
 .lose a {
     color: #999;
+}
+
+
+/* 列表播放图标 */
+
+.play {
+    width: 100%;
+    height: 100%;
+    background: url(./../img/play.png)no-repeat center;
+    background-size: 40%;
 }
