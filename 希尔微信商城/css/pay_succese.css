@@ -1,0 +1,44 @@
+/* 付款成功 */
+
+.main {
+    box-sizing: border-box;
+    text-align: center;
+    width: 4.7rem;
+    margin: 0 auto;
+    margin-top: 1.4rem;
+}
+
+.success-tit {
+    font-size: .34rem;
+    line-height: .4rem;
+    margin-bottom: .25rem;
+}
+
+.success-tit span {
+    position: relative;
+    padding-left: .5rem;
+}
+
+.success-tit span:before {
+    content: "";
+    width: .4rem;
+    height: .4rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -.2rem;
+    background: url(./../img/success_1.png)no-repeat center;
+    background-size: 100%;
+}
+
+.success-msg {
+    color: #888;
+    font-size: .24rem;
+    margin-bottom: .48rem;
+}
+
+.success-op a,
+.success-op {
+    font-size: .26rem;
+    color: #98d62c;
+}

@@ -9,7 +9,7 @@
 }
 
 
-/* 列表标题 */
+/* 列表标题 左图标 */
 
 .listTitle.title {
     height: .88rem;
@@ -24,7 +24,7 @@
     float: left;
     width: .4rem;
     height: .4rem;
-    margin: .22rem 0;
+    margin: .23rem 0;
     margin-right: .2rem;
     background: url(./../img/buyRecord_icon.png)no-repeat center;
     background-size: 100%;
@@ -46,12 +46,49 @@
 
 /* 左边竖线标题 */
 
+.leftLineBox {
+    padding: .2rem;
+    margin: .1rem 0;
+}
+
 .leftLine {
     padding: 0 .2rem;
     line-height: .4rem;
     height: .4rem;
     border-left: .1rem solid #f67d24;
     background-color: #fff;
+    overflow: hidden;
+}
+
+.leftLine .icon,
+.leftLine .cont {
+    float: left;
+}
+
+.leftLine .more {
+    float: right;
+}
+
+
+/* 左边图标标题 */
+
+.leftIcon {
+    line-height: .4rem;
+    height: .4rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.leftIcon .icon {
+    float: left;
+    width: .4rem;
+    height: .4rem;
+    background: url(./../img/lesson.png)no-repeat center;
+    background-size: 100%;
+}
+
+.leftIcon .title {
+    float: left;
 }
 
 
@@ -363,6 +400,103 @@
 }
 
 
+/* 提交结果 */
+
+.subResult {
+    width: 4.4rem;
+    margin: 0 auto;
+    margin-top: 2.6rem;
+    text-align: center;
+}
+
+.subResult .status {
+    width: 1.74rem;
+    height: 1.74rem;
+    padding: .35rem 0;
+    border-radius: 100%;
+    margin: 0 auto;
+    background: url(./../img/bg_1.png)no-repeat center;
+    background-size: 100%;
+    margin-bottom: 2.45rem;
+}
+
+.subResult .status .icon {
+    width: .1rem;
+    height: .54rem;
+    margin: 0 auto;
+    margin-bottom: .1rem;
+    background: url(./../img/bg_march.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.subResult .status .icon.failure {
+    width: .4rem;
+    height: .4rem;
+    background: url(./../img/bg_failure.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.subResult .status .icon.success {
+    width: .4rem;
+    height: .4rem;
+    background: url(./../img/bg_success.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.subResult .status .content {
+    line-height: .4rem;
+    padding: 0 .2rem;
+    font-size: .26rem;
+    color: #707070;
+}
+
+.subResult .msg .subtitle {
+    margin-bottom: .2rem;
+}
+
+.subResult .msg .content {
+    font-size: .24rem;
+    line-height: .36rem;
+    color: #999;
+}
+
+
+/* 顶部搜索 */
+
+.searchtype1 {
+    padding: .2rem;
+}
+
+.searchtype1 .search {
+    width: 100%;
+    height: .6rem;
+    border-radius: .3rem;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+.searchtype1 .search .searchInp {
+    width: 6rem;
+    height: .6rem;
+    line-height: .6rem;
+    padding: 0 .3rem;
+    border-radius: .3rem 0 0 .3rem;
+}
+
+.searchtype1 .search .searchBtn {
+    width: 1.1rem;
+    height: .3rem;
+    line-height: .3rem;
+    margin: .15rem 0;
+    text-align: left;
+    font-size: .32rem;
+    color: #999;
+    background: url(./../img/search.png)no-repeat center;
+    background-size: 29%;
+    /* border-left: .02rem solid #666; */
+}
+
+
 /* 纪录列表 */
 
 .recordLi {
@@ -445,7 +579,7 @@
 
 .writeColumn span {
     float: left;
-    max-width: 2.4rem;
+    max-width: 2.8rem;
 }
 
 .writeColumn input,
@@ -453,13 +587,13 @@
     float: left;
     color: #666;
     font-size: .3rem;
-    min-width: 5.2rem;
+    min-width: 4.8rem;
 }
 
 .writeColumn input {
     height: .52rem;
-    line-height: .54rem;
-    margin-top: .2rem;
+    line-height: .52rem;
+    margin: .18rem 0;
 }
 
 .writeColumn textarea {
@@ -488,14 +622,17 @@
 
 .pushInp {
     display: block;
-    height: .8rem;
-    line-height: .8rem;
-    width: 6rem;
+    height: .98rem;
+    line-height: .98rem;
+    width: 7.1rem;
     border-radius: .1rem;
-    background-color: #37343f;
+    background-image: linear-gradient(left, #df242b, #ec492d, #f96d30);
+    background-image: -webkit-linear-gradient(left, #df242b, #ec492d, #f96d30);
     color: #fff;
     margin: 0 auto;
     font-size: .34rem;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 
@@ -627,6 +764,46 @@
     color: #fff;
     background-color: #93d521;
     overflow: hidden;
+}
+
+
+/* 菜单栏方形菜单 */
+
+.menuCenter {
+    width: 7.5rem;
+    background-color: #fff;
+    z-index: 10;
+    overflow: hidden;
+    text-align: center;
+    font-size: .24rem;
+    color: #585858;
+}
+
+.menuCenter .li {
+    float: left;
+    width: 25%;
+    padding: .3rem;
+}
+
+.menuCenter .li a {
+    display: block;
+    height: 100%;
+}
+
+.menuCenter .li .icon {
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: .1rem;
+}
+
+.menuCenter .li .title {
+    line-height: .36rem;
+    height: .36rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 

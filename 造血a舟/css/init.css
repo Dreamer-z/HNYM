@@ -19,7 +19,7 @@ body {
 body {
     max-width: 7.5rem;
     margin: 0 auto;
-    background-color: #eee;
+    background-color: #fafafa;
 }
 
 a {
@@ -44,10 +44,6 @@ video::-internal-media-controls-download-button {
 
 video::-webkit-media-controls-enclosure {
     overflow: hidden;
-}
-
-video::-webkit-media-controls-panel {
-    width: calc(100% + 30px);
 }
 
 ul,

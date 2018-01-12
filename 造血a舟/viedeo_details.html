@@ -32,7 +32,64 @@
             </video>
             <div class="play"></div>
         </div>
+        <div class="title">地中海贫血到底有多可怕?</div>
+        <div class="option clear">
+            <p class="icon left"></p>
+            <span class="playing left"><span>1.7万</span>次</span>
+            <p class="left clear collectbox"><span class="collect left"></span><span class="left">收藏</span></p>
+        </div>
+        <!-- 收费信息 -->
+        <div class="lessonPrice clear bg-fff">
+            <div class="price left">课程价格：<span>&yen;<span>36.80</span></span>
+            </div>
+            <div class="numberOfPeople right">报名人数：<span>2586</span></div>
+        </div>
+
+        <div class="introduce">
+            <div class="leftIcon">
+                <div class="icon"></div>
+                <div class="title">课程介绍</div>
+            </div>
+            <div class="content">
+                地中海贫血分型及症状
+                <img src="./img/ls/banner_2.png" alt=""> 重型地中海贫血： 此类型患者的血红蛋白在6g/dl以下，严重缺乏正常的血红蛋白，如果没有血液补充，将出现以下症状：面色苍白，易疲倦，食欲不振，免疫力低下（易受感染等），发育缓慢和肝脾肿大等。长此下去，易导致发育不全、骨骼变形和心功能衰竭，从而缩短寿命。因此，需要定期输血。 中间型地中海贫血： 此类型患者的血红蛋白在6～9g/dl，一般表现为脸色较为苍白、脾脏稍有肿大，无其它明显的症状，生长发育基本正常，不需定期输血。但在感染、误服药物、怀孕等可能导致贫血加重的情况下则需要进行输血治疗。
+                轻型地中海贫血: 此类型患者是地中海贫血的遗传基因携带者，制造血红蛋白的功能只有轻微问题。一般无临床表现，身体状况较正常。
+            </div>
+        </div>
+
+        <!-- 购买课程 -->
+        <div class="bt-op">
+            <div class="bOp-l">免费试看</div>
+            <div class="bOp-r"><a href="./confirm_order.html">购买课程</a></div>
+        </div>
     </div>
 </body>
+<script>
+    window.onload = function() {
+        // 收藏
+        var col = false;
+        $(".collectbox").click(function() {
+            col = !col;
+            if (col == false) {
+                $(this).children(".collect").removeClass("check");
+            } else {
+                $(this).children(".collect").addClass("check");
+            }
+        });
+
+        // 课程类型。收费还是免费
+        var forFree = true; //true为免费，false为收费
+        if (forFree == true) {
+            $(".videoDetails").removeClass("forFree");
+            // 免费点击播放
+            $(".play").click(function() {
+                $(this).fadeOut(50);
+                $(".playWindow video").get(0).play();
+            });
+        } else {
+            $(".videoDetails").addClass("forFree");
+        }
+    }
+</script>
 
 </html>

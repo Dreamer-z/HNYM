@@ -261,6 +261,18 @@ var all = {
     // 购物车数量
     scNum: function() {
         $(".commodity").html();
+    },
+    // 视频操作
+    playing: function(domName, palyInp) {
+        // $(domName).get(0).onemptied = function(){};
+        $(palyInp).click(function() {
+            $(palyInp).fadeOut(50);
+            $(domName).get(0).play();
+            $(domName).click(function() {
+                $(domName).get(0).pause();
+                $(palyInp).fadeIn(50);
+            });
+        });
     }
 };
 window.onload = function() {

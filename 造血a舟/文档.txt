@@ -12,3 +12,11 @@
 在线视频 vTap.html
 视频列表 video_list.html
 视频详情 viedeo_details.html
+确认订单 confirm_order.html
+医生注册 doctor_signUp.html
+提交审核 submit_audit.html
+审核结果 audit_result.html
+首页 index.html
+关于我们 about_us.html
+权威专家 authority_experts.html
+专家介绍 specialist_introduce.html
