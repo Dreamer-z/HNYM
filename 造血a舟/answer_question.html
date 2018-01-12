@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <title>患者答疑</title>
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="./js/adaptive.js"></script>
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 28;
+        window['adaptive'].maxWidth = 480;
+        window['adaptive'].scaleType = 1;
+        window['adaptive'].init();
+    </script>
+</head>
+
+<body>
+    <div class="questionList">
+        <div class="li">
+            <div class="title">贫血程度如何划分？</div>
+            <div class="content">
+                由于贫血的临床表现和贫血的轻重并不是对应关系，因此，贫血的轻重程度并不以临床表现为判断标准，而是以血红蛋白浓度高低来判断。
+            </div>
+        </div>
+        <div class="li">
+            <div class="title">日常饮食应该注意些什么？</div>
+            <div class="content">
+                假装有内容假装有内容假装有内容假装有内容假装有内容假装有内容假装有内容假装有内容假装有内容假装有内容
+            </div>
+        </div>
+        <div class="li">
+            <div class="title">可以适当的做哪些运动？</div>
+            <div class="content">
+                假装有内容假装有内容假装有内容假装有内容假装有内容假装有内容假装有内容假装有内容假装有内容假装有内容
+            </div>
+        </div>
+        <div class="li">
+            <div class="title">再生障碍性贫血哪些表现表示有好转？</div>
+            <div class="content">
+                假装有内容假装有内容假装有内容假装有内容假装有内容假装有内容假装有内容假装有内容假装有内容假装有内容
+            </div>
+        </div>
+        <div class="li">
+            <div class="title">怎么判断自己是否病情加重？</div>
+            <div class="content">
+                假装有内容假装有内容假装有内容假装有内容假装有内容假装有内容假装有内容假装有内容假装有内容假装有内容
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(".li").each(function(i) {
+        var check = false;
+        $(".li").eq(i).children(".title").click(function() {
+            check = !check;
+            if (check == false) {
+                $(this).parent(".li").removeClass("check");
+                $(this).siblings(".content").slideUp(200);
+            } else {
+                $(this).parent(".li").addClass("check");
+                $(this).siblings(".content").slideDown(200);
+            };
+        });
+    });
+</script>
+
+</html>

@@ -161,7 +161,7 @@ var all = {
                     src: imgArr[i],
                     class: "img-li"
                 }).appendTo($("<div/>", {
-                    class: "img-li-box fl"
+                    class: "img-li-box left"
                 }).appendTo($("." + domname)));
             };
 
@@ -210,7 +210,7 @@ var all = {
                     src: imgArr[i],
                     class: "img-li"
                 }).appendTo($("<div/>", {
-                    class: "img-li-box fl"
+                    class: "img-li-box left"
                 }).insertBefore($("." + domname)));
             };
 

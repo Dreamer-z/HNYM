@@ -5,3 +5,10 @@
 我的收藏 my_collect.html
 再生障碍性贫血 disease_knowledge.html
 日常保健 daily_care.html
+其他 others.html
+患者答疑 answer_question.html
+疾病简介 introduction_of_disease.html
+文章详情 article_details.html
+在线视频 vTap.html
+视频列表 video_list.html
+视频详情 viedeo_details.html

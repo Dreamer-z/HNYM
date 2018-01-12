@@ -274,3 +274,366 @@
 .dailyCare .listType .headline {
     width: 2.5rem;
 }
+
+
+/* 其他 */
+
+.others.videoList .li .secondContent .optionMsg p>.icon {
+    background: url(./../img/browse.png)no-repeat center;
+    background-size: 90%;
+}
+
+
+/* 疾病简介 */
+
+.diseaseMain {
+    padding: .2rem;
+    background-color: #fff;
+    text-indent: 2em;
+}
+
+.diseaseMain .title {
+    text-align: center;
+    font-size: .32rem;
+    margin: .2rem 0 .4rem 0;
+}
+
+.diseaseMain .leftLine {
+    font-size: .32rem;
+}
+
+.diseaseMain img {
+    display: block;
+    max-width: 7.1rem;
+    margin: .1rem auto;
+}
+
+
+/* 文章详情 */
+
+.articleMain {
+    background-color: #fff;
+    padding: .2rem;
+}
+
+.articleMain .title {
+    font-size: .32rem;
+    margin: .1rem 0 .2rem 0;
+}
+
+.articleMain .time {
+    font-size: .24rem;
+    color: #999;
+    margin-bottom: .2rem;
+}
+
+.articleMain .content * {
+    text-indent: 2em;
+}
+
+.articleMain .content img {
+    display: block;
+    max-width: 7.1rem;
+    margin: .1rem auto;
+}
+
+.articleMain .option {
+    color: #868585;
+    margin: .4rem 0 .2rem 0;
+}
+
+.articleMain .option .likeIt {
+    margin-left: .2rem;
+    padding-left: .4rem;
+    background: url(./../img/collect.png)no-repeat 0 center;
+    background-size: 35%;
+}
+
+.articleMain .option .likeIt.check {
+    background: url(./../img/collect_on.png)no-repeat 0 center;
+    background-size: 35%;
+}
+
+
+/* 在线视频 */
+
+.vTap {
+    margin-bottom: 1.1rem;
+}
+
+.vTap .searchtype1 {
+    padding: .2rem;
+}
+
+.vTap .searchtype1 .search {
+    width: 100%;
+    height: .6rem;
+    border-radius: .3rem;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+.vTap .searchtype1 .search .searchInp {
+    width: 6rem;
+    height: .6rem;
+    line-height: .6rem;
+    padding: 0 .3rem;
+    border-radius: .3rem 0 0 .3rem;
+}
+
+.vTap .searchtype1 .search .searchBtn {
+    width: 1.1rem;
+    height: .3rem;
+    line-height: .3rem;
+    margin: .15rem 0;
+    text-align: left;
+    font-size: .32rem;
+    color: #999;
+    background: url(./../img/search.png)no-repeat center;
+    background-size: 29%;
+    /* border-left: .02rem solid #666; */
+}
+
+.vTap .classType {
+    padding: 0 .2rem;
+    padding-bottom: .2rem;
+    overflow: hidden;
+}
+
+.vTap .classType .box {
+    float: left;
+    width: 6.5rem;
+    overflow: hidden;
+}
+
+.vTap .classType .list {
+    height: .56rem;
+    line-height: .56rem;
+}
+
+.vTap .classType .box::-webkit-scrollbar {
+    display: none;
+}
+
+.vTap .classType .li {
+    float: left;
+    text-align: center;
+    width: 1.6rem;
+}
+
+.vTap .classType .li.check {
+    color: #b62b30;
+}
+
+.vTap .alltype {
+    float: left;
+    width: .6rem;
+    height: .56rem;
+    text-align: center;
+    position: relative;
+}
+
+.vTap .alltype .icon {
+    display: block;
+    width: .28rem;
+    height: .28rem;
+    margin: 0 auto;
+    background: url(./../img/all.png)no-repeat center;
+    background-size: 100%;
+}
+
+.vTap .alltype p {
+    font-size: .18rem;
+    color: #999;
+}
+
+.vTap .vTapBanner {
+    width: 7.5rem;
+    height: 3.5rem;
+    padding: .2rem 0;
+    overflow: hidden;
+}
+
+.vTap .vTapBanner .swiper-wrapper {
+    width: 100%;
+    height: 3.5rem;
+}
+
+.vTap .vTapBanner .swiper-wrapper .swiper-slide {
+    width: 100%;
+    height: 3.5rem;
+}
+
+.vTap .vTapBanner .swiper-wrapper .swiper-slide a {
+    display: block;
+    height: 100%;
+    position: relative;
+}
+
+.vTap .vTapBanner .swiper-wrapper .swiper-slide a .play {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: 20%;
+}
+
+.vTap .vTapBanner .swiper-wrapper .swiper-slide a img {
+    width: 100%;
+    height: 3.5rem;
+}
+
+.vTap .vTapHot .title {
+    height: .8rem;
+    line-height: .8rem;
+    overflow: hidden;
+    padding: 0 .2rem;
+}
+
+.vTap .vTapHot .title .icon {
+    float: left;
+    width: .35rem;
+    height: .38rem;
+    margin: .2rem 0;
+    background: url(./../img/title_icon_1.png)no-repeat center;
+    background-size: 100%;
+}
+
+.vTap .vTapHot .title .cont {
+    float: left;
+    margin-left: .1rem;
+}
+
+.vTap .vTapHot .title .more {
+    float: right;
+    font-size: .24rem;
+    color: #777676;
+}
+
+.vTap .vTapHot .list {
+    width: 7.5rem;
+    padding: 0 .2rem;
+    margin-top: .2rem;
+    overflow: hidden;
+}
+
+.vTap .vTapHot .list .li {
+    float: left;
+    width: 3.4rem;
+    height: 2.4rem;
+    position: relative;
+    margin-bottom: .2rem;
+}
+
+.vTap .vTapHot .list .li:nth-of-type(2n+1) {
+    margin-right: .3rem;
+}
+
+.vTap .vTapHot .list .li a {
+    display: block;
+    height: 100%;
+}
+
+.vTap .vTapHot .list .li .photo {
+    width: 100%;
+    height: 100%;
+}
+
+.vTap .vTapHot .list .li .subtitle {
+    position: absolute;
+    left: 0;
+    bottom: .2rem;
+    font-size: .24rem;
+    color: #fff;
+    text-align: center;
+}
+
+.vTap .vTapHot .list .li .play {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: 20%;
+}
+
+.vTap .typeWindow {
+    width: 0;
+    height: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    background-color: #fff;
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.vTap .typeWindow .title {
+    padding: .3rem .2rem;
+    text-align: center;
+    position: relative;
+}
+
+.vTap .typeWindow .title .cancel {
+    position: absolute;
+    right: .2rem;
+    top: .36rem;
+    height: .26rem;
+    width: .26rem;
+    background: url(./../img/cancel_1.png)no-repeat center;
+    background-size: 100%;
+}
+
+.vTap .typeWindow .typeDetails {
+    overflow: hidden;
+    padding: .2rem;
+}
+
+.vTap .typeWindow .typeDetailsli {
+    float: left;
+    height: .52rem;
+    padding: 0 .2rem;
+    margin: .1rem;
+    background-color: #eee;
+    color: #696868;
+    border-radius: .1rem;
+}
+
+
+/* 视频列表 */
+
+.videoList .videoList {
+    margin-top: .1rem;
+}
+
+
+/* 视频详情 */
+
+.videoDetails .playWindow {
+    width: 7.5rem;
+    height: 4rem;
+    background-color: #fff;
+    position: relative;
+}
+
+.videoDetails .playWindow video {
+    display: block;
+    width: 7.5rem;
+    height: 4rem;
+    object-fit: fill;
+}
+
+.videoDetails .playWindow .play {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: 20%;
+}
+
+
+/* 
+.videoDetails .playWindow video::-webkit-media-controls-panel {
+    background-color: rgba(250, 250, 250, 1);
+}
+
+.videoDetails .playWindow video::-webkit-media-controls-play-button {} */

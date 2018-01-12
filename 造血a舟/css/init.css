@@ -96,11 +96,11 @@ select::-ms-expand {
     display: none;
 }
 
-.fl {
+.left {
     float: left;
 }
 
-.fr {
+.right {
     float: right;
 }
 
@@ -144,6 +144,12 @@ select::-ms-expand {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
+}
+
+.transition {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
 .fgx {
