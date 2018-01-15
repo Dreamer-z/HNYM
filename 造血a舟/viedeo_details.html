@@ -60,6 +60,7 @@
         <!-- 购买课程 -->
         <div class="bt-op">
             <div class="bOp-l">免费试看</div>
+            <div class="bOp-c"><a href="./password_play.html">密码观看</a></div>
             <div class="bOp-r"><a href="./confirm_order.html">购买课程</a></div>
         </div>
     </div>
@@ -78,7 +79,7 @@
         });
 
         // 课程类型。收费还是免费
-        var forFree = true; //true为免费，false为收费
+        var forFree = false; //true为免费，false为收费
         if (forFree == true) {
             $(".videoDetails").removeClass("forFree");
             // 免费点击播放

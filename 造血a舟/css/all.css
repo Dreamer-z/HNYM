@@ -711,6 +711,12 @@
     background-color: red;
 }
 
+.videoDetails .bOp-l,
+.videoDetails .bOp-c,
+.videoDetails .bOp-r {
+    width: 33.3333%;
+}
+
 
 /* 确认订单 */
 
@@ -776,7 +782,14 @@
 
 .confirmOrder>.payFor .cont {
     float: right;
+    height: 100%;
     color: #b62b30;
+}
+
+.confirmOrder>.payFor .cont input {
+    display: block;
+    height: 100%;
+    text-align: right;
 }
 
 .confirmOrder>.payBtn {

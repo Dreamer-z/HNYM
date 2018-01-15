@@ -828,10 +828,15 @@
 }
 
 .bOp-l,
+.bOp-c,
 .bOp-r {
     width: 50%;
     height: 100%;
     float: left;
+}
+
+.bOp-c {
+    border-left: .01rem solid #eee;
 }
 
 

@@ -13,6 +13,7 @@
 视频列表 video_list.html
 视频详情 viedeo_details.html
 确认订单 confirm_order.html
+密码播放 password_play.html
 医生注册 doctor_signUp.html
 提交审核 submit_audit.html
 审核结果 audit_result.html
