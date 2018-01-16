@@ -21,3 +21,6 @@
 关于我们 about_us.html
 权威专家 authority_experts.html
 专家介绍 specialist_introduce.html
+在线视频（医生端）vTap_doctor.html
+视频分类（医生端）video_list_doctor.html
+视频分类（患者端）video_list_patient.html
