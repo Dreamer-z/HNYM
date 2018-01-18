@@ -844,6 +844,21 @@
     text-align: right;
 }
 
+.doctorSignUp .writeColumn textarea {
+    width: 100%;
+    margin: 0;
+}
+
+.doctorSignUp .writeColumn.short {
+    margin: .3rem 0;
+}
+
+.doctorSignUp .writeColumn.short div {
+    width: 100%;
+    float: right;
+    padding-bottom: .2rem;
+}
+
 .doctorSignUp .writeColumn-photo span {
     line-height: .88rem;
 }

@@ -123,6 +123,7 @@ select::-ms-expand {
 }
 
 .elli {
+    display: block;
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
@@ -130,6 +131,7 @@ select::-ms-expand {
 }
 
 .elli2 {
+    display: block;
     width: 100%;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -138,6 +140,7 @@ select::-ms-expand {
 }
 
 .elli3 {
+    display: block;
     width: 100%;
     display: -webkit-box;
     -webkit-box-orient: vertical;

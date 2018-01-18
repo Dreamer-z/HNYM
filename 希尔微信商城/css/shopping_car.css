@@ -47,6 +47,10 @@
     margin-right: .2rem;
 }
 
+.sCarmsg {
+    width: 2.8rem;
+}
+
 .sCarname {
     font-size: .3rem;
 }
@@ -105,11 +109,11 @@
 }
 
 .compute-op input {
+    display: block;
     box-sizing: border-box;
-    width: 1rem;
+    width: .6rem;
     height: .5rem;
     margin-top: 1rem;
-    padding-left: .25rem;
     text-align: center;
 }
 

@@ -597,10 +597,14 @@
 }
 
 .writeColumn textarea {
-    height: 1.08rem;
     line-height: .54rem;
     margin-top: .2rem;
     margin-bottom: .2rem;
+    overflow: hidden;
+}
+
+.writeColumn textarea::-webkit-scrollbar {
+    display: none;
 }
 
 .writeColumn-submit {

@@ -33,7 +33,7 @@
     height: .45rem;
     color: transparent;
     cursor: pointer;
-    background-image: url("../starability-images/icons.png");
+    background-image: url("../img/starability-images/icons.png");
     background-repeat: no-repeat;
 }
 
@@ -41,7 +41,7 @@
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .starability-basic>label {
-        background-image: url("../starability-images/icons@2x.png");
+        background-image: url("../img/starability-images/icons@2x.png");
         background-size: .48rem auto;
     }
 }
@@ -81,7 +81,7 @@
     height: .45rem;
     color: transparent;
     cursor: pointer;
-    background-image: url("../starability-images/icons.png");
+    background-image: url("../img/starability-images/icons.png");
     background-repeat: no-repeat;
 }
 
@@ -89,7 +89,7 @@
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .starability-slot>label {
-        background-image: url("../starability-images/icons@2x.png");
+        background-image: url("../img/starability-images/icons@2x.png");
         background-size: .48rem auto;
     }
 }
@@ -149,7 +149,7 @@
     height: .45rem;
     color: transparent;
     cursor: pointer;
-    background-image: url("../starability-images/icons.png");
+    background-image: url("../img/starability-images/icons.png");
     background-repeat: no-repeat;
 }
 
@@ -157,7 +157,7 @@
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .starability-grow>label {
-        background-image: url("../starability-images/icons@2x.png");
+        background-image: url("../img/starability-images/icons@2x.png");
         background-size: .48rem auto;
     }
 }
@@ -168,7 +168,7 @@
     content: ' ';
     width: .45rem;
     height: .45rem;
-    background-image: url("../starability-images/icons.png");
+    background-image: url("../img/starability-images/icons.png");
     background-repeat: no-repeat;
     bottom: 0;
 }
@@ -177,7 +177,7 @@
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .starability-grow>label:before {
-        background-image: url("../starability-images/icons@2x.png");
+        background-image: url("../img/starability-images/icons@2x.png");
         background-size: .48rem auto;
     }
 }
@@ -238,7 +238,7 @@
     height: 0.45rem;
     color: transparent;
     cursor: pointer;
-    background-image: url(../starability-images/icons.png);
+    background-image: url(../img/starability-images/icons.png);
     background-repeat: no-repeat;
 }
 
@@ -246,7 +246,7 @@
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .starability-growRotate>label {
-        background-image: url("../starability-images/icons@2x.png");
+        background-image: url("../img/starability-images/icons@2x.png");
         background-size: 0.48rem auto;
         margin: 0 0.05rem;
     }
@@ -258,7 +258,7 @@
     content: ' ';
     width: 0.45rem;
     height: 0.45rem;
-    background-image: url("../starability-images/icons.png");
+    background-image: url("../img/starability-images/icons.png");
     background-repeat: no-repeat;
     bottom: 0;
 }
@@ -267,7 +267,7 @@
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .starability-growRotate>label:before {
-        background-image: url("../starability-images/icons@2x.png");
+        background-image: url("../img/starability-images/icons@2x.png");
         background-size: .48rem auto;
     }
 }
@@ -327,7 +327,7 @@
     height: 0.45rem;
     color: transparent;
     cursor: pointer;
-    background-image: url("../starability-images/icons.png");
+    background-image: url("../img/starability-images/icons.png");
     background-repeat: no-repeat;
 }
 
@@ -335,7 +335,7 @@
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .starability-fade>label {
-        background-image: url("../starability-images/icons@2x.png");
+        background-image: url("../img/starability-images/icons@2x.png");
         background-size: .48rem auto;
     }
 }
@@ -346,7 +346,7 @@
     content: ' ';
     width: 0.45rem;
     height: 0.45rem;
-    background-image: url("../starability-images/icons.png");
+    background-image: url("../img/starability-images/icons.png");
     background-repeat: no-repeat;
     background-position: 0 -.48rem;
     bottom: .3rem;
@@ -356,7 +356,7 @@
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .starability-fade>label:before {
-        background-image: url("../starability-images/icons@2x.png");
+        background-image: url("../img/starability-images/icons@2x.png");
         background-size: .45rem auto;
     }
 }
@@ -421,7 +421,7 @@
     height: 0.45rem;
     color: transparent;
     cursor: pointer;
-    background-image: url("../starability-images/icons-checkmark.png");
+    background-image: url("../img/starability-images/icons-checkmark.png");
     background-repeat: no-repeat;
 }
 
@@ -429,7 +429,7 @@
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .starability-checkmark>label {
-        background-image: url("../starability-images/icons-checkmark@2x.png");
+        background-image: url("../img/starability-images/icons-checkmark@2x.png");
         background-size: .48rem auto;
     }
 }
@@ -445,7 +445,7 @@
     content: ' ';
     width: 0.45rem;
     height: 0.45rem;
-    background-image: url("../starability-images/icons-checkmark.png");
+    background-image: url("../img/starability-images/icons-checkmark.png");
     background-repeat: no-repeat;
     background-position: 0 -.6rem;
     right: -.3rem;
@@ -455,7 +455,7 @@
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .starability-checkmark>label:before {
-        background-image: url("../starability-images/icons-checkmark@2x.png");
+        background-image: url("../img/starability-images/icons-checkmark@2x.png");
         background-size: .48rem auto;
     }
 }

@@ -1208,6 +1208,92 @@ body {
 }
 
 
+/* 兑换券选项样式 */
+
+.iMall-zzc .ticket-box {
+    width: 7.5rem;
+    position: fixed;
+    left: calc(50% - 3.75rem);
+    bottom: 0;
+    z-index: 100;
+    background-color: #fff;
+    display: none;
+}
+
+.iMall-zzc .nbbox {
+    padding: .2rem;
+}
+
+.iMall-zzc .onbook-op .add,
+.iMall-zzc .onbook-op .sub {
+    width: .6rem;
+    height: .5rem;
+    margin-top: .24rem;
+    border-radius: .15rem;
+    overflow: hidden;
+}
+
+.iMall-zzc .onbook-op .sub {
+    background: url(./../img/as_sub.png)no-repeat center;
+    background-size: 100%;
+}
+
+.iMall-zzc .onbook-op input {
+    width: 1rem;
+    height: .5rem;
+    margin-top: .24rem;
+    text-align: center;
+}
+
+.iMall-zzc .onbook-op .add {
+    background: url(./../img/as_add.png)no-repeat center;
+    background-size: 100%;
+}
+
+.iMall-zzc .onbook-op .add-cl {
+    background: url(./../img/as_add_cl.png)no-repeat center;
+    background-size: 100%;
+}
+
+.iMall-zzc .onbook-op .sub-cl {
+    background: url(./../img/as_sub_cl.png)no-repeat center;
+    background-size: 100%;
+}
+
+.iMall-zzc .confirm {
+    line-height: .98rem;
+    font-size: .34rem;
+    color: #fff;
+    text-align: center;
+    background-color: #93d521;
+}
+
+.iMall-zzc .comNum {
+    padding: 0 .2rem 0 2.15rem;
+    position: relative;
+}
+
+.iMall-zzc .comNum .comimg {
+    width: 1.95rem;
+    height: 1.45rem;
+    border-radius: .1rem;
+    box-shadow: 0 0 .3rem rgba(0, 0, 0, .6);
+    position: absolute;
+    left: .2rem;
+    bottom: 0;
+}
+
+.iMall-zzc .comNum .price {
+    padding-left: .3rem;
+    color: red;
+}
+
+.iMall-zzc .comNum .name {
+    padding: .2rem .3rem;
+    font-size: .3rem;
+}
+
+
 /* 设计师注册 */
 
 .signUpBg {

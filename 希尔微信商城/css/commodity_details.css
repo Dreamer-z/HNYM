@@ -132,9 +132,10 @@
     width: 4.25rem;
 }
 
-.bOp-l a {
+
+/* .bOp-l a {
     width: 33.3333%;
-}
+} */
 
 .bOp-lli {
     width: 100%;
@@ -144,9 +145,8 @@
     padding-bottom: .1rem;
 }
 
-.bOp-lli a {
-    display: block;
-    width: 100%;
+.bOp-lli {
+    width: 50%;
     height: 100%;
 }
 
@@ -164,6 +164,11 @@
     background-size: 30%;
 }
 
+.collected {
+    background: url(./../img/collected.png)no-repeat 50% .1rem;
+    background-size: 30%;
+}
+
 .shoppingCar {
     background: url(./../img/shoppingCar.png)no-repeat 50% .1rem;
     background-size: 30%;
@@ -177,4 +182,80 @@
     color: #fff;
     background-color: #93d521;
     font-size: .34rem;
+}
+
+
+/* 加入购物车选项样式 */
+
+.ticket-box {
+    width: 7.5rem;
+    position: fixed;
+    left: calc(50% - 3.75rem);
+    bottom: 0;
+    z-index: 100;
+    background-color: #fff;
+    display: none;
+}
+
+.nbbox {
+    padding: .2rem;
+}
+
+.onbook-op .add,
+.onbook-op .sub {
+    width: .6rem;
+    height: .5rem;
+    margin-top: .24rem;
+    border-radius: .15rem;
+    overflow: hidden;
+}
+
+.onbook-op .sub {
+    background: url(./../img/as_sub.png)no-repeat center;
+    background-size: 100%;
+}
+
+.onbook-op input {
+    width: 1rem;
+    height: .5rem;
+    margin-top: .24rem;
+    text-align: center;
+}
+
+.onbook-op .add {
+    background: url(./../img/as_add.png)no-repeat center;
+    background-size: 100%;
+}
+
+.confirm {
+    line-height: .98rem;
+    font-size: .34rem;
+    color: #fff;
+    text-align: center;
+    background-color: #93d521;
+}
+
+.comNum {
+    padding: 0 .2rem 0 2.15rem;
+    position: relative;
+}
+
+.comNum .comimg {
+    width: 1.95rem;
+    height: 1.45rem;
+    border-radius: .1rem;
+    box-shadow: 0 0 .3rem rgba(0, 0, 0, .6);
+    position: absolute;
+    left: .2rem;
+    bottom: 0;
+}
+
+.comNum .price {
+    padding-left: .3rem;
+    color: red;
+}
+
+.comNum .name {
+    padding: .2rem .3rem;
+    font-size: .3rem;
 }

@@ -36,18 +36,18 @@ function ticket() { // 优惠券
     $(".md-ticket").click(function(ev) {
         ev.stopPropagation();
         $(".ticket-zzc").css("display", "block");
-        $(".ticket-box").slideDown("slow");
+        $(".ticket-box").slideDown(200);
         $(document).click(function(ev) {
             if (ev.target == $(".ticket-box")[0] || ev.target == $(".coupon-list")[0] || ev.target == $(".coupon-li")[0] || ev.target == $(".coupon-sec")[0] || ev.target == $(".coupon-sec-limit")[0] || ev.target == $(".coupon-sec-limit span")[0] || ev.target == $(".coupon-sec-cont")[0] || ev.target == $(".coupon-sec-tit")[0] || ev.target == $(".coupon-sec-type")[0] || ev.target == $(".coupon-sec-type span")[0] || ev.target == $(".coupon-validity")[0] || ev.target == $(".coupon-validity span")[0] || ev.target == $(".ticket-tit")[0]) {
                 return;
             } else {
-                $(".ticket-zzc").slideUp("slow");
-                $(".ticket-box").slideUp("slow");
+                $(".ticket-zzc").slideUp(200);
+                $(".ticket-box").slideUp(200);
             }
         });
         $(".coupon-li2").click(function() {
-            $(".ticket-zzc").slideUp("slow");
-            $(".ticket-box").slideUp("slow");
+            $(".ticket-zzc").slideUp(200);
+            $(".ticket-box").slideUp(200);
             $(".cTicket").html($(this).children(".coupon-li-box").children(".coupon-sec").children(".coupon-limit").children("span").html() + "元优惠券")
         });
     });

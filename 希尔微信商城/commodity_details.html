@@ -23,17 +23,18 @@
         window['adaptive'].scaleType = 1;
         window['adaptive'].init();
     </script>
+
 </head>
 
 <body>
     <div class="comBanner swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide" style="background: url(./img/dongtai/banner_1.png)no-repeat center;
-    background-size: cover"></div>
+    background-size: 100% 100%"></div>
             <div class="swiper-slide" style="background: url(./img/dongtai/banner_1.png)no-repeat center;
-    background-size: cover"></div>
+    background-size: 100% 100%"></div>
             <div class="swiper-slide" style="background: url(./img/dongtai/banner_1.png)no-repeat center;
-    background-size: cover"></div>
+    background-size: 100% 100%"></div>
         </div>
         <div class="swiper-pagination"></div>
     </div>
@@ -94,18 +95,30 @@
     </div>
     <div class="bt-op">
         <div class="bOp-l clear">
-            <a href="" class="fl">
+            <!-- <a href="" class="fl">
                 <div class="bOp-lli merchant">联系商家</div>
-            </a>
-            <a href="" class="fl">
-                <div class="bOp-lli collect">收藏</div>
-            </a>
-            <a href="" class="fl">
-                <div class="bOp-lli shoppingCar">加入购物车</div>
-            </a>
+            </a> -->
+            <div class="bOp-lli collect fl">收藏</div>
+            <div class="bOp-lli shoppingCar fl">加入购物车</div>
         </div>
         <div class="bOp-r">
             <button type="submit">立即购买</button>
+        </div>
+    </div>
+    <!-- 加入购物车选项 -->
+    <div class="ticket-zzc fullscreen">
+        <div class="ticket-box">
+            <div class="comNum">
+                <div class="comimg" style="background:url(./img/dongtai/dt_img.png)no-repeat 0 .05rem;background-size: 100%;background-color:#fff;"></div>
+                <div class="name elli"></div>
+                <div class="price">&yen;<span></span></div>
+            </div>
+            <div class="nbbox clear">
+                <div class="onbook-op fr clear">
+                    <span class="sub fl" data="adult_sub"></span><input id="adult" class="onbook-adult fl" type="number" name="onbook-adult" value="1" disabled><span class="add fl" data="adult_add"></span>
+                </div>
+            </div>
+            <div class="confirm">确定</div>
         </div>
     </div>
 </body>
@@ -113,6 +126,63 @@
 <script src="./js/all.js"></script>
 <script>
     all.banner(".comBanner");
+    // 加入购物车选项
+    function nb() {
+        $(".comNum .price span").text($(".comPrice").children("span").html());
+        $(".comNum .name").text($(".com-tit").html());
+
+        function allnum(pnum) {
+            // $(".ocnum").html(pnum);
+            $(".comNum .price span").html(pnum * Number($(".comPrice").children("span").html()));
+            // $(".aggregate").html(pnum * Number($(".ocPrice").html()));
+        };
+        // 数量选择
+        var pnum;
+        var len;
+        var type = "";
+        var allpeo;
+        $(".add").click(function() {
+            $(this).addClass("add-cl");
+            $(this).siblings(".sub").removeClass("sub-cl");
+            pnum = $(this).siblings("input").val();
+            pnum++;
+            $(this).siblings("input").val(pnum);
+            allnum(pnum);
+        });
+        $(".sub").click(function() {
+            $(this).addClass("sub-cl");
+            $(this).siblings(".add").removeClass("add-cl");
+            if ($(this).siblings("input").val() == 0) {
+                return;
+            };
+            pnum = $(this).siblings("input").val();
+            pnum--;
+            $(this).siblings("input").val(pnum);
+            allnum(pnum);
+        });
+    };
+    nb();
+
+    function ticket() {
+        $(".shoppingCar").click(function(ev) {
+            ev.stopPropagation();
+            $(".ticket-zzc").css("display", "block");
+            $(".ticket-box").slideDown(200);
+            $(document).click(function(ev) {
+                if (ev.target == $(".ticket-box")[0] || ev.target == $(".onbook-op")[0] || ev.target == $(".onbook-op .sub")[0] || ev.target == $(".onbook-op .onbook-adult")[0] || ev.target == $(".onbook-op .add")[0] || ev.target == $(".donfirm")[0] || ev.target == $(".comNum")[0] || ev.target == $(".comNum .comimg")[0] || ev.target == $(".comNum .name")[0] || ev.target == $(".comNum .price")[0] || ev.target == $(".comNum .price span")[0] || ev.target == $(".nbbox")[0]) {
+                    return;
+                } else {
+                    $(".ticket-zzc").slideUp(200);
+                    $(".ticket-box").slideUp(200);
+                }
+            });
+            $(".confirm").click(function() {
+                $(".ticket-zzc").slideUp(200);
+                $(".ticket-box").slideUp(200);
+            });
+        });
+    };
+    ticket();
 </script>
 
 </html>

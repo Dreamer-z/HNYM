@@ -14,7 +14,7 @@
     width: 16.6666%;
 }
 
-.order-type-check {
+.order-type-check a {
     color: #93d521;
     font-size: .28rem;
 }
@@ -84,7 +84,7 @@
     border: .01rem solid #999;
     border-radius: .3rem;
     margin: .1rem;
-    display: none;
+
 }
 
 .pj {

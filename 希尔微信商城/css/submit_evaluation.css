@@ -13,7 +13,7 @@
     width: 1.5rem;
     height: 1.5rem;
     margin-right: .1rem;
-    background: url(./../img/dingdan/sp_img2.png)no-repeat center;
+    background: url(../img/dingdan/sp_img2.png)no-repeat center;
     background-size: cover;
     border-radius: .1rem;
     border: .01rem solid #eee;
@@ -173,7 +173,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    background: url(./../img/del_bg.png)no-repeat top right;
+    background: url(../img/del_bg.png)no-repeat top right;
     background-size: 100%;
     border-radius: 50%;
 }
@@ -183,7 +183,7 @@
 }
 
 .add-op {
-    background: url(./../img/sc.png)no-repeat center;
+    background: url(../img/sc.png)no-repeat center;
     background-size: 100%;
 }
 
@@ -257,6 +257,6 @@
 
 .tj-result span {
     padding-left: .7rem;
-    background: url(./../img/success.png)no-repeat .18rem .05rem;
+    background: url(../img/success.png)no-repeat .18rem .05rem;
     background-size: 18%;
 }

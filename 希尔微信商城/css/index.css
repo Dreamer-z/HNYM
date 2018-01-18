@@ -340,9 +340,9 @@
 .hpPrice {
     color: #fff;
     background-color: #fa5656;
-    padding: 0 .3rem 0 .1rem;
+    padding: 0 .2rem 0 .1rem;
     border-radius: .05rem .22rem .22rem .05rem;
-    margin-right: .2rem;
+    margin-right: .1rem;
 }
 
 .hpPrice span {
@@ -351,7 +351,7 @@
 
 .hpOriginalprice {
     text-decoration: line-through;
-    margin-right: .4rem;
+    margin-right: .1rem;
 }
 
 .addSc {

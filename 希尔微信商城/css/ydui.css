@@ -160,7 +160,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 36%;
+    height: 50%;
     z-index: 1000;
     background-color: #fff;
     -webkit-transform: translate(0, 100%);
@@ -292,7 +292,7 @@
 
 .cityselect-content>.cityselect-item {
     display: block;
-    height: inherit;
+    height: 70%;
     width: 50%;
     /* for old android */
     -webkit-box-flex: 0;
@@ -374,4 +374,11 @@
     display: block;
     content: '\E600';
     font-family: 'YDUI-INLAY';
+}
+/*   */
+.cityselect-item-box{
+    box-sizing:border-box;
+}
+.cityselect-content .cityselect-item .cityselect-item-box a{
+    display:block;
 }

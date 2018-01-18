@@ -57,7 +57,7 @@ a {
 .msg-inp #J_Address {
     width: 4rem;
     padding-right: .5rem;
-    background: url(./../img/more_l.png)no-repeat 4.15rem .28rem;
+    background: url(./../img/more_l.png)no-repeat 4.15rem .06rem;
     background-size: 4%;
 }
 
@@ -91,7 +91,6 @@ a {
 /* 信息展示栏 */
 
 .msg-dis {
-    box-sizing: border-box;
     padding: 0 .2rem;
     height: .8rem;
     line-height: .8rem;
@@ -105,7 +104,6 @@ a {
 .btn1 {
     width: 7.5rem;
     height: .98rem;
-    line-height: .98rem;
     background-color: #93d521;
     color: #fff;
     font-size: .34rem;
