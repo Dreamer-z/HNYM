@@ -9,6 +9,45 @@
 }
 
 
+/* 栏目列表可放左右图标 */
+
+.column {
+    height: .88rem;
+    line-height: .88rem;
+    padding: 0 .2rem;
+    overflow: hidden;
+    background-color: #fff;
+    border-bottom: .02rem solid #eee;
+}
+
+.column a {
+    display: block;
+    height: 100%;
+}
+
+.column .icon-left {
+    float: left;
+    width: .36rem;
+    height: .36rem;
+    margin: .25rem 0;
+    margin-right: .2rem;
+}
+
+.column .cont {
+    float: left;
+}
+
+.column .icon-right {
+    float: right;
+    width: .3rem;
+    height: .5rem;
+    margin: .17rem 0;
+}
+
+
+/* 二级 */
+
+
 /* 列表标题 左图标 */
 
 .listTitle.title {
@@ -632,8 +671,10 @@
     line-height: .98rem;
     width: 7.1rem;
     border-radius: .1rem;
-    background-image: linear-gradient(left, #df242b, #ec492d, #f96d30);
-    background-image: -webkit-linear-gradient(left, #df242b, #ec492d, #f96d30);
+    /* background-image: linear-gradient(left, #df242b, #ec492d, #f96d30);
+    background-image: -webkit-linear-gradient(left, #df242b, #ec492d, #f96d30); */
+    background-image: linear-gradient(left, #ae1f9e, #ea2b8d);
+    background-image: -webkit-linear-gradient(left, #ae1f9e, #ea2b8d);
     color: #fff;
     margin: 0 auto;
     font-size: .34rem;
@@ -796,12 +837,26 @@
     height: 100%;
 }
 
+.menuCenter .li a .icon .number {
+    position: absolute;
+    right: .05rem;
+    top: .05rem;
+    width: .3rem;
+    height: .3rem;
+    line-height: .3rem;
+    font-size: .2rem;
+    background-color: #ff2150;
+    color: #fff;
+    border-radius: 50%;
+}
+
 .menuCenter .li .icon {
     width: .8rem;
     height: .8rem;
     border-radius: 50%;
     margin: 0 auto;
     margin-bottom: .1rem;
+    position: relative;
 }
 
 .menuCenter .li .title {

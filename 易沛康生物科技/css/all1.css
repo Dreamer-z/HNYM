@@ -1,0 +1,95 @@
+body {
+    background-color: #eee;
+}
+
+
+/* 个人中心 */
+
+.personCenter .column .icon-right {
+    background: url(./../img/more_l.png)no-repeat center;
+    background-size: 50%;
+}
+
+.personCenter .column:nth-of-type(3) .icon-left {
+    background: url(./../img/personcenter_1.png)no-repeat center;
+    background-size: 100%;
+}
+
+.personCenter .column:nth-of-type(4) .icon-left {
+    background: url(./../img/personcenter_2.png)no-repeat center;
+    background-size: 85%;
+}
+
+.personCenter .column:nth-of-type(5) .icon-left {
+    background: url(./../img/personcenter_3.png)no-repeat center;
+    background-size: 100%;
+}
+
+.personCenter .column:nth-of-type(6) .icon-left {
+    background: url(./../img/personcenter_4.png)no-repeat center;
+    background-size: 85%;
+}
+
+.personCenter .column:nth-of-type(7) .icon-left {
+    background: url(./../img/personcenter_5.png)no-repeat center;
+    background-size: 100%;
+}
+
+.personCenter .menuCenter {
+    margin-bottom: .4rem;
+}
+
+.personCenter .menuCenter a {
+    color: #999;
+    font-size: .24rem;
+}
+
+.personCenter .menuCenter .li:nth-of-type(1) .icon {
+    background: url(./../img/personcenter_6.png)no-repeat center;
+    background-size: 60%;
+}
+
+.personCenter .menuCenter .li:nth-of-type(2) .icon {
+    background: url(./../img/personcenter_7.png)no-repeat center;
+    background-size: 60%;
+}
+
+.personCenter .menuCenter .li:nth-of-type(3) .icon {
+    background: url(./../img/personcenter_8.png)no-repeat center;
+    background-size: 65%;
+}
+
+.personCenter .menuCenter .li:nth-of-type(4) .icon {
+    background: url(./../img/personcenter_9.png)no-repeat center;
+    background-size: 55%;
+}
+
+.personCenter .logout {
+    display: block;
+    height: .88rem;
+    line-height: .88rem;
+    color: #ea2b8d;
+    text-align: center;
+    margin-top: .4rem;
+    background-color: #fff;
+}
+
+
+/* 修改资料 */
+
+.modifiedData .writeColumn input,
+.modifiedData .writeColumn textarea {
+    float: right;
+    text-align: center;
+}
+
+
+/* 修改密码 */
+
+.modifiedPassord .pushInp {
+    width: 5.95rem;
+}
+
+.modifiedPassord .list {
+    padding-top: 1.8rem;
+}
