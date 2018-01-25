@@ -1986,8 +1986,42 @@ body {
     height: 2.1rem;
 }
 
+
+/* 2018.1.22 */
+
+.myWorkOption {
+    overflow: hidden;
+    padding: .1rem .2rem 0 .2rem;
+}
+
+.myWorkOption .read,
+.myWorkOption .like {
+    line-height: .4rem;
+    box-sizing: border-box;
+    height: .4rem;
+    width: 50%;
+    float: left;
+    font-size: .2rem;
+    padding-left: .4rem;
+    color: #999;
+}
+
+.myWorkOption .read {
+    background: url(./../img/read.png)no-repeat 0 center;
+    background-size: 19%;
+}
+
+.myWorkOption .like {
+    background: url(./../img/like.png)no-repeat 0 center;
+    background-size: 15%;
+}
+
+
+/* 2018.1.22 */
+
 .myWorksList .myWorksLi .myWorksName {
     padding: .1rem .2rem;
+    box-sizing: border-box;
 }
 
 .myWorksList .myWorksLi .myWorksStyle {

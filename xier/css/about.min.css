@@ -352,6 +352,7 @@
 
 .al-li {
     width: 360px;
+    height: 410px;
     margin: 20px;
     border: 1px solid #eee;
     box-sizing: border-box;
@@ -395,7 +396,10 @@
     font-size: 20px;
     line-height: 48px;
     padding: 0 20px;
-    margin-top: 20px
+    margin-top: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .al-li-cont {

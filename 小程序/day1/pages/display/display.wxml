@@ -1,0 +1,3 @@
+<view class="box">
+  <canvas canvas-id="test" bind:touchstart="touchs" bind:touchmove="touchm" bind:touchend="touche"/>
+</view>

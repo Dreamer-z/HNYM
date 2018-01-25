@@ -31,7 +31,7 @@
             <h2 class="totalNum">5000</h2>
         </div>
         <div class="integralGetTpye bg-fff">
-            <a href="">获取方式</a>
+            <a>获取方式</a>
         </div>
         <div class="title">积分明细</div>
         <div class="record-list">
@@ -58,6 +58,26 @@
             </div>
         </div>
     </div>
+    <div class="fullscreen">
+        <div class="popup">
+            <div class="tit">获取方式</div>
+            <div class="confirm">确认</div>
+            <div class="cancel">取消</div>
+            <div class="cont">充值现金可获取积分</div>
+        </div>
+    </div>
 </body>
+<script src="./js/all.js"></script>
+<script>
+    $(".integralGetTpye").click(function() {
+        $(".fullscreen").fadeIn(200);
+        $(".confirm").click(function() {
+            $(".fullscreen").fadeOut(200);
+        });
+        $(".cancel").click(function() {
+            $(".fullscreen").fadeOut(200);
+        });
+    });
+</script>
 
 </html>

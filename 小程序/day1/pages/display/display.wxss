@@ -1,0 +1,10 @@
+.box{
+  height: 1110rpx;
+  overflow: hidden;
+}
+.box canvas{
+  display: block;
+  width: 100%;
+  height: 1000rpx;
+  /* background-color: #eee; */
+}
