@@ -88,15 +88,6 @@ textarea::-webkit-scrollbar {
     display: none;
 }
 
-.input-checked {
-    background: url(./../img/success.png)no-repeat center;
-    background-size: 120%;
-}
-
-.input-no-checked {
-    background: transparent;
-}
-
 select::-ms-expand {
     display: none;
 }
@@ -166,3 +157,13 @@ select::-ms-expand {
 .bg-fff {
     background-color: #fff;
 }
+
+
+/* .input-checked {
+    background: url(./../img/success.png)no-repeat center;
+    background-size: 120%;
+}
+
+.input-no-checked {
+    background: transparent;
+} */

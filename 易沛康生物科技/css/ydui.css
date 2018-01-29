@@ -292,7 +292,7 @@
 
 .cityselect-content>.cityselect-item {
     display: block;
-    height: 70%;
+    height: 90%;
     width: 50%;
     /* for old android */
     -webkit-box-flex: 0;
@@ -375,10 +375,14 @@
     content: '\E600';
     font-family: 'YDUI-INLAY';
 }
+
+
 /*   */
-.cityselect-item-box{
-    box-sizing:border-box;
+
+.cityselect-item-box {
+    box-sizing: border-box;
 }
-.cityselect-content .cityselect-item .cityselect-item-box a{
-    display:block;
+
+.cityselect-content .cityselect-item .cityselect-item-box a {
+    display: block;
 }

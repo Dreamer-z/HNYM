@@ -5,32 +5,76 @@ body {
 
 /* 个人中心 */
 
+.personCenter .personMsg {
+    height: 3.44rem;
+    background: url(./../img/pc_bg.png)no-repeat center;
+    background-size: 100%;
+    position: relative;
+}
+
+.personCenter .personMsg .up {
+    height: 2.72rem;
+    text-align: center;
+    padding-top: .5rem;
+}
+
+.personCenter .personMsg .up .photo {
+    width: 1.36rem;
+    height: 1.36rem;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.personCenter .personMsg .up .name {
+    font-size: .32rem;
+    color: #fff;
+}
+
+.personCenter .personMsg .modData {
+    position: absolute;
+    right: .4rem;
+    top: .3rem;
+    width: .36rem;
+    height: .36rem;
+    background: url(./../img/write.png)no-repeat center;
+    background-size: 100%;
+}
+
+.personCenter .personMsg .down {
+    line-height: .72rem;
+    height: .72rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .4);
+    font-size: .24rem;
+    padding: 0 .2rem;
+}
+
 .personCenter .column .icon-right {
     background: url(./../img/more_l.png)no-repeat center;
     background-size: 50%;
 }
 
-.personCenter .column:nth-of-type(3) .icon-left {
+.personCenter .column:nth-of-type(4) .icon-left {
     background: url(./../img/personcenter_1.png)no-repeat center;
     background-size: 100%;
 }
 
-.personCenter .column:nth-of-type(4) .icon-left {
+.personCenter .column:nth-of-type(5) .icon-left {
     background: url(./../img/personcenter_2.png)no-repeat center;
     background-size: 85%;
 }
 
-.personCenter .column:nth-of-type(5) .icon-left {
+.personCenter .column:nth-of-type(6) .icon-left {
     background: url(./../img/personcenter_3.png)no-repeat center;
     background-size: 100%;
 }
 
-.personCenter .column:nth-of-type(6) .icon-left {
+.personCenter .column:nth-of-type(7) .icon-left {
     background: url(./../img/personcenter_4.png)no-repeat center;
     background-size: 85%;
 }
 
-.personCenter .column:nth-of-type(7) .icon-left {
+.personCenter .column:nth-of-type(8) .icon-left {
     background: url(./../img/personcenter_5.png)no-repeat center;
     background-size: 100%;
 }
@@ -72,13 +116,16 @@ body {
     text-align: center;
     margin-top: .4rem;
     background-color: #fff;
+    margin-bottom: 1.3rem;
 }
 
 
 /* 修改资料 */
 
 .modifiedData .writeColumn input,
-.modifiedData .writeColumn textarea {
+.modifiedData .writeColumn textarea,
+.checkMessage .writeColumn input,
+.checkMessage .writeColumn textarea {
     float: right;
     text-align: center;
 }
@@ -91,5 +138,703 @@ body {
 }
 
 .modifiedPassord .list {
+    width: 5.95rem;
+    margin: 0 auto;
     padding-top: 1.8rem;
 }
+
+.modifiedPassord .list .li {
+    height: 1.1rem;
+    line-height: 1.1rem;
+    border-bottom: .02rem solid #eee;
+    overflow: hidden;
+}
+
+.modifiedPassord .list .li span,
+.modifiedPassord .list .li input {
+    float: left;
+}
+
+.modifiedPassord .list .li span {
+    width: 1.6rem;
+}
+
+.modifiedPassord .list .li input {
+    width: 4.35rem;
+    height: 100%;
+}
+
+.modifiedPassord .list .pwInp .pwinp2,
+.modifiedPassord .list .npwInp .npwinp2 {
+    display: none;
+}
+
+.modifiedPassord .list .option {
+    overflow: hidden;
+    font-size: .2rem;
+    height: .46rem;
+    line-height: .26rem;
+    padding-top: .2rem;
+}
+
+.modifiedPassord .list .option label:nth-of-type(1) {
+    float: left;
+    width: .26rem;
+    height: .26rem;
+}
+
+.modifiedPassord .list .option label:nth-of-type(2) {
+    float: left;
+}
+
+.modifiedPassord .list .option label:after,
+.modifiedPassord .list .option input {
+    width: .26rem;
+    height: .26rem;
+}
+
+
+/* 收货地址 */
+
+.receive_address .list {
+    margin-bottom: 1.1rem;
+}
+
+.receive_address .li {
+    padding: 0 .2rem;
+    background-color: #fff;
+    margin-bottom: .3rem;
+}
+
+.receive_address .li .name_tel {
+    padding: .2rem 0;
+}
+
+.receive_address .li .addr {
+    padding-bottom: .2rem;
+}
+
+.receive_address .li .option {
+    height: .81rem;
+    line-height: .4rem;
+    padding: .2rem 0;
+    border-top: .01rem solid #eee;
+}
+
+.receive_address .li .option label {
+    color: #ea2b8d;
+}
+
+.receive_address .li .option .optionsecend .edit,
+.receive_address .li .option .optionsecend .del {
+    padding-left: .4rem;
+    margin-left: .4rem;
+    color: #5d5c5d;
+}
+
+.receive_address .li .option .optionsecend .edit {
+    background: url(./../img/edit.png)no-repeat 0 center;
+    background-size: 35%;
+}
+
+.receive_address .li .option .optionsecend .del {
+    background: url(./../img/del_1.png)no-repeat 0 center;
+    background-size: 28%;
+}
+
+.receive_address .newAddr {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    margin-left: -3.75rem;
+    z-index: 9;
+    line-height: .98rem;
+}
+
+
+/* 新建地址 */
+
+.newAddress .writeColumn input,
+.newAddress .writeColumn textarea {
+    float: right;
+}
+
+.newAddress .writeColumn.addr input {
+    padding-right: .4rem;
+    text-align: right;
+    background: url(./../img/more_l.png)no-repeat 4.7rem center;
+    background-size: 3%;
+}
+
+.newAddress .writeColumn.default span {
+    width: 2rem;
+}
+
+.newAddress .writeColumn.default label {
+    float: right;
+}
+
+.newAddress .pushInp {
+    width: 6rem;
+}
+
+
+/* 我的邀请码 */
+
+.inviteCode .up {
+    height: 6.42rem;
+    padding-top: .8rem;
+}
+
+.inviteCode .up .inviteNumber {
+    width: 4.42rem;
+    height: 4.42rem;
+    padding: .8rem 0;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: .15rem solid #f4425f;
+    text-align: center;
+    color: #717171;
+}
+
+.inviteCode .up .inviteNumber .number span {
+    font-size: 1.2rem;
+    color: #f4425f;
+    margin-right: .1rem;
+}
+
+.inviteCode .up .remind {
+    text-align: center;
+    margin-top: .3rem;
+}
+
+.inviteCode .down {
+    height: 5.65rem;
+    padding-top: .75rem;
+    text-align: center;
+}
+
+.inviteCode .down .code {
+    padding: .4rem 0;
+    font-size: .48rem;
+    color: #f4425f;
+}
+
+.inviteCode .down .remind {
+    color: #3b3a3a;
+}
+
+.inviteCode .down .remind1 {
+    padding: 0 .3rem;
+    color: #727070;
+}
+
+.inviteCode .pushInp {
+    width: 7.1rem;
+    height: .88rem;
+    line-height: .88rem;
+    text-align: center;
+    font-size: .3rem;
+    margin: 0 auto;
+    border: .01rem solid #ea2b8d;
+    color: #ea2b8d;
+    border-radius: .1rem;
+    margin-top: .8rem;
+}
+
+
+/* 我的消息 */
+
+.myMessage {
+    padding-top: .3rem;
+}
+
+.myMessage .li {
+    overflow: hidden;
+    padding: .3rem .2rem;
+    margin-bottom: .2rem;
+    background-color: #fff;
+}
+
+.myMessage .li .title-time {
+    overflow: hidden;
+    padding-bottom: .3rem;
+    display: flex;
+}
+
+.myMessage .li .title-time .title {
+    float: left;
+    flex: 1;
+}
+
+.myMessage .li .title-time .time {
+    float: right;
+    flex: 1;
+    color: #6c6c6c;
+    text-align: right;
+}
+
+
+/* 等级管理 */
+
+.levelManagement .column:nth-of-type(1) .icon-left {
+    background: url(./../img/levelManagement_1.png)no-repeat center;
+    background-size: 100%;
+}
+
+.levelManagement .column:nth-of-type(2) .icon-left {
+    background: url(./../img/levelManagement_2.png)no-repeat center;
+    background-size: 100%;
+}
+
+.levelManagement .list {
+    margin-top: .3rem;
+}
+
+.levelManagement .list .li {
+    margin-bottom: .2rem;
+    padding: .3rem .2rem .3rem 1.64rem;
+    color: #9d9b9b;
+    position: relative;
+    background-color: #fff;
+}
+
+.levelManagement .list .li .icon {
+    float: left;
+    width: 1.22rem;
+    height: 1.22rem;
+    border-radius: 50%;
+    position: absolute;
+    left: .2rem;
+    top: 50%;
+    margin-top: -.61rem;
+}
+
+.levelManagement .list .li:nth-of-type(1) .icon {
+    background: url(./../img/level_1.png)no-repeat center;
+    background-size: 100%;
+}
+
+.levelManagement .list .li:nth-of-type(2) .icon {
+    background: url(./../img/level_2.png)no-repeat center;
+    background-size: 100%;
+}
+
+.levelManagement .list .li:nth-of-type(3) .icon {
+    background: url(./../img/level_3.png)no-repeat center;
+    background-size: 100%;
+}
+
+.levelManagement .list .li:nth-of-type(4) .icon {
+    background: url(./../img/level_4.png)no-repeat center;
+    background-size: 100%;
+}
+
+.levelManagement .list .li:nth-of-type(5) .icon {
+    background: url(./../img/level_5.png)no-repeat center;
+    background-size: 100%;
+}
+
+.levelManagement .list .li .content {
+    width: 5.66rem;
+}
+
+.levelManagement .list .li .content .title {
+    padding-bottom: .15rem;
+    font-size: .32rem;
+    color: #333;
+}
+
+.levelManagement .list .li .content .criteria {
+    margin-bottom: .1rem;
+    padding-left: .3rem;
+    position: relative;
+}
+
+.levelManagement .list .li .content .criteria::before {
+    content: "·";
+    color: #333;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* 代理列表 */
+
+.agentList .li {
+    padding: 0 .2rem;
+    margin-bottom: .2rem;
+    background-color: #fff;
+}
+
+.agentList .li .up {
+    padding: .4rem 0;
+    height: 1.6rem;
+    line-height: .8rem;
+    overflow: hidden;
+}
+
+.agentList .li .up .photo,
+.agentList .li .up .nameLevel {
+    float: left;
+}
+
+.agentList .li .up .allOrder {
+    float: right;
+    width: 1.4rem;
+    height: .58rem;
+    line-height: .58rem;
+    border-radius: .1rem;
+    text-align: center;
+    font-size: .24rem;
+    background-color: #ea2b8d;
+    margin: .11rem auto;
+}
+
+.agentList .li .up .allOrder a {
+    color: #fff;
+}
+
+.agentList .li .up .photo {
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    margin-right: .3rem;
+    overflow: hidden;
+    background: url(./../img/ls/photo.png)no-repeat center;
+    background-size: 100%;
+}
+
+.agentList .li .up .nameLevel {
+    width: 4.5rem;
+    font-size: .32rem;
+}
+
+.agentList .li .up .nameLevel .level {
+    font-size: .24rem;
+    color: #999;
+    margin-left: .1rem;
+}
+
+.agentList .li .down {
+    overflow: hidden;
+    height: .81rem;
+    line-height: .8rem;
+    border-top: .01rem solid #eee;
+    color: #454545;
+    display: flex;
+}
+
+.agentList .li .down .title {
+    float: left;
+    flex: 2;
+}
+
+.agentList .li .down .number {
+    float: right;
+    flex: 1;
+}
+
+.agentList .li .down .number span {
+    color: #ea2b8d;
+    font-size: .34rem;
+}
+
+
+/* 我的团队 */
+
+.myTeam .personMsg {
+    height: 3.8rem;
+    position: relative;
+    background-color: #fff;
+}
+
+.myTeam .personMsg .bg {
+    height: 2rem;
+    background: url(./../img/myteam_1.png)no-repeat center;
+    background-size: 100%;
+}
+
+.myTeam .personMsg .msg {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.myTeam .personMsg .msg .photo,
+.myTeam .personMsg .msg .name,
+.myTeam .personMsg .msg .level {
+    margin-bottom: .2rem;
+}
+
+.myTeam .personMsg .msg .photo {
+    width: 1.45rem;
+    height: 1.45rem;
+    border-radius: 50%;
+    border: .03rem solid #fff;
+    margin: 0 auto;
+}
+
+.myTeam .teamOrder {
+    margin: .3rem 0;
+    background-color: #fff;
+}
+
+.myTeam .teamOrder .head {
+    height: .8rem;
+    line-height: .8rem;
+    padding: 0 .2rem;
+    padding-right: .6rem;
+    overflow: hidden;
+    background: url(./../img/more_l.png)no-repeat 7.1rem center;
+    background-size: 2%;
+    border-bottom: .01rem solid #eee;
+}
+
+.myTeam .teamOrder .head .title {
+    float: left;
+}
+
+.myTeam .teamOrder .head .more {
+    float: right;
+}
+
+.myTeam .teamOrder .head .more a {
+    color: #999;
+}
+
+.myTeam .teamOrder .menuCenter .li:nth-of-type(1) .icon {
+    background: url(./../img/myteamorder_1.png)no-repeat center;
+    background-size: 65%;
+}
+
+.myTeam .teamOrder .menuCenter .li:nth-of-type(2) .icon {
+    background: url(./../img/myteamorder_2.png)no-repeat center;
+    background-size: 65%;
+}
+
+.myTeam .teamOrder .menuCenter .li:nth-of-type(3) .icon {
+    background: url(./../img/myteamorder_3.png)no-repeat center;
+    background-size: 70%;
+}
+
+.myTeam .teamOrder .menuCenter .li:nth-of-type(4) .icon {
+    background: url(./../img/myteamorder_4.png)no-repeat center;
+    background-size: 60%;
+}
+
+.myTeam .teamOrder .menuCenter .li a {
+    color: #999;
+}
+
+.myTeam .list {
+    margin-bottom: 1.3rem;
+}
+
+.myTeam .list .li {
+    padding: .2rem .8rem .2rem .4rem;
+    margin-bottom: .2rem;
+    background: url(./../img/more_l.png)no-repeat 7rem center;
+    background-size: 3%;
+    background-color: #fff;
+}
+
+.myTeam .list .li a {
+    overflow: hidden;
+    display: block;
+}
+
+.myTeam .list .li a .icon {
+    float: left;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: .4rem;
+}
+
+.myTeam .list .li:nth-of-type(1) a .icon {
+    background: url(./../img/level_2.png)no-repeat center;
+    background-size: 100%;
+}
+
+.myTeam .list .li:nth-of-type(2) a .icon {
+    background: url(./../img/level_3.png)no-repeat center;
+    background-size: 100%;
+}
+
+.myTeam .list .li:nth-of-type(3) a .icon {
+    background: url(./../img/level_4.png)no-repeat center;
+    background-size: 100%;
+}
+
+.myTeam .list .li:nth-of-type(4) a .icon {
+    background: url(./../img/level_5.png)no-repeat center;
+    background-size: 100%;
+}
+
+.myTeam .list .li a .content {
+    float: right;
+    width: 4.6rem;
+    padding: .2rem 0;
+    line-height: .36rem;
+}
+
+.myTeam .list .li a .content .number {
+    color: #999;
+}
+
+
+/* 团队订单 */
+
+.teamOrders .type {
+    display: flex;
+    background-color: #fff;
+}
+
+.teamOrders .type .li {
+    flex: 1;
+    height: .88rem;
+    line-height: .88rem;
+    text-align: center;
+}
+
+.teamOrders .type .li span {
+    display: inline-block;
+    height: .85rem;
+}
+
+.teamOrders .type .li.check span {
+    border-bottom: .03rem solid #f40a30;
+    color: #f40a30;
+}
+
+.orderList {
+    margin-top: .02rem;
+}
+
+.orderList .li {
+    background-color: #fff;
+    margin-bottom: .2rem;
+}
+
+.orderList .li .head {
+    overflow: hidden;
+    padding: 0 .7rem 0 .2rem;
+    height: .9rem;
+    line-height: .9rem;
+    border-bottom: .01rem solid #eee;
+    background: url(./../img/more_l.png)no-repeat 7.1rem center;
+    background-size: 2%;
+}
+
+.orderList .li .head .photo,
+.orderList .li .head .name {
+    float: left;
+}
+
+.orderList .li .head .photo {
+    width: .74rem;
+    height: .74rem;
+    border-radius: 50%;
+    margin: .08rem 0;
+    margin-right: .2rem;
+}
+
+.orderList .li .head .level {
+    float: right;
+}
+
+.orderList .li .orderMsg {
+    height: .76rem;
+    line-height: .76rem;
+    overflow: hidden;
+    padding: 0 .2rem;
+    display: flex;
+}
+
+.orderList .li .orderMsg .ordercode {
+    flex: 2;
+}
+
+.orderList .li .orderMsg .orderstatus {
+    flex: 1;
+    color: red;
+}
+
+.orderList .li .goodsMsg {
+    background-color: #eee;
+    padding: .1rem .2rem;
+    display: flex;
+}
+
+.orderList .li .goodsMsg .photo {
+    float: left;
+    width: 1.35rem;
+    height: 1.35rem;
+    border-radius: .1rem;
+    margin-right: .45rem;
+}
+
+.orderList .li .goodsMsg .msg {
+    float: left;
+    width: 3.6rem;
+    color: #999;
+    font-size: .24rem;
+}
+
+.orderList .li .goodsMsg .msg .name {
+    margin-bottom: .15rem;
+    color: #333;
+    font-size: .28rem;
+}
+
+.orderList .li .goodsMsg .priceNumber {
+    float: right;
+    text-align: right;
+    width: 1.6rem;
+    color: #999;
+    font-size: .24rem;
+}
+
+.orderList .li .goodsMsg .priceNumber .price {
+    margin-bottom: .15rem;
+    color: #333;
+    font-size: .28rem;
+}
+
+.orderList .li .total {
+    text-align: right;
+    padding: 0 .2rem;
+    height: .76rem;
+    line-height: .76rem;
+    overflow: hidden;
+}
+
+.orderList .li .total p {
+    float: right;
+}
+
+.orderList .li .total p:nth-of-type(1) span {
+    color: red;
+}
+
+.orderList .li .status {
+    text-align: right;
+    line-height: .8rem;
+    width: 7.5rem;
+    overflow: hidden;
+}
+
+.orderList .li .status span {
+    padding: .05rem .2rem;
+    color: red;
+    border: .01rem solid red;
+    border-radius: .3rem;
+    margin: 0 .1rem;
+    white-space: nowrap;
+}
+
+
+/* 订单详情 */

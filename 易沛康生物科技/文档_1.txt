@@ -1,3 +1,13 @@
 个人中心 person_center.html
 修改资料 modified_data.html
 修改密码 modified_password.html
+收货地址 receive_address.html
+新建地址 new_address.html
+我的邀请码 invite_code.html
+我的消息 my_message.html
+等级管理 level_management.html
+查看资料 check_message.
+代理列表 agent_list.html
+我的团队 my_team.html
+团队订单 team_orders.html
+订单详情 goods_details.html

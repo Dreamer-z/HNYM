@@ -26,36 +26,42 @@
 </head>
 
 <body>
-    <div class="modifiedData">
+    <div class="checkMessage">
         <div class="writeColumn writeColumn-photo">
             <span>头像</span>
-            <input id="photo" class="photo" type="file">
-            <label class="photo" for="photo"></label>
+            <input id="photo" class="photo" type="file" disabled>
+            <label class="photo" for="photo" style="background: url(./img/ls/photo.png)no-repeat center;background-size: cover;"></label>
         </div>
         <div class="writeColumn">
             <span>姓名：</span>
-            <input type="text" name="" value="Mr.Xu">
+            <input type="text" name="" value="Mr.Xu" disabled>
         </div>
         <div class="writeColumn">
-            <span>电话：</span>
-            <input type="number" name="" value="13786139413">
+            <span>等级：</span>
+            <input type="text" name="" value="特级代理" disabled>
+        </div>
+        <div class="writeColumn">
+            <span>手机：</span>
+            <input type="number" name="" value="13786139413" disabled>
         </div>
         <div class="writeColumn">
             <span>身份证：</span>
-            <input type="number" name="" value="440223199812174088">
+            <input type="number" name="" value="440223199812174088" disabled>
+        </div>
+        <div class="writeColumn" style="margin:.2rem 0;">
+            <span>注册时间：</span>
+            <input type="text" name="" value="2018年1月24日" disabled>
         </div>
         <div class="writeColumn">
             <span>地址：</span>
-            <input id="J_Address" type="text" name="" value="中国 湖南 长沙">
+            <input type="text" name="" value="中国 湖南 长沙" disabled>
         </div>
-        <a href="./modified_password.html"><button class="writeColumn-submit">确认修改</button></a>
     </div>
 </body>
 <script src="./js/ydui.citys.js"></script>
 <script src="./js/ydui.js"></script>
 <script src="./js/all.js"></script>
 <script>
-    all.putpicture("photo", "photo");
     //地区选择
     ! function() {
         var $target = $('#J_Address');

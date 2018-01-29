@@ -14,93 +14,93 @@ var all = {
         $(".fullscreen2").height($(window).height());
         $(".fullscreen2").css({ "background-color": "#fff", "box-sizing": "border-box" });
     },
-    // 全选功能
-    check_inp: function(allinpID, inputparent) {
-        function select(num) {
-            if (num == 1) {
-                $(inputparent).find("input:checkbox").removeClass("input-no-checked");
-                $(inputparent).find("input:checkbox").addClass("input-checked");
-                $(inputparent).find("input:checkbox").prop("checked", "checked");
-            } else {
-                $(inputparent).find("input:checkbox").removeClass("input-checked");
-                $(inputparent).find("input:checkbox").addClass("input-no-checked");
-                $(inputparent).find("input:checkbox").removeProp("checked");
-            }
-        };
-        document.getElementById(allinpID).addEventListener("change", function() {
-            if ($("#" + allinpID).prop("checked") == true) {
-                $(inputparent).find("input:checkbox").each(function(i) {
-                    $(inputparent).find("input:checkbox").eq(i).attr("state", "1");
-                    $(inputparent).find("input:checkbox").eq(i).addClass("input-checked");
-                    $(inputparent).find("input:checkbox").eq(i).prop("checked", "checked");
-                    select($(inputparent).find("input:checkbox").eq(i).attr("state"));
-                });
-            } else {
-                $(inputparent).find("input:checkbox").each(function(i) {
-                    $(inputparent).find("input:checkbox").eq(i).attr("state", "0");
-                    $(inputparent).find("input:checkbox").eq(i).removeClass("input-checked");
-                    $(inputparent).find("input:checkbox").eq(i).removeProp("checked");
-                    select($(inputparent).find("input:checkbox").eq(i).attr("state"));
-                });
-            }
-        });
-    },
-    // 复选按钮
-    check: function() {
-        var state, th;
-        $("input:checkbox").click(function() {
-            th = $(this);
-            if ($(this).attr("state") == 0 || !$(this).attr("state")) {
-                $(this).attr("state", "1");
-                state = $(this).attr("state")
-                select(th, state);
-            } else {
-                $(this).attr("state", "0");
-                state = $(this).attr("state")
-                select(th, state);
-            };
-        });
+    // // 全选功能
+    // check_inp: function(allinpID, inputparent) {
+    //     function select(num) {
+    //         if (num == 1) {
+    //             $(inputparent).find("input:checkbox").removeClass("input-no-checked");
+    //             $(inputparent).find("input:checkbox").addClass("input-checked");
+    //             $(inputparent).find("input:checkbox").prop("checked", "checked");
+    //         } else {
+    //             $(inputparent).find("input:checkbox").removeClass("input-checked");
+    //             $(inputparent).find("input:checkbox").addClass("input-no-checked");
+    //             $(inputparent).find("input:checkbox").removeProp("checked");
+    //         }
+    //     };
+    //     document.getElementById(allinpID).addEventListener("change", function() {
+    //         if ($("#" + allinpID).prop("checked") == true) {
+    //             $(inputparent).find("input:checkbox").each(function(i) {
+    //                 $(inputparent).find("input:checkbox").eq(i).attr("state", "1");
+    //                 $(inputparent).find("input:checkbox").eq(i).addClass("input-checked");
+    //                 $(inputparent).find("input:checkbox").eq(i).prop("checked", "checked");
+    //                 select($(inputparent).find("input:checkbox").eq(i).attr("state"));
+    //             });
+    //         } else {
+    //             $(inputparent).find("input:checkbox").each(function(i) {
+    //                 $(inputparent).find("input:checkbox").eq(i).attr("state", "0");
+    //                 $(inputparent).find("input:checkbox").eq(i).removeClass("input-checked");
+    //                 $(inputparent).find("input:checkbox").eq(i).removeProp("checked");
+    //                 select($(inputparent).find("input:checkbox").eq(i).attr("state"));
+    //             });
+    //         }
+    //     });
+    // },
+    // // 复选按钮
+    // check: function() {
+    //     var state, th;
+    //     $("input:checkbox").click(function() {
+    //         th = $(this);
+    //         if ($(this).attr("state") == 0 || !$(this).attr("state")) {
+    //             $(this).attr("state", "1");
+    //             state = $(this).attr("state")
+    //             select(th, state);
+    //         } else {
+    //             $(this).attr("state", "0");
+    //             state = $(this).attr("state")
+    //             select(th, state);
+    //         };
+    //     });
 
-        function select(dom, num) {
-            if (num == 1) {
-                $(dom).removeClass("input-no-checked");
-                $(dom).addClass("input-checked");
-                $(dom).prop("checked", "checked");
-            } else {
-                $(dom).removeClass("input-checked");
-                $(dom).addClass("input-no-checked");
-                $(dom).removeProp("checked");
-            }
-        };
-    },
-    // 单选按钮
-    inp: function() {
-        var state, th;
-        $("input:radio").click(function() {
-            th = $(this);
-            if ($(this).attr("state") == 0 || !$(this).attr("state")) {
-                $("input:radio").attr("state", "0");
-                $(this).attr("state", "1");
-                state = $(this).attr("state")
-                select(th, state);
-            };
-        });
+    //     function select(dom, num) {
+    //         if (num == 1) {
+    //             $(dom).removeClass("input-no-checked");
+    //             $(dom).addClass("input-checked");
+    //             $(dom).prop("checked", "checked");
+    //         } else {
+    //             $(dom).removeClass("input-checked");
+    //             $(dom).addClass("input-no-checked");
+    //             $(dom).removeProp("checked");
+    //         }
+    //     };
+    // },
+    // // 单选按钮
+    // inp: function() {
+    //     var state, th;
+    //     $("input:radio").click(function() {
+    //         th = $(this);
+    //         if ($(this).attr("state") == 0 || !$(this).attr("state")) {
+    //             $("input:radio").attr("state", "0");
+    //             $(this).attr("state", "1");
+    //             state = $(this).attr("state")
+    //             select(th, state);
+    //         };
+    //     });
 
-        function select(dom, num) {
-            if (num == 1) {
-                $("input:radio").removeClass("input-no-checked");
-                $("input:radio").removeClass("input-checked");
-                $(dom).removeClass("input-no-checked");
-                $(dom).addClass("input-checked");
-                $(dom).prop("checked", "checked");
-            } else {
-                $("input:radio").removeClass("input-checked");
-                $("input:radio").addClass("input-no-checked");
-                $(dom).addClass("input-no-checked");
-                $(dom).removeProp("checked", "checked");
-            }
-        };
-    },
+    //     function select(dom, num) {
+    //         if (num == 1) {
+    //             $("input:radio").removeClass("input-no-checked");
+    //             $("input:radio").removeClass("input-checked");
+    //             $(dom).removeClass("input-no-checked");
+    //             $(dom).addClass("input-checked");
+    //             $(dom).prop("checked", "checked");
+    //         } else {
+    //             $("input:radio").removeClass("input-checked");
+    //             $("input:radio").addClass("input-no-checked");
+    //             $(dom).addClass("input-no-checked");
+    //             $(dom).removeProp("checked", "checked");
+    //         }
+    //     };
+    // },
     // 横向banner
     banner: function(obj, time) {
         var mySwiper = new Swiper(obj, {
@@ -279,6 +279,6 @@ window.onload = function() {
     all.fullscreen();
     all.fullscreen1();
     all.fullscreen2();
-    all.check();
-    all.inp();
+    // all.check();
+    // all.inp();
 };

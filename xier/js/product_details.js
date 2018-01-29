@@ -34,33 +34,43 @@ var pr = {
         var fdj = document.getElementById("pro-fd");
         var wm = 2;
         var hm = 2;
+        var lock = false;
         img.onmouseover = function() {
             fd.style.display = "block";
             fdj.style.display = "block";
+            setTimeout(() => {
+                lock = true;
+            }, 1);
         };
         img.onmouseout = function() {
             fd.style.display = "";
             fdj.style.display = "";
+            lock = false;
         };
         fd.onmousemove = function() {
-            var eve = event || arguments[0];
-            var x = eve.clientX - img.offsetLeft - (fd.offsetWidth / 2);
-            var y = eve.pageY - img.offsetTop - (fd.offsetHeight / 2);
-            if (x <= 0) {
-                fd.style.left = 0 + "px";
-            } else if (x >= img.offsetWidth - fd.offsetWidth) {
-                fd.style.left = img.offsetWidth - fd.offsetWidth + "px";
+            if (lock == true) {
+                var eve = document.all ? window.event : arguments[0] ? arguments[0] : event;
+                var x = eve.clientX - img.offsetLeft - (fd.offsetWidth / 2);
+                var y = eve.pageY ? eve.pageY - img.offsetTop - (fd.offsetHeight / 2) : eve.clientY - img.offsetTop - (fd.offsetHeight / 2);
+                // var y = eve.pageY - img.offsetTop - (fd.offsetHeight / 2);
+                if (x <= 0) {
+                    fd.style.left = 0 + "px";
+                } else if (x >= img.offsetWidth - fd.offsetWidth) {
+                    fd.style.left = img.offsetWidth - fd.offsetWidth + "px";
+                } else {
+                    fd.style.left = x + "px";
+                }
+                if (y <= 0) {
+                    fd.style.top = 0 + "px";
+                } else if (y >= img.offsetHeight - fd.offsetHeight) {
+                    fd.style.top = img.offsetHeight - fd.offsetHeight + "px";
+                } else {
+                    fd.style.top = y + "px";
+                }
+                fdj.style.backgroundPosition = wm * (-fd.offsetLeft) + "px" + " " + hm * (-fd.offsetTop) + "px";
             } else {
-                fd.style.left = x + "px";
+                return;
             }
-            if (y <= 0) {
-                fd.style.top = 0 + "px";
-            } else if (y >= img.offsetHeight - fd.offsetHeight) {
-                fd.style.top = img.offsetHeight - fd.offsetHeight + "px";
-            } else {
-                fd.style.top = y + "px";
-            }
-            fdj.style.backgroundPosition = wm * (-fd.offsetLeft) + "px" + " " + hm * (-fd.offsetTop) + "px";
         };
     },
     cli_fd: function() {
@@ -104,7 +114,7 @@ var pr = {
 $(function() {
     pr.cs();
     pr.num();
-    pr.fdj();
+    // pr.fdj();
     pr.cli_fd();
     pr.sc();
     pr.pl();
