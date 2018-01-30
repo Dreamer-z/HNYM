@@ -262,7 +262,7 @@ body {
 .newAddress .writeColumn.addr input {
     padding-right: .4rem;
     text-align: right;
-    background: url(./../img/more_l.png)no-repeat 4.7rem center;
+    background: url(./../img/more_l.png)no-repeat 5.1rem center;
     background-size: 3%;
 }
 
@@ -710,6 +710,10 @@ body {
     color: #f40a30;
 }
 
+.teamOrders .orderList {
+    margin-bottom: 1.3rem;
+}
+
 .orderList {
     margin-top: .02rem;
 }
@@ -761,6 +765,7 @@ body {
 .orderList .li .orderMsg .orderstatus {
     flex: 1;
     color: red;
+    text-align: right;
 }
 
 .orderList .li .goodsMsg {
@@ -867,4 +872,94 @@ body {
 
 .goodsDetails .addr .nameTel .up {
     padding-bottom: .2rem;
+}
+
+.goodsDetails .goods {
+    margin: .2rem 0;
+    padding: .3rem .2rem;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.goodsDetails .goods .photo {
+    float: left;
+    width: 1.55rem;
+    height: 1.55rem;
+    border-radius: .1rem;
+    margin-right: .2rem;
+}
+
+.goodsDetails .goods .msg {
+    float: right;
+    width: 5.3rem;
+}
+
+.goodsDetails .goods .msg .size {
+    font-size: .22rem;
+    color: #999;
+    padding: .1rem 0;
+}
+
+.goodsDetails .ordermsg {
+    padding: .3rem .2rem;
+    border-bottom: .01rem solid #eee;
+    background-color: #fff;
+}
+
+.goodsDetails .ordermsg .ordercode,
+.goodsDetails .ordermsg .time {
+    padding: .1rem 0;
+}
+
+.goodsDetails .payway {
+    margin-bottom: .2rem;
+    padding: 0 .2rem;
+    height: .8rem;
+    line-height: .8rem;
+    background-color: #fff;
+}
+
+.goodsDetails .totalPrice .sallprice,
+.goodsDetails .totalPrice .actual {
+    background-color: #fff;
+    line-height: .8rem;
+    padding: 0 .2rem;
+}
+
+.goodsDetails .totalPrice .sallprice {
+    margin-bottom: .01rem;
+    font-size: .24rem;
+    color: #444343;
+}
+
+.goodsDetails .totalPrice .actual {
+    text-align: right;
+    margin-bottom: .6rem;
+}
+
+.goodsDetails .totalPrice .actual span {
+    color: red;
+}
+
+.goodsDetails .option {
+    text-align: right;
+    padding: 0 .2rem;
+    line-height: .98rem;
+}
+
+.goodsDetails .option a {
+    margin: 0 .1rem;
+    padding: .1rem .2rem;
+    border-radius: .35rem;
+    font-size: .24rem;
+}
+
+.goodsDetails .option .logistics {
+    color: #4e4d4d;
+    border: .01rem solid #6c6c6c;
+}
+
+.goodsDetails .option .comfirm {
+    color: #f40a30;
+    border: .01rem solid #f40a30;
 }

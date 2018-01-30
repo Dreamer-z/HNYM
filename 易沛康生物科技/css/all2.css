@@ -1,0 +1,541 @@
+body{
+    background-color: #eee;
+}
+.loginhtml .conplogo{
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-left: 3.1rem;
+}
+.loginhtml .conplogo>img{
+    width: 100%;
+    height: 100%;
+}
+.loginhtml .conpname{
+    color: #3d3c3c;
+    font-size: 0.36rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.2rem;
+    margin-bottom: 1.1rem;
+}
+.login-box {
+    height: 1.1rem;
+    width: 6.6rem;
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+}
+.login-box span {
+    width: 1.1rem;
+    height: 1.1rem;
+    line-height: 1.2rem;
+    text-align: center;
+    display: block;
+    color: #999;
+}
+.login-box span i{
+    font-size: 0.54rem;
+    color: #666;
+}
+.login-boxinput {
+    width: 5.5rem;
+    height: 1.1rem;
+    line-height: 1.1rem;
+    background: none;
+    padding: 0 0.2rem;
+    font-size: 0.3rem;
+}
+.yz-boxinput{
+    width: 3.5rem;
+}
+.loginhtml .pushInp{
+    width: 6.6rem;
+    margin: 0.8rem auto 0.4rem auto; 
+}
+.register-boxyzm {
+    width: 2rem;
+    height: 1.1rem;
+    line-height: 1.1rem;
+    background: none;
+    color: #dd137b;
+    font-size: 0.28rem;
+    float: right;
+}
+.register-agreement {
+    width: 6.6rem;
+    margin: auto;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    margin-top: 0.4rem;
+}
+.checkbox {
+    position: relative;
+    width: 0.4rem;
+    height:0.4rem;
+    margin: 0.02rem 0.2rem 0 0;
+    float:left;
+    line-height: 0.4rem;
+}
+.checkbox input[type ="checkbox"]:checked +label {
+    background: #dd137b;
+    border: none;
+    border-radius: 50%;
+}
+.checkbox label {
+    width: 0.4rem;
+    height: 0.4rem;
+    text-align: center;
+    display: block;
+    border: 1px solid #ccc;
+    position: absolute;
+    border-radius: 50%;
+}
+.checkbox input:checked + label:after {
+    content:"";
+    background: url(./../img/gou.png) no-repeat center;
+    background-size: 0.3rem 0.3rem;
+    font-size: 0.24rem;
+    color: #fff !important;
+    position: absolute;
+    width: 0.4rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    left: 0;
+}
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+}
+.register-agreement p span {
+    color: #dd137b;
+}
+.reghtml .pushInp{
+    width: 6.6rem;
+    margin: 0.8rem auto 0.4rem auto; 
+}
+.verhtml div{
+    font-size: 0.24rem;
+    text-align: center;
+    margin-bottom: 0.2rem;
+}
+.verhtml .verinp{
+    display: block;
+    text-align: center;
+    width: 6.6rem;
+    height: 1.1rem;
+    font-size: 0.3rem;
+    margin: 0 auto;
+    line-height: 1.1rem;
+    border-bottom: 0.01rem solid #ccc;
+    border-radius: 0;
+}
+.resethtml .login-box span{
+    width: 1.6rem;
+    text-align: left;
+    padding-left: 0.1rem;
+    color: #333;
+    position: relative;
+    bottom: 0.06rem;
+}
+.resethtml .login-box .login-boxinput{
+    width: 5rem;
+}
+.productlisthtml .searchdiv{
+    height: 1rem;
+    line-height: 1rem;
+    padding: 0.15rem 0.25rem;
+}
+.productlisthtml .searchdiv input{
+    width: 6.1rem;
+    height: 0.7rem;
+    background: url(.././img/search.png)no-repeat left center;
+    background-size: 0.4rem 0.4rem;
+    background-position-x: 0.2rem;
+    background-color: #fff;
+    padding-left: 0.8rem;
+    border-radius: 0.1rem;
+    font-size: 0.28rem;
+}
+.productlisthtml .searchdiv span{
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-left: 0.2rem;
+}
+.productlisthtml .searchdiv span i{
+    width:100%;
+    height: 100%;
+    position: relative;
+    bottom: 0.1rem;
+    font-size: 0.6rem;
+    color:#666;
+}
+
+.productlisthtml .producttab{
+    height: 0.84rem;
+    line-height: 0.84rem;
+    background-color: #fff;
+    border-bottom: 0.02rem solid #eee;
+}
+.productlisthtml .producttab .current{
+    color: #f40a30;
+}
+.productlisthtml .productlist{
+    padding-bottom: 1.4rem;
+}
+.productlisthtml .productlist li{
+    float: left;
+    height: 2.6rem;
+    width: 100%;
+    background-color: #fff;
+}
+.productlisthtml .productlist.style2{
+    padding-left: 0.1rem;
+}
+.productlisthtml .productlist.style2 li{
+    width: 3.6rem;
+    height: 6.0rem;
+    margin-right: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+.productlisthtml .productlist li .productimg{
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-left: 0.1rem;
+    margin-top: 0.1rem;
+    background: url(.././img/productimg.png)no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.productlisthtml .productlist.style2 li .productimg{
+    width: 3.6rem;
+    height: 3.6rem;
+    margin: 0;
+}
+.productlisthtml .productlist li .productintro{
+    width: 4.8rem;
+    height: 2.6rem;
+    border-bottom: 0.02rem solid #ccc;
+    padding: 0.2rem;
+    padding-left: 0;
+}
+.productlisthtml .productlist.style2 li .productintro{
+    width: 100%;
+    padding: 0.1rem;
+    height: 2.4rem;
+    border-bottom: 0;
+}
+.productlisthtml .productlist li .productintro .introplace{
+    font-size: 0.22rem;
+    color: #999;
+    margin: 0.25rem 0;
+}
+.productlisthtml .productlist li .productintro .introdetail{
+    color: #f40a30;
+    font-size: 0.24rem;
+}
+.productlisthtml .productlist li .productintro .introdetail .buy{
+    width: 0.9rem;
+    height: 0.42rem;
+    line-height:0.42rem;
+    text-align: center;
+    background-color: #f40a30;
+    color: #fff;
+    border-radius: 0.05rem;
+}
+.indexhtml{
+    padding-bottom: 1.2rem;
+}
+.indexhtml .searchdiv{
+    background-color: #fff;
+}
+.indexhtml .searchdiv input{
+    background-color: #eee;
+    width: 7rem;
+}
+.indexhtml .bannerdiv{
+    height:3.5rem;
+    margin-bottom: 0.2rem;
+}
+.indexhtml .bannerdiv img{
+    width:100%;
+    height: 100%;
+}
+.indexhtml .indexproductlist{
+    text-align: center;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.24rem;
+    position: relative;
+    background: url(.././img/index-bg.png)no-repeat;
+    background-position: center center;
+    background-size: 3.6rem 0.1rem;
+    /* background-color: #fff; */
+}
+.indexhtml .indexlist li{
+    background-color: #fff;
+    margin-bottom: 0.2rem;
+}
+.indexhtml .indexlist .listbanner{
+    height: 3.5rem;
+}
+.indexhtml .indexlist .listbanner img{
+    width: 100%;
+    height: 100%;
+}
+.indexhtml .indexlist .listinfo{
+    height: 1.2rem;
+    background-color: #fff;
+    padding: 0.2rem;
+}
+.indexhtml .indexlist .listinfo .left{
+    width: 3.5rem;
+}
+.indexhtml .indexlist .listinfo .right{
+    width: 3.3rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.24rem;
+    color: #f40a30;
+}
+.indexhtml .indexlist .listinfo .left div:last-child{
+    font-size: 0.24rem;
+    color: #999;
+}
+.indexhtml .indexlist .listinfo .right span .price{
+    font-size: 0.28rem;
+    margin:0 0.1rem;
+}
+.indexhtml .indexlist .listinfo .right a{
+    display: inline-block;
+    width: 1.4rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    background-color: #f40a30;
+    text-align: center;
+    color: #fff;
+    margin: 0.1rem 0 0 0.3rem;
+}
+.productdetailhtml{
+    padding-bottom: 1.2rem;
+}
+.productdetailhtml .detailbanner{
+    height: 5.66rem;
+}
+.productdetailhtml .detailbanner img{
+    width: 100%;
+    height: 100%;
+}
+.productdetailhtml .detailbanner .swiper-pagination-bullet{
+    background-color: #f40a30;
+}
+.productdetailhtml .detailinfo{
+    min-height: 3.04rem;
+    background-color: #fff;
+    padding: 0.25rem;
+}
+.productdetailhtml .detailinfo .pricediv{
+    color: #f40a30;
+    height: 0.7rem;
+    line-height: 0.7rem;
+}
+.productdetailhtml .detailinfo .pricediv .price{
+    font-size: 0.36rem;
+}
+.productdetailhtml .detailinfo .salesdiv{
+    color: 666;
+    font-size: 0.22rem; 
+    height: 0.7rem;
+    line-height: 0.7rem;
+    /* border-bottom: 0.02rem solid #eee; */
+}
+.productdetailhtml .prodetail{
+    text-align: center;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.24rem;
+    position: relative;
+    background: url(.././img/index-bg.png)no-repeat;
+    background-position: center center;
+    background-size: 3.6rem 0.1rem;
+}
+.productdetailhtml .detailimg img{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.detailtab{
+    text-align: center;
+    line-height: 0.98rem;
+    font-size: 0.32rem;
+    background-color: #f40a30;
+}
+.detailtab a{
+    color: #fff;
+}
+.detailtab .share{
+    background: url(.././img/share.png)no-repeat center center;
+    background-size: 0.34rem 0.34rem;
+    background-position-y: 0.2rem;
+    background-color: #fff;
+    font-size: 0.22rem;
+    color: #999;
+    line-height: 1.4rem;
+}
+.submitorderhtml .orderinfo{
+    height: 2.16rem;
+    margin-bottom: 0.2rem;
+    background: url(.././img/order-bg.png)no-repeat center bottom;
+    background-size: 100%;
+    background-color: #fff;
+}
+.submitorderhtml .orderinfo .memberinfo{
+    height: 0.9rem;
+    line-height: 0.9rem;
+    padding: 0 1rem;
+}
+.submitorderhtml .orderinfo .placeinfo{
+    height: 0.8rem;
+    padding: 0 1rem;
+    background: url(.././img/place.png)no-repeat left center,url(.././img/more_l.png)no-repeat right center;
+    background-size: 0.5rem,0.2rem;
+    background-position-y: 0.1rem,0.2rem;
+    background-position-x: 0.3rem,7rem;
+}
+.submitorderhtml .productinfo{
+    height: 3.3rem;
+    background-color: #fff;
+    margin-bottom: 0.2rem;
+    
+}
+.submitorderhtml .productinfo .info1{
+    height: 2.3rem;
+    border-bottom: 0.02rem solid #eee;
+    padding: 0.25rem;
+}
+.submitorderhtml .productinfo .info1 .imgdiv{
+    width: 1.6rem;
+    height: 1.6rem;
+    background: url(.././img/productimg.png)no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 0.1rem;
+}
+.submitorderhtml .productinfo .info1 .textdiv{
+    width: 5.1rem;
+    margin-left: 0.3rem;
+    height: 1.6rem;
+    margin-top: 0.1rem;
+    line-height: 2;
+}
+.submitorderhtml .productinfo .info1 .textdiv>div:first-child{
+    color: #000;
+    font-size: 0.3rem;
+}
+.submitorderhtml .productinfo .info1 .textdiv>div:nth-child(2){
+    color: #999;
+    font-size: 0.22rem;
+}
+.submitorderhtml .productinfo .info1 .textdiv>div:last-child{
+    color: #f40a30;
+    font-size: 0.3rem;
+}
+.submitorderhtml .productinfo .info1 .textdiv>div:last-child .right{
+    color: #999;
+}
+.submitorderhtml .productinfo .info2{
+    height: 1rem;
+    line-height: 1rem;
+    padding: 0 0.25rem;
+}
+.submitorderhtml .productinfo .info2>.right{
+    width: 2.8rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    margin-top: 0.15rem;
+}
+.submitorderhtml .productinfo .info2>.right button{
+    width: 0.8rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    font-size: 0.7rem;
+    color: #999;
+    border:0.01rem solid #999; 
+}
+.submitorderhtml .productinfo .info2>.right button.jia{
+    font-size: 0.5rem;
+}
+.submitorderhtml .productinfo .info2>.right input{
+    width: 1.2rem;
+    height: 0.7rem;
+    padding-top: 0.08rem;
+    line-height: 1;
+    border:0.01rem solid #999; 
+    border-left: 0;
+    border-right: 0;
+    font-size: 0.28rem;
+    text-align: center;
+    border-radius: 0;
+}
+.submitorderhtml .membremark{
+    height: 0.88rem;
+    line-height: 0.88rem;
+    background-color: #fff;
+    padding: 0 0.25rem;
+}
+.submitorderhtml .membremark .remarkinp{
+    font-size: 0.28rem;
+    padding-left: 0.2rem;
+    width: 6.2rem;
+    height: 0.4rem;
+}
+.ordertab{
+    font-size: 0.3rem;
+    background-color: #f40a30;
+    line-height: 1rem;
+}
+.ordertab a{
+    color: #fff;
+}
+.ordertab .ordertotal{
+    background-color: #fff;
+    color: #666;
+    font-size: 0.24rem;
+}
+.ordertab .ordertotal>span{
+    color: #f40a30;
+}
+.ordertab .ordertotal>span>.price{
+    font-size: 0.3rem;
+}
+.ordersuccesshtml{
+    height: 4.38rem;
+    background-color: #fff;
+    text-align: center;
+    padding:0 1.6rem;
+    color: #888;
+}
+.ordersuccesshtml>div:first-child{
+    height: 2.4rem;
+    line-height: 2.4rem;
+    font-size: 0.3rem;
+    color: #f40a30;
+    padding-left:0.4rem;
+    background: url(.././img/success.png)no-repeat center center;
+    background-size: 0.36rem;
+    background-position-x: 1rem;
+}
+.orderstab{
+    height: 0.88rem;
+    line-height: 0.88rem;
+    background-color: #fff;
+    border-top: 0.02rem solid #eee;
+    padding: 0.2rem 0; 
+}
+.orderstab>a{
+    height: 0.48rem;
+    line-height: 0.48rem;
+}
+.orderstab>a:first-child{
+    border-right: 0.02rem solid #eee;
+}

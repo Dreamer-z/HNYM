@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <title>提交订单</title>
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/all2.css">
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="./js/adaptive.js"></script>
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 28;
+        window['adaptive'].maxWidth = 480;
+        window['adaptive'].scaleType = 1;
+        window['adaptive'].init();
+    </script>
+</head>
+
+<body>
+    <div class="submitorderhtml">
+        <div class="orderinfo">
+            <div class="clear memberinfo">
+                <span class="left">周四红</span>
+                <span class="right">13812341234</span>
+            </div>
+            <div class="placeinfo elli2">湖南省长沙市天心区黑石铺街道北辰中央公园16栋4单元507</div>
+        </div>
+        <div class="productinfo">
+            <div class="info1 clear">
+                <div class="left imgdiv"></div>
+                <div class="left textdiv">
+                    <div>易沛康肠道水疗</div>
+                    <div>规格：10g/袋×30袋/盒</div>
+                    <div>
+                        &yen;<span class="pricespan">1500</span> <span class="right">×<span class="amountspan">1</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="info2 clear">
+                <div class="left">数量</div>
+                <div class="right clear">
+                    <button class="left jian" state="0">-</button>
+                    <input type="tel" class="left amount" value="98" maxlength="4" id="amount">
+                    <button class="left jia" state="1">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="membremark">备注<input type="text" class="remarkinp" placeholder="卖家留言 (50字以内)" maxlength="50"></div>
+    </div>
+    <div class="bt-op ordertab">
+        <a class="bOp-l">
+            <div class="ordertotal">合计：<span class="price">&yen;<span class="price">1500.00</span></span>
+            </div>
+        </a>
+        <a class="bOp-r" href="#">
+            <div>立即购买</div>
+        </a>
+    </div>
+    <script src="./js/submitorder.js"></script>
+</body>
+
+</html>
