@@ -185,7 +185,12 @@
 
 /* 动态数据列表展示 */
 
-.listType {
+.listbox {
+    width: 7.5rem;
+    overflow: hidden;
+}
+
+.listbox .listType {
     float: left;
     line-height: .88rem;
     width: 7.5rem;
@@ -465,6 +470,11 @@
 
 .searchtype1 {
     padding: .2rem;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: 99;
+    margin-left: -3.75rem;
 }
 
 .searchtype1 .search {

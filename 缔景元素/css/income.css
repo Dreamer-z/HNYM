@@ -1,0 +1,93 @@
+.income_statistics .total {
+    position: relative;
+}
+
+.income_statistics .total .withdraw {
+    position: absolute;
+    right: .3rem;
+    bottom: .4rem;
+    width: 1.2rem;
+    height: .54rem;
+    line-height: .54rem;
+    text-align: center;
+    border: .01rem solid #fff;
+    border-radius: .1rem;
+}
+
+.fullscreen .box {
+    padding: 0 .2rem;
+    padding-top: 3rem;
+}
+
+.fullscreen .box .cont {
+    padding: .2rem .45rem .45rem .45rem;
+    border-radius: .1rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.fullscreen .box .cont .title {
+    font-size: .22rem;
+    margin: 0;
+}
+
+.fullscreen .box .cont .title span {
+    font-size: .34rem;
+    font-weight: bold;
+}
+
+.fullscreen .box .cont .inp {
+    padding: .3rem 0;
+}
+
+.fullscreen .box .cont .inp input {
+    display: block;
+    width: 3.55rem;
+    height: .54rem;
+    line-height: .54rem;
+    font-size: .24rem;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: .01rem solid #eee;
+}
+
+.fullscreen .box .cont .comfirm {
+    display: block;
+    width: 3.7rem;
+    height: .8rem;
+    line-height: .8rem;
+    margin: 0 auto;
+    border-radius: .1rem;
+    background-color: #37343f;
+    color: #eee;
+    font-size: .3rem;
+}
+
+.tc2 .box .cont {
+    padding: 1rem .45rem;
+}
+
+.tc2 .box .cont .status {
+    width: .52rem;
+    height: .52rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: .2rem;
+}
+
+.tc2 .box .cont .status.success {
+    background-image: url(./../img/correct.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.tc2 .box .cont .status.failure {
+    background-image: url(./../img/del_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.tc2 .box .cont .result {
+    font-size: .4rem;
+    font-weight: bold;
+}

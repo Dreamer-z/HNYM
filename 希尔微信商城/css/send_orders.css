@@ -47,10 +47,10 @@
 }
 
 .ordDet-commodity-msg {
-    width: 3rem;
+    width: 2.8rem;
     max-height: 100%;
     overflow: hidden;
-    margin-right: .2rem;
+    /*margin-right: .2rem;*/
 }
 
 .ordDet-commodity-name {
@@ -65,7 +65,7 @@
 }
 
 .ordDet-commodity-pnum {
-    width: 2.1rem;
+    width: 2.15rem;
     font-size: .24rem;
     line-height: .4rem;
     text-align: right;
@@ -195,6 +195,7 @@
 }
 
 .bOp-r {
+    cursor:pointer;
     color: #fff;
     background-color: #93d521;
 }
@@ -296,4 +297,17 @@
     color: #fff;
     text-align: center;
     background-color: #93d521;
+}
+/* 新增收货地址按钮 */
+.ordDet-adAddr{
+    text-align:center;
+    height: 1rem;
+    line-height: 1rem;
+}
+.adAddr{
+    padding: .1rem .2rem;
+    border: .01rem solid #93d521;
+    border-radius: .25rem;
+    background-color: #93d521;
+    color: #fff;
 }

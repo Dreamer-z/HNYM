@@ -24,13 +24,15 @@
     </script>
 </head>
 
-<body>
+<body style="cursor:pointer">
     <div class="videoListDoctor">
-        <div class="listType">
-            <div class="headline check"><span>免费专区</span></div>
-            <div class="headline"><span>患者教育</span></div>
-            <div class="headline"><span>专家访谈</span></div>
-            <div class="headline"><span>其他教程</span></div>
+        <div class="listbox">
+            <div class="listType">
+                <div class="headline check"><span>免费专区</span></div>
+                <div class="headline"><span>患者教育</span></div>
+                <div class="headline"><span>专家访谈</span></div>
+                <div class="headline"><span>其他教程</span></div>
+            </div>
         </div>
         <div class="listContent">
             <div class="videoList">
@@ -76,11 +78,16 @@
         </div>
     </div>
 </body>
+<script src="./js/touchlist.js"></script>
 <script>
-    $(".headline").click(function() {
-        $(".headline").removeClass("check");
-        $(this).addClass("check");
-    });
+    window.onload = function() {
+        $(".headline").click(function() {
+            $(".headline").removeClass("check");
+            $(this).addClass("check");
+        });
+        $(".listType").width($(".headline").length * $(".headline").width());
+        tlist("headline", "listType", 4);
+    };
 </script>
 
 </html>

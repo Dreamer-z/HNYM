@@ -100,7 +100,7 @@
 }
 
 .ord-li {
-    width: 1.48rem;
+    width: 1.86rem;
     height: 1.4rem;
     line-height: .4rem;
     text-align: center;
@@ -113,8 +113,21 @@
     padding-top: .8rem;
     color: #666;
     padding-bottom: .2rem;
+    position:relative;
 }
-
+.ord-li a span{
+    position:absolute;
+    right:0;
+    top:0;
+    width:.45rem;
+    height:.45rem;
+    font-size:.2rem;
+    line-height:.45rem;
+    color:#fff;
+    background-color:#93d521;
+    border-radius:50%;
+    text-align:center;
+}
 .waiPay a {
     background: url(./../img/pec_1.png)no-repeat .45rem .2rem;
     background-size: 40%;
@@ -151,6 +164,7 @@
 .perCen-li {
     background-color: #fff;
 }
+.perCen-li{border-bottom:.02rem;}
 
 .perCen-ord a,
 .perCen-li a {

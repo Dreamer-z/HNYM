@@ -1948,23 +1948,21 @@ body {
 .myWorksSearch input,
 .myWorksSearch button {
     display: inline-block;
-    height: 100%;
-    line-height: .6rem;
     font-size: .3rem;
+    height: .4rem;
+    line-height: .4rem;
+    margin: .1rem 0;
 }
 
 .myWorksSearch button {
     width: 1.2rem;
+    border-left: .01rem solid #666;
 }
 
 .myWorksSearch input {
     box-sizing: border-box;
     width: 5.5rem;
-    height: .4rem;
-    line-height: .4rem;
-    margin: .1rem 0;
     padding: 0 .1rem;
-    border-right: .01rem solid #666;
 }
 
 .myWorksList {

@@ -21,3 +21,11 @@
     box-sizing: border-box;
     border-bottom: .03rem solid #93d521;
 }
+
+.menu .circuit div {
+        background: url(./../img/menu_2_on.png)no-repeat center;
+    background-size: 90%;
+}
+.menu .circuit p {
+        color: #93d521;
+}

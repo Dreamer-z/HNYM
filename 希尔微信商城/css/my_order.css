@@ -9,11 +9,25 @@
     text-align: center;
     border-bottom: .01rem solid #eee;
 }
-
-.order-type-li {
-    width: 16.6666%;
+.order-list {
+    margin-bottom: 1.1rem;
 }
-
+.order-type-li {
+    width: 20%;
+    position:relative;
+}
+.order-type-li span{
+    position:absolute;
+    right:.05rem;
+    top:.05rem;
+    width:.4rem;
+    height:.4rem;
+    line-height:.4rem;
+    background-color:#93d521;
+    color:#fff;
+    border-radius:50%;
+    font-size:.2rem;
+}
 .order-type-check a {
     color: #93d521;
     font-size: .28rem;
@@ -26,9 +40,9 @@
 }
 
 .order-li-cont {
-    margin-bottom: .1rem;
+    padding: .1rem 0;
+    border-bottom:.01rem solid #eee;
 }
-
 .order-img {
     box-sizing: border-box;
     border: .01rem solid #eee;
@@ -145,4 +159,12 @@
 .refundRemind a {
     color: #93d521;
     font-size: .28rem;
+}
+.menu .center div {
+    background: url(./../img/menu_5_on.png)no-repeat center;
+    background-size: 90%;
+}
+
+.menu .center p {
+    color: #93d521;
 }

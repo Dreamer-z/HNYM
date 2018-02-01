@@ -376,6 +376,7 @@
 .vTap .classType .list {
     height: .56rem;
     line-height: .56rem;
+    font-size: .28rem;
 }
 
 .vTap .classType .box::-webkit-scrollbar {
@@ -903,6 +904,7 @@
 
 .index .indexBanner {
     height: 3.68rem;
+    margin-top: 1rem;
 }
 
 .index .indexBanner .swiper-slide img {
