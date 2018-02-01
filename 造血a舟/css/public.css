@@ -1000,3 +1000,17 @@ input[type="checkbox"] {
     background: url(./../img/play.png)no-repeat center;
     background-size: 30%;
 }
+
+.relative {
+    position: relative;
+}
+
+.mark {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: .24rem;
+    padding: 0 .1rem;
+    color: #fff;
+    background-color: #93d521;
+}

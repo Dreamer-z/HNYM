@@ -157,3 +157,7 @@ select::-ms-expand {
 .bg-fff {
     background-color: #fff;
 }
+
+.relative {
+    position: relative;
+}

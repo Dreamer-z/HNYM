@@ -130,7 +130,7 @@ var all = {
             direction: 'horizontal',
             loop: true,
             slidesPerView: perview,
-            speed: 1000,
+            speed: 1500,
             autoplay: 3000,
             autoplayDisableOnInteraction: false,
         });
