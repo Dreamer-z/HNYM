@@ -1,0 +1,10 @@
+绑定兑换券     binding_ticket.html
+订单详情       order_details.html
+现场直播       live_television.html
+现场直播列表   live_television_list.html
+配送记录       send_record.html
+提交订单       send_order.html
+提交评价       submit_evaluation.html
+确认配送       comfirm_send.html
+同价更改       same_price_change.html
+我的订单       my_orders.html

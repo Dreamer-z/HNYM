@@ -1,0 +1,820 @@
+/* 绑定兑换券 */
+
+.bindingTicket .writeColumn {
+    font-size: .3rem;
+}
+
+
+/* 订单详情 */
+
+.orderDetails .ordDet-state {
+    padding: .15rem .4rem;
+    background: url(./../img/dd_bg.png)no-repeat center;
+    background-size: 100% 100%;
+    line-height: .4rem;
+    color: #fff;
+}
+
+.orderDetails .ordDet-state .ordDet-pay {
+    font-size: .34rem;
+    font-weight: bold;
+    padding-left: .6rem;
+}
+
+.orderDetails .ordDet-state .ordDet-shipments {
+    font-size: .28rem;
+    padding-left: .6rem;
+    background: url(./../img/dsh.png)no-repeat .04rem .05rem;
+    background-size: 6%;
+    margin-top: .1rem;
+}
+
+.orderDetails .ordDet-express,
+.orderDetails .ordDet-predict {
+    text-align: right;
+    font-size: .24rem;
+}
+
+.orderDetails .ordDet-msg {
+    margin: .1rem 0;
+}
+
+.orderDetails .ordDet-msg-person {
+    font-size: .28rem;
+    padding: .2rem 1rem;
+}
+
+.orderDetails .ordDet-msg-addr {
+    padding: 0 1rem;
+    font-size: .24rem;
+    line-height: .4rem;
+    color: #999;
+    margin-bottom: .2rem;
+}
+
+.orderDetails .dd-xt {
+    width: 7.5rem;
+    height: .08rem;
+    background: url(./../img/dd_xt.png)no-repeat center;
+    background-size: 100% 100%;
+}
+
+.orderDetails .logo {
+    margin-top: .2rem;
+    margin-bottom: .02rem;
+    height: .8rem;
+    line-height: .5rem;
+    padding: .15rem .3rem;
+    background-color: #fff;
+}
+
+.orderDetails .logo img {
+    float: left;
+    height: 100%;
+}
+
+.orderDetails .logo span {
+    float: left;
+    margin-left: .2rem;
+}
+
+.orderDetails .goodsDetails {
+    padding: .3rem .2rem;
+    background-color: #fff;
+    height: 2.15rem;
+}
+
+.orderDetails .goodsDetails .photo {
+    width: 1.55rem;
+    height: 1.55rem;
+    border-radius: .1rem;
+    overflow: hidden;
+}
+
+.orderDetails .goodsDetails .msg {
+    margin-left: .2rem;
+    width: 3.8rem;
+    height: 100%;
+    overflow: hidden;
+}
+
+.orderDetails .goodsDetails .pricenumber {
+    width: 1.5rem;
+    text-align: right;
+    font-size: .24rem;
+}
+
+.orderDetails .goodsDetails .pricenumber .price {
+    color: red;
+    margin-bottom: .1rem;
+}
+
+.orderDetails .goodsDetails .pricenumber .price span,
+.orderDetails .goodsDetails .pricenumber .number span {
+    font-size: .28rem;
+}
+
+.orderDetails .change {
+    text-align: right;
+    padding: 0 .2rem .15rem .2rem;
+}
+
+.orderDetails .change span {
+    display: inline-block;
+    height: .52rem;
+    line-height: .5rem;
+    padding: 0 .2rem;
+    border: .01rem solid #75c6d7;
+    color: #75c6d7;
+    border-radius: .26rem;
+    margin: 0 .1rem;
+}
+
+.orderDetails .change .pause.check {
+    color: #ff6766;
+    border: .01rem solid #ff6766;
+}
+
+.orderDetails .send {
+    height: .9rem;
+    line-height: .9rem;
+    margin: .02rem 0;
+}
+
+.orderDetails .send .flex-item {
+    padding: 0 .2rem;
+}
+
+.orderDetails .msg-dis {
+    color: #999;
+}
+
+.orderDetails .orderCode {
+    margin-top: .2rem;
+}
+
+.orderDetails .payfor {
+    color: #333;
+}
+
+.orderDetails .payfor span {
+    color: #ff6766;
+}
+
+.orderDetails .btn1 {
+    margin-top: .2rem;
+}
+
+
+/* 现场直播 */
+
+.liveTelevision .television {
+    height: 3.8rem;
+}
+
+.liveTelevision .television video {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.liveTelevision .introduce {
+    margin-top: .3rem;
+    padding: 0 .2rem .4rem .2rem;
+    color: #999;
+}
+
+.liveTelevision .introduce .title {
+    color: #333;
+    font-size: .3rem;
+}
+
+
+/* 视频直播列表 */
+
+.liveTelevisionList .list {
+    overflow: hidden;
+    padding-bottom: .3rem;
+}
+
+.liveTelevisionList .list .li {
+    float: left;
+    width: 3.45rem;
+    background-color: #fff;
+    border-radius: .1rem;
+    overflow: hidden;
+}
+
+.liveTelevisionList .list .li:nth-of-type(2n+1) {
+    margin: 0 .1rem 0 .2rem;
+}
+
+.liveTelevisionList .list .li:nth-of-type(2n) {
+    margin: 0 .2rem 0 .1rem;
+}
+
+.liveTelevisionList .list .li .photo {
+    height: 2.15rem;
+}
+
+.liveTelevisionList .list .li .photo img {
+    display: block;
+    height: 2.15rem;
+    width: 100%;
+}
+
+.liveTelevisionList .list .li .title {
+    padding: .1rem .2rem;
+}
+
+.liveTelevisionList .list .li .option {
+    padding: 0 .2rem;
+    height: .48rem;
+    line-height: .28rem;
+    font-size: .24rem;
+    padding-bottom: .2rem;
+    overflow: hidden;
+}
+
+.liveTelevisionList .list .li .option .icon {
+    float: left;
+    height: 100%;
+    width: .28rem;
+    margin-right: .1rem;
+    background: url(./../img/browse.png)no-repeat center;
+    background-size: 100%;
+}
+
+.liveTelevisionList .list .li .option .browse {
+    float: left;
+    color: #999;
+}
+
+
+/* 配送记录 */
+
+.sendRecord .list .li {
+    margin-top: .2rem;
+}
+
+.sendRecord .list .li .up {
+    background-color: #fff;
+    margin-bottom: .02rem;
+    overflow: hidden;
+    padding: .2rem .3rem;
+}
+
+.sendRecord .list .li .up .photo {
+    float: left;
+    width: .72rem;
+    height: .72rem;
+    border-radius: 50%;
+    margin-right: .2rem;
+}
+
+.sendRecord .list .li .up .msg {
+    float: left;
+    width: 4.5rem;
+    line-height: .36rem;
+    font-size: .28rem;
+}
+
+.sendRecord .list .li .up .status {
+    float: right;
+    width: 1.4rem;
+    text-align: right;
+    line-height: .36rem;
+    font-size: .24rem;
+}
+
+.sendRecord .list .li .up .status .state {
+    color: #75c6d7;
+}
+
+.sendRecord .list .li .up .status .time {
+    color: #999;
+}
+
+.sendRecord .list .li .down {
+    background-color: #fff;
+    padding: .2rem .3rem;
+    text-align: right;
+}
+
+.sendRecord .list .li .down .comment a {
+    display: inline-block;
+    height: .42rem;
+    line-height: .4rem;
+    padding: 0 .2rem;
+    font-size: .22rem;
+    color: #75c6d7;
+    border: .01rem solid #75c6d7;
+    border-radius: .21rem;
+}
+
+.sendRecord .list .li .down .star {
+    height: .42rem;
+    overflow: hidden;
+}
+
+.sendRecord .list .li .down .star span {
+    display: inline-block;
+    height: 100%;
+    width: 2rem;
+}
+
+.sendRecord .list .li .down .comment,
+.sendRecord .list .li .down .star {
+    display: none;
+}
+
+
+/* 提交订单 */
+
+.sendOrder .takeMsg {
+    padding-left: .9rem;
+    padding-bottom: .3rem;
+    margin-bottom: .2rem;
+    background: url(./../img/addr.png)no-repeat .3rem center;
+    background-size: 4%;
+    background-color: #fff;
+    position: relative;
+}
+
+.sendOrder .takeMsg .person {
+    padding: .2rem 0;
+    padding-right: .9rem;
+    display: flex;
+}
+
+.sendOrder .takeMsg .person .name {
+    flex: 1;
+}
+
+.sendOrder .takeMsg .person .tel {
+    flex: 1;
+    text-align: right;
+}
+
+.sendOrder .takeMsg .address {
+    padding-right: .9rem;
+    overflow: hidden;
+    font-size: .24rem;
+    background: url(./../img/more_l.png)no-repeat 6.1rem center;
+    background-size: 2.5%;
+}
+
+.sendOrder .takeMsg .address .title {
+    float: left;
+    width: 1.4rem;
+}
+
+.sendOrder .takeMsg .address .cont {
+    float: left;
+    width: 4.3rem;
+    color: #999;
+}
+
+.sendOrder .takeMsg .dd-xt {
+    width: 7.5rem;
+    height: .08rem;
+    background: url(./../img/dd_xt.png)no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3.75rem;
+}
+
+.sendOrder .goods {
+    overflow: hidden;
+    padding: .3rem .2rem;
+}
+
+.sendOrder .goods .photo {
+    float: left;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: .1rem;
+    margin-right: .2rem;
+}
+
+.sendOrder .goods .msg {
+    float: left;
+    font-size: .28rem;
+    width: 2.8rem;
+    height: 1.6rem;
+    margin-right: .2rem;
+}
+
+.sendOrder .goods .option {
+    float: right;
+    width: 2rem;
+    height: 1.8rem;
+}
+
+.sendOrder .goods .option .saleprice {
+    text-align: right;
+    font-size: .22rem;
+    color: #ff6766;
+}
+
+.sendOrder .goods .option .saleprice span {
+    font-size: .3rem;
+}
+
+.sendOrder .goods .option .numInp {
+    margin-top: .5rem;
+}
+
+.sendOrder .total {
+    text-align: right;
+    padding: 0 .2rem;
+    font-size: .3rem;
+    height: .88rem;
+    line-height: .88rem;
+    margin-top: .02rem;
+    margin-bottom: .2rem;
+}
+
+.sendOrder .total .number,
+.sendOrder .total .price {
+    color: #ff6766;
+}
+
+.sendOrder .total .price {
+    font-size: .22rem;
+}
+
+.sendOrder .total .price span {
+    font-size: .3rem;
+}
+
+.sendOrder .cloumnInp {
+    height: .88rem;
+    line-height: .88rem;
+    padding: 0 .5rem 0 .2rem;
+    margin-bottom: .02rem;
+    background: url(./../img/more_l.png)no-repeat 7.1rem center;
+    background-size: 2.5%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.sendOrder .cloumnInp span {
+    float: left;
+    width: 1.5rem;
+    overflow: hidden;
+}
+
+.sendOrder .cloumnInp.sendday span {
+    width: 2rem;
+}
+
+.sendOrder .cloumnInp.ticket {
+    margin-top: .2rem;
+    margin-bottom: 1.1rem;
+}
+
+.sendOrder .cloumnInp input {
+    float: right;
+    width: 5.3rem;
+    height: 100%;
+    color: #999;
+    overflow: hidden;
+}
+
+.sendOrder .cloumnInp input::-webkit-input-placeholder {
+    color: #999;
+}
+
+.sendOrder .cloumnInp.sendday input {
+    float: right;
+    width: 4.8rem;
+    overflow: hidden;
+}
+
+.sendOrder .cloumnInp.ticket input {
+    text-align: right;
+    padding-right: .3rem;
+}
+
+.sendOrder .bt-op {
+    font-size: .34rem;
+    line-height: .98rem;
+}
+
+.sendOrder .bt-op .bOp-l span {
+    color: #ff6766;
+}
+
+.sendOrder .bt-op .bOp-r a {
+    color: #fff;
+    background-color: #75c6d7;
+}
+
+.mbsc-android-holo-light .dwv {
+    color: #75c6d7;
+    border-bottom: 2px solid #75c6d7;
+}
+
+.sendOrder .sendway .box {
+    width: 7.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3.75rem;
+    font-size: .28rem;
+    background-color: #eee;
+}
+
+.sendOrder .sendway .box .li {
+    height: .8rem;
+    line-height: .4rem;
+    padding: .2rem;
+    overflow: hidden;
+    background-color: #fff;
+    margin-bottom: .01rem;
+}
+
+.sendOrder .sendway .box .li label,
+.sendOrder .sendway .box .li input {
+    float: right;
+}
+
+.sendOrder .sendway .box .li label {
+    margin-right: 0;
+}
+
+.sendOrder .sendway .box .li .title {
+    float: left;
+    width: 6.5rem;
+}
+
+.sendOrder .sendway .box .btn1 {
+    margin-top: 0;
+}
+
+
+/* 提交评价 */
+
+.submitEval .backtitle {
+    text-align: center;
+    height: .88rem;
+    line-height: .88rem;
+    margin-bottom: .2rem;
+    padding: 0 .2rem;
+    background-color: #fff;
+    position: relative;
+    font-size: .28rem;
+}
+
+.submitEval .backtitle a {
+    position: absolute;
+    left: .2rem;
+    top: 0;
+    height: .88rem;
+    width: .3rem;
+    line-height: .88rem;
+    background: url(./../img/more_r.png)no-repeat center;
+    background-size: 60%;
+}
+
+.submitEval .li {
+    overflow: hidden;
+    background-color: #fff;
+    margin-bottom: .02rem;
+    padding: 0 .2rem;
+    font-size: .28rem;
+}
+
+.submitEval .msg,
+.submitEval .stars {
+    height: .88rem;
+    line-height: .88rem;
+}
+
+.submitEval .stars .starability-growRotate {
+    margin-top: .2rem;
+}
+
+.submitEval .comment {
+    padding: .2rem;
+}
+
+.submitEval .comment .box {
+    width: 6rem;
+}
+
+.submitEval .comment .box textarea {
+    width: 100%;
+    font-size: .28rem;
+}
+
+.submitEval .submit {
+    position: fixed;
+    left: 50%;
+    margin-left: -3.75rem;
+    bottom: 0;
+    width: 7.5rem;
+    height: .98rem;
+    line-height: .98rem;
+    background-color: #75c6d7;
+    color: #fff;
+    font-size: .34rem;
+    text-align: center;
+}
+
+
+/* 确认配送 */
+
+.comfirmSend .takeMsg {
+    padding-left: .9rem;
+    padding-bottom: .3rem;
+    margin-bottom: .2rem;
+    background: url(./../img/addr.png)no-repeat .3rem center;
+    background-size: 4%;
+    background-color: #fff;
+    position: relative;
+}
+
+.comfirmSend .takeMsg .person {
+    padding: .2rem 0;
+    padding-right: .9rem;
+    display: flex;
+}
+
+.comfirmSend .takeMsg .person .name {
+    flex: 1;
+}
+
+.comfirmSend .takeMsg .person .tel {
+    flex: 1;
+    text-align: right;
+}
+
+.comfirmSend .takeMsg .address {
+    padding-right: .9rem;
+    overflow: hidden;
+    font-size: .24rem;
+    background: url(./../img/more_l.png)no-repeat 6.1rem center;
+    background-size: 2.5%;
+}
+
+.comfirmSend .takeMsg .address .title {
+    float: left;
+    width: 1.4rem;
+}
+
+.comfirmSend .takeMsg .address .cont {
+    float: left;
+    width: 4.3rem;
+    color: #999;
+}
+
+.comfirmSend .takeMsg .dd-xt {
+    width: 7.5rem;
+    height: .08rem;
+    background: url(./../img/dd_xt.png)no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3.75rem;
+}
+
+.comfirmSend .remind {
+    overflow: hidden;
+    background-color: #fff;
+    height: .88rem;
+    line-height: .88rem;
+    font-size: .28rem;
+    padding: 0 .2rem;
+    margin-bottom: .2rem;
+}
+
+.comfirmSend .remind textarea {
+    width: 6rem;
+    height: .4rem;
+    line-height: .4rem;
+    margin-top: .22rem;
+    font-size: .28rem;
+}
+
+.comfirmSend .remark {
+    padding: 0 .2rem;
+    font-size: .24rem;
+    color: #ff6766;
+}
+
+
+/* 同价更改 */
+
+.spChange .li {
+    height: .8rem;
+    line-height: .4rem;
+    padding: .2rem;
+    overflow: hidden;
+    background-color: #fff;
+    margin-bottom: .01rem;
+}
+
+.spChange .li label,
+.spChange .li input {
+    float: right;
+}
+
+.spChange .li label {
+    margin-right: 0;
+}
+
+.spChange .li .title {
+    float: left;
+    width: 6.5rem;
+}
+
+
+/* 我的订单 */
+
+.myOrder .backtitle {
+    margin-bottom: 0;
+}
+
+.myOrder .typelist {
+    display: flex;
+    background-color: #fff;
+    margin-bottom: .2rem;
+    line-height: .88rem;
+    font-size: .28rem;
+}
+
+.myOrder .typelist .li {
+    flex: 1;
+    text-align: center;
+}
+
+.myOrder .typelist .li.check {
+    color: #75c6d7;
+}
+
+.myOrder .orderList .li {
+    padding: 0 .2rem;
+    background-color: #fff;
+}
+
+.myOrder .orderList .li .up {
+    overflow: hidden;
+    line-height: .88rem;
+    border-bottom: .02rem solid #eee;
+}
+
+.myOrder .orderList .li .up .status {
+    color: #75c6d7;
+}
+
+.myOrder .orderList .li .middle {
+    overflow: hidden;
+    padding: .2rem 0;
+    border-bottom: .02rem solid #eee;
+}
+
+.myOrder .orderList .li .middle .photo {
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: .1rem;
+}
+
+.myOrder .orderList .li .middle .msg {
+    width: 4.2rem;
+    padding: 0 .2rem;
+}
+
+.myOrder .orderList .li .middle .pricenumber {
+    width: 1.5rem;
+    text-align: right;
+    font-size: .22rem;
+}
+
+.myOrder .orderList .li .middle .pricenumber .price {
+    margin-bottom: .3rem;
+    color: #ff6766;
+}
+
+.myOrder .orderList .li .middle .pricenumber .price span,
+.myOrder .orderList .li .middle .pricenumber .number span {
+    font-size: .28rem;
+}
+
+.myOrder .orderList .li .down {
+    line-height: .88rem;
+    text-align: right;
+}
+
+.myOrder .orderList .li .down button {
+    margin: 0 .1rem;
+    padding: .1rem .3rem;
+    border: .01rem solid #75c6d7;
+    color: #75c6d7;
+    font-size: .28rem;
+    border-radius: .3rem;
+}

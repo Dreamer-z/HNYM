@@ -190,7 +190,7 @@
     overflow: hidden;
 }
 
-.listbox .listType {
+.listType {
     float: left;
     line-height: .88rem;
     width: 7.5rem;

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <title>配送记录</title>
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="./js/adaptive.js"></script>
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 28;
+        window['adaptive'].maxWidth = 480;
+        window['adaptive'].scaleType = 1;
+        window['adaptive'].init();
+    </script>
+</head>
+
+<body>
+    <div class="sendRecord">
+        <div class="backtitle">
+            <a href=""></a><span>配送记录</span>
+        </div>
+        <div class="list">
+            <div class="li" state="0">
+                <div class="up">
+                    <div class="photo" style="background: url(./img/ls/photo.png)no-repeat center;background-size: cover;"></div>
+                    <div class="msg">
+                        <div class="name">配送员：<span>王某某</span></div>
+                        <div class="tel">手机：<span>134 5654 5654</span></div>
+                    </div>
+                    <div class="status">
+                        <div class="state">配送完成</div>
+                        <div class="time">2017.11.11</div>
+                    </div>
+                </div>
+                <div class="down">
+                    <div class="comment">
+                        <a href="">评价</a>
+                    </div>
+                    <div class="star">
+                        <span class="star1"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="li" state="1">
+                <div class="up">
+                    <div class="photo" style="background: url(./img/ls/photo.png)no-repeat center;background-size: cover;"></div>
+                    <div class="msg">
+                        <div class="name">配送员：<span>王某某</span></div>
+                        <div class="tel">手机：<span>134 5654 5654</span></div>
+                    </div>
+                    <div class="status">
+                        <div class="state">配送完成</div>
+                        <div class="time">2017.11.11</div>
+                    </div>
+                </div>
+                <div class="down">
+                    <div class="comment">
+                        <a href="">评价</a>
+                    </div>
+                    <div class="star">
+                        <span class="star1"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    window.onload = function() {
+        $(".list .li").each(function(i) {
+            if ($(".list .li").eq(i).attr("state") == "0") {
+                $(".list .li").eq(i).children(".down").children(".comment").css("display", "block");
+            } else if ($(".list .li").eq(i).attr("state") == "1") {
+                $(".list .li").eq(i).children(".down").children(".star").css("display", "block");
+            }
+        })
+    }
+</script>
+
+</html>
