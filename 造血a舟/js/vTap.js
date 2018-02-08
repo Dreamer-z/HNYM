@@ -63,7 +63,7 @@ function move(t) {
             "margin-left": -pge * wd
         });
         return;
-    } else if (pge >= $(".typeList .li").length - 3) {
+    } else if (pge >= $(".typeList .li").length - 4) {
         pge = $(".typeList .li").length - 4;
         $(".typeList").css({
             "transition": "all " + t + "s",
