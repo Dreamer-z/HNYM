@@ -24,7 +24,7 @@
     </script>
 </head>
 
-<body>
+<body style="cursor:pointer;">
     <div class="myOrder">
         <div class="backtitle">
             <a href=""></a><span>我的订单</span>
@@ -54,17 +54,39 @@
                     </div>
                 </div>
                 <div class="down">
-                    <button class="pay">付款</button><button class="comment">评价</button><button class="keeporder">续订</button>
+                    <button class="complain">投诉</button><button class="pay">付款</button><button class="comment">评价</button><button class="keeporder">续订</button>
+                </div>
+            </div>
+        </div>
+        <div class="fullscreen complainpopup">
+            <div class="popup">
+                <div class="title">投诉</div>
+                <div class="option">
+                    <div class="online"><a href="./order_complain.html">在线投诉</a></div>
+                    <div class="phone"><a href="tel:+">电话投诉</a></div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script src="./js/all.js"></script>
 <script>
     $(".typelist .li").click(function() {
         $(".typelist .li").removeClass("check");
         $(this).addClass("check");
-    })
+    });
+    // 投诉
+    $(".complain").click(function(ev) {
+        ev.stopPropagation();
+        $(".complainpopup").fadeIn(100);
+        $(document).click(function(ev) {
+            if (ev.target == $(".popup")[0] || ev.target == $(".popup .cont")[0] || ev.target == $(".popup .option")[0]) {
+                return;
+            } else {
+                $(".complainpopup").fadeOut(100);
+            }
+        });
+    });
 </script>
 
 </html>

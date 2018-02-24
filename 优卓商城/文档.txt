@@ -8,3 +8,6 @@
 确认配送       comfirm_send.html
 同价更改       same_price_change.html
 我的订单       my_orders.html
+订单投诉       order_complain.html
+提交建议       suggest.html
+投诉反馈       complain_feedback.html

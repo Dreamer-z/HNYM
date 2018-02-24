@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <title>投诉反馈</title>
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="./js/adaptive.js"></script>
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 28;
+        window['adaptive'].maxWidth = 480;
+        window['adaptive'].scaleType = 1;
+        window['adaptive'].init();
+    </script>
+</head>
+
+<body style="cursor:pointer;">
+    <div class="complainFeedback">
+        <div class="backtitle">
+            <a href=""></a><span>投诉反馈</span>
+        </div>
+        <div class="tData">
+            <div class="cont">
+                <div class="left">订单号:</div>
+                <div class="right">13546436468616</div>
+            </div>
+        </div>
+        <div class="tData productName">
+            <div class="cont">
+                <div class="title">产品:</div>
+                <div class="list">
+                    <div class="li clear">
+                        <img class="left" src="./img/ls/product.png" alt="">
+                        <div class="name left elli2">田园牧场鲜牛奶195ml</div>
+                    </div>
+                    <div class="li clear">
+                        <img class="left" src="./img/ls/product.png" alt="">
+                        <div class="name left elli2">田园牧场鲜牛奶195ml</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tData">
+            <div class="cont">
+                <div class="left">投诉类别:</div>
+                <div class="right">未装箱</div>
+            </div>
+        </div>
+        <div class="tData complainCont">
+            <div class="cont">
+                <div class="left">投诉内容:</div>
+                <div class="right">配送员没有给我安装奶箱</div>
+            </div>
+        </div>
+        <div class="photoList">
+            <img src="./img/ls/product.png" alt="">
+            <img src="./img/ls/product.png" alt="">
+            <img src="./img/ls/product.png" alt="">
+            <img src="./img/ls/product.png" alt="">
+            <img src="./img/ls/product.png" alt="">
+            <img src="./img/ls/product.png" alt="">
+        </div>
+        <div class="feedbackbox">
+            <div class="title">您的订单问题是否解决？</div>
+            <div class="resultInp resolved">已解决</div>
+            <div class="resultInp unsolved">未解决</div>
+        </div>
+        <div class="fullscreen msgpopup1">
+            <div class="popup">
+                <div class="cont">感谢配合，我们会继续完善我们的服务</div>
+            </div>
+        </div>
+        <div class="fullscreen msgpopup2">
+            <div class="popup">
+                <div class="title">继续投诉</div>
+                <div class="option">
+                    <div class="online"><a href="./order_complain.html">在线投诉</a></div>
+                    <div class="phone"><a href="tel:+">电话投诉</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./js/all.js"></script>
+<script>
+    $(".resolved").click(function() {
+        $(".msgpopup1").fadeIn(200);
+        setTimeout(function() {
+            $(".msgpopup1").fadeOut(200);
+        }, 1500);
+    });
+    $(".unsolved").click(function(ev) {
+        ev.stopPropagation();
+        $(".msgpopup2").fadeIn(100);
+        $(document).click(function(ev) {
+            if (ev.target == $(".popup")[0] || ev.target == $(".popup .cont")[0] || ev.target == $(".popup .option")[0]) {
+                return;
+            } else {
+                $(".msgpopup2").fadeOut(100);
+            }
+        });
+    });
+</script>
+
+</html>

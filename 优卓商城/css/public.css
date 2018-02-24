@@ -431,8 +431,8 @@ input[type="radio"]:checked+label:after {
 .popup .option {
     font-size: .3rem;
     color: #333;
-    height: .8rem;
     line-height: .8rem;
+    overflow: hidden;
 }
 
 
@@ -567,7 +567,6 @@ input[type="radio"]:checked+label:after {
 .tData {
     box-sizing: border-box;
     width: 7.5rem;
-    height: .88rem;
     line-height: .88rem;
     background-color: #fff;
     font-size: .3rem;
@@ -671,8 +670,9 @@ input[type="radio"]:checked+label:after {
     border-radius: .1rem;
     /* background-image: linear-gradient(left, #df242b, #ec492d, #f96d30);
     background-image: -webkit-linear-gradient(left, #df242b, #ec492d, #f96d30); */
-    background-image: linear-gradient(left, #ae1f9e, #ea2b8d);
-    background-image: -webkit-linear-gradient(left, #ae1f9e, #ea2b8d);
+    /* background-image: linear-gradient(left, #ae1f9e, #ea2b8d);
+    background-image: -webkit-linear-gradient(left, #ae1f9e, #ea2b8d); */
+    background-color: #75c6d7;
     color: #fff;
     margin: 0 auto;
     font-size: .34rem;
