@@ -1,0 +1,361 @@
+/*内容部分*/
+
+.main {
+    width: 7.5rem;
+}
+
+.boxOne {
+    width: 7.5rem;
+    margin-top: .9rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.boxOne .pic {
+    position: relative;
+}
+
+.boxOne .pic>div {
+    position: absolute;
+    width: 7.5rem;
+    margin-top: 1.2rem;
+    top: 0;
+    left: 0;
+}
+
+.boxOne h3 {
+    font-size: .4rem;
+    line-height: .7rem;
+}
+
+#banner .pic .text {
+    display: none;
+}
+
+#banner .pic:nth-child(3n-1) .text {
+    display: block;
+}
+
+.boxTwo .content {
+    text-align: center;
+}
+
+.boxTwo .content>p {
+    width: 6.9rem;
+    padding: .3rem;
+    text-align: center;
+    line-height: .4rem;
+}
+
+.boxTwo .content>div {
+    width: 7.5rem;
+    height: 4rem;
+}
+
+.boxTwo .content>div .slick {
+    width: 6rem;
+    height: 4rem;
+    float: left;
+}
+
+.boxTwo .content>div .pre,
+.boxTwo .content>div .next {
+    float: left;
+    width: .75rem;
+    height: 4rem;
+    background: url(../images/pre1.png) center center no-repeat;
+    background-size: contain;
+}
+
+.boxTwo .content>div .next {
+    background-image: url(../images/nxet1.png)
+}
+
+.boxTwo .morebtn {
+    background: #a6ce60;
+    display: block;
+    margin: .5rem auto
+}
+
+.boxThree .content {
+    width: 7.5rem;
+    height: 10rem;
+    background: url(../images/mo2.jpg) center center no-repeat;
+}
+
+.boxThree .content .mall {
+    position: relative;
+    height: 8.5rem;
+}
+
+.boxThree .content .mall div {
+    width: 2.8rem;
+    height: 2.8rem;
+    position: absolute;
+}
+
+.boxThree .content .mall div.Tmall {
+    background: url(../images/ico.png)center center no-repeat;
+    background-size: contain;
+    top: 1.8rem;
+    left: .6rem;
+}
+
+.boxThree .content .mall div.jd {
+    top: 1.8rem;
+    right: .6rem;
+    background: url(../images/ico2.png)center center no-repeat;
+    background-size: contain;
+}
+
+.boxThree .content .mall div.o2o {
+    top: .7rem;
+    left: 2.35rem;
+    background: url(../images/ico4.png)center center no-repeat;
+    background-size: contain;
+}
+
+.boxThree .content .mall div.shop {
+    top: 2.9rem;
+    left: 2.35rem;
+    background: url(../images/ico3.png)center center no-repeat;
+    background-size: contain;
+}
+
+.boxThree .content .mall div.jzt {
+    top: 4rem;
+    left: .6rem;
+    background: url(../images/ico4.png)center center no-repeat;
+    background-size: contain;
+}
+
+.boxThree .content .mall div.trt {
+    top: 4rem;
+    right: .6rem;
+    background: url(../images/ico5.png)center center no-repeat;
+    background-size: contain;
+}
+
+.boxThree .content .mall div.other1 {
+    top: 5.1rem;
+    left: 2.35rem;
+    /* background: url(../images/ico6.png)center center no-repeat;
+	background-size: contain; */
+    background-color: #fff;
+}
+
+.boxThree .content .txt {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.boxThree .content .txt h2 {
+    font-size: .32rem;
+    line-height: .8rem;
+}
+
+.boxThree .content .txt+div {
+    margin-top: 1.2rem;
+    text-align: center;
+}
+
+.boxFour .content {
+    padding: 0 .15rem;
+}
+
+.boxFour .content ul {
+    height: 6.6rem;
+    overflow: hidden;
+}
+
+.boxFour .content li {
+    line-height: .6rem;
+    font-size: .28rem;
+    position: relative;
+    padding-left: .4rem;
+    background: url(../images/list.png) 0 center no-repeat;
+    background-size: 5%;
+    margin: .2rem 0;
+}
+
+.boxFour .content li span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1.7rem;
+    color: #aaa;
+}
+
+.boxFour .content li a {
+    display: block;
+    width: 5.1rem;
+    height: .6rem;
+    padding-right: 1.7rem;
+    overflow: hidden;
+    /*内容超出后隐藏*/
+    text-overflow: ellipsis;
+    /* 超出内容显示为省略号*/
+    white-space: nowrap;
+    /*文本不进行换行*/
+}
+
+.boxFour .content .text {
+    text-align: center;
+}
+
+.boxFour .content .morebtn {
+    background: #a6ce60;
+}
+
+.boxFive {
+    width: 7.2rem;
+    padding: 0 .15rem;
+    height: 8.5rem;
+    background: url(../images/mo3.jpg)center center no-repeat;
+    background-size: 100%;
+}
+
+.boxFive:before {
+    content: '';
+    display: table;
+    clear: both;
+    height: .5rem;
+}
+
+.boxFive .title {
+    color: #FFFFFF;
+    width: 7.2rem;
+}
+
+.boxFive .content div {
+    width: 6.5rem;
+    margin: 0 auto;
+    height: .8rem;
+    line-height: .8rem;
+    padding: .1rem 0;
+}
+
+.boxFive .content div span {
+    display: inline-block;
+    height: .78rem;
+    border: .01rem solid transparent;
+    line-height: .78rem;
+    position: relative;
+    top: 0;
+    border-right: 0;
+    color: #FFFFFF;
+    padding: 0 .2rem;
+}
+
+.boxFive .content div input {
+    border-radius: 0;
+    appearance: none;
+    padding-left: .1rem;
+    height: .78rem;
+    line-height: .78rem;
+    width: 4.9rem;
+    border: .01rem solid #FFFFFF;
+    -webkit-border: .01rem solid #FFFFFF;
+    border-: .01rem solid #FFFFFF;
+    background: transparent;
+    outline: none;
+    color: #FFFFFF;
+}
+
+.boxFive .content div textarea {
+    width: 4.8rem;
+    border-radius: 0;
+    -webkit-appearance: none;
+    border: .01rem solid #FFFFFF;
+    -webkit-border: .01rem solid #FFFFFF;
+    border-: .01rem solid #FFFFFF;
+    background: transparent;
+    height: 2.4rem;
+    line-height: .4rem;
+    outline: none;
+    color: #FFFFFF;
+    padding: .1rem;
+}
+
+.boxFive .content div.tet {
+    height: 2.62rem;
+}
+
+.boxFive .content div.tet span {
+    height: 2.6rem;
+    line-height: 2.4rem;
+    display: inline-block;
+    position: static;
+    float: left;
+}
+
+.boxFive .content .morebtn {
+    width: 5rem;
+    margin-left: 1.75rem;
+    font-size: .3rem;
+    -webkit-border: .02rem solid #FFFFFF;
+    border-: .02rem solid #FFFFFF;
+}
+
+.msgList {
+    width: 7.5rem;
+    height: 6.3rem;
+    margin: .3rem auto;
+    overflow: hidden;
+}
+
+.msgList .msgLi {
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.1rem;
+    padding: .3rem .2rem;
+    overflow: hidden;
+    border-bottom: .01rem solid #eee;
+}
+
+.msgList .msgLi a {
+    display: block;
+    color: #000;
+}
+
+.msgList .msgLiImg {
+    float: left;
+    width: 2.2rem;
+    height: 1.5rem;
+    border-radius: .1rem;
+    overflow: hidden;
+}
+
+.msgList .msgLiImg img {
+    display: block;
+    width: 100%;
+}
+
+.msgList .msgLiMain {
+    box-sizing: border-box;
+    float: left;
+    width: 4.9rem;
+    padding-left: .2rem;
+}
+
+.msgList .msgLiTitle {
+    font-size: .32rem;
+    line-height: .42rem;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.msgList .msgLiContent {
+    font-size: .22rem;
+    text-indent: 2em;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: #333;
+    line-height: .36rem;
+}

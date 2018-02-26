@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/Reset.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/commom.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        if (!isMobile()) {
+            window.location.href = "http://tangph.com/index.html";
+        }
+
+        function isMobile() {
+            if (/android/i.test(navigator.userAgent)) {
+                //document.write("This is Android'browser.");
+                return true;
+            }
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                //document.write("This is iOS'browser.");
+                return true;
+            }
+            if (/Linux/i.test(navigator.userAgent)) {
+                //document.write("This is Linux'browser.");
+                return true;
+            }
+            if (/Linux/i.test(navigator.platform)) {
+                //document.write("This is Linux operating system.");
+                return true;
+            }
+            if (/MicroMessenger/i.test(navigator.userAgent)) {
+                //document.write("This is MicroMessenger'browser.");
+                return true;
+            }
+
+            return false;
+        }
+    </script>
+    <script src="js/adaptive.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js?t=1" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.tmpl.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="layer/layer.js" type="text/javascript" charset="utf-8"></script>
+    <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/wxshare.js"></script>
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].baseFont = 28;
+        window['adaptive'].maxWidth = 750;
+        window['adaptive'].scaleType = 1;
+        window['adaptive'].init();
+    </script>
+    <title>伊能启元 我糖平衡网</title>
+</head>
+
+<body>
+    <input type="hidden" id="wx_title" value="" />
+    <input type="hidden" id="wx_desc" value="" />
+    <input type="hidden" id="wx_imgurl" value="" />
+    <!--顶部logo-->
+    <header class="header"></header>
+    <!--右上角菜单-->
+    <div class="menu"></div>
+    <!--内容主体-->
+    <div class="main">
+        <!--轮播图-->
+        <div class="boxOne" id="banner">
+            <!--<div class="pic">
+					<img src="images/box-one_01.jpg" alt="" />
+					<div class="text">
+						<h3>引 领 品 质 生 活</h3>
+						<h3>Q U A L I T Y   L I F E</h3>
+					</div>
+				</div>>-->
+        </div>
+        <!--产品中心-->
+        <div class="boxTwo">
+            <!--产品中心标题-->
+            <div class="title">
+                <h3>我糖健康</h3>
+                <div></div>
+            </div>
+            <div class="msgList">
+
+            </div>
+            <a href="BrandCenter.html?id=23" class="morebtn">查看更多</a>
+        </div>
+        <!--经典商城-->
+        <div class="boxThree">
+            <div class="content">
+                <div class="mall">
+                    <a href="http://www.jk.cn/">
+                        <div class="Tmall"></div>
+                    </a>
+                    <a href="javascript:">
+                        <div class="o2o"></div>
+                    </a>
+                    <a href="http://www.yydys.com/">
+                        <div class="jd"></div>
+                    </a>
+                    <a href="https://mall.jd.com/index-674905.htmlindex-674905.html">
+                        <div class="shop"></div>
+                    </a>
+                    <a href="http://www.jztey.com">
+                        <div class="jzt"></div>
+                    </a>
+                    <a href="http://www.tongrentang.com">
+                        <div class="trt"></div>
+                    </a>
+                    <a href="javascript:">
+                        <div class="other1"></div>
+                    </a>
+                </div>
+                <div class="txt">
+                    <h2>更多商品选择，请到以上希尔商城选购</h2>
+                    <h3>ONLINE SHOPPING MALL</h3>
+                </div>
+                <div class="blogrollbox" style="text-align:center;padding:.4rem 1rem;line-height:.44rem;">
+                    <a href="http://www.jztey.com" target="_blank" style="overflow:hidden;display:block;color:#fff;margin-bottom:.2rem;">
+                        <img src="/images/ico3.png" style="height:.44rem;float:left;margin-right:.2rem;">
+                        <span style="float:left">九州通医药集团股份有限公司</span>
+                    </a>
+                    <a href="http://www.tongrentang.com" target="_blank" style="overflow:hidden;display:block;color:#fff;margin-bottom:.2rem;">
+                        <img src="/images/ico4.png" style="height:.44rem;float:left;margin-right:.2rem;">
+                        <span style="float:left">北京同仁堂（集团）有限责任公司</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--新闻资讯-->
+        <div class="boxFour">
+            <!--新闻资讯标题-->
+            <div class="title">
+                <h3>新闻资讯</h3>
+                <div></div>
+            </div>
+            <!--新闻资讯列表-->
+            <div class="content">
+                <ul>
+                    <!--<li>
+							<span>[2017/09/12]</span>
+							<a href="#">湖南金典木业有限公司怎么样？1</a>
+						</li>-->
+                </ul>
+                <div class="text">
+                    <a href="BrandCenter.html?id=24" class="morebtn">查看更多</a>
+                </div>
+            </div>
+        </div>
+        <!--留言表单-->
+        <div class="boxFive" style="display:none;">
+            <!--表单标题-->
+            <div class="title">
+                <h3>联系我们</h3>
+                <h4>CONTACT US</h4>
+                <div></div>
+            </div>
+            <!--表单-->
+            <div class="content">
+                <div>
+                    <span>姓 名 ：</span><input type="text" id="username" placeholder="请输入您的姓名" />
+                </div>
+                <div>
+                    <span>电 话 ：</span><input type="text" id="userphone" placeholder="请输入您的电话" />
+                </div>
+                <div class="tet">
+                    <span>留 言 ：</span><textarea id='usermsg' placeholder="您想对我说"></textarea>
+                </div>
+                <a href="#" class="morebtn">提&nbsp;&nbsp;交</a>
+            </div>
+        </div>
+    </div>
+    <!--底部导航-->
+    <div id="footer">
+
+    </div>
+</body>
+<!--产品中心-->
+<script id="bannerTemplate" type="text/x-jquery-tmpl">
+
+    <div class="msgLi">
+        <a href="news.html?id=${id}">
+            <div class="msgLiImg" style="background:url()no-repeat center;background-size:cover;">
+                <img src="${article_image}" alt="${article_title}">
+            </div>
+            <div class="msgLiMain">
+                <div class="msgLiTitle">${article_title}</div>
+                <div class="msgLiContent">${article_short}</div>
+            </div>
+        </a>
+    </div>
+
+</script>
+<!--首页轮播-->
+<script id="topbannerTemplate" type="text/x-jquery-tmpl">
+    <div class="pic">
+        <a href='${url}'>
+            <img src='${file_url}' alt="" />
+        </a>
+    </div>
+</script>
+<!--首页新闻列表-->
+<script id="newsTemplate" type="text/x-jquery-tmpl">
+    <li>
+        <span>${article_publish_time}</span>
+        <a href="news.html?id=${id}">${article_title}</a>
+    </li>
+</script>
+
+</html>
