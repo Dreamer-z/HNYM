@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>优卓食品科技有限公司</title>
+    <link rel="stylesheet" type="text/css" href="../addons/ewei_shopv2/static/js/dist/foxui/css/foxui.min.css?v=0.2">
+    <link rel="stylesheet" type="text/css" href="../addons/ewei_shopv2/template/mobile/default/static/css/style.css?v=2.0.3">
+
+    <link rel="stylesheet" type="text/css" href="../addons/ewei_shopv2/static/fonts/iconfont.css?v=2016070717">
+    <script src="./resource/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="//res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
+    <script src="../addons/ewei_shopv2/static/js/require.js"></script>
+    <script src="../addons/ewei_shopv2/static/js/myconfig-app.js"></script>
+    <script language="javascript">
+        require(['core'], function(modal) {
+            modal.init({
+                siteUrl: "http://yzshop.hnabmx.cn/",
+                baseUrl: "./index.php?i=5&c=entry&m=ewei_shopv2&do=mobile&r=ROUTES&mid=27"
+            })
+        });
+    </script>
+
+
+
+    <style type="text/css">
+        body {
+            position: absolute;
+            ;
+            max-width: 750px;
+            margin: auto;
+        }
+        
+        .fui-navbar {
+            max-width: 750px;
+        }
+        
+        .fui-navbar,
+        .fui-footer {
+            max-width: 750px;
+        }
+        
+        .fui-page.fui-page-from-center-to-left,
+        .fui-page-group.fui-page-from-center-to-left,
+        .fui-page.fui-page-from-center-to-right,
+        .fui-page-group.fui-page-from-center-to-right,
+        .fui-page.fui-page-from-right-to-center,
+        .fui-page-group.fui-page-from-right-to-center,
+        .fui-page.fui-page-from-left-to-center,
+        .fui-page-group.fui-page-from-left-to-center {
+            -webkit-animation: pageFromCenterToRight 0ms forwards;
+            animation: pageFromCenterToRight 0ms forwards;
+        }
+    </style>
+
+
+    <style>
+        .danmu {
+            display: none;
+            opacity: 0;
+        }
+    </style>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core" src="../addons/ewei_shopv2/static/js/app/core.js?v=1519867245430"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="biz/order/create" src="../addons/ewei_shopv2/static/js/app/biz/order/create.js?v=1519867245430"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="init" src="../addons/ewei_shopv2/static/js/app/init.js?v=1519867245430"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="//qzonestyle.gtimg.cn/qzone/qzact/common/share/share.js" src="//qzonestyle.gtimg.cn/qzone/qzact/common/share/share.js?v=1519867245430"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="../addons/ewei_shopv2/static/js/app/../dist/jquery/jquery-1.11.1.min.js?v=1519867245430"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tpl" src="../addons/ewei_shopv2/static/js/app/../dist/tmodjs.js?v=1519867245430"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="biz/plugin/diyform" src="../addons/ewei_shopv2/static/js/app/biz/plugin/diyform.js?v=1519867245430"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.qrcode" src="../addons/ewei_shopv2/static/js/app/../dist/jquery/jquery.qrcode.min.js?v=1519867245430"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="foxui" src="../addons/ewei_shopv2/static/js/app/../dist/foxui/js/foxui.min.js?v=1519867245430"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.gcjs" src="../addons/ewei_shopv2/static/js/app/../dist/jquery/jquery.gcjs.js?v=1519867245430"></script>
+</head>
+
+<body>
+
+    <div class="fui-page-group ">
+        <link rel="stylesheet" type="text/css" href="../addons/ewei_shopv2/template/mobile/default/static/css/coupon.css?v=2.0.0">
+        <link rel="stylesheet" type="text/css" href="../addons/ewei_shopv2/template/mobile/default/static/css/coupon-new.css?v=2017030302">
+
+        <link rel="stylesheet" type="text/css" href="../addons/ewei_shopv2/template/mobile/default/static/css/init1.css">
+        <link rel="stylesheet" type="text/css" href="../addons/ewei_shopv2/template/mobile/default/static/css/public.css">
+        <link rel="stylesheet" type="text/css" href="../addons/ewei_shopv2/template/mobile/default/static/css/mobiscroll.custom-2.16.1.min.css">
+
+        <style>
+            .yen {
+                border: none;
+                height: 0.75rem;
+                width: 0.75rem;
+                display: inline-block;
+                background: #ff4753;
+                color: #fff;
+                font-size: 0.4rem;
+                line-height: 0.8rem;
+                text-align: center;
+                font-style: normal;
+                border-radius: 0.75rem;
+                -webkit-border-radius: 0.75rem;
+            }
+            
+            .coupon-list.mini .coupon-item .coupon-after {
+                padding: 1.2em 0.5em 1.2em 0;
+                right: 0;
+                width: auto;
+            }
+            
+            .cloumnInp {
+                padding: 0 20px;
+            }
+            
+            .cloumnInp span {
+                font-size: 14px;
+            }
+            
+            .sendway .box {
+                width: 7.5rem;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                margin-left: -3.75rem;
+                font-size: .28rem;
+                background-color: #eee;
+            }
+            
+            .sendway .box .li {
+                height: .8rem;
+                line-height: .4rem;
+                padding: .2rem;
+                overflow: hidden;
+                background-color: #fff;
+                margin-bottom: .01rem;
+            }
+            
+            .sendway .box .li label,
+            .sendway .box .li input {
+                float: right;
+            }
+            
+            .sendway .box .li label {
+                margin-right: 0;
+            }
+            
+            .sendway .box .li .title {
+                float: left;
+                width: 6.5rem;
+            }
+            
+            .sendway .box .btn1 {
+                margin-top: 0;
+            }
+        </style>
+        <div class="fui-page order-create-page fui-page-current" id="fui-page-1519869978247">
+            <div class="fui-header">
+                <div class="fui-header-left">
+                    <a class="back"></a>
+                </div>
+                <div class="title">确认订单</div>
+                <div class="fui-header-right" data-nomenu="true">&nbsp;</div>
+            </div>
+            <div class="fui-content  navbar">
+
+
+
+                <!--地址选择-->
+                <div class="fui-list-group" id="addressInfo" data-addressid="3">
+                    <a class="fui-list " href="./index.php?i=5&amp;c=entry&amp;m=ewei_shopv2&amp;do=mobile&amp;r=member.address.selector&amp;mid=27" data-nocache="true">
+                        <div class="fui-list-media">
+                            <i class="icon icon-location"></i>
+                        </div>
+                        <div class="fui-list-inner">
+                            <div class="title has-address"><span class="realname">游冲</span> <span class="mobile">18573309629</span></div>
+                            <div class="text has-address"><span class="address">湖南省长沙市天心区 桂花坪街道 生活艺术城1栋 770011</span></div>
+                            <div class="text no-address" style="display:none"><i class="icon icon-add"></i> 添加收货地址</div>
+                        </div>
+                        <div class="fui-list-angle">
+                            <div class="angle"></div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <!--自提点选择-->
+                <div class="fui-list-group" id="carrierInfo" style="display: none">
+                    <a class="fui-list" href="./index.php?i=5&amp;c=entry&amp;m=ewei_shopv2&amp;do=mobile&amp;r=store.selector&amp;type=1&amp;merchid=0&amp;mid=27" data-nocache="true">
+                        <div class="fui-list-media">
+                            <i class="icon icon-shop"></i>
+                        </div>
+
+                        <div class="fui-list-inner">
+                            <div class="title"><span class="storename"></span></div>
+                            <div class="subtitle"><span class="realname"></span> <span class="mobile" id="carrierInfo_mobile"></span></div>
+                            <div class="text"><span class="address"></span></div>
+                        </div>
+                        <div class="fui-list-angle">
+                            <div class="angle"></div>
+                        </div>
+                    </a>
+                </div>
+                <!--联系填写-->
+                <div class="fui-cell-group sm" id="memberInfo" style="display:none">
+                    <div class="fui-cell">
+                        <div class="fui-cell-label sm">联系人</div>
+                        <div class="fui-cell-info"><input type="text" placeholder="请输入联系人" data-set="" name="carrier_realname" class="fui-input" value="小游" data-value="小游"></div>
+                    </div>
+                    <div class="fui-cell">
+                        <div class="fui-cell-label sm">联系电话</div>
+                        <div class="fui-cell-info"><input type="tel" placeholder="请输入联系电话" data-set="" name="carrier_mobile" class="fui-input" value="18573309622" data-value="18573309622"></div>
+                    </div>
+                </div>
+
+
+                <div class="fui-list-group">
+
+                    <div class="fui-list-group-title"><i class="icon icon-shop"></i> 优卓食品科技有限公司</div>
+                    <input type="hidden" name="goodsid[]" value="" data-value="">
+                    <input type="hidden" name="optionid[]" value="0" data-value="0">
+
+
+                    <ul>
+                        <li>
+                            <div class="fui-list goods-item">
+                                <div class="fui-list-media">
+                                    <a href="./index.php?i=5&amp;c=entry&amp;m=ewei_shopv2&amp;do=mobile&amp;r=goods.detail&amp;id=21&amp;mid=27">
+                                        <img src="http://yzshop.hnabmx.cn/attachment/images/5/2018/01/iwdZlyV3V0Sd8YHSNayWkxslhTk3VD.jpg" class="round package-goods-img" style="height: 64px;">
+                                    </a>
+                                </div>
+                                <div class="fui-list-inner">
+                                    <a href="./index.php?i=5&amp;c=entry&amp;m=ewei_shopv2&amp;do=mobile&amp;r=goods.detail&amp;id=21&amp;mid=27">
+                                        <div class="text">
+                                            圣牧全程有机纯牛奶精品装纯奶200ml*24盒 </div>
+                                    </a>
+                                </div>
+                                <div class="fui-list-angle">
+                                    <span class="price ">¥ <span class="marketprice">66</span></span>
+                                    <span class="total">
+                                            x1<input class="num shownum" type="hidden" name="" value="1" data-value="1">
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div class="cloumnInp">
+                                <span style="
+    font-size: 14px;
+">配送方式：</span>
+                                <input id="sWay" type="text" placeholder="仅工作日配送" readonly="" data-value="">
+                            </div>
+                            <div class="cloumnInp">
+                                <span style="
+    font-size: 14px;
+">配送日期：</span>
+                                <input id="demo_date" type="text" value="2017.06.01" data-value="2017.06.01">
+                            </div>
+                            <div class="cloumnInp sendday">
+                                <span style="
+    font-size: 14px;
+">每日配送(瓶)：</span>
+                                <input type="number" placeholder="请输入您每日需要配送的数量" data-value="">
+                            </div>
+                        </li>
+                    </ul>
+
+
+
+
+
+
+
+
+                    <script type="text/javascript">
+                        $(function() {
+                            $(".package-goods-img").height($(".package-goods-img").width());
+                        })
+                    </script>
+                    <div class="fui-cell-group">
+
+                        <div class="fui-cell">
+                            <div class="fui-cell-info" style="text-align: right;">共 <span id="goodscount" class="text-danger">1</span> 件商品 合计：<span class="text-danger">¥ <span class="goodsprice">66.00</span></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="fui-cell-group sm ">
+                    <div class="fui-cell">
+                        <div class="fui-cell-info"><input type="text" class="fui-input" id="remark" placeholder="选填: 买家留言(50字以内)" maxlength="50" data-value=""></div>
+                    </div>
+                </div>
+                <div class="fui-cell-group  sm">
+
+                    <div id="coupondiv" class="fui-cell fui-cell-click" style="display:none">
+                        <div class="fui-cell-label" style="width:auto;">优惠券</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark">
+                            <img id="couponloading" src="../addons/ewei_shopv2/static/images/loading.gif" style="vertical-align: middle;display: none;" width="20" alt="">
+                            <div class="badge badge-danger" style="display:none">0</div>
+                            <span class="text">无可用</span>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+                <div class="fui-cell-group sm">
+                    <input type="hidden" id="weight" name="weight" value="0" data-value="0">
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">商品小计</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark">¥ <span class="goodsprice">
+            66.00        </span></div>
+                    </div>
+                    <div class="fui-cell istaskdiscount" style="display: none">
+                        <div class="fui-cell-label" style="width:auto">任务活动优惠</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark">-¥ <span id="showtaskdiscountprice" class="showtaskdiscountprice"></span></div>
+                        <input type="hidden" id="taskdiscountprice" class="taskdiscountprice" value="0.00" data-value="0.00">
+                    </div>
+
+                    <div class="fui-cell islotterydiscount" style="display: none">
+                        <div class="fui-cell-label" style="width:auto">游戏活动优惠</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark">-¥ <span id="showlotterydiscountprice" class="showlotterydiscountprice"></span></div>
+                        <input type="hidden" id="lotterydiscountprice" class="lotterydiscountprice" value="0.00" data-value="0.00">
+                    </div>
+
+                    <div class="fui-cell discount" style="display: none">
+                        <div class="fui-cell-label" style="width:auto">会员优惠</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark">-¥ <span id="showdiscountprice" class="showdiscountprice"></span></div>
+                        <input type="hidden" id="discountprice" class="discountprice" value="0.00" data-value="0.00">
+                    </div>
+
+                    <div class="fui-cell isdiscount" style="display: none">
+                        <div class="fui-cell-label" style="width:auto">促销优惠</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark">-¥ <span id="showisdiscountprice" class="showisdiscountprice"></span></div>
+                        <input type="hidden" id="isdiscountprice" class="isdiscountprice" value="0.00" data-value="0.00">
+                    </div>
+
+                    <div class="fui-cell" id="deductenough" style="display:none">
+                        <div class="fui-cell-label" style="width:auto">商城单笔满 <span id="deductenough_enough" class="text-danger">0.00</span> 元立减</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark">-¥ <span id="deductenough_money">0.00</span></div>
+                    </div>
+
+                    <div class="fui-cell" id="merch_deductenough" style="display:none">
+                        <div class="fui-cell-label" style="width:auto">商户单笔满 <span id="merch_deductenough_enough" class="text-danger">0.00</span> 元立减</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark">-¥ <span id="merch_deductenough_money">0.00</span></div>
+                    </div>
+
+                    <div class="fui-cell" id="seckillprice" style="display: none">
+                        <div class="fui-cell-label" style="width:auto">秒杀优惠</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark">-¥ <span id="seckillprice_money">0</span></div>
+                    </div>
+
+
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">运费</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark">¥ <span class="dispatchprice">0.00</span></div>
+                    </div>
+
+
+                    <div class="fui-cell" id="coupondeduct_div" style="display:none">
+                        <div class="fui-cell-label" style="width:auto" id="coupondeduct_text"></div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark">-¥ <span id="coupondeduct_money">0</span></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="fui-navbar order-create-checkout">
+                <a href="javascript:;" class="nav-item total">
+                    <p> 需付：<span class="text-danger ">¥ <span class="totalprice">66.00</span></span>
+                    </p>
+                </a>
+                <a href="javascript:;" class="nav-item btn btn-danger buybtn">立即支付</a>
+            </div>
+            <script id="tpl_coupons" type="text/html">
+                <div class="coupon-picker option-picker">
+                    <div class="option-picker-inner coupon-picker">
+                        <div class="coupon-list mini">
+                            <%each wxcards as wxcard%>
+                                <div class="coupon-item  <%wxcard.color%>   " data-couponname="<%wxcard.title%>" data-contype="1" data-wxid="<%wxcard.id%>" data-wxcardid="<%wxcard.card_id%>" data-wxcode="<%wxcard.code%>" data-merchid="<%wxcard.merchid%>">
+                                    <div class="coupon-dots">
+                                        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                                    </div>
+                                    <div class="coupon-left">
+                                        <div class="single">
+                                            <%if wxcard.backpre%><span class="subtitle">￥</span>
+                                                <%/if%>
+                                                    <%wxcard.backmoney%>
+                                        </div>
+                                    </div>
+                                    <div class="coupon-right">
+                                        <div class="title">
+                                            <%wxcard.title%>
+                                        </div>
+                                        <div class="usetime">
+                                            <div class="text">有效期:
+                                                <%wxcard.timestr%>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="coupon-after">
+                                        <div class="coupon-btn">选择</div>
+                                    </div>
+                                </div>
+                                <%/each%>
+
+                                    <%each coupons as coupon%>
+                                        <div class="coupon-item  <%coupon.color%> " data-contype="2" data-couponname="<%coupon.couponname%>" data-couponid="<%coupon.id%>" data-merchid="<%coupon.merchid%>">
+                                            <div class="coupon-dots">
+                                                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                                            </div>
+                                            <div class="coupon-left">
+                                                <div class="single">
+                                                    <%if coupon.backpre%><span class="subtitle">￥</span>
+                                                        <%/if%>
+                                                            <%coupon.backmoney%>
+                                                </div>
+                                            </div>
+                                            <div class="coupon-right">
+                                                <div class="title">
+                                                    <%coupon.couponname%>
+                                                </div>
+                                                <div class="usetime">
+                                                    <div class="text">有效期:
+                                                        <%coupon.timestr%>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="coupon-after">
+                                                <div class="coupon-btn">选择</div>
+                                            </div>
+                                        </div>
+                                        <%/each%>
+                        </div>
+                    </div>
+                    <div class="fui-navbar" style="z-index: 999">
+                        <a class="nav-item btn btn-default btn-cancel" style="color: #666">不使用优惠券</a>
+                        <a class="nav-item btn btn-danger btn-confirm">确定使用</a>
+                    </div>
+                </div>
+            </script>
+            <script language="javascript">
+                require(['biz/order/create'], function(modal) {
+                    modal.init({
+                        "id": 0,
+                        "gdid": 0,
+                        "fromcart": 1,
+                        "addressid": "3",
+                        "storeid": 0,
+                        "couponcount": 0,
+                        "coupon_goods": [{
+                            "goodsid": "21",
+                            "total": "1",
+                            "optionid": "0",
+                            "marketprice": "66.00",
+                            "merchid": "0",
+                            "cates": "",
+                            "discounttype": 0,
+                            "isdiscountprice": 0,
+                            "discountprice": 0,
+                            "isdiscountunitprice": 0,
+                            "discountunitprice": 0
+                        }],
+                        "isvirtual": false,
+                        "isverify": false,
+                        "goods": [{
+                            "goodsid": "21",
+                            "total": "1",
+                            "optionid": "0",
+                            "marketprice": "66.00",
+                            "merchid": "0",
+                            "cates": "",
+                            "discounttype": 0,
+                            "isdiscountprice": 0,
+                            "discountprice": 0,
+                            "isdiscountunitprice": 0,
+                            "discountunitprice": 0
+                        }],
+                        "merchs": [],
+                        "orderdiyformid": 0,
+                        "giftid": 0,
+                        "mustbind": 0
+                    });
+                });
+            </script>
+        </div>
+        <script language="javascript">
+            $(function() {
+                $.getJSON("./index.php?i=5&c=entry&m=ewei_shopv2&do=mobile&r=util.task&mid=27");
+            })
+        </script>
+
+        <script language="javascript">
+            require(['init']);
+
+            setTimeout(function() {
+                if ($(".danmu").length > 0) {
+                    $(".danmu").remove();
+                }
+            }, 500);
+        </script>
+
+
+
+
+        <script language="javascript">
+            clearTimeout(window.interval);
+            window.interval = setTimeout(function() {
+                window.shareData = {
+                    "hideMenus": ["menuItem:share:qq", "menuItem:share:QZone", "menuItem:share:email", "menuItem:copyUrl", "menuItem:openWithSafari", "menuItem:openWithQQBrowser", "menuItem:share:timeline", "menuItem:share:appMessage"]
+                };
+                jssdkconfig = null || {
+                    jsApiList: []
+                };
+                jssdkconfig.debug = false;
+                jssdkconfig.jsApiList = ['checkJsApi', 'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'showOptionMenu', 'hideMenuItems', 'onMenuShareQZone', 'scanQRCode'];
+                wx.config(jssdkconfig);
+                wx.ready(function() {
+                    wx.showOptionMenu();
+
+                    wx.hideMenuItems({
+                        menuList: ["menuItem:share:qq", "menuItem:share:QZone", "menuItem:share:email", "menuItem:copyUrl", "menuItem:openWithSafari", "menuItem:openWithQQBrowser", "menuItem:share:timeline", "menuItem:share:appMessage"]
+                    });
+
+                    wx.onMenuShareAppMessage(window.shareData);
+                    wx.onMenuShareTimeline(window.shareData);
+                    wx.onMenuShareQQ(window.shareData);
+                    wx.onMenuShareWeibo(window.shareData);
+                    wx.onMenuShareQZone(window.shareData);
+                });
+            }, 500);
+
+
+            //	Share to qq
+            require(['//qzonestyle.gtimg.cn/qzone/qzact/common/share/share.js'], function(setShareInfo) {
+                setShareInfo({
+                    title: "",
+                    summary: "",
+                    pic: "",
+                    url: ""
+                });
+            });
+        </script>
+
+
+        <div class="wap-qrcode-container">
+            <p class="example1">优卓食品科技有限公司</p>
+            <div class="wap-qrcode-image" id="wap-qrcode"><canvas width="256" height="256"></canvas></div>
+            <p class="example1">微信“扫一扫”浏览</p>
+        </div>
+        <script language="javascript">
+            $(function() {
+                setTimeout(function() {
+                    require(['jquery.qrcode'], function(q) {
+                        $('#wap-qrcode').html('');
+                        $('#wap-qrcode').qrcode("http://yzshop.hnabmx.cn/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile&r=order.create&mid=27");
+                    });
+                }, 500);
+
+            })
+        </script>
+        <span style="display:none"></span>
+
+
+    </div>
+    <div class="fullscreen sendway">
+        <div class="box">
+            <div class="li li1">
+                <label for="eDay" class="title">每日配送</label><input class="sway" id="eDay" name="way" type="radio"><label for="eDay"></label>
+            </div>
+            <div class="li li2">
+                <label for="wDay" class="title">工作日配送</label><input class="sway" id="wDay" name="way" type="radio"><label for="wDay"></label>
+            </div>
+            <div class="li li3">
+                <label for="oTime" class="title">一次性配送</label><input class="sway" id="oTime" name="way" type="radio"><label for="oTime"></label>
+            </div>
+            <div class="confirm">
+                <button class="btn1">确定</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 配送方式
+        $(function() {
+            $("#sWay").click(function(ev) {
+                ev.stopPropagation();
+                $(".sendway").fadeIn(100);
+                $(document).click(function(ev) {
+                    if (ev.target == $(".box")[0] || ev.target == $(".box .li1")[0] || ev.target == $(".box .li2")[0] || ev.target == $(".box .li3")[0] || ev.target == $(".box .li1 label")[0] || ev.target == $(".box .li1 label")[1] || ev.target == $(".box .li1 input")[0] || ev.target == $(".box .li2 label")[0] || ev.target == $(".box .li2 label")[1] || ev.target == $(".box .li2 input")[0] || ev.target == $(".box .li3 label")[0] || ev.target == $(".box .li3 label")[1] || ev.target == $(".box .li3 input")[0] || ev.target == $(".box .confirm")[0] || ev.target == $(".box .confirm button")[0]) {
+                        return;
+                    } else {
+                        $(".sendway").fadeOut(100);
+                    }
+                });
+                $(".btn1").click(function(ev) {
+                    ev.stopPropagation();
+                    ev.preventDefault();
+                    $(".sway").each(function(i) {
+                        if ($(".sway").eq(i).prop("checked")) {
+                            $("#sWay").val($(".sway").eq(i).siblings(".title").html());
+                            $(".sendway").fadeOut(100);
+                        } else {
+                            return;
+                        }
+                    });
+                });
+            })
+        });
+        // 时间选择
+        $(function() {
+            $('#demo_date').mobiscroll().date({ //可选：date\datetime\time\
+                theme: 'android-holo-light',
+                mode: 'scroller',
+                display: 'modal',
+                showNow: true,
+                nowText: "今天",
+                startYear: 2010, //开始年份
+                endYear: 2050, //结束年份
+                lang: 'zh'
+
+            });
+            $('#demo_date').mobiscroll('setVal', '20&nbsp;&nbsp;&nbsp;&nbsp;17-01-01 12:00', true, true, false); //设置时间初始值
+        });
+    </script>
+</body>
+
+</html>
